@@ -118,6 +118,7 @@ A differenza del margine di contribuzione di primo livello, questo **considera i
 Tale differenziazione può assumere forme molto diverse.
 
 **Lo scopo del calcolo dei margini di contribuzione multilivello è quello di determinare la redditività degli oggetti di riferimento in conformità con le relative cause e nel modo più trasparente possibile.**
+
 - **Costi specifici dl prodotto** = i costi possono essere attribuiti in modo preciso a un prodotto o servizio (ad esempio l'ammortamento di una macchina utilizzata per produrre il modello di biciclette A);
 - **Costi fissi per area** = i costi possono essere attribuiti a un'area aziendale (ad esempio per l'officina di produzione di bicilette);
 - **Costi aziendali fissi** = si intendono i costi fissi generali che non possono essere imputati a un prodotto o a un'area (Ad esempio gli stipendi amministrativi).
@@ -133,12 +134,15 @@ Tale differenziazione può assumere forme molto diverse.
 5. Per ottenere **il risultato operativo**, si sottraggono nell'ultimo passaggio i costi fissi aziendali dal margine di contribuzione III così determinato.
 
 ## Calcolo del margine di contribuzione di secondo livello
+
 Una volta calcolata il margine di primo livello, è possibile calcolare il margine di secondo livello sottraendo al primo i costi fissi specifici.
 I costi fissi specifici sono detti così in quanto:
+
 - **Fissi**: non cambiano nel corso del tempo e non sono proporzionali alla produzione;
 - **Specifici**: partecipano alla creazione del prodotto (e non di altri).
 
 Alcuni esempi potrebbero essere:
+
 - Ammortamento di macchinari deputati esclusivamente alla creazione del prodotto
 - Manutenzioni
 - Consulenze tecniche esclusive
@@ -148,3 +152,87 @@ Una volta riconosciuti tali costi, la formula è la seguente:
 $$M_dC \text{ II° livello} = M_dC \text{ I° livello} - \text{Costi Fissi Specifici}$$
 
 ## Il margine di contribuzione relativo
+
+Il margine di contribuzione relativo mette in relazione:
+
+- Il margine di contribuzione unitario
+- IL cosiddetto fattore vincolante
+
+Alcuni esempi sono la capacità di una macchina di produzione o di un dipendente.
+
+Il margine di contribuzione relativo viene utilizzato per:
+
+- Ottimizzare un origramma di produzione in caso di capacità limitate;
+- Massimizzare il margine di contribuzione dell'untià di produzione interessata.
+
+Per principio, la produzione di prodotti o servizi con un margine di contrivuzione previsto più elevato deve essere privilegiata.
+
+Il margine di contribuzione relativo è calcolato secondo questa formula:
+$$M_dR = \frac{M_dC_u}{\text{fattore vincolante per unità}}$$
+
+### Esempi di calcolo di margine di contribuzione relativo
+
+**Dati:**
+
+- Il margine di contribuzione per il modello di bicicletta A è di 100€;
+- Per la produzione viene utilizzata una determinata macchina per un'ora;
+- Per il modello di bicicletta B, invece, il margine di contribuzione unitario è pari a 60€ ed è previsto un tempo di produzione di soli 30 minuti con la stessa macchina.
+
+**Svolgimento:**
+
+- Margine di contribuzione relativo $M_CR_A$ per la bicicletta A:
+  $$M_CR = \frac{100€}{1h} = 100 €/h$$
+- Margine di contribuzione relativo $M_CR_B$ per la bicicletta B:
+  $$M_CR = \frac{60€}{0.5h} = 120 €/h$$
+
+> **Dal calcolo emerge che il modello B ha un margine di contribuzione più elevato.**
+
+Se la macchina rappresenta quindi effettivamente il fattore vincolante nella produzione e nella vendita dellebicilette, ovvero se tutte le altre stazioni di produzione e distribuzione hanno una capacità maggiore, la bicicletta B ha un margine di contribuzione più elevato rispetto alla bicicletta A, **per cui si dovrebbe privilegiare la sua produzione.**
+
+La pratica non è così semplice!:
+
+- Nel nostro esempio affinchè il calcolo sia correttom si dovrebbe produrre il doppio delle biciclette B rispetto a quelle di tipo A;
+- Tuttavia, la domanda di biciclette B potrebbe non essere sufficiente per sfruttare al massimo la macchina;
+- Il fattore vincolante quindi non sarebbe più la macchina, ma la vendita delle biciclette di tipo B;
+- Il tal caso, il margine di contribuzione più elevato nella teoria non verrebbe raggiunto nella realtà.
+
+## Perchè calcolare i margini di retribuzione
+
+1. Ogni prodotto apporta un reddito differente dagli altri;
+2. Il calcolo del margine di contribuzione è utile per capire quanto un determinato prodotto sia o meno redditizio;
+3. Permette all'imprenditore di capire quanto sia proficuo produrre e vendere un determinato prodottom piuttosto che un altro;
+4. Permette all'imprenditore di capire se la propria produzione caratterisitica (ovvero fino al II margine) riesca a coprire i costi fissi generali, generando così almeno un pareggio.
+
+## Limiti dell'analisi del margine di contribuzione
+
+1. **Non è adatta per imprese molto complesse, che hanno una moltitudine di prodotti** $\implies$ in questo caso è utile fare questa analisi per area geografica, per mercati o per canali di distribuzione;
+2. **Non è sempre immediato suddividere i costi per ciascuna linea** $\implies$ solitamente i costi comuni sono molto elevati e quelli specifici più ridotti (analisi poco significativa);
+3. **Non sempre è semplice suddividere i costi variabili e fissi**.
+
+## Configurazioni di costo e mergini di contribuzione
+
+![Alt text](image-3.png)
+
+## Esercitazione 2: Utilizzo dei margini di contribuzione
+Raptor S.p.A produce tre prodotti differenti:
+1. X;
+2. Y;
+3. Z;
+Utilizzando due diversi materiali:
+1. M1;
+2. M2;
+Tre componenti:
+1.  C1;
+2.  C2;
+3.  C3;
+E un macchinario dedicato che non può essere utilizzato per altre produzioni.
+
+Dalla contabilità industriale della Raptor si ricavano le seguenti informazioni:
+
+| | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
+|---|---|---|---|---|---|---|---|
+|**Prodotto X**| | 1.5 | 1 | 2 | 2 | 1 | 2 | 2 | 
+|**Prodotto Y**| 2 | 1.2 | 1 | 1 | 2 | 1 | 2.5 | 
+|**Prodotto Z**| 1.2 | 2 | 1.5 | 1 | 1 | 2 | 3 | 
+|**Costo** | 10 €/ora | 3 €/kg | 2 €/kg | 2 €/unità | 3 €/unità | 2 €/unità |  |
+
