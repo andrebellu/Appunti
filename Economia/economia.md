@@ -236,3 +236,17 @@ Dalla contabilità industriale della Raptor si ricavano le seguenti informazioni
 |**Prodotto Z**| 1.2 | 2 | 1.5 | 1 | 1 | 2 | 3 | 
 |**Costo** | 10 €/ora | 3 €/kg | 2 €/kg | 2 €/unità | 3 €/unità | 2 €/unità |  |
 
+- Il prezzo di vendita del prodotto X è pari a 42€, il prezzo di Y è pari a 45€ e il prezzo di Z è pari a 40€;
+- La produzione prevista per il 2021 è pari a 15.000 unità del prodotto X, 25.000 del prodotto Y e 20.000 unità del prodotto Z;
+- Le ore macchina complessivamente disponibili nel corso dell'anno sono 160k.
+- I costi indiretti di produzione sono complessivamente pari a 40k€ e sono legali all'ammortamento del macchinario e alla quota parte dell'affito del capannone industriale (calcolata sulla base dello spazio utilizzato dal macchinario);
+
+a. Il direttore vendie ritiene possibile aumentare le vendite di 1k unità per uno dei tre prodotti. Di quale prodotto conviene aumentare la produzione?
+
+b. La decisione cambierebbe in caso di saturazione della capacità produttiva dell'impianto? In tal caso, di quale pdotto converrebbe aumentare la produzione e di quale converrebbe ridurla?
+
+> Soluzioni esercizio lezione 16.
+
+# Lezione 17
+
+# Il modello di break-even
