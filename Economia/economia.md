@@ -29,6 +29,12 @@
   - [Il modello di break-even in chiave algebrica](#il-modello-di-break-even-in-chiave-algebrica)
   - [Quantità e valore di break even](#quantità-e-valore-di-break-even)
     - [Caso Monoprodotto](#caso-monoprodotto)
+  - [Quantità target e reddito obiettivo](#quantità-target-e-reddito-obiettivo)
+  - [Diagramma del profitto e reddito operativo](#diagramma-del-profitto-e-reddito-operativo)
+  - [Break even, costi fissi e costi variabili](#break-even-costi-fissi-e-costi-variabili)
+    - [CASO 1](#caso-1)
+    - [CASO 2](#caso-2)
+  - [Break Even e Margine di contribuzione](#break-even-e-margine-di-contribuzione)
 
 # Lezione 16
 
@@ -356,3 +362,37 @@ $$Q = \frac{CF}{p-CV} \implies \text{break even point}$$
 $$Q_{be} \frac{CF}{P_u - CV_u} = \frac{CF}{MC_u}$$
 
 $Q_{be}$ = Breakeven point (in quantità)
+
+## Quantità target e reddito obiettivo
+L'analii del volume di pareggio può essere facilmente estesa all calcolo **del volume necessario a conseguire un determinato reddito obiettivo.**
+
+Il reddito obiettivo si riferisce a quello risultato dalla differenza tra i ricavi e i costi (fissi più variabili) di produzione, ossia al **reddito operativo** (EBIT, Earnings Befire Interests and Taxes).
+
+$$Q_{target} = \frac{(CF + EBIT_{target})}{(P-CV_u)} = \frac{(CF+EBIT_{target})}{MC_u}$$
+
+$Q_{target}$ = Quantità obiettivo
+$CF$ = Costi fissi totali
+$EBIT_{target}$ = Reddito obiettivo
+$P$ = Prezzo di vendita
+$CV_u$ = Costo variabile unitario
+$MC_u$ = Margine di contribuzione unitario
+
+## Diagramma del profitto e reddito operativo
+
+![Alt text](image-7.png)
+
+## Break even, costi fissi e costi variabili
+
+### CASO 1
+Costi fissi alti e costi variabili bassi
+
+![Alt text](image-8.png)
+
+### CASO 2
+Costi fissi bassi e costi variabili alti
+
+![Alt text](image-9.png)
+
+## Break Even e Margine di contribuzione
+- Una quota parte dei ricavi di vendita devono essere utilizzati per coprire i costi variabili correlati ai ricavi stessi;
+- 
