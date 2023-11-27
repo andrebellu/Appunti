@@ -1,3 +1,35 @@
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Lezione 16](#lezione-16)
+- [Margine di contribuzione](#margine-di-contribuzione)
+  - [Definizione](#definizione)
+  - [Come utilizzarlo](#come-utilizzarlo)
+  - [Lettura](#lettura)
+  - [Algortimo di Calcolo](#algortimo-di-calcolo)
+  - [Come eseguire il calcolo](#come-eseguire-il-calcolo)
+  - [Livelli del margine di contribuzione](#livelli-del-margine-di-contribuzione)
+  - [Calcolo del margine di contribuzione di primo livello](#calcolo-del-margine-di-contribuzione-di-primo-livello)
+    - [Esempio di calcolo del margine di contribuzione](#esempio-di-calcolo-del-margine-di-contribuzione)
+  - [Calcolo del margine di contribuzione multilivello](#calcolo-del-margine-di-contribuzione-multilivello)
+    - [Esempio di calcolo del margine di contribuzione di multilivello](#esempio-di-calcolo-del-margine-di-contribuzione-di-multilivello)
+  - [Calcolo del margine di contribuzione di secondo livello](#calcolo-del-margine-di-contribuzione-di-secondo-livello)
+  - [Il margine di contribuzione relativo](#il-margine-di-contribuzione-relativo)
+    - [Esempi di calcolo di margine di contribuzione relativo](#esempi-di-calcolo-di-margine-di-contribuzione-relativo)
+  - [Perchè calcolare i margini di retribuzione](#perchè-calcolare-i-margini-di-retribuzione)
+  - [Limiti dell'analisi del margine di contribuzione](#limiti-dellanalisi-del-margine-di-contribuzione)
+  - [Configurazioni di costo e mergini di contribuzione](#configurazioni-di-costo-e-mergini-di-contribuzione)
+  - [Esercitazione 2: Utilizzo dei margini di contribuzione](#esercitazione-2-utilizzo-dei-margini-di-contribuzione)
+- [Lezione 17](#lezione-17)
+- [Il modello di break-even](#il-modello-di-break-even)
+  - [Definizione](#definizione-1)
+  - [Ipotesi e finalità](#ipotesi-e-finalità)
+  - [Punto di pareggio: Ricavi Totali = Costi Totali](#punto-di-pareggio-ricavi-totali--costi-totali)
+  - [Il volume di pareggio](#il-volume-di-pareggio)
+  - [Il diagramma di profitto](#il-diagramma-di-profitto)
+  - [Il modello di break-even in chiave algebrica](#il-modello-di-break-even-in-chiave-algebrica)
+  - [Quantità e valore di break even](#quantità-e-valore-di-break-even)
+    - [Caso Monoprodotto](#caso-monoprodotto)
+
 # Lezione 16
 
 # Margine di contribuzione
@@ -250,3 +282,77 @@ b. La decisione cambierebbe in caso di saturazione della capacità produttiva de
 # Lezione 17
 
 # Il modello di break-even
+
+## Definizione
+Il modello di **break even** (analisi del punto di pareggio) ha la finalità di individuare il minimo volume di produzione che consente ad un'impresa di "coprire i costi".
+
+Fornisce la risposta alle seguenti domande:
+1. Qual è il livello di attività minimo che rende conveniente la produzione? (I ricavi devono coprire costi variabili e costi fissi);
+2. Quanto devo produrre per "stare in piedi"?
+
+![Alt text](image-4.png)
+
+## Ipotesi e finalità
+Il modello di break-even si fonda su quattro ipotesi:
+1. Impresa mono-prodotto
+2. Linearità dei costi $\implies$ no economie di scala
+3. Linearità dei ricavi $\implies$ invariabilità dei prezzi
+4. No variazioni di scorte $\implies$ produzione = fatturato
+
+> **Finalità:** Inidividuare il minimo volume operativo che conseta all'impresa di coprire i costi $\implies$ Tale volume prende il nome di **volume di pareggio o punto di pareggio**.
+
+## Punto di pareggio: Ricavi Totali = Costi Totali
+
+![Alt text](image-5.png)
+
+## Il volume di pareggio
+**Si definisce volume di pareggio (break-even) o punto di pareggio (break-even point) quello in corrispondenza del quale i ricavi totali eguagliano i costi totali (operativi) e duqnue il reddito (operativo) è pari a zero**.
+
+In formule:
+$$Q_{be}|MON \implies Ricavi = Costi $$
+$$MON = Ricavi - Costi = P\times Q - CF - CV_u \times Q = Q(P - CV_u) - CF$$
+$$Q_{be} = \frac{CF}{(P - CV_u)} = \frac{CF}{MC_u}$$
+
+## Il diagramma di profitto
+Per modellizzare il punto di pareggio e analizzare la dinamica del reddito di un'impresa in relazione a decisioni che modifichino il livello di attività, nella prassi è molto usato lo strumento del **diagramma del profitto** (profit graph), o diagramma costo-volume-profitto (costo-volume-profit graph o C-V-P Graph).
+
+Il diagramma del profitto:
+- Mostra la relazione attesa tra ricavi totali e costi totali al variare del volume di output;
+- Può essere costruito sia per l'impresa nel suo complesso sia per specifici segmenti di business, come:
+  - Un prodotto (Kinder Brioss Latte)
+  - Una line di prodotti (Kinder Brioss)
+  - Una divisione di prodotti (Diviosione prodotti per colazione di ferrero)
+
+![Alt text](image-6.png)
+
+## Il modello di break-even in chiave algebrica
+**Hp**: n° unità prodotte = n° unità vendute = Q
+
+p = prezzo di vendita unitario
+
+m = (p-cv) = margine di contribuzione unitario
+
+CF = Costi fissi totali
+
+CT = Costi totali
+
+cv = costo valore unitario
+ 
+M = $M \times Q$ = margine di contribuzione totale
+
+RT = ricavi totali
+
+$\pi$ = profitti (utili)
+
+$$\pi = RT - CT \rightarrow \pi = p \times Q - (CF + cv\times Q)$$
+
+Conviene produrre se $\pi \geq 0 \rightarrow p \times Q - CF - cv\times Q \geq 0$,
+quindi se $Q \geq \frac{CF}{m}$ con 
+$$Q = \frac{CF}{p-CV} \implies \text{break even point}$$
+
+## Quantità e valore di break even
+### Caso Monoprodotto
+
+$$Q_{be} \frac{CF}{P_u - CV_u} = \frac{CF}{MC_u}$$
+
+$Q_{be}$ = Breakeven point (in quantità)
