@@ -395,4 +395,7 @@ Costi fissi bassi e costi variabili alti
 
 ## Break Even e Margine di contribuzione
 - Una quota parte dei ricavi di vendita devono essere utilizzati per coprire i costi variabili correlati ai ricavi stessi;
-- 
+- Ciò che resta dei ricavi totali dopo la copertura dei corrispondenti costi variabili è il margine di contribuzione;
+- Se il flusso del margine di contribuzione riempie fino all'orlo il "recipiente dei costi fissi", significa che è stato raggiunto il volume di pareggio;
+- Una volta che il "recipiente dei costi fissi" è colmo, ogni ulteriore unitò di margine di contribuzione unitario confluisce nel "recipiente dei profitti";
+- Questo trabocco non può comunque verificarsi (vale a dire, non sarà generato alcun profitto) fino
