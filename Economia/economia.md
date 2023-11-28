@@ -343,8 +343,8 @@ Il modello di break-even si fonda su quattro ipotesi:
 **Si definisce volume di pareggio (break-even) o punto di pareggio (break-even point) quello in corrispondenza del quale i ricavi totali eguagliano i costi totali (operativi) e duqnue il reddito (operativo) è pari a zero**.
 
 In formule:
-$$Q_{be}|MON \implies Ricavi = Costi $$
-$$MON = Ricavi - Costi = P\times Q - CF - CV*u \times Q = Q(P - CV_u) - CF$$
+$$Q_{be}|MON \implies Ricavi = Costi$$
+$$MON = Ricavi - Costi = P\times Q - CF - CV\times u \times Q = Q(P - CV_u) - CF$$
 $$Q*{be} = \frac{CF}{(P - CV_u)} = \frac{CF}{MC_u}$$
 
 ## Il diagramma di profitto
@@ -438,6 +438,7 @@ Costi fissi bassi e costi variabili alti
   ** La contribuzione è, dunque, dapprima contribuito alla copertura dei costi fissi e, successivamente (oltre il volume di pareggio), contributo alla generazione del reddito**
 
 ![Alt text](./assets/image-10.png)
+
 La figura precedente chiarisce l'importanza, sotto il profilo gestionale, del concetto di margine di contribuzione.s
 
 ## Volume di pareggio: un esempio
