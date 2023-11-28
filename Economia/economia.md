@@ -1,4 +1,5 @@
 # Table of Contents
+
 - [Table of Contents](#table-of-contents)
 - [Lezione 16](#lezione-16)
 - [Margine di contribuzione](#margine-di-contribuzione)
@@ -35,6 +36,26 @@
     - [CASO 1](#caso-1)
     - [CASO 2](#caso-2)
   - [Break Even e Margine di contribuzione](#break-even-e-margine-di-contribuzione)
+  - [Volume di pareggio: un esempio](#volume-di-pareggio-un-esempio)
+  - [Break-even in valore e margine di contribuzione percentuale](#break-even-in-valore-e-margine-di-contribuzione-percentuale)
+  - [Margine di contribuzione percentuale: un esempio](#margine-di-contribuzione-percentuale-un-esempio)
+    - [Risoluzione](#risoluzione)
+  - [Le imprese multi-prodotto](#le-imprese-multi-prodotto)
+    - [Margine di contribuzione del prodtto equivalente: esempio](#margine-di-contribuzione-del-prodtto-equivalente-esempio)
+  - [Margine di sicurezza](#margine-di-sicurezza)
+  - [Leva operativa e struttura dei costi](#leva-operativa-e-struttura-dei-costi)
+    - [Leva operativa e struttura dei costi: un esempio](#leva-operativa-e-struttura-dei-costi-un-esempio)
+  - [Grado di leva operativa, quantità, costi e ricavi: una visione d'insieme](#grado-di-leva-operativa-quantità-costi-e-ricavi-una-visione-dinsieme)
+  - [Esercitazione 3: BEP](#esercitazione-3-bep)
+- [Lezione 18](#lezione-18)
+- [L'utilizzo dei costi per le decisioni di breve e lungo periodo.](#lutilizzo-dei-costi-per-le-decisioni-di-breve-e-lungo-periodo)
+  - [Logiche nella misurazione dei Costi](#logiche-nella-misurazione-dei-costi)
+  - [Pregi e difetti del costo diretto e del costo pieno](#pregi-e-difetti-del-costo-diretto-e-del-costo-pieno)
+  - [Il supporto di decisioni di breve periodo](#il-supporto-di-decisioni-di-breve-periodo)
+  - [Il supporto a decisioni di lungo periodo](#il-supporto-a-decisioni-di-lungo-periodo)
+  - [Gli effetti motivazionali](#gli-effetti-motivazionali)
+  - [Modelli di supporto alle decisioni di breve periodo](#modelli-di-supporto-alle-decisioni-di-breve-periodo)
+  - [La scelta del mix ottimale di produzione](#la-scelta-del-mix-ottimale-di-produzione)
 
 # Lezione 16
 
@@ -124,7 +145,7 @@ Detto ciò, generalmente, primo secondo e terzo riguardano il margine dopo:
 2. Costi fissi specifici (e variabili a riparto)
 3. Costi fissi generali
 
-![Alt text](./image.png)
+![Alt text](././assets/image.png)
 
 ## Calcolo del margine di contribuzione di primo livello
 
@@ -137,7 +158,7 @@ $$M_dC \text{ I° livello} = Ricavi - (Materiali, Mandodopera, Lavorazioni ester
 
 ### Esempio di calcolo del margine di contribuzione
 
-![Alt text](image-1.png)
+![Alt text](./assets/image-1.png)
 
 > Nel calcolo del margine di contribuzione di primo livelli si detraggono i costi fissi dal margine di contribuzione
 
@@ -163,7 +184,7 @@ Tale differenziazione può assumere forme molto diverse.
 
 ### Esempio di calcolo del margine di contribuzione di multilivello
 
-![Alt text](image-2.png)
+![Alt text](./assets/image-2.png)
 
 1. Calcolare per ogni prodotto il margine di contribuzione e poi sommare i singoli importi **al margine di contribuzione di primo livello**.
 2. Una volta determinato il margine di contribuzione specifico per ogni prodotto, **si sottraggono i costi fissi corrispondenti per ottenre il margine di contribuzione di secondo livello dei singoli prodotti.** La somma dei margini di contribuzione II di ciascun prodotto di un'area ne determina il margine di contribuzione II corrispondente, mentre il totale di questi importi determina a suoa volta il margine di contribuzione II dell'azienda nel suo complesso.
@@ -249,30 +270,32 @@ La pratica non è così semplice!:
 
 ## Configurazioni di costo e mergini di contribuzione
 
-![Alt text](image-3.png)
+![Alt text](./assets/image-3.png)
 
 ## Esercitazione 2: Utilizzo dei margini di contribuzione
+
 Raptor S.p.A produce tre prodotti differenti:
+
 1. X;
 2. Y;
 3. Z;
-Utilizzando due diversi materiali:
-1. M1;
-2. M2;
-Tre componenti:
-1.  C1;
-2.  C2;
-3.  C3;
-E un macchinario dedicato che non può essere utilizzato per altre produzioni.
+   Utilizzando due diversi materiali:
+4. M1;
+5. M2;
+   Tre componenti:
+6. C1;
+7. C2;
+8. C3;
+   E un macchinario dedicato che non può essere utilizzato per altre produzioni.
 
 Dalla contabilità industriale della Raptor si ricavano le seguenti informazioni:
 
-| | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
-|---|---|---|---|---|---|---|---|
-|**Prodotto X**| | 1.5 | 1 | 2 | 2 | 1 | 2 | 2 | 
-|**Prodotto Y**| 2 | 1.2 | 1 | 1 | 2 | 1 | 2.5 | 
-|**Prodotto Z**| 1.2 | 2 | 1.5 | 1 | 1 | 2 | 3 | 
-|**Costo** | 10 €/ora | 3 €/kg | 2 €/kg | 2 €/unità | 3 €/unità | 2 €/unità |  |
+|                | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
+| -------------- | -------------------- | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- | ------------ | --- |
+| **Prodotto X** |                      | 1.5               | 1                 | 2                 | 2                 | 1                 | 2            | 2   |
+| **Prodotto Y** | 2                    | 1.2               | 1                 | 1                 | 2                 | 1                 | 2.5          |
+| **Prodotto Z** | 1.2                  | 2                 | 1.5               | 1                 | 1                 | 2                 | 3            |
+| **Costo**      | 10 €/ora             | 3 €/kg            | 2 €/kg            | 2 €/unità         | 3 €/unità         | 2 €/unità         |              |
 
 - Il prezzo di vendita del prodotto X è pari a 42€, il prezzo di Y è pari a 45€ e il prezzo di Z è pari a 40€;
 - La produzione prevista per il 2021 è pari a 15.000 unità del prodotto X, 25.000 del prodotto Y e 20.000 unità del prodotto Z;
@@ -290,16 +313,20 @@ b. La decisione cambierebbe in caso di saturazione della capacità produttiva de
 # Il modello di break-even
 
 ## Definizione
+
 Il modello di **break even** (analisi del punto di pareggio) ha la finalità di individuare il minimo volume di produzione che consente ad un'impresa di "coprire i costi".
 
 Fornisce la risposta alle seguenti domande:
+
 1. Qual è il livello di attività minimo che rende conveniente la produzione? (I ricavi devono coprire costi variabili e costi fissi);
 2. Quanto devo produrre per "stare in piedi"?
 
-![Alt text](image-4.png)
+![Alt text](./assets/image-4.png)
 
 ## Ipotesi e finalità
+
 Il modello di break-even si fonda su quattro ipotesi:
+
 1. Impresa mono-prodotto
 2. Linearità dei costi $\implies$ no economie di scala
 3. Linearità dei ricavi $\implies$ invariabilità dei prezzi
@@ -309,29 +336,33 @@ Il modello di break-even si fonda su quattro ipotesi:
 
 ## Punto di pareggio: Ricavi Totali = Costi Totali
 
-![Alt text](image-5.png)
+![Alt text](./assets/image-5.png)
 
 ## Il volume di pareggio
+
 **Si definisce volume di pareggio (break-even) o punto di pareggio (break-even point) quello in corrispondenza del quale i ricavi totali eguagliano i costi totali (operativi) e duqnue il reddito (operativo) è pari a zero**.
 
 In formule:
 $$Q_{be}|MON \implies Ricavi = Costi $$
-$$MON = Ricavi - Costi = P\times Q - CF - CV_u \times Q = Q(P - CV_u) - CF$$
-$$Q_{be} = \frac{CF}{(P - CV_u)} = \frac{CF}{MC_u}$$
+$$MON = Ricavi - Costi = P\times Q - CF - CV*u \times Q = Q(P - CV_u) - CF$$
+$$Q*{be} = \frac{CF}{(P - CV_u)} = \frac{CF}{MC_u}$$
 
 ## Il diagramma di profitto
+
 Per modellizzare il punto di pareggio e analizzare la dinamica del reddito di un'impresa in relazione a decisioni che modifichino il livello di attività, nella prassi è molto usato lo strumento del **diagramma del profitto** (profit graph), o diagramma costo-volume-profitto (costo-volume-profit graph o C-V-P Graph).
 
 Il diagramma del profitto:
+
 - Mostra la relazione attesa tra ricavi totali e costi totali al variare del volume di output;
 - Può essere costruito sia per l'impresa nel suo complesso sia per specifici segmenti di business, come:
   - Un prodotto (Kinder Brioss Latte)
   - Una line di prodotti (Kinder Brioss)
   - Una divisione di prodotti (Diviosione prodotti per colazione di ferrero)
 
-![Alt text](image-6.png)
+![Alt text](./assets/image-6.png)
 
 ## Il modello di break-even in chiave algebrica
+
 **Hp**: n° unità prodotte = n° unità vendute = Q
 
 p = prezzo di vendita unitario
@@ -343,7 +374,7 @@ CF = Costi fissi totali
 CT = Costi totali
 
 cv = costo valore unitario
- 
+
 M = $M \times Q$ = margine di contribuzione totale
 
 RT = ricavi totali
@@ -353,10 +384,11 @@ $\pi$ = profitti (utili)
 $$\pi = RT - CT \rightarrow \pi = p \times Q - (CF + cv\times Q)$$
 
 Conviene produrre se $\pi \geq 0 \rightarrow p \times Q - CF - cv\times Q \geq 0$,
-quindi se $Q \geq \frac{CF}{m}$ con 
+quindi se $Q \geq \frac{CF}{m}$ con
 $$Q = \frac{CF}{p-CV} \implies \text{break even point}$$
 
 ## Quantità e valore di break even
+
 ### Caso Monoprodotto
 
 $$Q_{be} \frac{CF}{P_u - CV_u} = \frac{CF}{MC_u}$$
@@ -364,6 +396,7 @@ $$Q_{be} \frac{CF}{P_u - CV_u} = \frac{CF}{MC_u}$$
 $Q_{be}$ = Breakeven point (in quantità)
 
 ## Quantità target e reddito obiettivo
+
 L'analii del volume di pareggio può essere facilmente estesa all calcolo **del volume necessario a conseguire un determinato reddito obiettivo.**
 
 Il reddito obiettivo si riferisce a quello risultato dalla differenza tra i ricavi e i costi (fissi più variabili) di produzione, ossia al **reddito operativo** (EBIT, Earnings Befire Interests and Taxes).
@@ -379,23 +412,285 @@ $MC_u$ = Margine di contribuzione unitario
 
 ## Diagramma del profitto e reddito operativo
 
-![Alt text](image-7.png)
+![Alt text](./assets/image-7.png)
 
 ## Break even, costi fissi e costi variabili
 
 ### CASO 1
+
 Costi fissi alti e costi variabili bassi
 
-![Alt text](image-8.png)
+![Alt text](./assets/image-8.png)
 
 ### CASO 2
+
 Costi fissi bassi e costi variabili alti
 
-![Alt text](image-9.png)
+![Alt text](./assets/image-9.png)
 
 ## Break Even e Margine di contribuzione
+
 - Una quota parte dei ricavi di vendita devono essere utilizzati per coprire i costi variabili correlati ai ricavi stessi;
 - Ciò che resta dei ricavi totali dopo la copertura dei corrispondenti costi variabili è il margine di contribuzione;
 - Se il flusso del margine di contribuzione riempie fino all'orlo il "recipiente dei costi fissi", significa che è stato raggiunto il volume di pareggio;
 - Una volta che il "recipiente dei costi fissi" è colmo, ogni ulteriore unitò di margine di contribuzione unitario confluisce nel "recipiente dei profitti";
-- Questo trabocco non può comunque verificarsi (vale a dire, non sarà generato alcun profitto) fino
+- Questo trabocco non può comunque verificarsi (vale a dire, non sarà generato alcun profitto) fino a che il "recipiente dei costi fissi" non sia completamente pieno;
+  ** La contribuzione è, dunque, dapprima contribuito alla copertura dei costi fissi e, successivamente (oltre il volume di pareggio), contributo alla generazione del reddito**
+
+![Alt text](./assets/image-10.png)
+La figura precedente chiarisce l'importanza, sotto il profilo gestionale, del concetto di margine di contribuzione.s
+
+## Volume di pareggio: un esempio
+
+Si consideri un'impresa monoprodotto con i seguenti dati di costo e di prezzo di vendita:
+
+- Costi fissi totali (CF) -> 400€ per periodo;
+- Costo variabile unitario ($CV_u$) -> 6€ per unità;
+- Prezzo di vendita (P) -> 8,5€ per unità.
+
+Il volume di pareggio risulta essere:
+$$Q_{be} = \frac{CF}{(P-CV_u)} = \frac{400€}{8,5€ - 6€} = 160€$$
+
+In corrispondeza del volume di pareggio, pari a 160 unità, i ricavi totali sono pari a 1360€ e coincidono con i costi totali:
+$$RT_{be} = P \times Q_{be} = 8,5€ \times 160 = 1360€$$
+$$CT_{be} = CF + CV_{be} = CF + CV_u\times Q_{be} = 400€ + 6€ \times 160 = 400€ + 960€ = 1360€$$
+
+## Break-even in valore e margine di contribuzione percentuale
+
+Il volume di pareggio può anche essere espresso in termini di ricavi ($RT_{be}$) piuttosto che in unità fisiche,
+è sufficinete moltiplicare entrambi i membri dell'equazione della quantità di pareggio per il _prezzo di vendita_.
+$$RT_{be} = \frac{CF}{\frac{MC_u}{P}} = \frac{CF}{mc\%}$$
+Il margine di contribuzione unitario espresso in percentuale del prezzo di vendita è denominato **margine di contribuzione percentuale** (percentage contribution margin).
+
+- Nel nostro esempio, questo valore è pari a 2,5€/8,5€ = 29,4%: _ciascun euro di ricavo produce 29,4 centesimi di contribuzione_;
+- Il bep in valore è, dunque, pari a 400€/0,294 = 1360€ (che equivale al volume di pareggio, 160 unità, moltiplicato per il prezzo di vendita, 8,5€).
+
+## Margine di contribuzione percentuale: un esempio
+
+- Il prodotto **A** ha:
+
+  - Un margine di contribuzione percentuale (mc%) del 40%;
+  - Un prezzo di vendita di 100€;
+
+  La direzione commerciale ritiene che una campagna promozionale del costo di 30k€ potrebbe determinare un aumento dei volumi dei vendita di 1000 unità.
+
+- Una decisione alternativa potrebbe essere quella di agire sul prodotto **B**, che ha un mc% del 50%, un prezzo di vendita di 120€, ma che richiederebbe costi promozionali a 60k€.
+
+  In questo caso si potrebbero vendere 1.3k unità in più.
+
+**Qual è la scelta migliore?**
+
+### Risoluzione
+
+- Dati del problema:
+
+![Alt text](./assets/image-11.png)
+
+- $EBIT = M_{cu}\times Q - CF$
+- $mc\% = \frac{M_{cu}}{P} \implies M_{cu} = mc\%\times P$
+- $EBIT(A) = 40\% \times 100€ \times 1.000 - 30.000€ = 40.000€ - 30.000€ = 10.000€$
+- $EBIT(B) = 50\% \times 120 \times 1.300 - 60.000€ = 78.000€ - 60.000€ = 18.000€$
+
+> La soluzione migliore risulta essere la **B**
+
+## Le imprese multi-prodotto
+
+Le relazioni costo-volume-profitto sinora descritte si applicano ad imprese **mono-prodotto**.
+
+Nel caso di imprese **multi-prodotto**, le relazioni precedenti sono valide solo se ciascun prodotto genera all'incirca lo stesso margine di contribuzione percentuale degli altri.
+
+Se l'impresa realizza una molteplicità di prodotti con margini di contribuzione percentuale significativamente diversi, è ancora possibile ricorrere al diagramma del proditto e raffigurare il reddito in funzione delle quantità vendute solo se è noto il **mix delle vendite**.
+
+In questo caso, il margine di contribuzione unitario deve essere calcolare come media ponderata, con le quantità vendute, dei margini di contribuzione unitari dei singoli prodotti.
+
+Questo particolare margine di contribuzione è denominato **margine di contribuzione del prodotto equivalente**.
+
+Supponiamo che un'impresa produca due beni, A e B, con differenti prezzi di vendita e costi variabili unitari.
+
+Il reddito (operativo) complessivo sarà pari a:
+$$EBIT = PA\times QA + PB \times QB - Cv_uA\times QA - Cv_uB\times QB - CF = (PA - CV_uA)\times QA + (PB - Cv_uB)\times QB - CF = MC_uA\times QA + MC_uB\times QB – CF$$
+
+Come ci si aspettava, il reddito dell'impresa è dato dalla differenza tra la somma dei margini di contribuzione complessivamente generati dall'azienda e i costi fissi.
+
+Supponendo noto il _mix delle vendute_ ed indicando con wA e wB i pesi dei due prodotti QA e QB sul totale delle quantità vendute Q, si ottiene:
+$$EBIT = MC_uA\times wA\times Q + MC_uB\times wB\times Q – CF = (MC_uA\times wA + MC_uB\times wB)\times Q – CF = MC_{ueq}\times Q – CF$$
+
+$MC_{ueq} \implies$ Margine di contribuzione del prodotto equivalente.
+
+### Margine di contribuzione del prodtto equivalente: esempio
+
+Un'impresa assembla tre tipi di computer, A, B e C, con i seguenti dati di costo e prezzo:
+
+![Alt text](./assets/image-12.png)
+
+Ipotizzando che il mix delle vendite rimanga costante, si calcoli il punto di pareggio e il reddito operatico in corrispondenza del volume di vendita previsto.
+
+Innanzitutto, calcoliamo il margine di contribuzione del prodotto equivalente:
+
+![Alt text](./assets/image-13.png)
+
+Poi calcoliamo la quantità di pareggio:
+
+![Alt text](./assets/image-14.png)
+
+Poi calcoliamo il reddito in corrispondenza delle previsioni di vendita:
+
+![Alt text](./assets/image-15.png)
+
+## Margine di sicurezza
+
+Un'altra grandezza che può essere misurata ricorrendo al diagramma del profitto è il **margine di sicurezza**, che indica di quanto il **volume attuale** eccede il **volume di pareggio**.
+
+L'utilizzo del margine di sicurezza serve prevalentemente a rispondere alla seguente domanda: di quanto possono ridursi i ricavi programmati prima di raggiungere il punto di pareggio?
+
+Se, per esempio, il volume attuale è di 200 unità e il punto di pareggio è di 160 unità, il margine di sicurezza è pari a 40 unità, vale a dire al **20%**(40/200) del _volume attuale_.
+
+Il volume delle vendite può dunque diminuire del 20% prima che si vada incontro ad una perdita.
+
+E' più significativo esprimere il margine di sicurezza in % piuttosto che in valore assoluto:
+es. volume attuale = 2.040, $Q_{be}$ = 2.000, **ms = 40, ms% = 2%**.
+
+## Leva operativa e struttura dei costi
+
+La **leva operativa** (operative leverage) è una misura di quanto il reddito è sensibile a cambiamenti dei ricavi.
+
+L'effetto leva è misurato dal grado di leva operativa (degree of operating leverage), un indicatore calcolare, in corrispondenza a ciascun volumedi ricavi, come rapporto tra la variazione percentuale del reddito e la corrispondente variazione percentuale dei ricavi.
+
+$$\text{Grado di leva operativa (glo)} = \dfrac{\dfrac{\Delta EBIT}{EBIT}}{\dfrac{\Delta RT}{RT}}$$
+
+Dato che $\Delta EBIT = mc\% \times \Delta RT$
+
+$$\text{(glo)} = \dfrac{\dfrac{mc\% \times \Delta RT}{EBIT}}{\dfrac{\Delta RT}{RT}} = \dfrac{mc\% \times RT}{EBIT} = \dfrac{MC}{EBIT}$$
+
+### Leva operativa e struttura dei costi: un esempio
+
+Calcolo del _glo_ in corrispondeza di un volume pari a 200 unità:
+
+- $Q = 200RT = €1700 \ CV = €1.200 \ CF = €400 \ EBIT = €100$
+- $\Delta Q = 50 \rightarrow €425 \Delta CV = €300 \Delta CF = 0 \Delta EBIT = €125$
+
+$$\text{glo} = \dfrac{\dfrac{\Delta EBIT}{EBIT}}{\dfrac{\Delta RT}{RT}} = \dfrac{1,25}{0,250} = 5$$
+
+In alternativa:
+
+$$\text{glo} = \dfrac{MC}{EBIT}{\dfrac{(8,5€ - 6€)\times 200}{100€}} = \dfrac{500€}{100€} = 5$$
+
+E' facile verificare che più si è prossimi al punto di pareggio, maggiore è il grado di leva operativa.
+
+La leva operativa è sensibile alla **struttura dei costi** (cost structure), vale a dire all'incidenza relativa dei costi fissi e dei costi variabili sui costi aziendali complessivi.
+
+Se un'impresa è caratterizzata da **alti costi fissi** (e bassi costi variabili), il margine di contribuzione è alto e, corrispondentemente, è **alto il glo**.
+
+- Per queste imprese, come ad esempio le compagnie aeree, le catene alberghiere o, in generale, le imprese di produzione fortemente integrate (che svolgono, cioè, all'interno di molte delle fasi del ciclo produttivo), una determinata variazione dei ricavi ha conseguenze economiche di rilievo.
+
+Al contrario, le imprese caratterizzata da **bassi costi fissi** (e alti costi variabili) presentano un **basso glo** e, quindi, a parità di variazione dei ricavi mostrano variazioni dell'EBIT più contenute.
+
+In formule: $\text{glo} = \dfrac{MC}{EBIT} = \dfrac{MC}{MC - CF} = \dfrac{1}{1-\dfrac{CF}{MC}} = \dfrac{1}{1-\dfrac{CF}{RT-CV}}$
+
+## Grado di leva operativa, quantità, costi e ricavi: una visione d'insieme
+
+![Alt text](./assets/image-16.png)
+
+## Esercitazione 3: BEP
+
+# Lezione 18
+
+# L'utilizzo dei costi per le decisioni di breve e lungo periodo.
+
+## Logiche nella misurazione dei Costi
+
+Quali voci si costo considerare?
+
+- Full costing o Direct costing
+- Costi standard o Budget?
+
+- **Full costing:** viene attribuita ai prodotti anche una quota dei costi indiretti. In tal modo viene privilegiato il criterio della completezza di analisi rispetto alle responsabilità specifiche;
+- **Direct costing:** viene attribuito ai prodotto il solo costo delle risorse dirette impiegate (materiali diretti e lavoro diretto). In tal modo viene privilegiato il criterio delle responsabilità specifiche rispetto alla completezza di analisi.
+
+> L'obiettivo è mettere in evidenza il peso delle attività lavorative indirette sul costo del bene prodotto, cioè sul **Costo Pieno Aziendale**
+
+## Pregi e difetti del costo diretto e del costo pieno
+
+Un'attenzione a sé merita il problema dell'utilità o meno di rilevare il costo pieno di un prodotto.
+
+Il confronto tra sistemi full costing e sistemi direct costing può essere sviluppato in riferimento a tre obiettivi:
+
+1. Supporto a decisioni di breve periodo
+2. Supporto a decisioni si lungo periodo
+3. Effetti motivazionali
+
+cui si aggiunge ovviamente il **costo del sistema**, superiore per i metodi full-costingm che richiedono un insieme più ampio di rilevazioni.
+
+![Alt text](./assets/image-17.png)
+
+## Il supporto di decisioni di breve periodo
+
+Le **decisioni di breve periodo** si basano usualmente sulla capacità delle diverse alternative di creare valore economico, assumendo che le risorse dell'impresa siano fissate.
+
+Esempi di tali decisioni possono essere:
+
+- La scelta se accettare o meno l'ordine di un cliente non strategico;
+- Una decisione di _make or buy_ per attività non critiche;
+
+$$\text{Creazione di valore economico} = \text{Ricavi} - \text{Costi evitabili}$$
+
+Poichè normalmente i costi indiretti non sono completamente evitabili, il _full costing_ non presenta alcun vantaggio teorico rispetto al _direct costing_.
+
+La contabilizzazione di voci di costo in base **al costo pieno enfatizza l'attiva di produzione**, mentre la valorizazione in base al **costo diretto** porta l'attenzione degli operatori sulla **necessità fondamentale di vendere ciò che si è prodotto**.
+
+Infatti, se le scorte vengono valorizzate al costo variabile, tutti i costi di struttura risultano a carico delle vendite del periodo. In sostanza, la **produzione genera margini solo nel momento della vendita.**
+
+Viceversa, nel caso della valorizzazione a costo pien, i costi di struttura vengono caricati pro-quota al prodotto. In tal caso il valore delle rimanenze risulta incrementato anche di una quota dei costi di struttura.
+
+In teoria, quest'ultimo sembrerebbe il sistema più corretto, in quanto ogni bene prodotto sopporta i propri costi diretti e contribuisce pro quota ai costi comuni.
+
+In realtà è necessario sottolineare come non sia sufficiente produrre, ma è anche necessario collocare la produzione sul mercato. Inoltre, la produzione presente in magazzino subisce spesso un rapido processo di obsolescenza. Il costo primo risponde certamente ad un'ottica prudenziale di valutazione, che induce ad attribuire alle scorte un valore di sicuro realizzo.
+
+La moderna contabilità analitica tende a raccogliare contemporaneamente informazioni relativa al costo diretto ed al costo pieno, così da poter disporre di dati che consentano di far fronte e molteplici esigenze informative.
+
+**Seconda gli economisti contemporanei Robin Cooper e Steven Kaplan, l'uso dei sistemi full costing nelle decisioni di lungo periodo è giustificato dal fatto che nel lungo periodo tutti i costi sono variabili, poichè non esistono risorse fisse.**
+
+Tuttavia, ciò non implica necessariamente che nel lungo periodo le decisioni debbano essere prese sulla base del confronto tra prezzo e costo pieno.
+
+## Il supporto a decisioni di lungo periodo
+
+_Esempio_: decisione concernente l'acquisizione di un ordine da parte di un cliente strategico: la creazione di valore economico connessa con la decisione richiede l'analisi delle implicazioni delle due decisioni alternative relative rispettivamente:
+- All'acquisizione dell'ordine;
+- Alla non acquisizione dell'ordine.
+
+La differenza tra le due alternative nasce dal margine degli futuri che il cliente potrebbe annullare in seguito al rifiuto di accettare l'ordine odierno.
+Occorrerebbe dunque analizzare, attraverso una vera e propria valutazione di investimento, i possibili ordini futuri del cliente, la relativa profittabilità, la possibilità di saturare la capacità produttica dell'impresa, tutti elementi che non vengono in alcun modo evidenziati nel costo pieno.
+
+Di conseguenza, anche il ricorso ad un costo pieno calcolato correttamente non consente di superare il basso orientamento al lungo periodo delle tecniche di contabilità interna.
+
+Al più, l'utilizzo del costo pieno calcolato correttamente può servire a suggerire al management alcune opportunità di miglioramento.
+Più specificamente, è possibile evidenziare i motivi dell'utilizzo delle risorse indirette e conseguentemente quali risorse potrebbero essere liberate dall'eliminazione di un prodotto, da una diversa forma di pianificazione della produzione o da una variazione del livello produttivo.
+
+## Gli effetti motivazionali
+
+Il costo pieno rende esplicito all'interno dell'impresa il fatto che le attività dirette non sono a costo zero, ma si rièpercuotono alla fine sulla profittabilità generata dai prodotti. E' così possibile ridurre il rischio di un ricorso indiscriminato alle risorse indirette. 
+
+Ad esempio, se il sistema di Controllo di Gesiotne appare a costo zero vi può essere la tendenza a richiedere informazioni non standard anche quando ciò non sia necessario.
+Se al contrario il costo del sistema viene attribuito alle unità organizzative in proporzione al numero di report richiestim si tenderà a limitarne l'utilizzo.
+
+In altri termini, i centri produttivi svolgono una funzione di tipo dialettico, ostacolando in fase di definizione del budget una eccessiva allocazione di risorse alle attività di supporto, per evitare che attraverso il ribaltamento dei costi indiretti ai centri produttivi si verifichi un peggioramento del risultato di questi ultimi.
+
+L'uso di un sismea direct costing, non garantendo un controllo sulle risorse indirettem ne incentiva implicitamente un maggiore utilizzo, destinato a ripercuotersi in un incremento dei costi nel medio-lungo periodo. Al contrario, un sistema full costing evita l'aumento ingiustificato dei costi delle risorse indirette.
+
+## Modelli di supporto alle decisioni di breve periodo
+- Il _modello di break-even_ ha la finalità di individuare il minimo volume di produzione che consente ad un'impresa di comprire i costi
+  - Domanda: quanto devo produrre per stare in piedi?
+- La _scelta del mix ottimale di produzione_ permette di individuare il piano di produzione che massimizza il proditto di un'impresa multi prodtto in presenza di vincoli
+  - Domanda: su che prodotti devo puntare per fare più soldi
+- L'_analisi della contribuzione_ consente di determinare la redditività delle diverse linee di pordotto di un'imprese
+  - Domanda: quanto mi rende ogni linea di prodott?
+- L'_analisi di make or buy_ supporta l'assunzione di decisione che attengono alla scelta tra produrre all'interno o acquistare all'esterno (outsourcing)
+  - Domanda: svolgo in caso o esternalizzo quella determinata fase del processo produttivo?
+
+## La scelta del mix ottimale di produzione
+
+Oltre al modello di break-even, un altro importantissimo modello di supporto alla pianificazione di breve periodo è quello del **mix ottimo di produzione**.
+
+Domanda: ottimo in che senso e rispetto a cosa?
+- Ottimo nel senso della **massimizzazione del margine di contribuzione** (e perciò del reddito operativo) dell'impresa?
+- Ottimo rispetto ai **vincoli di capacità produttiva** (h macchina, h di manodopera) e di **domanda di mercaoto** (la quantità di prodotto che si prevede il mercato assorbirà) che l'impresa deve fronteggiare?
