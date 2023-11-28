@@ -56,6 +56,7 @@
   - [Gli effetti motivazionali](#gli-effetti-motivazionali)
   - [Modelli di supporto alle decisioni di breve periodo](#modelli-di-supporto-alle-decisioni-di-breve-periodo)
   - [La scelta del mix ottimale di produzione](#la-scelta-del-mix-ottimale-di-produzione)
+  - [Il problema matematico del mix ottimo](#il-problema-matematico-del-mix-ottimo)
 
 # Lezione 16
 
@@ -290,12 +291,13 @@ Raptor S.p.A produce tre prodotti differenti:
 
 Dalla contabilità industriale della Raptor si ricavano le seguenti informazioni:
 
-|                | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
-| -------------- | -------------------- | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- | ------------ | --- |
-| **Prodotto X** |                      | 1.5               | 1                 | 2                 | 2                 | 1                 | 2            | 2   |
-| **Prodotto Y** | 2                    | 1.2               | 1                 | 1                 | 2                 | 1                 | 2.5          |
-| **Prodotto Z** | 1.2                  | 2                 | 1.5               | 1                 | 1                 | 2                 | 3            |
-| **Costo**      | 10 €/ora             | 3 €/kg            | 2 €/kg            | 2 €/unità         | 3 €/unità         | 2 €/unità         |              |
+|  | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
+|---|---|---|---|---|---|---|---|
+| Prodotto X | 2 | 1.5 | 1 | 2 | 2 | 1 | 2 |
+| Prodotto Y | 2 | 1.2 | 1 | 1 | 2 | 1 | 2.5 |
+| Prodotto Z | 1.2 | 2 | 1.5 | 1 | 1 | 2 | 3 |
+| Costo | 10 €/ora | 3 €/kg | 2 €/kg | 2 €/unità | 3 €/unità | 2 €/unità |
+
 
 - Il prezzo di vendita del prodotto X è pari a 42€, il prezzo di Y è pari a 45€ e il prezzo di Z è pari a 40€;
 - La produzione prevista per il 2021 è pari a 15.000 unità del prodotto X, 25.000 del prodotto Y e 20.000 unità del prodotto Z;
@@ -694,3 +696,5 @@ Oltre al modello di break-even, un altro importantissimo modello di supporto all
 Domanda: ottimo in che senso e rispetto a cosa?
 - Ottimo nel senso della **massimizzazione del margine di contribuzione** (e perciò del reddito operativo) dell'impresa?
 - Ottimo rispetto ai **vincoli di capacità produttiva** (h macchina, h di manodopera) e di **domanda di mercaoto** (la quantità di prodotto che si prevede il mercato assorbirà) che l'impresa deve fronteggiare?
+
+## Il problema matematico del mix ottimo
