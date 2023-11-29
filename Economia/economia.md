@@ -57,6 +57,11 @@
   - [Modelli di supporto alle decisioni di breve periodo](#modelli-di-supporto-alle-decisioni-di-breve-periodo)
   - [La scelta del mix ottimale di produzione](#la-scelta-del-mix-ottimale-di-produzione)
   - [Il problema matematico del mix ottimo](#il-problema-matematico-del-mix-ottimo)
+    - [Il mix ottimo di produzione: un esempio](#il-mix-ottimo-di-produzione-un-esempio)
+  - [Analisi della contribuzione](#analisi-della-contribuzione)
+  - [Analisi della contribuzione: un'applicazione](#analisi-della-contribuzione-unapplicazione)
+- [Lezione 19](#lezione-19)
+- [Analisi make or buy, determinazione dei costi di prodotto, Job Order Costing.](#analisi-make-or-buy-determinazione-dei-costi-di-prodotto-job-order-costing)
 
 # Lezione 16
 
@@ -291,13 +296,12 @@ Raptor S.p.A produce tre prodotti differenti:
 
 Dalla contabilità industriale della Raptor si ricavano le seguenti informazioni:
 
-|  | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
-|---|---|---|---|---|---|---|---|
-| Prodotto X | 2 | 1.5 | 1 | 2 | 2 | 1 | 2 |
-| Prodotto Y | 2 | 1.2 | 1 | 1 | 2 | 1 | 2.5 |
-| Prodotto Z | 1.2 | 2 | 1.5 | 1 | 1 | 2 | 3 |
-| Costo | 10 €/ora | 3 €/kg | 2 €/kg | 2 €/unità | 3 €/unità | 2 €/unità |
-
+|            | Lavoro diretto (ore) | Materiale M1 (kg) | Materiale M2 (kg) | Componente C1 (N) | Componente C2 (N) | Componente C3 (N) | Ore macchina |
+| ---------- | -------------------- | ----------------- | ----------------- | ----------------- | ----------------- | ----------------- | ------------ |
+| Prodotto X | 2                    | 1.5               | 1                 | 2                 | 2                 | 1                 | 2            |
+| Prodotto Y | 2                    | 1.2               | 1                 | 1                 | 2                 | 1                 | 2.5          |
+| Prodotto Z | 1.2                  | 2                 | 1.5               | 1                 | 1                 | 2                 | 3            |
+| Costo      | 10 €/ora             | 3 €/kg            | 2 €/kg            | 2 €/unità         | 3 €/unità         | 2 €/unità         |
 
 - Il prezzo di vendita del prodotto X è pari a 42€, il prezzo di Y è pari a 45€ e il prezzo di Z è pari a 40€;
 - La produzione prevista per il 2021 è pari a 15.000 unità del prodotto X, 25.000 del prodotto Y e 20.000 unità del prodotto Z;
@@ -658,6 +662,7 @@ Tuttavia, ciò non implica necessariamente che nel lungo periodo le decisioni de
 ## Il supporto a decisioni di lungo periodo
 
 _Esempio_: decisione concernente l'acquisizione di un ordine da parte di un cliente strategico: la creazione di valore economico connessa con la decisione richiede l'analisi delle implicazioni delle due decisioni alternative relative rispettivamente:
+
 - All'acquisizione dell'ordine;
 - Alla non acquisizione dell'ordine.
 
@@ -671,16 +676,17 @@ Più specificamente, è possibile evidenziare i motivi dell'utilizzo delle risor
 
 ## Gli effetti motivazionali
 
-Il costo pieno rende esplicito all'interno dell'impresa il fatto che le attività dirette non sono a costo zero, ma si rièpercuotono alla fine sulla profittabilità generata dai prodotti. E' così possibile ridurre il rischio di un ricorso indiscriminato alle risorse indirette. 
+Il costo pieno rende esplicito all'interno dell'impresa il fatto che le attività dirette non sono a costo zero, ma si rièpercuotono alla fine sulla profittabilità generata dai prodotti. E' così possibile ridurre il rischio di un ricorso indiscriminato alle risorse indirette.
 
 Ad esempio, se il sistema di Controllo di Gesiotne appare a costo zero vi può essere la tendenza a richiedere informazioni non standard anche quando ciò non sia necessario.
 Se al contrario il costo del sistema viene attribuito alle unità organizzative in proporzione al numero di report richiestim si tenderà a limitarne l'utilizzo.
 
 In altri termini, i centri produttivi svolgono una funzione di tipo dialettico, ostacolando in fase di definizione del budget una eccessiva allocazione di risorse alle attività di supporto, per evitare che attraverso il ribaltamento dei costi indiretti ai centri produttivi si verifichi un peggioramento del risultato di questi ultimi.
 
-L'uso di un sismea direct costing, non garantendo un controllo sulle risorse indirettem ne incentiva implicitamente un maggiore utilizzo, destinato a ripercuotersi in un incremento dei costi nel medio-lungo periodo. Al contrario, un sistema full costing evita l'aumento ingiustificato dei costi delle risorse indirette.
+L'uso di un sistema direct costing, non garantendo un controllo sulle risorse indirettem ne incentiva implicitamente un maggiore utilizzo, destinato a ripercuotersi in un incremento dei costi nel medio-lungo periodo. Al contrario, un sistema full costing evita l'aumento ingiustificato dei costi delle risorse indirette.
 
 ## Modelli di supporto alle decisioni di breve periodo
+
 - Il _modello di break-even_ ha la finalità di individuare il minimo volume di produzione che consente ad un'impresa di comprire i costi
   - Domanda: quanto devo produrre per stare in piedi?
 - La _scelta del mix ottimale di produzione_ permette di individuare il piano di produzione che massimizza il proditto di un'impresa multi prodtto in presenza di vincoli
@@ -695,7 +701,93 @@ L'uso di un sismea direct costing, non garantendo un controllo sulle risorse ind
 Oltre al modello di break-even, un altro importantissimo modello di supporto alla pianificazione di breve periodo è quello del **mix ottimo di produzione**.
 
 Domanda: ottimo in che senso e rispetto a cosa?
+
 - Ottimo nel senso della **massimizzazione del margine di contribuzione** (e perciò del reddito operativo) dell'impresa?
 - Ottimo rispetto ai **vincoli di capacità produttiva** (h macchina, h di manodopera) e di **domanda di mercaoto** (la quantità di prodotto che si prevede il mercato assorbirà) che l'impresa deve fronteggiare?
 
 ## Il problema matematico del mix ottimo
+
+Matematicamente, il modello si configura come un **problema di ottimizzazione lineare vincolata** nelle variabili $Q_i$ (i = 1..N) che rappresentano le quantità degli N beni da produrre (l'impresa è perciò multi-prodotto):
+
+![Alt text](./assets/mix.png)
+
+In generale, è possibile risolvere il problema mediante l'algoritmo del simplesso. Spesso, però, la soluzione può risultare più agevole tramite algoritmi euristici.
+
+### Il mix ottimo di produzione: un esempio
+
+...
+
+## Analisi della contribuzione
+
+L'analisi della contribuzione si fonda sullo studio del **margine di contribuzione** ottenuto attraverso la riclassificazione del Conto Economico.
+
+Nel **conto economico tradizionale**, riclassificato a **valore aggiunto**, i costi di competenza sono aggregati "per natura" o "per funzione" , a prescindere dal loro comportamento con il voume di output:
+
+- All'interno delle singole voci di costo di un conto economico a valore aggiunto sono presenti, in generale, sia costi fissi sia costi variabili.
+
+Il **conto economico a margine di contribuzione** classifica i costi non per funzione ma bensì in _relazione al loro comportamento con il volume di output:_
+
+- Il conto economico a margine di contribuzione è cioè caratterizzato dalla separazione dei costi in variabili (con il volume di output) e fissi (rispetto al volume di output).
+
+**Il consto economico a margine di contribuzione consente di valutare rapidamente l'effetto sul reddito di cambiamenti delle quantità vendute o dei ricavi di vendita**.
+
+In generale, grazie alla separazione dei costi in variabili e fissi, il cosnto economico a margine di contribuzione:
+
+1. Facilita le analisi economiche che implicano cambiamenti di volume;
+2. Favorisce le analisi di redditività delle diverse linee di prodotto;
+3. Support l'assunzione di decisioni che riguardano i prezzi;
+4. Support l'assunzione di decisioni che attengono alla scelta di produrre all'interno o qcquistare all'esterno (_make or buy_)
+
+![Alt text](./assets/modello.png)
+
+## Analisi della contribuzione: un'applicazione
+
+Conto economico convenzionale (mese di giugno) di un'impresa che eroga due servizi:
+
+- Lavaggio a secco;
+- Tintoria.
+
+![Alt text](./assets/20.png)
+
+Conto ecnomico riclassificato a margine di contribuzione:
+
+![Alt text](./assets/21.png)
+
+![Alt text](./assets/22.png)
+
+![Alt text](./assets/23.png)
+
+> Attenzione!! Se i costi indiretti fossero allcoati ai due servizi in proprozione, ad esempio, all'ammontare dei ricavi, allora ciascuno dei due servizi registrerebbe una perdita:
+
+![Alt text](./assets/24.png)
+
+Si potrebbe ritenere conveniente cessare l'attività di uno qualsiasi dei due servizi, essendo trambi in perdita.
+
+Al contrario, l'analisi di contribuzione mostra che ciascuno dei due servizi contribuisce alla copertura dei costi fissi comuni.
+
+La perdita aziendale non si ridurrebbe pertanto cessando l'attività nè dell'uno nè dell0altro servizio: i costi fissi comuni rimarrebbero infatti sostanzialmente inalterati, giacchè la relazione causale tra le attività svolte dagli staff della capogruppo e i singoli segmenti è in generale basse, se non inesistente.
+
+Se non è possibile trovare criteri di allocazione rappresentativi dell'effettivo consumo di risorse (comuni) da parte dei singoli segmenti, allora è opportuno non allocare tali costi (ed evitare fenomeni di sovvenzionamento incrociato del reddito)
+
+In generale, i principi da seguire nello strutturare i report economici dei diversi business sono:
+
+1. Attribuire ai singoli segmenti tutti i costi ad essi oggettivamente riconducibili;
+2. Allocare tutti i costi che sono ragionevolmente riconducibili ai singoli segmenti utilizzando una qualche base di allocazione rappresentativa del consumo di risorse;
+3. Non allocare quei costi comuni per i quali si dovrebbero comunque utilizzare criteri di ripartizione arbitrari (dal momento che se anche un certo business fosse alienato questi costi rimarrebbero sostanzialmente inalterati);
+
+**Non rispettare questi principi significa distorcere le informazioni di redditività dei singoli business e favorire la possibilità di assumere decisioni sbagliate.**
+
+# Lezione 19
+
+# Analisi make or buy, determinazione dei costi di prodotto, Job Order Costing.
+
+Con scelta di **make or buy** ci si riferisce all'anlisi volta a determinare se sia economicamente profittevole svolgere una determinata attività all'interno dell'impresa o sia piuttosto preferibile approvigionarsi da un fornitore esterno.
+
+I tradizionali sistemi contabili non consentono di comprendere a priori la soluzione migliore, in quanto non tengono presente lo specifico contesto in cui la scelta avviene.
+
+Per prendere una decisione di questo tipo occorre infatti analizzare con attenzione quali siano i costi effettivamente evitabili dall'impresa in caso l'attività sia delegata all'esterno.
+
+_Esempio_: un'azienda che realizza un prodotto caratterizzata da un costo pieno di 40€ a cui venga avanzata - da parte di un fornitore esterno - la cessione dello stesso bene a 38€.
+
+- Dovrebbe l'azienda cessare la produzione ed attivare un contratto di fornitura con l'imprenditore esterno?
+- Quali sono i costi da considerare in questo caso?
