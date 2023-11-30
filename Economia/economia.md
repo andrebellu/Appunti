@@ -62,6 +62,19 @@
   - [Analisi della contribuzione: un'applicazione](#analisi-della-contribuzione-unapplicazione)
 - [Lezione 19](#lezione-19)
 - [Analisi make or buy, determinazione dei costi di prodotto, Job Order Costing.](#analisi-make-or-buy-determinazione-dei-costi-di-prodotto-job-order-costing)
+  - [Scelta tra alternative e costi e ricavi differenziali](#scelta-tra-alternative-e-costi-e-ricavi-differenziali)
+  - [Make or buy](#make-or-buy)
+    - [un esempio](#un-esempio)
+    - [I costi opportunità](#i-costi-opportunità)
+    - [I costi invisibili](#i-costi-invisibili)
+  - [Costi invisibili](#costi-invisibili)
+    - [Un esempio nell'elettronica di consumo](#un-esempio-nellelettronica-di-consumo)
+  - [I metodi per la determinazione dei costi di prodotto](#i-metodi-per-la-determinazione-dei-costi-di-prodotto)
+  - [Il calcolo dei costi di prodotto](#il-calcolo-dei-costi-di-prodotto)
+  - [Le tecniche di rilevazione dei costi](#le-tecniche-di-rilevazione-dei-costi)
+  - [Rilevazione dei costi: i metodi tradizionali rilevazione dei costi](#rilevazione-dei-costi-i-metodi-tradizionali-rilevazione-dei-costi)
+  - [Job Order Costing](#job-order-costing)
+    - [Esempio di scheda](#esempio-di-scheda)
 
 # Lezione 16
 
@@ -791,3 +804,166 @@ _Esempio_: un'azienda che realizza un prodotto caratterizzata da un costo pieno 
 
 - Dovrebbe l'azienda cessare la produzione ed attivare un contratto di fornitura con l'imprenditore esterno?
 - Quali sono i costi da considerare in questo caso?
+
+## Scelta tra alternative e costi e ricavi differenziali
+
+In generale, nei problemi di scelta tra alternative che si escludono a vicenda (come sono le decisioni di make or buy) **assumono grande rilevanza le configurazioni di costo differenziale e di ricavo differenziale**.
+
+Da un punto di vista economico, la domanda chiave da porsi nel caso di una scelta tra alternative è:
+
+> Quali costi e quali ricavi si modificheranno, e in che misura, passando da un'alternativa (detta riferimento o caso base, base case) all'altra?
+
+Formalmente, **i costi differenziali e i ricavi differenziali sono rispettivamente quei costi e quei ricavi che, esaminati in relazione ad una determinata ipotesi, risultano differenti da come sarebbero in relazione ad un'ipotesi diversa.**
+
+In altre parola, i costi e i ricavi differenziali si riferiscono sempre a situazioni specifiche, sono cioè sempre specifici delle alternative da esaminare.
+
+Cosa significano **in alternativa e evitabile?**. Facciamo un esempio:
+
+- Nella decisione se recarsi in macchina al mare o in montagna per il week-end, il costo dell'assicurazione dell'autovettura è un costo irrilevante, perchè rimane lo stesso qualunque sia la decisione presa;
+- I costi di viaggio e soggiorno che si sosterrebbero andando al mare sarebbero invece evitabili scegliendo la montagna e, viceversa, si eviterebbero i costi di viaggio e soggiorno del week-end in montagna se ci si recasse al mare;
+
+## Make or buy
+
+### un esempio
+
+Un'impresa sta considerando la possibilità di acquistare il componente cod. 101 - attualmente prodotto internamente attraverso attività prevalentemente manuali di assemlaggio - da un fornitore esterno.
+Si configurano così due alternative:
+
+1. Continuare a realizzare il componente cod. 101;
+2. Acquistare il componente all'esterno.
+
+Tutti gli elementi di ricavo e di costo (sia di prodotto sia di periodo) che non si riferiscono alla realizzazione del componente cod. 101 non saranno probabilmente influenzati dalla decizione in questione, così non è necessario tenerne conto nella scelta.
+
+Gli elementi di costo differenziale potrebbero essere i seguenti:
+
+![Alt text](./assets/195.png)
+
+![Alt text](./assets/196.png)
+
+Perchè i costi aumenterebbero di 310€ se si acquistasse all'intero il componente, **la proprosta di rivolgersi all'esterno dovrebbe essere, da un punto di vista strettamente econmico, respinta**.
+
+Per completezza, avremmo potuto anche rappresentare gli elementi di costo e di ricavo non influenzati dalla decisione. Queste, ovviamente, devono essere dello stesso importo in ciascuna delle alternative, poichè altrimenti non sarebbero irrilevanti.
+
+![Alt text](./assets/197.png)
+
+### I costi opportunità
+
+Nella scelta tra alternative è opportuno tenere conto dei costi (di) opportunità:
+
+- I **costi opportunità** sono una misura del reddito potenziale al quale si rinuncia quando una determinata scelta implica l'esclusione di un corso d'azione alternativo;
+- Nell'esempio precedente, se lo spazio necessario per produrre internamente il componente cod. 101 potesse essere alternativamente destinato alla produzione di altri componenti e tra queste possibilità quella più conveniente si riferisse al componente cod. 405 in grado di realizzare settimanalmente un utile di 600€, allora il costo opportunitò che si sosterrebbe producendo internamente il componente cod. 101 sarebbe di 600€.
+
+### I costi invisibili
+
+Nell'esempio precedente il costo dell'alternativa acquistare all'esterno (buy) è apparentemente facile da stimare, almeno se si identifica il costo cono il solo prezzo d'acquisto del componente cod. 101.
+
+Occorre però tenere in considerazione il fatto che la qualità e il sercizio (puntaualitò e modalità delle consegne) sono elementi di valutazione altrettanto importanti, a volte anche più del prezzo d'acquisto:
+
+- Il **danno economico** che produce un ritardo di consegna di un componente o una sua difettosità può essere infatti superiore al prezzo d'acquisto, specie se la difettosità si manifesta quanto il prodotto è già stato consegnato all'utente finale e richiede costoi interventi di riparazione (se non la sostituzione).
+
+In una decisione di make or buy, **l'alternativa buy** (così come la scelta fra fornitori diversi) deve quindi essere effettuata in base al costo complessivo generato dall'outsourcing e non solo in base al prezzo d'acquisto.
+
+Questo costo complessivo è denominato **costo totale del possesso** (total cost of ownership).
+
+## Costi invisibili
+
+### Un esempio nell'elettronica di consumo
+
+![Alt text](./assets/1910.png)
+
+## I metodi per la determinazione dei costi di prodotto
+
+I metodi tradizionali per la determinazione dei costi di prodotto coinvologono decisioni su tre aspetti (fra loro correlati):
+
+1. Quali voci considerare:
+   1. **Full costing**: viene attribuita ai prodotti anche una quota dei costi indeiretti. In tal modo viene privilegiato il criterio della completezza di analisi di rispetto alle respinsabilità specifiche.
+   2. **Direct costing**: viene attribuito ai prodotti il solo costo delle risorse dirette impiegate (materiali diretti e lavoro diretto). In tal modo viene privilegiato il criterio delle responsabilità specifiche rispetto alle cimpletezza di analisi.
+2. **Quali dati utilizzare:**
+   1. **Costi standard**
+   2. **Costi storici**
+3. **Quale specifica tecnica adottare:**
+   1. **Job Order Costing (JOC)**
+   2. **Processo Costing (PC)**
+   3. **Operation costing (OC)**
+   4. **Tecniche _innovative_**
+
+## Il calcolo dei costi di prodotto
+
+Il calcolo dei costi pieni di prodotto presenta una significativa difficoltà: quella **di attribuire una quota dei costi indiretti ad uno specifico prodotto**.
+
+$\implies$ E' necessario definire dei criteri di allocazione dei costi indiretti.
+
+L'attribuzione dei cosi può avvenire con due criteri:
+
+1. **Criterio casuale**: si attribuiscono al singolo prodotto i costi relatici alle risorse specificamente consumate da quel prodotto;
+2. **Criterio proporzionale**: si attribuiscono al singolo prodotto delle quote di costo proporzionalmente al consumo di una determinata risorsa, detta base di allocazione, da parte di quel prodotto.
+
+## Le tecniche di rilevazione dei costi
+
+- Tencniche tradizionali:
+  - JOC
+  - PC
+  - OC
+
+![Alt text](./assets/1913.png)
+
+- Tecniche innovative:
+  - Activity Based Costing
+  - Target Costing
+  - Life Cycle Costing
+
+## Rilevazione dei costi: i metodi tradizionali rilevazione dei costi
+
+![Alt text](./assets/1914.png)
+
+- Se il sistema produttivo realizza prodotti molto eterogenei si ricerca una base di allocazione per i costi indiretti industriali, mentre si allocano direttamente i costi del lavoro e quelli di materiali:
+  **JOC $\rightarrow$ Produzione per singolo pezzo + Produzione per lotti**
+
+- Se il sistema produttivo realizza prodotti omogenei, si allocano tutti i costi in modo proprzionale, senza alcuna allocazione causale
+  **PC $\rightarrow$ Produzione di serie + Produzione per processo**
+
+- **Sistema per commessa (JOC)**:
+
+  - Si rileva il costo di ciscun job (ordine di produzione, lotto, prodotto, servizio) nel corso della sua realizzazione indipendentemente dai periodi di tempi interessati
+
+- **Sistema per processo (PC)**:
+  - Si rileva il costo totale di competenza di un certo periodo
+  - Il costo untario di prodotto si ottiene dividendo tale costo per le quantità (di prodotti simili) realizzate nel periodo in questione.
+
+![Alt text](./assets/1917.png)
+
+Nella realtà esistono sistemi di produzione "intermedi", di conseguenza vengono adottate tecniche di rilecazione dei costi ibride, ovvero dei compromessi tra PC E JOC, come ad esempio l'OP.
+
+## Job Order Costing
+
+Il Job Order Costing (o Job Costing) utilizza come elemento di base per l'attribuzione dei costi il _job_, composto da una singola unità o da un lotto omogeneo di prodotti.
+
+A ciascun job viene associata una scheda, in forma cartacea o informatica, che lo accompagna lungo tutto il ciclo di lavorazione.
+
+In ogni fase del ciclo (centro di costo) vengono registrati sulla scheda i costi sostenuti per la realizzazione del job.
+
+In ogni fase del ciclo (centro di costo) vengono registrat isulla scehda i costi sostenuti per la realizzazione del job.
+
+Più specificamente:
+
+- Il costo dei materiali diretti viene determinato sulla base del valore a cui essi erano contabilizzati a magazzino;
+- Si rileva la quantità di lavoro diretto impiegata per la realizzazione del job, valorizzandola al costo orario del lavoro;
+- I costi indiretti vengono ripartiti tra i prodotti proporzionalmente all'utilizzo di un fattore produttivo (usualmente il lavoro diretto), denominato base di allocazione;
+
+### Esempio di scheda
+
+![Alt text](./assets/1919.png)
+
+L'allocazione avviene concettualmente in due fasuìi:
+
+1. Dapprima si determina il coefficiente di allocazione come rapporto tra costi indiretti complessivamente sostenuti nel centro di costo nel perioso di riferimento e l'impiego deella base di allocazione da parte di tutti i job transitati per il centro:
+
+$$\text{coefficiente di allocazione} = \frac{\text{costi indiretti sostenuti nel centro di costo}}{\text{impiego della base di allocazione da tutti i job transitati}}$$
+
+2. Successivamente si allocano allo specifico job j-esimo costi indiretti pari a:
+
+$$\text{Costo indiretto da allocare al j-esimo Job} = \text{Coefficiente di allocazione} \times ba_j$$
+
+dove $ba_j$ rappresenta l'utilizzo della base di allocazione da parte del job j-esimo.
+
+// slide 21
