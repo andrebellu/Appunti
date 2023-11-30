@@ -958,7 +958,7 @@ L'allocazione avviene concettualmente in due fasuìi:
 
 1. Dapprima si determina il coefficiente di allocazione come rapporto tra costi indiretti complessivamente sostenuti nel centro di costo nel perioso di riferimento e l'impiego deella base di allocazione da parte di tutti i job transitati per il centro:
 
-$$\text{coefficiente di allocazione} = \frac{\text{costi indiretti sostenuti nel centro di costo}}{\text{impiego della base di allocazione da tutti i job transitati}}$$
+$$\text{coefficiente di allocazione} = \dfrac{\text{costi indiretti sostenuti nel centro di costo}}{\text{impiego della base di allocazione da tutti i job transitati}}$$
 
 2. Successivamente si allocano allo specifico job j-esimo costi indiretti pari a:
 
