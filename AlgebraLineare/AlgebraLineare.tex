@@ -4,9 +4,12 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
 \usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
 
 \DeclareMathOperator{\Span}{span}
+\renewcommand\fbox{\fcolorbox{red}{white}}
 \newcommand{\sa}{\Span(\mathbb{A})}
 \newcommand{\V}{\mathbb{V} (\mathbb{K})}
 \newcommand{\s}[2]{#1_1, #1_2, \ldots, #1_{#2}}
@@ -30,7 +33,8 @@
 Siano $K$ un campo e $V$ un insieme. Si dice che $V$ è uno spazio vettoriale
 sul campo $K$, se sono definite due operazioni: un’operazione interna binaria
 su $V$, detta somma, $+: V \times V \mathbb{R}\rightarrow V$ e un’operazione
-esterna, detta prodotto esterno o prodotto per scalari, $\bullet : K \times V \mathbb{R}\rightarrow V$, tali che:
+esterna, detta prodotto esterno o prodotto per scalari, $\bullet : K \times V
+    \mathbb{R}\rightarrow V$, tali che:
 
 \begin{enumerate}
     \item $(V, +)$ sia un gruppo abeliano;
@@ -49,7 +53,9 @@ Gli elementi dell’insieme $V$ sono detti \textbf{vettori} gli elementi del
 campo $K$ sono detti \textbf{scalari}.
 
 \subsubsection{Nota bene}
-Sia $\mathbb K$ un campo, indichiamo con $\mathbb K_{[x]}=\{a_0+a_1x+\cdots \ | \ a_i\in\mathbb K\}$ l'insieme di tutti i polinomi in $x$ a coefficienti in $\mathbb K$.
+Sia $\mathbb K$ un campo, indichiamo con $\mathbb K_{[x]}=\{a_0+a_1x+\cdots \ |
+    \ a_i\in\mathbb K\}$ l'insieme di tutti i polinomi in $x$ a coefficienti in
+$\mathbb K$.
 
 \subsection{Vettori}
 I vettori sono segmenti orientati con \textbf{verso, direzione e lunghezza}.
@@ -76,7 +82,7 @@ campo $\alpha(a,b) = (\alpha a, \alpha b)$ è uno spazio vettoriale reale.
 
 Abbiamo verificato che $(\mathbb{R}^2,+)$ è un gruppo abeliano.
 
-NB\@:  abbiamo usato solamente che $\mathbb{R}$ è un campo $\implies$ abbiamo
+NB\@: abbiamo usato solamente che $\mathbb{R}$ è un campo $\implies$ abbiamo
 usato solo le proprietà della somma
 \begin{enumerate}
     \item Ora dobbiamo verificare che il prodotto esterno soddisfi le proprietà dello
@@ -103,8 +109,10 @@ $\mathbb{K}$. Si dice applicazione lineare da $V(\mathbb{K}) \ \ \text{in} \ \
 \[
     \forall \bar{v}, \bar{w}\in W, \forall\alpha,\beta\in\mathbb{K} \ \ \ f(\alpha\bar{w}+\beta\bar{v})=\alpha f(\bar{w})+\beta f(\bar{v})
 \]
-Un’applicazione lineare è una funzione che manda combinazioni lineari di vettori in combinazioni lineari con i medesimi coefficienti.
-Se $V(\mathbb{K})$ è spazio vettoriale e $f:V\rightarrow W$ è applicazione lineare $\implies f(V)$ immagine di $V$ mediante $f$ è uno spazio vettoriale.
+Un’applicazione lineare è una funzione che manda combinazioni lineari di
+vettori in combinazioni lineari con i medesimi coefficienti. Se $V(\mathbb{K})$
+è spazio vettoriale e $f:V\rightarrow W$ è applicazione lineare $\implies f(V)$
+immagine di $V$ mediante $f$ è uno spazio vettoriale.
 
 \subsection{Sottospazio Vettoriale}
 Sia $W(\mathbb{K})$ uno spazio vettoriale, sia anche $X\subseteq W$
@@ -115,7 +123,8 @@ troncata ad $X$ soddisfa gli assiomi di spazio vettoriale. \\ In tale caso
 scriviamo $X \leqslant W$. $X$ è sottospazio vettoriale se:
 \begin{enumerate}
     \item la somma di due qualsiasi vettori di $X$ è un vettori di $X$
-    \item il prodotto di un qualsiasi vettore di $X$ per uno scalare è ancora un vettore di $X$
+    \item il prodotto di un qualsiasi vettore di $X$ per uno scalare è ancora un vettore
+          di $X$
 \end{enumerate}
 
 \subsubsection{Teorema 1}
@@ -126,12 +135,20 @@ Sia $\mathbb{V}(\mathbf{K})$ uno spazio vettoriale su $\mathbb{K}$, allora:
 \end{enumerate}
 \textbf{Dimostrazione}:
 \begin{enumerate}
-    \item Consideriamo $0 \cdot \bar{v} = (0 + 0) \cdot \bar{v} = 0 \cdot \bar{v} + 0$ sommando a destra e a sinistra $-(0\cdot\bar v)$ si ottiene $-(0\cdot \bar v)+(0\cdot \bar v) = -(0\cdot\bar v)+0\cdot\bar v+0\cdot\bar v \implies 0 + 0 + 0\cdot\bar v \implies 0\cdot\bar v= \underline{0}$
-    $\alpha = 0 \implies \alpha\bar v =  \underline{0}$. \\
-    Supponiamo $\alpha\bar v =  \underline{0}$ con $\alpha = 0 \implies \exists\alpha^{-1}\in\mathbb{K} \ e \ \alpha^{-1}(\alpha\bar v) = \alpha^-1\cdot \underline{0}$ \\
-    $\alpha^{-1}(\alpha\bar v) = 1\cdot\bar v = \bar v$ \\
-    $\alpha^-1\cdot \underline{0} = \alpha^{-1}( \underline{0}+ \underline{0}) = \alpha^{-1}\cdot \underline{0}+\alpha^{-1}\cdot \underline{0} =  \underline{0}$ 
-    $\alpha^-1\cdot \underline{0}=\alpha^{-1}\cdot \underline{0}+\alpha^{-1}\cdot \underline{0}$ sommando come prima $-(\alpha^{-1}\underline 0)$ a dx e sx $\alpha^{-1}\underline 0 = \underline 0 \implies$ in particolare $\bar v = \underline 0$
+    \item Consideriamo $0 \cdot \bar{v} = (0 + 0) \cdot \bar{v} = 0 \cdot \bar{v} + 0$
+          sommando a destra e a sinistra $-(0\cdot\bar v)$ si ottiene $-(0\cdot
+              \bar{v})+(0\cdot \bar v) = -(0\cdot\bar v)+0\cdot\bar v+0\cdot\bar v \implies 0
+              + 0 + 0\cdot\bar v \implies 0\cdot\bar v= \underline{0}$ $\alpha = 0 \implies
+              \alpha\bar v = \underline{0}$. \\ Supponiamo $\alpha\bar v = \underline{0}$ con
+          $\alpha = 0 \implies \exists\alpha^{-1}\in\mathbb{K} \ e \
+              \alpha^{-1}(\alpha\bar v) = \alpha^-1\cdot \underline{0}$ \\
+          $\alpha^{-1}(\alpha\bar v) = 1\cdot\bar v = \bar v$ \\ $\alpha^-1\cdot
+              \underline{0} = \alpha^{-1}( \underline{0}+ \underline{0}) = \alpha^{-1}\cdot
+              \underline{0}+\alpha^{-1}\cdot \underline{0} = \underline{0}$ $\alpha^-1\cdot
+              \underline{0}=\alpha^{-1}\cdot \underline{0}+\alpha^{-1}\cdot \underline{0}$
+          sommando come prima $-(\alpha^{-1}\underline 0)$ a dx e sx
+          $\alpha^{-1}\underline 0 = \underline 0 \implies$ in particolare $\bar v =
+              \underline 0$
 
     \item $(-1)\bar v + \bar v = (-1)\bar v + 1\bar v = (-1+1)\bar v = 0\cdot\underline 0 = \underline 0$ pertanto sommando a dx e sx $(-\bar v)$ otteniamo $-1\bar v = -1\bar v+\bar v+(-\bar v = \underline 0 + (-\bar v) = \underline 0 + (-\bar v)=-\bar v$
 \end{enumerate}
@@ -142,18 +159,25 @@ In altre parole:
 
 \[
     \star) \ \ \forall \bar v, \bar w \in X \ \forall \alpha \beta\in\mathbb{K} : \alpha\bar v+\beta\bar w \in X
-    \]
+\]
 \textbf{Osservazione}: $\star$ è equivalente a dire:
 
 \[
     \bullet) \ \forall\alpha\in\mathbb K \ \ \forall \bar v\in X:\alpha\bar v+\beta\bar w \in X \ \& \ \forall\bar v,\bar w \in X: \bar v + \bar w \in X
-    \]
-Verifichiamo che se vale $\star$ allora $\forall \alpha\in\mathbb K, \forall\bar v ,\bar w \in X : \alpha\bar v + \underline 0 = \alpha\bar v\in X$ e $\forall \bar v,\bar w \in X: 1\cdot\bar v + 1\cdot\bar w \in X$. \\
-Viceversa se vale $\bullet$ $\implies \forall\alpha,\beta\in\mathbb K, \forall\bar v,\bar w \in X : \alpha\bar v,\beta\bar w \in X \implies \bar v' = \alpha\bar v,\bar w = \beta \bar w \in X \ \ \ \ \bar v'+\bar w' \in X \implies \alpha\bar v+\beta\bar w \in X$
-Se vale $\bullet$ o $\star$ (stessa cosa) allora $X$ è sottospazio.
-Osserviamo che molte delle proprietà di spazio vettoriale valgono automaticamente per le restrizioni applicate a qualsiasi $X\subseteq V(\mathbb K)$:
+\]
+Verifichiamo che se vale $\star$ allora $\forall \alpha\in\mathbb K,
+    \forall\bar v ,\bar w \in X : \alpha\bar v + \underline 0 = \alpha\bar v\in X$
+e $\forall \bar v,\bar w \in X: 1\cdot\bar v + 1\cdot\bar w \in X$. \\
+Viceversa se vale $\bullet$ $\implies \forall\alpha,\beta\in\mathbb K,
+    \forall\bar v,\bar w \in X : \alpha\bar v,\beta\bar w \in X \implies \bar v' =
+    \alpha\bar v,\bar w = \beta \bar w \in X \ \ \ \ \bar v'+\bar w' \in X \implies
+    \alpha\bar v+\beta\bar w \in X$ Se vale $\bullet$ o $\star$ (stessa cosa)
+allora $X$ è sottospazio. Osserviamo che molte delle proprietà di spazio
+vettoriale valgono automaticamente per le restrizioni applicate a qualsiasi
+$X\subseteq V(\mathbb K)$:
 \begin{enumerate}
-    \item se $\forall\bar v\in V: 1 \cdot \bar v = \bar v \implies \forall\bar v \in X:1\cdot\bar v= \bar v$
+    \item se $\forall\bar v\in V: 1 \cdot \bar v = \bar v \implies \forall\bar v \in
+              X:1\cdot\bar v= \bar v$
     \item $\forall\alpha,\beta \in \mathbb K \ \forall \bar v\in V:(\alpha\beta)\bar v = \alpha(\beta\bar v)\implies$vale anche per $\forall\bar v \in X$
     \item $\forall \alpha,\beta\in \mathbb K \ \forall\bar v \in V:(\alpha+\beta)\bar v=\alpha\bar v + \beta\bar v$
     \item $\forall\bar v,\bar w \ \forall \alpha\in\mathbb K=\alpha(\bar v + \bar w)=\alpha\bar v+\alpha\bar w$
@@ -174,7 +198,8 @@ a+b+c $\implies$ $(X, +)$ un gruppo. \\
 
 \subsection{Condizioni per sottospazio}
 
-Se vale la condizione $\star$: $\forall\alpha,\beta\in\mathbb K \ \forall\bar u,\bar v\in X:\alpha\bar u+\beta\bar v\in X$
+Se vale la condizione $\star$: $\forall\alpha,\beta\in\mathbb K \
+    \forall\bar{u},\bar v\in X:\alpha\bar u+\beta\bar v\in X$
 \begin{enumerate}
     \item $0\cdot\bar u + 0\cdot\bar v = \underline 0 + \underline 0 = \underline 0\in X$
     \item $1\cdot\bar u+1\cdot\bar v = \bar u+\bar v \in X$
@@ -184,20 +209,20 @@ Se vale la condizione $\star$: $\forall\alpha,\beta\in\mathbb K \ \forall\bar u,
 $X$ è un sottospazio, viceversa se $X$ sottospazio allora ogni combinazione lineare di suoi vettori deve stare in $X$ $\implies$ vale $\star$.
 
 \subsection{Indipendenza e dipendenza lineare}
-Siano $v_1, v_2\cdots v_n$ vettori di uno spazio vettoriale e $a_1, a_2\cdots a_n$
-elementi del campo $\mathbb{K}$. Si dice \textbf{combinazione lineare} dei
-vettori $v_1, v_2 \cdots v_n$ con coefficienti $a_1, a_2\cdots a_n$ il vettore di
-$\mathbb V$. 
+Siano $v_1, v_2\cdots v_n$ vettori di uno spazio vettoriale e $a_1, a_2\cdots
+    a_n$ elementi del campo $\mathbb{K}$. Si dice \textbf{combinazione lineare} dei
+vettori $v_1, v_2 \cdots v_n$ con coefficienti $a_1, a_2\cdots a_n$ il vettore
+di $\mathbb V$.
 
 \[a_1v_1+a_2v_2+\cdots+a_n v_n\]
-
 
 \subsubsection{Sistema Libero o Legato}
 $\mathbb V(\mathbb K)$ spazio vettoriale e un sistema $\mathbb A=[v_1, v_2,\ldots,v_n]$ si dice \textbf{libero}, ovvero i suoi vettori sono \textbf{linearmente indipendenti}, se l'unica combinazione lineare che dà come risultato il vettore nullo è quella con i coefficienti tutti nulli. Viceversa il sistema è \textbf{legato} e i suoi vettori sono \textbf{linearmente dipendenti}.
 
 \subsection{Sistema di generatori di uno spazio vettoriale}
 Sia $\mathbb V(\mathbb K)$ uno spazio vettoriale e sia $\mathbb A$ un sistema o
-un insieme non vuoto di vettori di $\mathbb V$. Si dice \textbf{copertura lineare} di $\mathbb A$, e si indica $\Span(\mathbb A)$, l'insieme dei vettori
+un insieme non vuoto di vettori di $\mathbb V$. Si dice \textbf{copertura
+    lineare} di $\mathbb A$, e si indica $\Span(\mathbb A)$, l'insieme dei vettori
 di $\mathbb V(\mathbb K)$ che si possono esprimere come combinazioni lineari,
 di un numero finito, di vettori di $\mathbb A$ (tutte le possibili combinazioni
 lineari).
@@ -208,112 +233,231 @@ lineari).
 \subsubsection{Copertura Lineare = Sottospazio}
 La copertura lineare $\Span(A)$ di un sistema o di un insieme $\mathbb A$, non
 vuoto, di vettori $\mathbb V(\mathbb K)$ è un sottospazio vettoriale di
-$\mathbb V(\mathbb K)$.\\ 
-\textbf{Dimostrazione:} si osserva che la somma di un numero finito di vettori di $\mathbb A$ è sempre una combinazione lineare di un numero finito di vettori a $\mathbb A$ e, analogamente, il prodotto di un elemento del campo $\mathbb K$, per una combinazione lineare di vettori di $\mathbb A$, è ancora una combinazione lineare di un numero finito di vettori di $\mathbb A$. 
-Quindi, $\Span(A)$ è  un sottospazio vettoriale di $\V$.
-Pertanto, dire che $\Span(A)$ è un sottospazio vettoriale di $\V$, la copertura lineare di un insieme o di un sistema $\mathbb A$ di vettori si suole chiamare \textbf{spazio generato} da $\mathbb A$.
-\\
-\textbf{Osservazione}: Diremo, talvolta, che la copertura lineare $\sa$ di un sistema o di un insieme $\mathbb A$, non vuoto, di vettori di $\V$ è \textbf{il più piccolo sottospazio vettoriale} che contiene $\mathbb A$,
-nel senso che $\sa$ è contenuto in ogni sottospazio vettoriale che contenga $\mathbb A$. E' immediato, infatti osservare che, ogni sottospazio vettoriale che contiene $\mathbb A$ deve contentere tutte le possibili combinazioni lineari di un numero finito di vettori di $\mathbb A$ e, quindi, anche $\sa$.\\
-Si può facilmente dimostrare che:
+$\mathbb V(\mathbb K)$.\\ \textbf{Dimostrazione:} si osserva che la somma di un
+numero finito di vettori di $\mathbb A$ è sempre una combinazione lineare di un
+numero finito di vettori a $\mathbb A$ e, analogamente, il prodotto di un
+elemento del campo $\mathbb K$, per una combinazione lineare di vettori di
+$\mathbb A$, è ancora una combinazione lineare di un numero finito di vettori
+di $\mathbb A$. Quindi, $\Span(A)$ è un sottospazio vettoriale di $\V$.
+Pertanto, dire che $\Span(A)$ è un sottospazio vettoriale di $\V$, la copertura
+lineare di un insieme o di un sistema $\mathbb A$ di vettori si suole chiamare
+\textbf{spazio generato} da $\mathbb A$.\\ \textbf{Osservazione}: Diremo,
+talvolta, che la copertura lineare $\sa$ di un sistema o di un insieme $\mathbb
+    A$, non vuoto, di vettori di $\V$ è \textbf{il più piccolo sottospazio
+    vettoriale} che contiene $\mathbb A$, nel senso che $\sa$ è contenuto in ogni
+sottospazio vettoriale che contenga $\mathbb A$. E' immediato, infatti
+osservare che, ogni sottospazio vettoriale che contiene $\mathbb A$ deve
+contentere tutte le possibili combinazioni lineari di un numero finito di
+vettori di $\mathbb A$ e, quindi, anche $\sa$.\\ Si può facilmente dimostrare
+che:
 \begin{enumerate}
     \item $\Span(\sa) = \sa$
     \item $\sa = \mathbb A \iff \mathbb A$ è un sottospazio vettoriale.
 \end{enumerate}
 
 \subsection{Insieme di generatori}
-Sia $\V$ uno spazio vettoriale e sia $\varnothing \ne A \subseteq \mathbb V$. Il sottoinsieme $\mathbb A$ si dice \textbf{sistema o insieme di generatori} di
-$\V$ se la sua copertura lineare $\sa = \V$, cioè se \textbf{ogni vettori di $\V$ si può esprimere come combinazione lineare di un numero finito di vettori di $\mathbb A$}.
-(Si dice che $X$ è un \textbf{insieme di generatori} per $\V$ se $\Span(X) = V$).
-Ogni spazio vettoriale ammette un insieme di generatori, ma si distinguono due casi:
+Sia $\V$ uno spazio vettoriale e sia $\varnothing \ne A \subseteq \mathbb V$.
+Il sottoinsieme $\mathbb A$ si dice \textbf{sistema o insieme di generatori} di
+$\V$ se la sua copertura lineare $\sa = \V$, cioè se \textbf{ogni vettori di
+    $\V$ si può esprimere come combinazione lineare di un numero finito di vettori
+    di $\mathbb A$}. (Si dice che $X$ è un \textbf{insieme di generatori} per $\V$
+se $\Span(X) = V$). Ogni spazio vettoriale ammette un insieme di generatori, ma
+si distinguono due casi:
 \begin{enumerate}
     \item \textbf{finitamente generato:} se $\exists$ un almeno un sistema di generatori con un numero finito di vettori;
-    \[
-        \exists X \subseteq \V \ \ \ |X|=n \ : \ \Span(X) = V
-    \]
+          \[
+              \exists X \subseteq \V \ \ \ |X|=n \ : \ \Span(X) = V
+          \]
     \item \textbf{non finitamente generato:} se ogni sistema di generatori ha un numero infinito di vettori.
 \end{enumerate}
 
 \subsubsection{Lemma}
-Se $S = [\s{v}{m}]$ è un sistema di generatori di uno spazio vettoriale $\V$ e uno dei suoi vettori $v_i$, dipende linearmente dagli altri, allora
-$S \ {v_i}$ è ancora un sistema di generatori di $\V$.
+Se $S = [\s{v}{m}]$ è un sistema di generatori di uno spazio vettoriale $\V$ e
+uno dei suoi vettori $v_i$, dipende linearmente dagli altri, allora $S \ {v_i}$
+è ancora un sistema di generatori di $\V$.
 
 \subsubsection{Teorema}
-Ogni spazio vettoriale $\V$ finitamente generato non banale ammette almeno un sistema libero di generatori.
+Ogni spazio vettoriale $\V$ finitamente generato non banale ammette almeno un
+sistema libero di generatori.
 
 \subsection{Lemma di Steinitz}
-Sia $\V$ uno spazio vettoriale f.g., sia $B=[\s{v}{n}]$ un suo sistema di generatori e sia $A=[u_1,u_2,u_m]$ un sistema libero si vettori di $\mathbb V$. Allora $m\leq n$.
+Sia $\V$ uno spazio vettoriale f.g., sia $B=[\s{v}{n}]$ un suo sistema di
+generatori e sia $A=[\s{u}{m}]$ un sistema libero di vettori di $\mathbb V$.
+Allora $m\leq n$, cioè $|A|\leq|B|$.\\
+\textbf{NB:} fra i vettori di $A$ e quelli di $B$ non c'è nessuna relazione.\\
+La dimostrazione non va studiata.
 
 \subsection{Base}
-Si dice \textbf{base} di uno spazio vettoriale $\V$ f.g.\ una \textbf{sequenza} libera di generatori di $\V$. \\
-Tutte la basi di uno spazio vettoriale $\V$ hanno la stessa \textit{cardinalità}.
+Si dice \textbf{base} di uno spazio vettoriale $\V$ f.g.\ una \textbf{sequenza}
+libera di generatori di $\V$. \\ Tutte la basi di uno spazio vettoriale $\V$
+hanno la stessa \textit{cardinalità}.
 
 \subsubsection{Dimostrazione}
-Ci basta far vedere che ogni vettori si scrive in modo unico come combinazione lineare degli elementi della base.\\
-Supponiamo $B=(\s{b}{n})$ e $B$ sequenza libera di generatori.\\
-$\bar v \in \Span(B) \ \ \ \ \ \bar v = \alpha_1\bar b_1+\alpha_2\bar b_2 + \cdots +\alpha_n\bar b_n$.\\
-Supponiamo anche $\bar v = \beta_1\bar b_1+\beta_2\bar b_2 + \cdots +\beta_n\bar b_n$.\\
-Allora $\bar v-\bar v = (\alpha_1\bar b_1+\cdots+\alpha_n\bar b_n) - (\beta_1\bar b_1+\beta_2\bar b_2 + \cdots +\beta_n\bar b_n) = (\alpha_1-\beta_1)\bar b_1+(\alpha_2-\beta_2)\bar b_2+\cdots+(\alpha_n-\beta_n)\bar v_n$.
-Se $B$ libera $\implies$ deve essere $\alpha_1 = \beta_1, \alpha_2 = \beta_2 \ldots \alpha_n = \beta_n$ perchè tutti i coefficienti sono necessariemente $0\\ \implies B$ libera e di generatori $\iff B$ base.
+Ci basta far vedere che ogni vettori si scrive in modo unico come combinazione
+lineare degli elementi della base.\\ Supponiamo $B=(\s{b}{n})$ e $B$ sequenza
+libera di generatori.\\ $\bar v \in \Span(B) \ \ \ \ \ \bar v =
+    \alpha_1\bar{b_1}+\alpha_2\bar b_2 + \cdots +\alpha_n\bar b_n$.\\ Supponiamo
+anche $\bar v = \beta_1\bar b_1+\beta_2\bar b_2 + \cdots +\beta_n\bar b_n$.\\
+Allora $\bar{v}-\bar v = (\alpha_1\bar b_1+\cdots+\alpha_n\bar b_n) -
+    (\beta_1\bar b_1+\beta_2\bar b_2 + \cdots +\beta_n\bar b_n) =
+    (\alpha_1-\beta_1)\bar{b_1}+(\alpha_2-\beta_2)\bar{b_2}+\cdots+(\alpha_n-\beta_n)\bar{v_n}$.
+Se $B$ libera $\implies$ deve essere $\alpha_1 = \beta_1, \alpha_2 = \beta_2
+    \ldots \alpha_n = \beta_n$ perchè tutti i coefficienti sono necessariemente
+$0\\ \implies B$ libera e di generatori $\iff B$ base.
+
+\subsection{Metodo degli scarti successivi}
+Algoritmo che data una sequna finita dei generatori per uno spazio vettoriale produce $\underbar{0}$ oppure una sottosequenza libera di generatori.
+$S$ è di generatori se $S= (\s{\bar{v}}{n})$ ed ogni $\bar{v}\in\V$ si scrive come combinazione lineare di un numero finito di vettori di $S$. $V = \Span(S)$
+
+\subsubsection{Lemma}
+Sia $S=(\s{v}{n})$ una seuqenza di generatori per uno spazio vettoriale $W$ legato, allora esiste $\bar{v}_i\in S:S\smallsetminus\{\bar v_i\}$ genera $W$ (``Possiamo sempre scartare almeno un vettore da $S$ ed otteniamo ancora una sequenza di generatori``).\\
+\textbf{Dimostrazione:} $S$ legata $\implies\exists\bar{v}_i\in S:\bar v_i=\sum_{j\ne i}^{}\ah_j\bar v_i$ \\
+Sia $\bar{w}\in\Span(S)\implies\exists\bh_j\ldots j=1\ldots n$ tali che $\bar{w}=\bh_1\bar{v}_1+\cdots+\bh_i\bar{v}_i+\cdots+\bh_n\bar{v}_n = \bh_1\bar{v}_1+\cdots+\bh_i\sum_{j\ne i}^{}(\bh_j+\bh_i\ah_j)\bar{v}_j$.\\
+$\implies \bar{w}$ è combinazione lineare di un numero finito di vettori di $S\smallsetminus\{\bar{v}_i\}$\\
+$\implies \Span(S\smallsetminus\{\bar{v}_i\})\subseteq\Span(S)$\\
+Viceversa ogni vettore di $\Span(S\smallsetminus\{\bar{v}_i\})$ è anche un vettore di $\Span(S)\implies\Span(S\smallsetminus\{\bar{v}_i\})\subseteq\Span(S)\implies$ \fbox{$\Span(S\smallsetminus\{\bar{v}_i\})=\Span(S)$}.
 
 \subsection{Dimensione}
-Uno spazio vettoriale $\V$ ha \textbf{dimensione n}, e scriveremo $\dim\V = n$, se $n$ è il numero di vettori che compongono una sua qualunque base.
+Uno spazio vettoriale $\V$ ha \textbf{dimensione n}, e scriveremo $\dim\V = n$,
+se $n$ è il numero di vettori che compongono una sua qualunque base.
 
 \subsection{Componenti}
-Sia $\V$ uno spazio vettoriale e $B = [\s{v}{n}]$ una sua base. $\forall v \in \mathbb V$ si dicono \textbf{componenti di $v$}, rispetto alla base $B$
-, i coefficienti $a_1, a_2,\ldots,a_n \in \mathbb K$ tali che:
+Sia $\V$ uno spazio vettoriale e $B = [\s{v}{n}]$ una sua base. $\forall v \in
+    \mathbb V$ si dicono \textbf{componenti di $v$}, rispetto alla base $B$, i
+coefficienti $a_1, a_2,\ldots,a_n \in \mathbb K$ tali che:
 \[
     v = a_1 v_1+a_2 v_2 +\cdots+a_n v_n
 \]
-Cambiando l'ordine dei vettori che compaiono in una base, anche se si ottiene ancora una bse, si tratta di una base diversa.
+Cambiando l'ordine dei vettori che compaiono in una base, anche se si ottiene
+ancora una bse, si tratta di una base diversa.
 
 \subsubsection{Corollario}
 In $\Vx{n}$, spazio vettoriale di dimensione n,
 \begin{enumerate}
     \item $m$ vettori $\s{v}{m}$ con $m > n$ sono l.d.;
     \item $m$ vettori $\s{v}{m}$ con $m < n$ non possono generare $\Vx{n}$;
-    \item una sequenza di $n$ generatori di $\Vx{n}$ risulta essere anche libera, e quindi, individua una base di $\Vx{n}$;
+    \item una sequenza di $n$ generatori di $\Vx{n}$ risulta essere anche libera, e
+          quindi, individua una base di $\Vx{n}$;
     \item una sequenza libera di $n$ vettori risulta essere anche un sistema di generatori e, quindi, individua una base di $\Vx{n}$.
 \end{enumerate}
 \textbf{Dimostrazione:}
 \begin{enumerate}
-    \item Dal lemma di Steinitz, se uno spazio vettoriale ha dimensione $n$, \textbf{il massimo numero di vettori l.d.} che si possono trovare in $\V$ è proprio $n$.
-    \item Il \textbf{minimo numero di vettori che occorrono per generare} $\Vx{n}$ è proprio $n$.
+    \item Dal lemma di Steinitz, se uno spazio vettoriale ha dimensione $n$, \textbf{il
+              massimo numero di vettori l.d.} che si possono trovare in $\V$ è proprio $n$.
+    \item Il \textbf{minimo numero di vettori che occorrono per generare} $\Vx{n}$ è
+          proprio $n$.
 \end{enumerate}
 
 \subsubsection{Proposizione}
-Ogni spazio vettoriale $\Vx{n}$ di dimensione $n$ contiene sottospazi di dimensione $m \ \forall \ 0\leq m\leq n$.
+Ogni spazio vettoriale $\Vx{n}$ di dimensione $n$ contiene sottospazi di
+dimensione $m \ \forall \ 0\leq m\leq n$.
 
 \subsubsection{Proposizione}
-Se $U$ e $W$ sono due sottospazi di uno spazio vettoriale $\Vx{n}$ e $U$ è contenuto in $W$, allora:
+Se $U$ e $W$ sono due sottospazi di uno spazio vettoriale $\Vx{n}$ e $U$ è
+contenuto in $W$, allora:
 \begin{enumerate}
     \item $\dim U\leq\dim W$;
     \item $U = W \iff \dim U = \dim W$
 \end{enumerate}
 
 \subsection{Teorema del completamento di una base}
-Sia $\Vx{n}$ uno spazio vettoriale di dimensione $n$ e sia $A = (\s{v}{m})$, ove $m\leq n$, una sequenza livera di vettori di $\Vx{n}$. 
-Allora, in una qualunque base $B$ di $\Vx{n}$, esiste una sequenza $B'$ di vettori, tale che $A\cup B'$ è base di $\Vx{n}$.
+Sia $\Vx{n}$ uno spazio vettoriale di dimensione $n$ e sia $A = (\s{v}{m})$,
+ove $m\leq n$, una sequenza livera di vettori di $\Vx{n}$. Allora, in una
+qualunque base $B$ di $\Vx{n}$, esiste una sequenza $B'$ di vettori, tale che
+$A\cup B'$ è base di $\Vx{n}$.
+
+\subsection{Legami fra sequenze libere, basi e matrici}
+Se $B=[\s{\bar{e}}{n}]$ e $B'=[\s{\bar{e}'}{n}]$ sono due basi di $\Vx{n}$
+allora:
+\begin{enumerate}
+    \item Esse hanno la stessa cardinalità [per Steinitz $n\leq m$ e $m\leq n \implies m
+              = n$ prendendo prima $B$ come libera e $B'$ come di generatori e poi
+          viceversa].\\ \textbf{Definizione:} si dice dimensione di $\Vx{n}$ il numero di
+          vettori di qualunque base.
+    \item Ogni vettori di $\Vx{n}$ si scrive in modo unico in componenti rispetto una fissata base \\ $B=(\s{\bar e}{n})\ \forall\bar v\in \Vx{n}\exists !(\s{\ah}{n})\in\mathbb{K}^n:\bar v = \ah_1\bar e_1+\cdots\ah_n\bar e_n$
+    \item Posto $ E = \begin{bmatrix}\bar e_1 \\ \vdots \\ \bar e_n\end{bmatrix} \ e \ E'=\begin{bmatrix}\bar e'_1 \\ \vdots \\ \bar e'_n\end{bmatrix} \ \ A=\begin{bmatrix}a_{11} && a_{1n} \\ a_{n1} && a_{nn} \end{bmatrix}$ tale che $\implies E'=AE\implies$.
+          \begin{enumerate}
+              \item la matrice $A$ è invertibile $\implies \det(A)\ne0$
+              \item se $\bar v=(\s{x}{n})E=(\s{x'}{n})E'\implies {^{t}X} = {^{t}A}{^{t}X'}$ cambiamento di base \\$[XE\implies X'E'=X'AE={^{t}X}={^{t}A}{^{t}X'}]$
+          \end{enumerate}
+\end{enumerate}
+\textbf{Osservazione:}\begin{enumerate}
+    \item Sia $S= (\s{\bar e}{n})$ una sequenza libera $\implies$ ogni sottosequenza di $S$ è libera
+    \item Sia $T= (\s{g}{k})$ una sequenza di generatori $\implies$ ogni sovrasequenza di $T$ è di generatori.
+\end{enumerate}
+\begin{itemize}
+    \item Se \textbf{aggiungo} vettori ad una \textbf{sequenza libera} ottengo ancora una sequenza libera (Teorema di completamento della base);
+    \item Se \textbf{tolgo} vettori ad una \textbf{sequenza libera} ottengo ancora una sequenza libera;
+    \item Se \textbf{aggiungo} vettori ad ua \textbf{sequenza di generatori} ottengo una sequenza di generatori;
+    \item Se \textbf{tolgo} vettori ad una \textbf{sequenza di generatori} ottengo una sequenza di generatori (Metodo degli scarti successivi).
+\end{itemize}
+
+\subsubsection{Dimostrazione}
+\begin{enumerate}
+    \item Sia $S$ libera, supponiamo $S'\leq S$ legata $\implies S'=(\s{\bar e}{t})\ \exists\ \s{\ah}{t}$ tali che $\ah_1\bar e_1+\ldots+\ah_t\bar e_t=\underbar{0} \\
+              (\s{\ah}{t}) \ne (0\ldots0) \implies \ah\bar e_1+\ldots\ah_t\bar e_t+0\bar e_{t+1}+\ldots+0\bar e_n = \underbar{0}$ con $(\s{\ah}{t}0 \ 0 \ldots0)\ne\underbar{0} \implies S$ legata, \textbf{assurdo}.
+    \item Sia $T= (\s{\bar g}{k})$ di generatori e $U=(\s{\bar h}{r})$ vettori $\implies \ T \cup S$ è di generatori, perchè $\forall$ vettore di $\V$ si scrive come $\bh_1\bar g_1+\ldots+\bh_k\bar g_k = \bh_1 \bar g_1+\ldots+\bh_k \bar g_k + 0\bar h_1+\ldots+0\bar h_r$
+\end{enumerate}
+
+\subsection{Teorema}
+Sia $\Vx{n}$ uno spazio vettoriale con $\dim(V) = n$. Sia $X\subseteq\Vx{n}$ con $|X| = n$. Allora $X = V$.
+
+\subsubsection{Dimostrazione}
+$X$ ammette una base $B'$ di n vettori $\implies$ tale base cobsta di $n$ vettori di $\Vx{n}$ liberi $\implies$ per le conseguenze di Steinitz take sequenza deve essere di generatori per $V\implies\Span(B') X\subseteq\Vx{n}=\Span(B')$ ne segue $X = V$.\\
+\textbf{La nozione di dimensione ci dice ``quanto è grande'' uno spazio vettoriale.}
 
 \subsection{Intersezione e somma di sottospazi}
-Dati due sottospazi $U$ e $W$ di uno spazio vettoriale $\V$, la loro \textbf{intersezione} e la loro \textbf{unione} sono, rispettivamente
+Dati due sottospazi $U$ e $W$ di uno spazio vettoriale $\V$, la loro
+\textbf{intersezione} e la loro \textbf{unione} sono, rispettivamente
 \[
     U \cap W = \{v\in V \ | \ v\in U \text{ and } v\in W  \} \ \ e \ \ U \cup W = \{v\in V \ | \ v\in U \text{ or } v\in W  \}
 \]
 
 \subsubsection{Proposizione}
-Se $U, W$ sono sottospazi di uno spazio vettoriale $\V$, $U\cap W$ è un sottospazio vettoriale di $\V$.
+Se $U, W$ sono sottospazi di uno spazio vettoriale $\V$, $U\cap W$ è un
+sottospazio vettoriale di $\V$.
 
 \subsection{Somma}
-Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$. Si dice \textbf{somma} $S$ di $U, W$
+Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$. Si dice
+\textbf{somma} $S$ di $U, W$
 \[
-    S = U + W = \{u+w \ | \ u \in U,w\in W\}    
+    S = U + W = \{u+w \ | \ u \in U,w\in W\}
 \]
 \subsubsection{Proposizione}
-La somma $S$ di due sottospazi $U, W$ di uno spazio $\V$ è uno spazio vettoriale di $\V$.\\
-\textbf{Dimostrazione:} basta osservare che se $v_1 e v_2$ sono vettori di $U+W$ anche $\ah v_1+\bh v_2$ appartiene a $U+W$.
-Infatti se $v_1 = u_1+w_1$ e $v_2 = u_2 + w_2$ allora $\ah v_1 + \bh v_2 = (\ah u_1 + \bh u_2)+(\ah w_1 + \bh w_2)$ e ciò dimostra l'asserto.
+La somma $S$ di due sottospazi $U, W$ di uno spazio $\V$ è uno spazio
+vettoriale di $\V$.\\ \textbf{Dimostrazione:} basta osservare che se $v_1 e
+    v_2$ sono vettori di $U+W$ anche $\ah v_1+\bh v_2$ appartiene a $U+W$. Infatti
+se $v_1 = u_1+w_1$ e $v_2 = u_2 + w_2$ allora $\ah v_1 + \bh v_2 = (\ah u_1 +
+    \bh u_2)+(\ah w_1 + \bh w_2)$ e ciò dimostra l'asserto.
 
 \subsection{Somma diretta}
+La somma $S$ di due sottospazi $U,W$ di uno spazio vettoriale $\V$ si dice
+\textbf{diretta}, e si scrive $U\oplus W$, se pgni vettore di $S$ si può
+esprimere in modo unico, come somma di un vettore di $U$ e di uno di $W$.
+
+\subsubsection{Proposizione}
+La somma di due sottospazi $U, W$ di uno spazio vettoriale $\V$ è diretta $\iff
+    \ U \cap W = \{0\}$ \\ \textbf{Dimostrazione:} supponiamo che la somma di $U,W$
+sia diretta e sia, per assurdo, $\underbar{0} \ne x\in U\cap W$. Un qualunque
+vettore $v$ di $U+W$ è $v=u+w$ ove $u\in U \text{ and } w\in W$, ma anche
+$v=(u+x)+(w-x)$ ove $u+x\in U$ e $w-x\in W$. Pertanto, $v$ può essere espresso
+in più modi come somma di un elemento di $U$ e di uno di $W$, e questo è
+assurdo.\\ Viceversa, sia $U\cap W = \{\underbar{0}\}$ e, per assurdo, esista
+un vettore $v$ esprimibile in due modi diversi come somma di vettori di $V$ e
+$W$,
+\[
+    v=u_1+w_1=u_2+w_2
+\]
+in questo caso il vettore $u_1-u_2=w_2-w_1$ sarebbe un vettore non nullo di
+$U\cap W$ e ciò è contro l'ipotesi.
+
+\subsubsection{Corollario}
+Uno spazio vettoriale $\V$ è somma diretta di due suoi sottospazi $U, W \iff{V} = U+W \text{ and } U \cap{W} = \{\underbar{0}\}$
+
+\subsection{Formula di Grassmann}
+Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$ f.g. Allora:
+\[
+    \dim(U+W) = \dim U + \dim W - \dim(U\cap W)
+\]
 
 \end{document}
