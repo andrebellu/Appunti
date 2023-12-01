@@ -460,4 +460,83 @@ Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$ f.g. Allora:
     \dim(U+W) = \dim U + \dim W - \dim(U\cap W)
 \]
 
+\subsection{Definizione}
+Se $U$ è un sottospazio vettoriale di $\Vx{n}$ si dice \textbf{complemento diretto} di $U$ in $V$, un sottospazio vettoriale $W$ di $V_n$, tale che $U\oplus W = V$.
+
+\section{Sistemi Lineari}
+\subsection{Determinante}
+Sia $A = (a_{ij})$ una matrice quadrata di ordine $n$, a elementi in un campo $\mathbb K$. Si dice \textbf{determinante}, e si indica con $\det(A)$ o $|A|$, la somma di tutti i suoi termini presi con il proprio segno. Cioè:
+\[
+    \det(A) = \sum_{\ah\in S_n}^{}sgn(\ah)a_{1\ah(1)}a_{2\ah(2)}\cdots a_{n\ah(n)}
+\]
+
+\subsubsection{Proprietà}
+\begin{enumerate}
+    \item Se una colonna (o una riga) di una matrice è nulla, allora il determinante è nullo.
+    \item $\det(A) = \det({^{t}A})$, infatti, i termini estratti da ${^{t}A}$ sono tutti e soli i termini estratti da $A$. Sia $A= (a_{ij})$ e $B = ({^{t}A}) = (b_{ij})$ allora $b_{ij} = a_{ji}$. Se:
+          \[
+              b_{1\ah(1)}b_{2\ah(2)}\cdots b_{n\ah(n)}
+          \]
+          è un termine estratto da ${^{t}A}$, associato alla permutazione $\ah$, esso coincide con:
+          \[
+              a_{\ah(1)1}a_{\ah(2)2}\cdots a_{\ah(n)n}
+          \]
+          che per definizione, è un termine estratto da $A$ e individuato dalla permutazione $\ah^{-1}$. Dunquue, poichè $sgn (\ah) = sgn (\ah^{-1})$, possiamo concludere che $\det(A) = \det({^{t}A})$.
+    \item Se $A'$ è ottenuta da $A$ scambiando tra loro due righe (o colonne), allora $\det(A') = -\det(A)$. Basta osservare che, i termini della matrice $A'$ si ottengono da quelli di $A$ scambiando tra loro due termini, e quindi, il segno del determinante cambia.
+          Infatti, se $A'=(b_{ij})$ è ottenuta da $A= (a_{ij})$ scambiando la k-esima riga con l'h-esima, allora ogni termine estratto da $A'$
+          \[
+              b_{1\ah(1)}\cdot\ldots\cdot b_{k\ah(k)}\cdot\ldots\cdot b_{h\ah(h)}\cdot\ldots\cdot b_{n\ah(n)}
+          \]
+          associato alla permutazione $\ah$, è uguale a:
+          \[
+              a_{1\ah(1)}\cdot\ldots\cdot a_{h\ah(k)}\cdot\ldots\cdot a_{k\ah(h)}\cdot\ldots\cdot a_{n\ah(n)}
+          \]
+          che risulta un termine di $A$ associato alla permutazione $(\sigma$ o $\ah)$, dove, $\sigma$ è lo scambio di $k$ con $h$. Ma essendo $sgn(\ah)=-sgn S (\ah\ o \ \sigma)$, risulta $|A'| = -|A|$
+    \item Se $A$ ha due righe (o due colonne) uguali, allora $\det(A) = 0$. Infatti, se $A$ ha due righe uguali, allora, scambiando tra loro queste due righe, non si altera la matrice $A$, e per la precendente proprietà, $\det(A) = -\det(A)$, da cui $\det(A) = 0$.
+    \item Se in $A$ una colonna $C_i$ è la somma di due n-uple $X_i, Y_i$, cioè se $A$ è del tipo:
+          \[
+              (C_1\ \cdots\ X_i + Y_i\ \cdots\ C_n)
+          \]
+          allora $|A|=|C_1 \cdots X_i \cdots C_n|+|C_1\cdots Y_i\cdots C_n|$. Analogamente per le righe.
+    \item Se $A'$ è una matrice ottenuta da $A= (C_1 \ C_2 \cdots C_n)$ moltiplicando per $k\in\mathbb K$ una sua colonna (o riga), allora
+          \[
+              |A'|=|C_1\ \cdots\ kC_i\ \cdots\ C_n|=k|C_1\ \cdots\ C_i\ \cdots\ C_n|=k|A|
+          \]
+    \item Se $A$ ha due colonne (o due righe) proporzionali, allora $\det(A) = 0$.
+    \item Se $A$ ha una colonna (o una riga) che è combinazione lineare di altre colonne (o righe), allora $\det(A) = 0$.
+    \item Se $A'$ è una matrice ottenuta da $A$ sommando ad una sua colonna (o riga) un multiplo di un'altra colonna (o riga), allora $|A'| = |A|$.
+\end{enumerate}
+
+\subsection{Eliminazione di Gauss}
+L'intendo del \textbf{metodo di eliminazione di Gauss} è quello di ridurre una matrice $A$ ad una matrice $A'$, detta \textbf{ridotta a gradini}, in quanto il determinante di quest'ultima può essere calcolato moltiplicando gli elementi presenti nella diagonale principale, che ha la forma:
+\[
+    A' = \begin{bmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        0      & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        0      & 0      & \cdots & a_{nn}
+    \end{bmatrix}
+\]
+Per farlo utilizziamo quelle che si chiamano \textbf{Mosse di Gauss}:
+\begin{enumerate}
+    \item Scambiare tra loro due righe della matrice;
+    \item Moltiplicare una riga per un numero diverso da zero;
+    \item Sostituire ad una riga la somma di essa con un multiplo di un'altra riga.
+\end{enumerate}
+\textbf{Osservazione:} le mosse di Gauss non alterano il determinante della matrice.\\
+Passi dell'algoritmo di Gauss:\\
+Indichiamo con $A$ una matrice non ridotta a gradini con $m$ righe e $n$ colonne.
+\begin{enumerate}
+    \item Sia $C_k$, con $1\leq\ k\leq\ n$, la prima colonna a paritre da sinistra che contiene almeno un termine $a$ non nullo.\\
+          Detta $R_1$ la prima riga della matrice, possono presentarsi\textbf{ due eventualità}:
+          \begin{enumerate}
+              \item Se $a$ è un elemento di $R_1$, passiamo al punto $3$
+              \item Se $a\notin\ R_1$. Controlliamo se la matrice ottenuta dopo lo scambio è ridotta a gradini: se lo è possiamo fermarci, in caso contrario procediamo oltre.
+          \end{enumerate}
+    \item L'obiettivo è annullare tutti gli elementi della k-esima colonna al di sotto di $a$. Sostituiamo ogni riga $R_i$, con $i>1$ e con k-esimo elemento non nullo, con $R_i+\lambda R_1, \lambda\in\mathbb{R} \ : \ R_i+\lambda R_1 = 0$.
+    \item Se la matrice risultante è ridotta a gradini, allora l'algoritmo termina, altrimenti ripetiamo i passi precedenti con la matrice ottenuta.
+\end{enumerate}
+
+\subsubsection{Algoritmo di Gauss in Julia}
+
 \end{document}
