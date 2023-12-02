@@ -283,9 +283,8 @@ sistema libero di generatori.
 \subsection{Lemma di Steinitz}
 Sia $\V$ uno spazio vettoriale f.g., sia $B=[\s{v}{n}]$ un suo sistema di
 generatori e sia $A=[\s{u}{m}]$ un sistema libero di vettori di $\mathbb V$.
-Allora $m\leq n$, cioè $|A|\leq|B|$.\\
-\textbf{NB:} fra i vettori di $A$ e quelli di $B$ non c'è nessuna relazione.\\
-La dimostrazione non va studiata.
+Allora $m\leq n$, cioè $|A|\leq|B|$.\\ \textbf{NB:} fra i vettori di $A$ e
+quelli di $B$ non c'è nessuna relazione.\\ La dimostrazione non va studiata.
 
 \subsection{Base}
 Si dice \textbf{base} di uno spazio vettoriale $\V$ f.g.\ una \textbf{sequenza}
@@ -306,16 +305,26 @@ Se $B$ libera $\implies$ deve essere $\alpha_1 = \beta_1, \alpha_2 = \beta_2
 $0\\ \implies B$ libera e di generatori $\iff B$ base.
 
 \subsection{Metodo degli scarti successivi}
-Algoritmo che data una sequna finita dei generatori per uno spazio vettoriale produce $\underbar{0}$ oppure una sottosequenza libera di generatori.
-$S$ è di generatori se $S= (\s{\bar{v}}{n})$ ed ogni $\bar{v}\in\V$ si scrive come combinazione lineare di un numero finito di vettori di $S$. $V = \Span(S)$
+Algoritmo che data una sequna finita dei generatori per uno spazio vettoriale
+produce $\underbar{0}$ oppure una sottosequenza libera di generatori. $S$ è di
+generatori se $S= (\s{\bar{v}}{n})$ ed ogni $\bar{v}\in\V$ si scrive come
+combinazione lineare di un numero finito di vettori di $S$. $V = \Span(S)$
 
 \subsubsection{Lemma}
-Sia $S=(\s{v}{n})$ una seuqenza di generatori per uno spazio vettoriale $W$ legato, allora esiste $\bar{v}_i\in S:S\smallsetminus\{\bar v_i\}$ genera $W$ (``Possiamo sempre scartare almeno un vettore da $S$ ed otteniamo ancora una sequenza di generatori``).\\
-\textbf{Dimostrazione:} $S$ legata $\implies\exists\bar{v}_i\in S:\bar v_i=\sum_{j\ne i}^{}\ah_j\bar v_i$ \\
-Sia $\bar{w}\in\Span(S)\implies\exists\bh_j\ldots j=1\ldots n$ tali che $\bar{w}=\bh_1\bar{v}_1+\cdots+\bh_i\bar{v}_i+\cdots+\bh_n\bar{v}_n = \bh_1\bar{v}_1+\cdots+\bh_i\sum_{j\ne i}^{}(\bh_j+\bh_i\ah_j)\bar{v}_j$.\\
-$\implies \bar{w}$ è combinazione lineare di un numero finito di vettori di $S\smallsetminus\{\bar{v}_i\}$\\
-$\implies \Span(S\smallsetminus\{\bar{v}_i\})\subseteq\Span(S)$\\
-Viceversa ogni vettore di $\Span(S\smallsetminus\{\bar{v}_i\})$ è anche un vettore di $\Span(S)\implies\Span(S\smallsetminus\{\bar{v}_i\})\subseteq\Span(S)\implies$ \fbox{$\Span(S\smallsetminus\{\bar{v}_i\})=\Span(S)$}.
+Sia $S=(\s{v}{n})$ una seuqenza di generatori per uno spazio vettoriale $W$
+legato, allora esiste $\bar{v}_i\in S:S\smallsetminus\{\bar v_i\}$ genera $W$
+(``Possiamo sempre scartare almeno un vettore da $S$ ed otteniamo ancora una
+sequenza di generatori``).\\ \textbf{Dimostrazione:} $S$ legata
+$\implies\exists\bar{v}_i\in S:\bar v_i=\sum_{j\ne i}^{}\ah_j\bar v_i$ \\ Sia
+$\bar{w}\in\Span(S)\implies\exists\bh_j\ldots j=1\ldots n$ tali che
+$\bar{w}=\bh_1\bar{v}_1+\cdots+\bh_i\bar{v}_i+\cdots+\bh_n\bar{v}_n =
+    \bh_1\bar{v}_1+\cdots+\bh_i\sum_{j\ne i}^{}(\bh_j+\bh_i\ah_j)\bar{v}_j$.\\
+$\implies \bar{w}$ è combinazione lineare di un numero finito di vettori di
+$S\smallsetminus\{\bar{v}_i\}$\\ $\implies
+    \Span(S\smallsetminus\{\bar{v}_i\})\subseteq\Span(S)$\\ Viceversa ogni vettore
+di $\Span(S\smallsetminus\{\bar{v}_i\})$ è anche un vettore di
+$\Span(S)\implies\Span(S\smallsetminus\{\bar{v}_i\})\subseteq\Span(S)\implies$
+\fbox{$\Span(S\smallsetminus\{\bar{v}_i\})=\Span(S)$}.
 
 \subsection{Dimensione}
 Uno spazio vettoriale $\V$ ha \textbf{dimensione n}, e scriveremo $\dim\V = n$,
@@ -338,7 +347,8 @@ In $\Vx{n}$, spazio vettoriale di dimensione n,
     \item $m$ vettori $\s{v}{m}$ con $m < n$ non possono generare $\Vx{n}$;
     \item una sequenza di $n$ generatori di $\Vx{n}$ risulta essere anche libera, e
           quindi, individua una base di $\Vx{n}$;
-    \item una sequenza libera di $n$ vettori risulta essere anche un sistema di generatori e, quindi, individua una base di $\Vx{n}$.
+    \item una sequenza libera di $n$ vettori risulta essere anche un sistema di
+          generatori e, quindi, individua una base di $\Vx{n}$.
 \end{enumerate}
 \textbf{Dimostrazione:}
 \begin{enumerate}
@@ -374,33 +384,51 @@ allora:
               = n$ prendendo prima $B$ come libera e $B'$ come di generatori e poi
           viceversa].\\ \textbf{Definizione:} si dice dimensione di $\Vx{n}$ il numero di
           vettori di qualunque base.
-    \item Ogni vettori di $\Vx{n}$ si scrive in modo unico in componenti rispetto una fissata base \\ $B=(\s{\bar e}{n})\ \forall\bar v\in \Vx{n}\exists !(\s{\ah}{n})\in\mathbb{K}^n:\bar v = \ah_1\bar e_1+\cdots\ah_n\bar e_n$
+    \item Ogni vettori di $\Vx{n}$ si scrive in modo unico in componenti rispetto una
+          fissata base \\ $B=(\s{\bar e}{n})\ \forall\bar v\in \Vx{n}\exists
+              !(\s{\ah}{n})\in\mathbb{K}^n:\bar v = \ah_1\bar e_1+\cdots\ah_n\bar e_n$
     \item Posto $ E = \begin{bmatrix}\bar e_1 \\ \vdots \\ \bar e_n\end{bmatrix} \ e \ E'=\begin{bmatrix}\bar e'_1 \\ \vdots \\ \bar e'_n\end{bmatrix} \ \ A=\begin{bmatrix}a_{11} && a_{1n} \\ a_{n1} && a_{nn} \end{bmatrix}$ tale che $\implies E'=AE\implies$.
           \begin{enumerate}
               \item la matrice $A$ è invertibile $\implies \det(A)\ne0$
-              \item se $\bar v=(\s{x}{n})E=(\s{x'}{n})E'\implies {^{t}X} = {^{t}A}{^{t}X'}$ cambiamento di base \\$[XE\implies X'E'=X'AE={^{t}X}={^{t}A}{^{t}X'}]$
+              \item se $\bar v=(\s{x}{n})E=(\s{x'}{n})E'\implies {^{t}X} = {^{t}A}{^{t}X'}$
+                    cambiamento di base \\$[XE\implies\ X'E'=X'AE={^{t}X}={^{t}A}{^{t}X'}]$
           \end{enumerate}
 \end{enumerate}
 \textbf{Osservazione:}\begin{enumerate}
-    \item Sia $S= (\s{\bar e}{n})$ una sequenza libera $\implies$ ogni sottosequenza di $S$ è libera
-    \item Sia $T= (\s{g}{k})$ una sequenza di generatori $\implies$ ogni sovrasequenza di $T$ è di generatori.
+    \item Sia $S= (\s{\bar{e}}{n})$ una sequenza libera $\implies$ ogni sottosequenza di
+          $S$ è libera
+    \item Sia $T= (\s{g}{k})$ una sequenza di generatori $\implies$ ogni sovrasequenza di
+          $T$ è di generatori.
 \end{enumerate}
 \begin{itemize}
-    \item Se \textbf{aggiungo} vettori ad una \textbf{sequenza libera} ottengo ancora una sequenza libera (Teorema di completamento della base);
-    \item Se \textbf{tolgo} vettori ad una \textbf{sequenza libera} ottengo ancora una sequenza libera;
-    \item Se \textbf{aggiungo} vettori ad ua \textbf{sequenza di generatori} ottengo una sequenza di generatori;
-    \item Se \textbf{tolgo} vettori ad una \textbf{sequenza di generatori} ottengo una sequenza di generatori (Metodo degli scarti successivi).
+    \item Se \textbf{aggiungo} vettori ad una \textbf{sequenza libera} ottengo ancora una
+          sequenza libera (Teorema di completamento della base);
+    \item Se \textbf{tolgo} vettori ad una \textbf{sequenza libera} ottengo ancora una
+          sequenza libera;
+    \item Se \textbf{aggiungo} vettori ad ua \textbf{sequenza di generatori} ottengo una
+          sequenza di generatori;
+    \item Se \textbf{tolgo} vettori ad una \textbf{sequenza di generatori} ottengo una
+          sequenza di generatori (Metodo degli scarti successivi).
 \end{itemize}
 
 \subsubsection{Dimostrazione}
 \begin{enumerate}
-    \item Sia $S$ libera, supponiamo $S'\leq S$ legata $\implies S'=(\s{\bar e}{t})\ \exists\ \s{\ah}{t}$ tali che $\ah_1\bar e_1+\ldots+\ah_t\bar e_t=\underbar{0} \\
-              (\s{\ah}{t}) \ne (0\ldots0) \implies \ah\bar e_1+\ldots\ah_t\bar e_t+0\bar e_{t+1}+\ldots+0\bar e_n = \underbar{0}$ con $(\s{\ah}{t}0 \ 0 \ldots0)\ne\underbar{0} \implies S$ legata, \textbf{assurdo}.
-    \item Sia $T= (\s{\bar g}{k})$ di generatori e $U=(\s{\bar h}{r})$ vettori $\implies \ T \cup S$ è di generatori, perchè $\forall$ vettore di $\V$ si scrive come $\bh_1\bar g_1+\ldots+\bh_k\bar g_k = \bh_1 \bar g_1+\ldots+\bh_k \bar g_k + 0\bar h_1+\ldots+0\bar h_r$
+    \item Sia $S$ libera, supponiamo $S'\leq\ S$ legata $\implies\ S'= (\s{\bar{e}}{t})\
+              \exists\ \s{\ah}{t}$ tali che
+          $\ah_1\bar{e_1}+\ldots+\ah_t\bar{e_t}=\underbar{0} \\ (\s{\ah}{t}) \ne\
+              (0\ldots0)
+              \implies\ah\bar{e_1}+\ldots\ah_t\bar{e_t}+0\bar{e_{t+1}}+\ldots+0\bar{e_n} =
+              \underbar{0}$ con $ (\s{\ah}{t}0 \ 0 \ldots0)\ne\underbar{0} \implies\ S$
+          legata, \textbf{assurdo}.
+    \item Sia $T= (\s{\bar{g}}{k})$ di generatori e $U= (\s{\bar{h}}{r})$ vettori
+          $\implies\ T \cup\ S$ è di generatori, perchè $\forall$ vettore di $\V$ si
+          scrive come $\bh_1\bar{g_1}+\ldots+\bh_k\bar{g_k} = \bh_1
+              \bar{g_1}+\ldots+\bh_k \bar{g_k} + 0\bar{h_1}+\ldots+0\bar{h_r}$
 \end{enumerate}
 
 \subsection{Teorema}
-Sia $\Vx{n}$ uno spazio vettoriale con $\dim(V) = n$. Sia $X\subseteq\Vx{n}$ con $|X| = n$. Allora $X = V$.
+Sia $\Vx{n}$ uno spazio vettoriale con $\dim(V) = n$. Sia $X\subseteq\Vx{n}$
+con $|X| = n$. Allora $X = V$.
 
 \subsubsection{Dimostrazione}
 $X$ ammette una base $B'$ di n vettori $\implies$ tale base cobsta di $n$ vettori di $\Vx{n}$ liberi $\implies$ per le conseguenze di Steinitz take sequenza deve essere di generatori per $V\implies\Span(B') X\subseteq\Vx{n}=\Span(B')$ ne segue $X = V$.\\
@@ -414,7 +442,7 @@ Dati due sottospazi $U$ e $W$ di uno spazio vettoriale $\V$, la loro
 \]
 
 \subsubsection{Proposizione}
-Se $U, W$ sono sottospazi di uno spazio vettoriale $\V$, $U\cap W$ è un
+Se $U, W$ sono sottospazi di uno spazio vettoriale $\V$, $U\cap\ W$ è un
 sottospazio vettoriale di $\V$.
 
 \subsection{Somma}
@@ -426,33 +454,34 @@ Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$. Si dice
 \subsubsection{Proposizione}
 La somma $S$ di due sottospazi $U, W$ di uno spazio $\V$ è uno spazio
 vettoriale di $\V$.\\ \textbf{Dimostrazione:} basta osservare che se $v_1 e
-    v_2$ sono vettori di $U+W$ anche $\ah v_1+\bh v_2$ appartiene a $U+W$. Infatti
-se $v_1 = u_1+w_1$ e $v_2 = u_2 + w_2$ allora $\ah v_1 + \bh v_2 = (\ah u_1 +
-    \bh u_2)+(\ah w_1 + \bh w_2)$ e ciò dimostra l'asserto.
+    v_2$ sono vettori di $U+W$ anche $\ah{} v_1+\bh{} v_2$ appartiene a $U+W$.
+Infatti se $v_1 = u_1+w_1$ e $v_2 = u_2 + w_2$ allora $\ah{} v_1 + \bh{} v_2 =
+    (\ah{} u_1 + \bh{} u_2)+ (\ah{} w_1 + \bh{} w_2)$ e ciò dimostra l'asserto.
 
 \subsection{Somma diretta}
 La somma $S$ di due sottospazi $U,W$ di uno spazio vettoriale $\V$ si dice
-\textbf{diretta}, e si scrive $U\oplus W$, se pgni vettore di $S$ si può
+\textbf{diretta}, e si scrive $U\oplus{W}$, se pgni vettore di $S$ si può
 esprimere in modo unico, come somma di un vettore di $U$ e di uno di $W$.
 
 \subsubsection{Proposizione}
-La somma di due sottospazi $U, W$ di uno spazio vettoriale $\V$ è diretta $\iff
-    \ U \cap W = \{0\}$ \\ \textbf{Dimostrazione:} supponiamo che la somma di $U,W$
-sia diretta e sia, per assurdo, $\underbar{0} \ne x\in U\cap W$. Un qualunque
-vettore $v$ di $U+W$ è $v=u+w$ ove $u\in U \text{ and } w\in W$, ma anche
-$v=(u+x)+(w-x)$ ove $u+x\in U$ e $w-x\in W$. Pertanto, $v$ può essere espresso
-in più modi come somma di un elemento di $U$ e di uno di $W$, e questo è
-assurdo.\\ Viceversa, sia $U\cap W = \{\underbar{0}\}$ e, per assurdo, esista
-un vettore $v$ esprimibile in due modi diversi come somma di vettori di $V$ e
-$W$,
+La somma di due sottospazi $U, W$ di uno spazio vettoriale $\V$ è diretta
+$\iff{U} \cap{W} = \{0\}$ \\ \textbf{Dimostrazione:} supponiamo che la somma di
+$U,W$ sia diretta e sia, per assurdo, $\underbar{0} \ne{} x\in{U}\cap{} W$. Un
+qualunque vettore $v$ di $U+W$ è $v=u+w$ ove $u\in{U}\text{ and } w\in{W}$, ma
+anche $v= (u+x)+ (w-x)$ ove $u+x\in{U}$ e $w-x\in{W}$. Pertanto, $v$ può essere
+espresso in più modi come somma di un elemento di $U$ e di uno di $W$, e questo
+è assurdo.\\ Viceversa, sia $U\cap{W} = \{\underbar{0}\}$ e, per assurdo,
+esista un vettore $v$ esprimibile in due modi diversi come somma di vettori di
+$V$ e $W$,
 \[
     v=u_1+w_1=u_2+w_2
 \]
 in questo caso il vettore $u_1-u_2=w_2-w_1$ sarebbe un vettore non nullo di
-$U\cap W$ e ciò è contro l'ipotesi.
+$U\cap{W}$ e ciò è contro l'ipotesi.
 
 \subsubsection{Corollario}
-Uno spazio vettoriale $\V$ è somma diretta di due suoi sottospazi $U, W \iff{V} = U+W \text{ and } U \cap{W} = \{\underbar{0}\}$
+Uno spazio vettoriale $\V$ è somma diretta di due suoi sottospazi $U, W \iff{V}
+    = U+W \text{ and } U \cap{W} = \{\underbar{0}\}$
 
 \subsection{Formula di Grassmann}
 Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$ f.g. Allora:
@@ -461,18 +490,23 @@ Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$ f.g. Allora:
 \]
 
 \subsection{Definizione}
-Se $U$ è un sottospazio vettoriale di $\Vx{n}$ si dice \textbf{complemento diretto} di $U$ in $V$, un sottospazio vettoriale $W$ di $V_n$, tale che $U\oplus W = V$.
+Se $U$ è un sottospazio vettoriale di $\Vx{n}$ si dice \textbf{complemento
+    diretto} di $U$ in $V$, un sottospazio vettoriale $W$ di $V_n$, tale che
+$U\oplus{W} = V$.
 
 \section{Sistemi Lineari}
 \subsection{Determinante}
-Sia $A = (a_{ij})$ una matrice quadrata di ordine $n$, a elementi in un campo $\mathbb K$. Si dice \textbf{determinante}, e si indica con $\det(A)$ o $|A|$, la somma di tutti i suoi termini presi con il proprio segno. Cioè:
+Sia $A = (a_{ij})$ una matrice quadrata di ordine $n$, a elementi in un campo
+$\mathbb{K}$. Si dice \textbf{determinante}, e si indica con $\det(A)$ o $|A|$,
+la somma di tutti i suoi termini presi con il proprio segno. Cioè:
 \[
     \det(A) = \sum_{\ah\in S_n}^{}sgn(\ah)a_{1\ah(1)}a_{2\ah(2)}\cdots a_{n\ah(n)}
 \]
 
 \subsubsection{Proprietà}
 \begin{enumerate}
-    \item Se una colonna (o una riga) di una matrice è nulla, allora il determinante è nullo.
+    \item Se una colonna (o una riga) di una matrice è nulla, allora il determinante è
+          nullo.
     \item $\det(A) = \det({^{t}A})$, infatti, i termini estratti da ${^{t}A}$ sono tutti e soli i termini estratti da $A$. Sia $A= (a_{ij})$ e $B = ({^{t}A}) = (b_{ij})$ allora $b_{ij} = a_{ji}$. Se:
           \[
               b_{1\ah(1)}b_{2\ah(2)}\cdots b_{n\ah(n)}
@@ -481,9 +515,14 @@ Sia $A = (a_{ij})$ una matrice quadrata di ordine $n$, a elementi in un campo $\
           \[
               a_{\ah(1)1}a_{\ah(2)2}\cdots a_{\ah(n)n}
           \]
-          che per definizione, è un termine estratto da $A$ e individuato dalla permutazione $\ah^{-1}$. Dunquue, poichè $sgn (\ah) = sgn (\ah^{-1})$, possiamo concludere che $\det(A) = \det({^{t}A})$.
-    \item Se $A'$ è ottenuta da $A$ scambiando tra loro due righe (o colonne), allora $\det(A') = -\det(A)$. Basta osservare che, i termini della matrice $A'$ si ottengono da quelli di $A$ scambiando tra loro due termini, e quindi, il segno del determinante cambia.
-          Infatti, se $A'=(b_{ij})$ è ottenuta da $A= (a_{ij})$ scambiando la k-esima riga con l'h-esima, allora ogni termine estratto da $A'$
+          che per definizione, è un termine estratto da $A$ e individuato dalla
+          permutazione $\ah^{-1}$. Dunquue, poichè $sgn (\ah) = sgn (\ah^{-1})$, possiamo
+          concludere che $\det(A) = \det({^{t}A})$.
+    \item Se $A'$ è ottenuta da $A$ scambiando tra loro due righe (o colonne), allora
+          $\det(A') = -\det(A)$. Basta osservare che, i termini della matrice $A'$ si
+          ottengono da quelli di $A$ scambiando tra loro due termini, e quindi, il segno
+          del determinante cambia. Infatti, se $A'=(b_{ij})$ è ottenuta da $A= (a_{ij})$
+          scambiando la k-esima riga con l'h-esima, allora ogni termine estratto da $A'$
           \[
               b_{1\ah(1)}\cdot\ldots\cdot b_{k\ah(k)}\cdot\ldots\cdot b_{h\ah(h)}\cdot\ldots\cdot b_{n\ah(n)}
           \]
@@ -491,24 +530,37 @@ Sia $A = (a_{ij})$ una matrice quadrata di ordine $n$, a elementi in un campo $\
           \[
               a_{1\ah(1)}\cdot\ldots\cdot a_{h\ah(k)}\cdot\ldots\cdot a_{k\ah(h)}\cdot\ldots\cdot a_{n\ah(n)}
           \]
-          che risulta un termine di $A$ associato alla permutazione $(\sigma$ o $\ah)$, dove, $\sigma$ è lo scambio di $k$ con $h$. Ma essendo $sgn(\ah)=-sgn S (\ah\ o \ \sigma)$, risulta $|A'| = -|A|$
-    \item Se $A$ ha due righe (o due colonne) uguali, allora $\det(A) = 0$. Infatti, se $A$ ha due righe uguali, allora, scambiando tra loro queste due righe, non si altera la matrice $A$, e per la precendente proprietà, $\det(A) = -\det(A)$, da cui $\det(A) = 0$.
-    \item Se in $A$ una colonna $C_i$ è la somma di due n-uple $X_i, Y_i$, cioè se $A$ è del tipo:
+          che risulta un termine di $A$ associato alla permutazione $(\sigma$ o $\ah)$,
+          dove, $\sigma$ è lo scambio di $k$ con $h$. Ma essendo $sgn(\ah)=-sgn S (\ah\ o
+              \ \sigma)$, risulta $|A'| = -|A|$
+    \item Se $A$ ha due righe (o due colonne) uguali, allora $\det(A) = 0$. Infatti, se
+          $A$ ha due righe uguali, allora, scambiando tra loro queste due righe, non si
+          altera la matrice $A$, e per la precendente proprietà, $\det(A) = -\det(A)$, da
+          cui $\det(A) = 0$.
+    \item Se in $A$ una colonna $C_i$ è la somma di due n-uple $X_i, Y_i$, cioè se $A$ è
+          del tipo:
           \[
               (C_1\ \cdots\ X_i + Y_i\ \cdots\ C_n)
           \]
-          allora $|A|=|C_1 \cdots X_i \cdots C_n|+|C_1\cdots Y_i\cdots C_n|$. Analogamente per le righe.
-    \item Se $A'$ è una matrice ottenuta da $A= (C_1 \ C_2 \cdots C_n)$ moltiplicando per $k\in\mathbb K$ una sua colonna (o riga), allora
+          allora $|A|=|C_1 \cdots X_i \cdots C_n|+|C_1\cdots Y_i\cdots C_n|$.
+          Analogamente per le righe.
+    \item Se $A'$ è una matrice ottenuta da $A= (C_1 \ C_2 \cdots C_n)$ moltiplicando per
+          $k\in\mathbb K$ una sua colonna (o riga), allora
           \[
               |A'|=|C_1\ \cdots\ kC_i\ \cdots\ C_n|=k|C_1\ \cdots\ C_i\ \cdots\ C_n|=k|A|
           \]
     \item Se $A$ ha due colonne (o due righe) proporzionali, allora $\det(A) = 0$.
-    \item Se $A$ ha una colonna (o una riga) che è combinazione lineare di altre colonne (o righe), allora $\det(A) = 0$.
-    \item Se $A'$ è una matrice ottenuta da $A$ sommando ad una sua colonna (o riga) un multiplo di un'altra colonna (o riga), allora $|A'| = |A|$.
+    \item Se $A$ ha una colonna (o una riga) che è combinazione lineare di altre colonne
+          (o righe), allora $\det(A) = 0$.
+    \item Se $A'$ è una matrice ottenuta da $A$ sommando ad una sua colonna (o riga) un
+          multiplo di un'altra colonna (o riga), allora $|A'| = |A|$.
 \end{enumerate}
 
 \subsection{Eliminazione di Gauss}
-L'intendo del \textbf{metodo di eliminazione di Gauss} è quello di ridurre una matrice $A$ ad una matrice $A'$, detta \textbf{ridotta a gradini}, in quanto il determinante di quest'ultima può essere calcolato moltiplicando gli elementi presenti nella diagonale principale, che ha la forma:
+L'intendo del \textbf{metodo di eliminazione di Gauss} è quello di ridurre una
+matrice $A$ ad una matrice $A'$, detta \textbf{ridotta a gradini}, in quanto il
+determinante di quest'ultima può essere calcolato moltiplicando gli elementi
+presenti nella diagonale principale, che ha la forma:
 \[
     A' = \begin{bmatrix}
         a_{11} & a_{12} & \cdots & a_{1n} \\
@@ -527,16 +579,71 @@ Per farlo utilizziamo quelle che si chiamano \textbf{Mosse di Gauss}:
 Passi dell'algoritmo di Gauss:\\
 Indichiamo con $A$ una matrice non ridotta a gradini con $m$ righe e $n$ colonne.
 \begin{enumerate}
-    \item Sia $C_k$, con $1\leq\ k\leq\ n$, la prima colonna a paritre da sinistra che contiene almeno un termine $a$ non nullo.\\
-          Detta $R_1$ la prima riga della matrice, possono presentarsi\textbf{ due eventualità}:
+    \item Sia $C_k$, con $1\leq\ k\leq\ n$, la prima colonna a paritre da sinistra che
+          contiene almeno un termine $a$ non nullo.\\ Detta $R_1$ la prima riga della
+          matrice, possono presentarsi\textbf{ due eventualità}:
           \begin{enumerate}
               \item Se $a$ è un elemento di $R_1$, passiamo al punto $3$
-              \item Se $a\notin\ R_1$. Controlliamo se la matrice ottenuta dopo lo scambio è ridotta a gradini: se lo è possiamo fermarci, in caso contrario procediamo oltre.
+              \item Se $a\notin\ R_1$. Controlliamo se la matrice ottenuta dopo lo scambio è
+                    ridotta a gradini: se lo è possiamo fermarci, in caso contrario procediamo
+                    oltre.
           \end{enumerate}
-    \item L'obiettivo è annullare tutti gli elementi della k-esima colonna al di sotto di $a$. Sostituiamo ogni riga $R_i$, con $i>1$ e con k-esimo elemento non nullo, con $R_i+\lambda R_1, \lambda\in\mathbb{R} \ : \ R_i+\lambda R_1 = 0$.
-    \item Se la matrice risultante è ridotta a gradini, allora l'algoritmo termina, altrimenti ripetiamo i passi precedenti con la matrice ottenuta.
+    \item L'obiettivo è annullare tutti gli elementi della k-esima colonna al di sotto di
+          $a$. Sostituiamo ogni riga $R_i$, con $i>1$ e con k-esimo elemento non nullo,
+          con $R_i+\lambda\ R_1, \lambda\in\mathbb{R}: \ R_i+\lambda\ R_1 = 0$.
+    \item Se la matrice risultante è ridotta a gradini, allora l'algoritmo termina,
+          altrimenti ripetiamo i passi precedenti con la matrice ottenuta.
 \end{enumerate}
 
-\subsubsection{Algoritmo di Gauss in Julia}
+\subsection{Complemento algebrico}
+Sia $A= (a_{ij})$ una matrice quadrata di ordine $n$, a elementi in un campo
+$\mathbb{K}$. Si dice \textbf{complemento algebrico} dell'elemento $a_{hk}$, e
+si indica con $\Gamma_{hk}$, il determinate della matrice quadrata di orfdine
+$n-1$, ottenuta da $A$ cancellando la riga $h$ e la colonna $k$, preso con il
+segno $ (-1)^{h+k} $.
 
+\subsection{Teorema di Laplace I}
+Data una matrice quadrata $A$ di ordine $n$, la somma dei prodotti degli
+elementi di una sua riga (o colonna), per i rispettivi complementi algebrici, è
+il determinate di $A$. Pertanto, la formula del calcolo del determinanto di $A=
+    (a_{ij})$ rispetto alla i-esima riga è:
+\[
+    |A| = \sum_{j=1}^n a_{ij}\Gamma_{ij} \ \ \forall i = 1, 2, \ldots, n
+\]
+Rispetto alla j-esima colonna è:
+\[
+    |A| = \sum_{i=1}^n a_{ij}\Gamma_{ij} \ \ \forall j = 1, 2, \ldots, n
+\]
+L'utilizzo dei complementi algebrici consente, quindi il calcolo del
+determinante di una matrice di ordine $n$ calcolando determinanti di matrici di
+ordine inferiore.
+
+\subsection{Teorema di Laplace II}
+Sia $A$ una matrice quadrata di ordine $n$. La somma dei prodotti degli
+elementi di una sua riga (o colonna) per i complementi elgebrici degli elementi
+di un'altra riga (o colonna) vale zero.
+
+\subsection{Teorema di Binet}
+Date due matrici quadrate di ordine $n$, $A$ e $B$, il determinante della
+matrice prodotto $AB$ è uguale al prodotto dei determinanti delle due matrici:
+\[
+    |AB| = |A||B|
+\]
+
+\subsection{Matrici Invertibili}
+Una matrice quadrata $A$ di ordine $n$ si dice \textbf{invertibile} se esiste
+una matrice $B$ quadrata e dello stesso ordine, tale che $AB = BA = I_n$, dove
+$I_n$ è la matrice identità di ordine $n$. In tal caso, la matrice $B$ si dice
+\textbf{matrice inversa} di $A$ e si indica con $A^{-1}$.
+
+\subsubsection{Teorema}
+Una matrice quadrata $A = (a-{ij})$, di ordine $n$, è invertibile
+$\iff|A|\ne0$. In questo caso, la matrice inversa di $A$ risulta essere
+$A^{-1}=|A|^{-1}\ {^{t}A_a}$ dove ${^{t}A_a}$ è la trasposta dell'aggiunta di
+$A$.
+
+\subsection{Dipendenza lineare e determinanti}
+Data una matrice $A\in{\mathbb{K}^{m,n}} (K)$ si dice \textbf{minore di ordine
+    k}, estratto da $A$, una matrice quadrata di ordine $k$ ()
 \end{document}
+
