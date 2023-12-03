@@ -6,7 +6,17 @@
 \usepackage{amssymb}
 \usepackage{mathtools}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{tkz-euclide} 
 \usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 \DeclareMathOperator{\Span}{span}
 \renewcommand\fbox{\fcolorbox{red}{white}}
@@ -489,6 +499,82 @@ Siano $U, W$ due sottospazi di uno spazio vettoriale $\V$ f.g. Allora:
     \dim(U+W) = \dim U + \dim W - \dim(U\cap W)
 \]
 
+La formula di Grassmann richiama il cosiddetto principio di
+induzione/esclusione. Siano $A$ e $B$ due insiemi finiti, $\rightarrow |A \cup
+    B| = |A| + |B| - |A\cap B|$.
+
+\begin{minipage}{0.2\textwidth}
+    \begin{tikzpicture}
+        \tkzDefPoint(0,0){A}
+        \tkzDefPoint(1,0){B}
+        \begin{scope}
+            \tkzClipCircle(A,B) \tkzClipCircle(B,A)
+            \tkzFillCircle[color=blue!20](A,B)
+        \end{scope}
+        \tkzDrawCircle(A,B)
+        \tkzDrawCircle(B,A)
+    \end{tikzpicture}
+\end{minipage}%
+\begin{minipage}{0.4\textwidth}
+    \[
+        |A\cup B| = |A\setminus B| + |A\setminus B| + |A\cap B|\]
+    \[
+        |A\setminus B| = |A| - |A\cap B|
+    \]
+    \[
+        |B\setminus A| = |B| - |A\cap B|
+    \]
+    \[
+        \implies |A\cup B| = |A\cap B| + |A| - |A\cap B| + |B| - |A\cap B| = |A| + |B| - |A\cap B|
+    \]
+    \vspace{2pt}
+\end{minipage}
+
+In generale se $B_u$ base di $U$ e $B_w$ base di $W$ allora $B_u\cup B_w = $
+generatori di $U+W$. Ma \textbf{non è vero} che $B_u\cap B_w$ base di $U\cap
+    W$. Al massimo $B_u\cap B_w$ è una sequenza libera di generatori di $U\cap W$.
+
+\subsubsection{Conseguenza del teorema di Grassmann}
+Il $max(dim (U), dim (W))\leq dim(U+W)\leq min (dim (U)+dim (W), dim (V_n))$\\
+$max (0, dim (U) + dim (W) - dim(V_n))\leq dim (U\cap W)\leq min (dim (U), dim
+    (W))$ \\ $U\cap W\leq U, W\leq U+W$
+
+\subsubsection{Dimostrazione}
+Idea: se $U\oplus W$ cioè $dim (U\cap W) = 0$ allora $dim (U+W) = dim (U) + dim
+    (W) - 0 = dim (U) + dim (W) - dim (U\cap W)$. Supponiamo $dim (U\cap W) = i > 0
+    \implies \exists$ una base $B_i$ di $U\cap W$, formata da vettori che stanno
+sia in $U$ che in $W$ e sono una sequenza libera. Applicando il teorema del
+completamento della base con vettori di $U$ estendiamo $B_i$ ad una base $B_u$
+di $U$ (e poniamo $B_u = B_i\cup B_n'$), similmente estendiamo $B_i$ ad una
+base $B_w$ di $W$ (e poniamo $B_w' = B_w \setminus B_i$).
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\linewidth]{grassman.png}
+    \caption{Grassman}
+    \label{fig:grassman}
+\end{figure}
+
+\# totale vettori = $m-i+i+l-i = m+l-i = dim U + dim U - dim U\cap W$ \\
+\textbf{Osservazione:} $B_u\cup B_w = B_u'\cup B_i\cup B_w'$ è una sequenza di generatori di $U+W$ perchè unione di una base di $U$ e di una base di $W$.\\
+\textbf{Dobbiamo dimostrare che è una sequenza libera:} supponiamo esistano $ (\s{\ah}{m-1}, \s{\bh}{i}, \s{\ch}{e-i})\ne\underbar{0}$ tali che
+$\ah_1\bar{u}_1+\cdots\ah_{m-i}\bar{u}_{m-i}+\bh_1\bar{e}_1+\cdots+\bh_i\bar{e}_i+\cdots+\ch_1\bar{w}_1+\cdots+\ch_{l-i}\bar{w}_{l-i} = \underbar{0} \implies$ è impossibile che sia $(\s{\ah}{m-i}) = (0\ 0\cdots\ 0)$ perchè altrimenti avremmo una combinazione lineare di vettori di $B_w$ con coefficienti non tutti $0$ che dà $\underbar{0}$.
+$\implies$ possiamo scrivere
+\[
+    \underline{\bh_1\bar{e}_1+\cdots+\bh_i\bar{e}_i+\ch_1\bar{w}_1+\cdots+\ch_{l-i}\bar{w}_{l-i}} =
+\]
+\[
+    \substack{\in \\ \mathrm{span}(B_w) = W}
+\]
+
+\[
+    \underline{= -\ah_1\bar{u}_1\cdots-\ah_{m-i}\bar{u}_{m-i}}
+\]
+\[
+    \substack{\in \\ \mathrm{span}(B_u') \leq U}
+\]
+......... finire
+
 \subsection{Definizione}
 Se $U$ è un sottospazio vettoriale di $\Vx{n}$ si dice \textbf{complemento
     diretto} di $U$ in $V$, un sottospazio vettoriale $W$ di $V_n$, tale che
@@ -644,6 +730,146 @@ $A$.
 
 \subsection{Dipendenza lineare e determinanti}
 Data una matrice $A\in{\mathbb{K}^{m,n}} (K)$ si dice \textbf{minore di ordine
-    k}, estratto da $A$, una matrice quadrata di ordine $k$ ()
-\end{document}
+    k}, estratto da $A$, una matrice quadrata di ordine $k$ (ovviaente $k\leq{m}$ e
+$k\leq{n}$) ottenuta da $A$ cancellando $m-k$ righe e $n-k$ colonne.\\
 
+\subsubsection{Teorema}
+Una sequenza $S = (\s{v}{k})$ di $k$ vettori $ (k\leq{n})$ dello spazio
+vettoriale $\Vx{n}$ è libera $\iff$ dalla matrice $A$, che ha nelle proprie
+righe (o colonne) le componenti dei vettori di $S$ in una base $B$ di $\Vx{n}$,
+si può estrarre un minore di ordine $k$ con determinante non nullo.
+
+\subsection{Rango}
+Sia $A$ una matrice di $K^{m,n} (\mathbb{K})$. Si dice \textbf{rango} della
+matrice $A$, e si indica con $rK (A)$, il massimo ordine di un minore non nullo
+estratto da $A$.\\ In modo equivalente, il rango di una matrice $A$ è $p$
+quando esiste un minore di ordine $p$ non nullo, ma non esiste alcun minore di
+ordine $p+1$ non nullo.\\
+
+\subsubsection{Osservazioni}
+Data una matrice $A \in K^{m,n} (\mathbb{K})$
+\begin{enumerate}
+    \item $rK (A) = 0\iff{} A$ è la matrice nulla;
+    \item il rango di $A$ coincide con il rango della sua trasposta ${^{t}A}$;
+    \item $rK (A) \leq min\{m,n\}$;
+    \item se $B$ è una matrice di $K^{n,p} (\mathbb{K})$, il rango della matrice prodotto
+          $AB$ è minore o guale, si adel rango di $A$, che di queòòp di $B$.
+    \item se $A$ e $B$ sono matrici quadrate dello stesso ordine e $A$ è invertibile,
+          allora $rK (AB) = rK (BA) = rK (B)$.
+\end{enumerate}
+
+\subsection{Kronecker}
+Gli spazi vettoriali $\Span(R)$ ed $\Span(C)$, di una matrice $A\in K^{m,n}
+    (\mathbb{K})$, hanno la stessa dimensione e tale dimensione coincide con il
+rango di $A$.
+
+\subsection{Osservazione}
+Il rango di una matrice $A$ coincide con il massimo numero di righe o di
+colonne linearmente indipendenti estraibili dalla matrice $A$.
+
+\subsubsection{Corollario}
+Se $A$ è una matrice quadrata di ordine $n$, con elementi in un campo
+$\mathbb{K}$, le seguenti condizioni sono equivalenti:
+\begin{enumerate}
+    \item $|A|\ne0$;
+    \item $A$ è invertibile
+    \item $rK (A) = n$;
+    \item le righe sono linearmente indipendenti e, quindi sono base di $\mathbb{K}^n$;
+    \item le colonne sono linearmente indipendenti e, quindi sono base di $\mathbb{K}^n$;
+\end{enumerate}
+
+\subsection{Teorema degli orlati}
+Una matrice $A\in K^{m,n} (\mathbb{K})$ ha rango $r$ se e solo se esiste un
+minore $M$ di ordine $r$ a determinante non nullo e tutti i minori di ordine
+$r+1$, che contengono $M$, hanno determinante nullo.
+
+\subsection{Sistemi Lineari}
+Un \textbf{sistema lineare} è insieme di $m$ equazioni lineari in $n$ incognite
+a coefficineti in un campo $\mathbb{K}$, un sistema lineare si può
+rappresentare come:
+\[
+    \begin{cases}
+        a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\
+        a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\
+        \vdots                                           \\
+        a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m
+    \end{cases}
+\]
+con $a_{ij}, b_i \in \mathbb{K}$. Gli elementi $a_{ij}$ si chiamano
+coefficienti delle incognite, gli elementi $b_i$ si chiamano termini noti.\\ La
+matrice $m\times n$
+\[
+    A = \begin{bmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn}
+    \end{bmatrix}
+\]
+è detta matrice dei coefficienti o \textbf{matrice incompleta} del sistema.\\
+La matrice $n\times 1$
+\[
+    X = \begin{bmatrix}
+        x_1    \\
+        x_2    \\
+        \vdots \\
+        x_n
+    \end{bmatrix}
+\]
+è detta matrice delle incognite.\\
+La matrice $m\times 1$
+\[
+    B = \begin{bmatrix}
+        b_1    \\
+        b_2    \\
+        \vdots \\
+        b_m
+    \end{bmatrix}
+\]
+è detta matrice dei termini noti.\\
+Infine, la matrice $m\times (n+1)$
+\[
+    A|B = \begin{bmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} & b_1    \\
+        a_{21} & a_{22} & \cdots & a_{2n} & b_2    \\
+        \vdots & \vdots & \ddots & \vdots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn} & b_m
+    \end{bmatrix}
+\]
+è detta \textbf{matrice completa} del sistema.
+
+\subsubsection{Sistema omogeneo}
+Un sistema lineare si dice \textbf{omogeneo} se tutti i termini noti sono
+nulli. Utilizzando il prodotto tra matrici, il sistema lineare assume la
+seguente forma:
+\[
+    AX = B
+\]
+In particolare, un sistema lineare omogeneo, in forma matriciale, si scrive
+\[
+    AX = \underbar{0}
+\]
+Si è soliti chiamare \textbf{sistema lineare omogeneo associato} ad $AX = B$,
+il sistema lineare omogeneo ottenuto da $AX = B$ ponendo $B = \underbar{0}$.
+
+\subsubsection{Sistema compatibile}
+Sia $AX = B$ un sistema lineare in $m$ equazioni e $n$ incognite. Si dice che
+tale sistema ha soluzione, ovvero che il \textbf{sistema è compatibile}, se
+esiste almeno un $n$-upla $ (\s{\ah}{n})$ di elementi di $\mathbb{K}$ che
+risolve tutte le equazioni del sistema. Tale $n$-upla è detta
+\textbf{soluzione}.\\ \textbf{Osservazione:} affermare hce una $n$-upla $
+    (\s{\ah}{n})$ di elementi di $\mathbb{K}$ è soluzione di un sistema $AX = B$,
+pensando tale sistema scritto nella forma, equivale a dire che
+\[
+    \ah_1C_1 + \ah_2C_2 + \cdots + \ah_nC_n = B
+\]
+cioè che $B$ è combinazione lineare delle colonne della matrice $A$ secondo i
+coefficienti $\ah_1, \ah_2, \ldots, \ah_n$.
+
+\subsection{Rouché-Capelli}
+Un sistema lineare $AX = B$, in $m$ equazioni e $n$ incognite, è compatibile
+$\iff rk (A) = rk (A|B)$.
+
+\subsubsection{Dimostrazione}
+
+\end{document}
