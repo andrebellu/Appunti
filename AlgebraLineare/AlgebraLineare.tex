@@ -871,5 +871,26 @@ Un sistema lineare $AX = B$, in $m$ equazioni e $n$ incognite, è compatibile
 $\iff rk (A) = rk (A|B)$.
 
 \subsubsection{Dimostrazione}
+Se il sistema $AX = B$ ha soluzione, esiste una $n$-upla di $\mathbb{K}$ $
+    (\s{\ah}{n})$, che ne soddisfa tutte le equazioni, tale, cioè, che:
+\[
+    \ah_1C_1 + \ah_2C_2 + \cdots + \ah_nC_n = B
+\]
+e quindi, B risulta essere combinazione lineare delle colonne della matrice A.
+Pertanto, il massimo numero di colonne linearmente indipendenti, estraibili
+dalla matrice $A$, coincide con il massimo numero di colonne linearmente
+indipendeti, estraibili dalla matrice $A|B$, e $rK (A) = rK (A|B)$. Viceversa
+se $rK (A) = rK (A|B)$, allora il massimo numero di colonne linearmente
+indipendenti, estraibili dalla matrice $A$, coincide con il massimo numero di
+colonne linearmente indipendenti, estraibili dalla matrice $A|B$, di
+conseguenza, la colonna $B$ risulta una combinazione lineare delle colonne
+della matrice $A$, e quindi, esiste una $n$-upla di $\mathbb{K}$ $
+    (\s{\ah}{n})$, tale che:
+\[
+    \ah_1C_1+\ah_2C_2+\cdots+\ah_nC_n = B
+\]
+Pertanto, il sistema $AX = B$ ha soluzione.
+
+\subsection{Cramer}
 
 \end{document}
