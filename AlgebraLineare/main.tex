@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tkz-euclide}
+\usepackage{subfiles}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\DeclareMathOperator{\Span}{span}
+\renewcommand\fbox{\fcolorbox{red}{white}}
+\newcommand{\sa}{\Span(\mathbb{A})}
+\newcommand{\V}{\mathbb{V} (\mathbb{K})}
+\newcommand{\s}[2]{#1_1, #1_2, \ldots, #1_{#2}}
+\newcommand{\Vx}[1]{\mathbb{V}_#1 (\mathbb{K})}
+\newcommand{\ah}{\alpha}
+\newcommand{\bh}{\beta}
+\newcommand{\ch}{\gamma}
+
+
+\title{Algebra Lineare e Geometria Analitica}
+\author{Andrea Bellu}
+\date{2023/2024}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\subfile{sections/spazi_vettoriali.tex}
+
+\subfile{sections/sistemi_lineari.tex}
+
+\subfile{sections/forme_bilineari.tex}
+
+\end{document}

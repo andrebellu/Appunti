@@ -1,0 +1,37 @@
+// useful keybindings for latex
+[
+    {
+        "key": "ctrl+B",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && resourceExtname == .tex",
+        "args": {
+            "snippet": "\\textbf{${TM_SELECTED_TEXT}$0}"
+        }
+    },
+    {
+        "key": "ctrl+I",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == latex",
+        "args": {
+            "snippet": "\\textit{${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "shift+4",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                {
+                    "command": "type",
+                    "args": {"text": "$$" },
+                },
+                "cursorLeft",
+            ],
+        },
+        "when": "editorTextFocus && (!editorHasSelection) && (editorLangId == latex || editorLangId == tex)"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    }
+]

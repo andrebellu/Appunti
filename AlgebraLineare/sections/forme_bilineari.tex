@@ -1,0 +1,120 @@
+%!TeX root = subfile
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Forme Bilineari e Prodotti Scalari}
+
+% pagine 85 86 87 finisci
+
+\subsection{Forme Bilineari}
+Sia $\V$ uno spazio vettoriale sul campo $\mathbb{K}$. Una \textbf{forma
+    bilineare} su $\mathbb{V}$ è un'applicazione
+\[
+    *: \V \times \V \rightarrow \mathbb{K}
+\]
+tale che $\forall \textbf{v,u,w} \in \mathbb{V} \text{ e } k\in\mathbb{K}$
+\begin{enumerate}
+    \item $ (\textbf{v}+\textbf{u})* \textbf{w} = (\textbf{v}*\textbf{w})+ (\textbf{u}*\textbf{w})$
+    \item $\textbf{v}*(\textbf{u}+\textbf{w}) = (\textbf{v}*\textbf{u})+ (\textbf{v}*\textbf{w})$
+    \item $ (k\textbf{v})*\textbf{u}=\textbf{v}* (k\textbf{u})=k (\textbf{v}*\textbf{u})$
+\end{enumerate}
+Si deduce che $0*\textbf{v} = \textbf{v}*0 = 0, \forall\ \textbf{v}\in\mathbb{V}$.
+
+\subsection{Forma bilineare simmetrica}
+Una forma bilineare $*$, su uno spazio vettoriale $\V$, si dice \textbf{forma
+    bilineare simmetrica o prodotto scalare} se, comunque si considerino due
+vettori $\textbf{v}$ e $\textbf{w}$ in $\V$, si ha:
+\[
+    \textbf{v}*\textbf{w} = \textbf{w} * \textbf{v}\]
+
+\subsection{Prodotti scalari e ortogonalità}
+In uno spazio vettoriale $\V$, con prodotto scalare ''$\cdot$'', due vettori
+$\textbf{v}$ e $\textbf{w}$ si dicono \textbf{ortogonali} e si scrive
+$\textbf{v}\perp\textbf{w}$ se $\textbf{v}\cdot\textbf{w} = 0$.
+
+\subsection{Complemento ortogonale}
+Sia $\V$ uno spazio vettoriale con prodotto scalare ''$\cdot$'' e sia $A$ un
+sottoinsieme, non vuoto, di $\mathbb{V}$. Si dice \textbf{complemento
+    ortogonale} di $A$ in $\Vx{n}$, l'insieme (si legge $A$ ortogonale)
+\[
+    A^{\perp} = \textbf{v}\in \mathbb{V}\ |\ \textbf{v}\cdot \textbf{w} = 0,\forall\textbf{w}\in A
+\]
+
+\subsubsection{Proposizione}
+Sia $\V$ uno spazio vettoriale con prodotto scalare ''$\cdot$'' e sia
+$\textbf{w}$ un vettore di $\V$ tale che $\textbf{w}\cdot\textbf{w}\ne0$.
+Allora, ogni vettore \textbf{v} di $\V$ si può esprimere come somma di due
+vettori $\textbf{w}_1$ e $\textbf{w}_2$, dove $\textbf{w}_1$ è ortogonale a
+$\textbf{w}$ e $\textbf{w}_2$ è proporzionale a $\textbf{w}$. \\
+\textbf{Dimostrazione:} Ogni vettore $\textbf{v}\in\V$ si può scrivere come:
+\[
+    \textbf{v} = \left(\textbf{v}-\dfrac{\textbf{v}\cdot \textbf{w}}{\textbf{w}\cdot \textbf{w}}\right) + \left(\dfrac{\textbf{v}\cdot \textbf{w}}{\textbf{w}\cdot \textbf{w}}\textbf{w}\right)
+\]
+Un calcolo diretto dimostra che $\textbf{w}_1 =
+    \textbf{v}-\dfrac{\textbf{v}\cdot \textbf{w}}{\textbf{w}\cdot
+        \textbf{w}}\textbf{w}$ è ortogonale $\textbf{w}$ mentre, ovviamente,
+$\textbf{w}_2 = \dfrac{\textbf{v}\cdot \textbf{w}}{\textbf{w}\cdot
+        \textbf{w}}\textbf{w}$ è proporzionale a $\textbf{w}$, secondo lo scalare
+$\dfrac{\textbf{v}\cdot \textbf{w}}{\textbf{w}\cdot \textbf{w}}$
+
+\subsection{Coefficiente di Fourier}
+Sia $\V$ uno spazio vettoriale con prodotto scalare ''$\cdot$'' e sia
+$\textbf{w}$ un vettore di $\mathbb{V}$ tale che
+$\textbf{w}\cdot\textbf{w}\ne0$. Se $\textbf{v}$ è un vettore di $\V$, si dice
+\textbf{coefficiente} o \textbf{componente di Fourier} di $\textbf{v}$ lungo
+$\textbf{w}$ il numero reale
+\[
+    \textbf{v}_w = \dfrac{\textbf{v}\cdot \textbf{w}}{\textbf{w}\cdot \textbf{w}}
+\]
+e si dice \textbf{proiezione} di $\textbf{v}$ su $\textbf{w}$ il vettore $
+    \overrightarrow{\textbf{v}} = \textbf{v}_w\textbf{w}$.
+
+\subsection{Forme Quadratiche}
+Sia $\V$ uno spazio vettoriale con prodotto scalare ''$\cdot$''. Si dice
+\textbf{forma quadratica}, associata al prodotto scalare ''$\cdot$'',
+l'applicazione
+\[
+    q: \V \rightarrow \mathbb{K}
+\]
+\[
+    \textbf{v}\rightarrow\textbf{v}\cdot\textbf{v}
+\]
+
+\subsection{Spazi con prodotto scalare definito positivo}
+Un prodotto scalare, assegnato in uno spazio vettoriale $\V$ su un campo
+ordinato, si dice \textbf{definito positivo} se
+$\forall\textbf{v}\in\mathbb{V},\textbf{v}\cdot\textbf{v}\geq0$ e
+$\textbf{v}\cdot\textbf{v}=0\iff\textbf{v}=\underbar{0}$
+
+Una forma quadratica si dice \textbf{definita positiva} se tale è il prodotto
+scalare cui essa è associata.
+
+\subsection{Norma}
+Dato un vettore $\textbf{v}\in\mathbb{V}^{\circ}(\mathbb{R})$ si dice
+\textbf{norma} di $\textbf{v}$ il numero reale positivo o nullo
+\[
+    ||\textbf{v}|| = \sqrt{\textbf{v}\cdot\textbf{v}} = \sqrt{\textbf{v}^2} = \sqrt{q(\textbf{v})}
+\]
+
+\subsection{Versore}
+Sia $\textbf{v}\ne0$ un vettore di $\mathbb{V}^{\circ} (\mathbb{R})$, si dice
+\textbf{versore} di $\textbf{v}$ il vettore
+\[
+    \textbf{v}' = \dfrac{\textbf{v}}{||\textbf{v}||}
+\]
+
+\subsection{Disuguaglianza di Cauchy-Schwarz}
+Siano \textbf{v} e \textbf{u} due vettori di $\mathbb{V}^{\circ} (\mathbb{R})$.
+Allora
+\[
+    |\textbf{v}\cdot\textbf{u}|\leq||\textbf{v}||\cdot||\textbf{u}||
+\]
+ove $|v\cdot u|$ indica il valore assoluto di $\textbf{v}\cdot\textbf{u}$.
+
+\subsubsection{Dimostrazione}
+
+\subsection{Disuguaglianza triangolare}
+
+\subsubsection{Dimostrazione}
+
+\end{document}
