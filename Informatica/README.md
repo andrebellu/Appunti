@@ -2,90 +2,90 @@
 
 ## Table of Contents
 
--   [Introduzione a C](#introduzione-a-c)
-    -   [Table of Contents](#table-of-contents)
-    -   [Tipi di dato](#tipi-di-dato)
-    -   [Regole di scrittura](#regole-di-scrittura)
-    -   [Sintassi per dichiarazione delle variabili](#sintassi-per-dichiarazione-delle-variabili)
-        -   [Assegnamento variabili](#assegnamento-variabili)
-    -   [Operatori aritmetici e di casting](#operatori-aritmetici-e-di-casting)
-        -   [Operatori aritmetici](#operatori-aritmetici)
-        -   [Operatore di casting](#operatore-di-casting)
-    -   [Operatori Logici Booleani](#operatori-logici-booleani)
-    -   [Astrazione procedurale](#astrazione-procedurale)
-        -   [Main function](#main-function)
-        -   [Scanf](#scanf)
-        -   [Printf](#printf)
--   [Astrazione sul controllo](#astrazione-sul-controllo)
-    -   [If](#if)
-        -   [Caso 1](#caso-1)
-        -   [Caso 2](#caso-2)
-        -   [Caso 3](#caso-3)
-    -   [Loops](#loops)
-        -   [For](#for)
-        -   [While](#while)
-        -   [Do-while](#do-while)
-    -   [Numeri random](#numeri-random)
-        -   [Rand](#rand)
-        -   [Srand](#srand)
-    -   [Vettori](#vettori)
-    -   [Matrici](#matrici)
--   [Puntatori](#puntatori)
-    -   [Dichiarazione di puntatori](#dichiarazione-di-puntatori)
-    -   [Operatore \&](#operatore-)
-    -   [**Operatore \***](#operatore--1)
-        -   [Esempio](#esempio)
-        -   [Puntatori con vettori](#puntatori-con-vettori)
-    -   [Stringhe (Array di caratteri)](#stringhe-array-di-caratteri)
-        -   [strlen()](#strlen)
-        -   [gets()](#gets)
-        -   [puts()](#puts)
-        -   [strcpy()](#strcpy)
-        -   [strncpy()](#strncpy)
-        -   [strcat()](#strcat)
-        -   [strncat()](#strncat)
-        -   [strcmp()](#strcmp)
--   [Funzioni](#funzioni)
-    -   [Definire e chiamare una funzione](#definire-e-chiamare-una-funzione)
-    -   [Return nelle funzioni](#return-nelle-funzioni)
-    -   [Passaggio di parametri](#passaggio-di-parametri)
-        -   [Passaggio per valore](#passaggio-per-valore)
-        -   [Passaggio per riferimento](#passaggio-per-riferimento)
--   [Operazioni su sequenze](#operazioni-su-sequenze)
-    -   [Ricerca completa](#ricerca-completa)
-    -   [Ricerca Binaria](#ricerca-binaria)
-    -   [Inserimento all'inizio](#inserimento-allinizio)
-    -   [Inserimento alla fine](#inserimento-alla-fine)
-    -   [Inserimento diretto](#inserimento-diretto)
-    -   [Cancellazione](#cancellazione)
--   [Esercizi da svolgere:](#esercizi-da-svolgere)
+- [Introduzione a C](#introduzione-a-c)
+  - [Table of Contents](#table-of-contents)
+  - [Tipi di dato](#tipi-di-dato)
+  - [Regole di scrittura](#regole-di-scrittura)
+  - [Sintassi per dichiarazione delle variabili](#sintassi-per-dichiarazione-delle-variabili)
+    - [Assegnamento variabili](#assegnamento-variabili)
+  - [Operatori aritmetici e di casting](#operatori-aritmetici-e-di-casting)
+    - [Operatori aritmetici](#operatori-aritmetici)
+    - [Operatore di casting](#operatore-di-casting)
+  - [Operatori Logici Booleani](#operatori-logici-booleani)
+  - [Astrazione procedurale](#astrazione-procedurale)
+    - [Main function](#main-function)
+    - [Scanf](#scanf)
+    - [Printf](#printf)
+- [Astrazione sul controllo](#astrazione-sul-controllo)
+  - [If](#if)
+    - [Caso 1](#caso-1)
+    - [Caso 2](#caso-2)
+    - [Caso 3](#caso-3)
+  - [Loops](#loops)
+    - [For](#for)
+    - [While](#while)
+    - [Do-while](#do-while)
+  - [Numeri random](#numeri-random)
+    - [Rand](#rand)
+    - [Srand](#srand)
+  - [Vettori](#vettori)
+  - [Matrici](#matrici)
+- [Puntatori](#puntatori)
+  - [Dichiarazione di puntatori](#dichiarazione-di-puntatori)
+  - [Operatore \&](#operatore-)
+  - [**Operatore \***](#operatore--1)
+    - [Esempio](#esempio)
+    - [Puntatori con vettori](#puntatori-con-vettori)
+  - [Stringhe (Array di caratteri)](#stringhe-array-di-caratteri)
+    - [strlen()](#strlen)
+    - [gets()](#gets)
+    - [puts()](#puts)
+    - [strcpy()](#strcpy)
+    - [strncpy()](#strncpy)
+    - [strcat()](#strcat)
+    - [strncat()](#strncat)
+    - [strcmp()](#strcmp)
+- [Funzioni](#funzioni)
+  - [Definire e chiamare una funzione](#definire-e-chiamare-una-funzione)
+  - [Return nelle funzioni](#return-nelle-funzioni)
+  - [Passaggio di parametri](#passaggio-di-parametri)
+    - [Passaggio per valore](#passaggio-per-valore)
+    - [Passaggio per riferimento](#passaggio-per-riferimento)
+- [Operazioni su sequenze](#operazioni-su-sequenze)
+  - [Ricerca completa](#ricerca-completa)
+  - [Ricerca Binaria](#ricerca-binaria)
+  - [Inserimento all'inizio](#inserimento-allinizio)
+  - [Inserimento alla fine](#inserimento-alla-fine)
+  - [Inserimento diretto](#inserimento-diretto)
+  - [Cancellazione](#cancellazione)
+- [Esercizi da svolgere:](#esercizi-da-svolgere)
 
 ## Tipi di dato
 
--   `int`: Integer type (%d)
--   `short int`: Short integer type (%hd)
--   `long`: Long integer type (%ld)
--   `long long`: Long long integer type (%lld)
--   `float`: Single-precision floating-point type (%f)
--   `double`: Double-precision floating-point type (%lf)
--   `long double`: Extended-precision floating-point type (%lf)
--   `char`: Character type (%c) <br>
+- `int`: Integer type (%d)
+- `short int`: Short integer type (%hd)
+- `long`: Long integer type (%ld)
+- `long long`: Long long integer type (%lld)
+- `float`: Single-precision floating-point type (%f)
+- `double`: Double-precision floating-point type (%lf)
+- `long double`: Extended-precision floating-point type (%lf)
+- `char`: Character type (%c) <br>
 
-    **Unsigned Types**
+  **Unsigned Types**
 
--   `unsigned int`: Unsigned Integer type (%u)
--   `unsigned short`: Unsigned Short integer type (%hu)
--   `unsigned long`: Unsigned Long integer type (%lu)
--   `unsigned long long`: Unsigned Long long integer type (%llu)
+- `unsigned int`: Unsigned Integer type (%u)
+- `unsigned short`: Unsigned Short integer type (%hu)
+- `unsigned long`: Unsigned Long integer type (%lu)
+- `unsigned long long`: Unsigned Long long integer type (%llu)
 
 ## Regole di scrittura
 
--   Indentazione
--   Nome significativo delle variabili
--   Commenti nel caso fossero necessari
--   Evitare l'uso di codici superflui
--   Utilizzo graffe
--   Salto delle righe tra dichiarazione e corpo del codice
+- Indentazione
+- Nome significativo delle variabili
+- Commenti nel caso fossero necessari
+- Evitare l'uso di codici superflui
+- Utilizzo graffe
+- Salto delle righe tra dichiarazione e corpo del codice
 
 ## Sintassi per dichiarazione delle variabili
 
@@ -112,11 +112,11 @@ y = x;
 
 ### Operatori aritmetici
 
--   **+**: somma;
--   **-**: differenza;
--   **\***: moltiplicazione;
--   **/**: diviso;
--   **%**: modulo (ritorna il resto di una divisione).
+- **+**: somma;
+- **-**: differenza;
+- **\***: moltiplicazione;
+- **/**: diviso;
+- **%**: modulo (ritorna il resto di una divisione).
 
 ### Operatore di casting
 
@@ -140,9 +140,9 @@ int main() {
 
 ## Operatori Logici Booleani
 
--   **AND** &&
--   **OR** ||
--   **NOT** !
+- **AND** &&
+- **OR** ||
+- **NOT** !
 
 | A   | B   | A AND B | A OR B | NOT A |
 | --- | --- | ------- | ------ | ----- |
@@ -171,9 +171,9 @@ int main(void) {
 }
 ```
 
--   void: indica che nella funzione non sono presenti dei parametri
+- void: indica che nella funzione non sono presenti dei parametri
 
--   return 0;: se viene eseguito tutto correttamente la funzione ritorna il valore 0 (il valore è un intero perchè la funzione è di tipo int).
+- return 0;: se viene eseguito tutto correttamente la funzione ritorna il valore 0 (il valore è un intero perchè la funzione è di tipo int).
 
 ### Scanf
 
@@ -259,9 +259,9 @@ In questo caso se la prima condizione non viene verificata, controlla la seconda
 
 Blocchi che permettono di iterare delle operazioni. Esistono 3 differenti loops:
 
--   for
--   while
--   do-while
+- for
+- while
+- do-while
 
 ### For
 
@@ -604,9 +604,9 @@ int main () {
 
 Funzione che viene utilizzata per comparare le due stringhe.
 
--   **ritorna 0** se le stringhe sono identiche
--   **ritorna un numero > 0** se il primo carattere non identico ha un valore ASCII maggiore del secondo
--   **ritorna un numero < 0** se il primo carattere non identico ha un valore ASCII minore del secondo
+- **ritorna 0** se le stringhe sono identiche
+- **ritorna un numero > 0** se il primo carattere non identico ha un valore ASCII maggiore del secondo
+- **ritorna un numero < 0** se il primo carattere non identico ha un valore ASCII minore del secondo
 
 # Funzioni
 
@@ -766,59 +766,43 @@ int main() {
 
 ## Ricerca completa
 
+La ricerca completa è un algoritmo di ricerca che esamina ogni elemento di un array fino a trovare quello desiderato. È un algoritmo semplice da implementare, ma può essere inefficiente se l'array è grande o se l'elemento desiderato è raro
+
+Questa funzione esegue una ricerca lineare su un array per trovare la prima occorrenza di un elemento dato. Prende in input un array, la sua dimensione e l'elemento da cercare. Restituisce l'indice dell'elemento se trovato, o -1 se non trovato.
+
 ```C
-#include <stdio.h>
-#define DIM 10
-
-int main(){
-    int v[DIM] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int x = 5;
-    int i = 0;
-
-    while(i < DIM && v[i] != x){
-        i++;
-    }
-
-    if(i < DIM){
-        printf("Elemento trovato in posizione %d", i);
-    }else{
-        printf("Elemento non trovato");
-    }
+int ricerca_completa(int vet[], int n, int x) {
+    int i;
+    for (i = 0; i < n && vet[i] != x; i++);
+    if (i < n) return i;
+    else return -1;
 }
 ```
 
 ## Ricerca Binaria
 
+La ricerca binaria è un algoritmo di ricerca più efficiente della ricerca completa. Funziona suddividendo l'array a metà e quindi cercando l'elemento desiderato nell'emettitore metà. Questo processo viene ripetuto fino a trovare l'elemento desiderato o fino a quando l'array è vuoto.
+
+Questa funzione esegue una ricerca binaria su un array per trovare un elemento dato. Prende in input un array, la sua dimensione e l'elemento da cercare. Restituisce l'indice dell'elemento se trovato, o -1 se non trovato.
+
 ```C
-#include <stdio.h>
-#define DIM 10
-
-int main(){
-    int v[DIM] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int x = 5;
-    int i = 0;
-    int j = DIM - 1;
-    int m;
-
-    while(i <= j){
-        m = (i + j) / 2;
-        if(v[m] == x){
-            printf("Elemento trovato in posizione %d", m);
-            break;
-        }else if(v[m] < x){
-            i = m + 1;
-        }else{
-            j = m - 1;
-        }
+int ricerca_binaria(int vet[], int n, int x) {
+    int sx = 0, dx = n-1, cx;
+    while (sx <= dx) {
+        cx = (sx + dx) / 2;
+        if (vet[cx] == x) return cx;
+        else if (vet[cx] < x) sx = cx + 1;
+        else dx = cx - 1;
     }
-
-    if(i > j){
-        printf("Elemento non trovato");
-    }
+    return -1;
 }
 ```
 
 ## Inserimento all'inizio
+
+L'inserimento all'inizio è un algoritmo di inserimento che inserisce un nuovo elemento all'inizio di un array. L'elemento esistente nella prima posizione viene spostato in avanti di una posizione.
+
+Questa funzione inserisce un nuovo elemento all'inizio di un array. Prende in input un array, la sua dimensione e il nuovo elemento da inserire. Restituisce la nuova dimensione dell'array.
 
 ```C
 int inserimento_inizio(int vet[], int n, int nuovo) {
@@ -834,6 +818,10 @@ int inserimento_inizio(int vet[], int n, int nuovo) {
 
 ## Inserimento alla fine
 
+L'inserimento alla fine è un algoritmo di inserimento che inserisce un nuovo elemento alla fine di un array. L'elemento viene inserito nella posizione successiva all'ultima posizione occupata.
+
+Questa funzione inserisce un nuovo elemento alla fine di un array. Prende in input un array, la sua dimensione e il nuovo elemento da inserire. Restituisce la nuova dimensione dell'array.
+
 ```C
 int inserimento_fine(int vet[], int n, int nuovo) {
     if (n < DIM) vet[n++] = nuovo;
@@ -843,6 +831,10 @@ int inserimento_fine(int vet[], int n, int nuovo) {
 ```
 
 ## Inserimento diretto
+
+L'inserimento diretto è un algoritmo di inserimento che inserisce un nuovo elemento in un array nella sua posizione corretta in base all'ordine dell'array. L'algoritmo inizia dalla prima posizione dell'array e sposta gli elementi maggiori di quello da inserire in avanti di una posizione. L'elemento viene quindi inserito nella posizione libera.
+
+Questa funzione inserisce un nuovo elemento in un array nella sua posizione corretta in base all'ordine dell'array. Prende in input un array, la sua dimensione e il nuovo elemento da inserire. Restituisce la nuova dimensione dell'array.
 
 ```C
 int inserimento_diretto (int vet[], int n, int nuovo) {
@@ -855,6 +847,22 @@ int inserimento_diretto (int vet[], int n, int nuovo) {
 ```
 
 ## Cancellazione
+
+La cancellazione è un algoritmo di cancellazione che rimuove un elemento da un array. L'elemento viene rimosso spostando tutti gli elementi successivi indietro di una posizione.
+
+Questa funzione rimuove un elemento da un array. Prende in input un array, la sua dimensione e l'elemento da rimuovere. Restituisce la nuova dimensione dell'array.
+
+```C
+int cancellazione(int vet[], int n, int num) {
+    int pos = cerca(vet, n, num);
+    if (pos >= 0) {
+        vet[pos] = vet[n-1];
+        n--;
+    }
+    else printf("\nWarning: Number not found");
+    return n;
+}
+```
 
 # Esercizi da svolgere:
 
