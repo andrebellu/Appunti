@@ -112,21 +112,23 @@ Allora
 ove $|v\cdot u|$ indica il valore assoluto di $\textbf{v}\cdot\textbf{u}$.
 
 \subsubsection{Dimostrazione}
-Siano non nulli i vettori $\textbf{v}$ e $\textbf{w}$. Diversamente la tesi è immediata. Per ongi numero reale $\ah$ si ha 
+Siano non nulli i vettori $\textbf{v}$ e $\textbf{w}$. Diversamente la tesi è
+immediata. Per ongi numero reale $\ah$ si ha
 \[
     0\leq(\ah\textbf{u}+\textbf{v})^2= (\textbf{u}\cdot\textbf{u})\ah^2+2(\textbf{u}\cdot\textbf{v})\ah+(\textbf{v}\cdot\textbf{v})\]
 
 e quindi, al variare di $\ah\in\mathbb{R}$, il trinomio
 \[
     ||\textbf{u}||^2\ah^2+2(\textbf{u}\cdot\textbf{v})\ah+||\textbf{v}||^2
-    \]
+\]
 
 è maggiore o al più uguale a zero. Il suo discriminante non può, pertanto, essere positivo perchè se lo fosse, al variare di $\ah$, il trinomio cambierebbe segno. Risulta
 \[
     \dfrac{\Delta}{4} = |\textbf{u}\cdot\textbf{v}|^2 - ||\textbf{u}||^2||\textbf{v}||^2\leq0\]
 
 \subsection{Disuguaglianza triangolare}
-Siano \textbf{v} e \textbf{u} due vettori di $\mathbb{V}^{\circ} (\mathbb{R})$. Allora
+Siano \textbf{v} e \textbf{u} due vettori di $\mathbb{V}^{\circ} (\mathbb{R})$.
+Allora
 \[
     ||\textbf{v}+\textbf{u}||\leq||\textbf{v}||+||\textbf{u}||
 \]
@@ -145,21 +147,55 @@ Applicando la disuguaglianza di Cauchy-Schwarz si ottiene la tesi:
 I vettori della base canonica $B = (\s{e}{n})$, dello spazio euclideo reale $\mathbb{R}^n$, godono delle seguenti proprietà:
 \begin{enumerate}
     \item hanno norma unitaria, cioè, $||e_i||=1 \text{ per } i=1,2\cdots n$;
-    \item sono tra loro ortogonali, cioè, $e_i\cdot e_j = 0$ per $i\ne j$ ove $i, j\in I_n$
-    \item la $i$-esima componente, di un qualunque vettore $(\s{x}{n})$ di $\mathbb{R}^n$, si ottiene moltiplicando scalarmente quel vettore per $e_i$.
+    \item sono tra loro ortogonali, cioè, $e_i\cdot e_j = 0$ per $i\ne j$ ove $i, j\in
+              I_n$
+    \item la $i$-esima componente, di un qualunque vettore $(\s{x}{n})$ di
+          $\mathbb{R}^n$, si ottiene moltiplicando scalarmente quel vettore per $e_i$.
 \end{enumerate}
-
-Diremo che i vettori $\s{v}{r}$, di uno spazio vettoriale $\mathbb{V}^{\circ}(\mathbb{V})$, tutti diversi dal vettore nullo, 
-costituiscono un \textbf{sistema ortogonale} se $\textbf{v}_i\cdot\textbf{v}_j = 0$, per $i\ne j $ e $i,j\in I_r$. 
-Se, inoltre, hanno norma unitario, essi costituiscono un \textbf{sistema ortonormale}. 
-Una base, che sia anche un sistema ortogonale. Una base, che sia anche un sistema ortogonale, 
-si dice \textbf{base orotogonale} e, se i suoi vettori hanno norma unitaria tale base si dice \textbf{base ortonormale}. 
-Ovviamente il vettore nullo è ortogonale a tutti i vettori di $\mathbb{V}$. Da un sistema (o da una base) ortogonale di
-$\mathbb{V}$ si può sempre ricavare una base ortonormale di $\mathbb{V}$, dividendo ciascun vettore del sistema per la sua norma.\\ \\
-I vettori della base canonica, di uno spazio euclideo reale, costituiscono una base ortonormale, ma \textbf{possiamo dimostrare che, in ogni spazio vettoriale f.g. con prodotto scalare definito positivo, è possibil ecostruire una base ortonormale che possiede le stesse proprietà che la base canonica ha negli spazi euclidei}.
+Diremo che i vettori $\s{v}{r}$, di uno spazio vettoriale
+$\mathbb{V}^{\circ}(\mathbb{V})$, tutti diversi dal vettore nullo,
+costituiscono un \textbf{sistema ortogonale} se $\textbf{v}_i\cdot\textbf{v}_j
+    = 0$, per $i\ne j $ e $i,j\in I_r$. Se, inoltre, hanno norma unitario, essi
+costituiscono un \textbf{sistema ortonormale}. Una base, che sia anche un
+sistema ortogonale. Una base, che sia anche un sistema ortogonale, si dice
+\textbf{base orotogonale} e, se i suoi vettori hanno norma unitaria tale base
+si dice \textbf{base ortonormale}. Ovviamente il vettore nullo è ortogonale a
+tutti i vettori di $\mathbb{V}$. Da un sistema (o da una base) ortogonale di
+$\mathbb{V}$ si può sempre ricavare una base ortonormale di $\mathbb{V}$,
+dividendo ciascun vettore del sistema per la sua norma.\\ \\ I vettori della
+base canonica, di uno spazio euclideo reale, costituiscono una base
+ortonormale, ma \textbf{possiamo dimostrare che, in ogni spazio vettoriale f.g.
+    con prodotto scalare definito positivo, è possibile costruire una base
+    ortonormale che possiede le stesse proprietà che la base canonica ha negli
+    spazi euclidei}.
 
 \subsubsection{Lemma}
-In uno spazio vettoriale $\mathbb{V}^{\circ}(\mathbb{R})$, se i vettori non nulli $\s{\textbf{v}}{r}$, costituiscono un sistema ortogonale, allora sono linearmente indipendenti.\\
-Partendo da una qualsiasi base di $\mathbb{V}^{\circ}(\mathbb{R})$, possiamo ora costrure una base ortogonale seguendo il procedimento detto \textbf{processo di ortogonalizzazione di Gram-Schmidt}.\\
+In uno spazio vettoriale $\mathbb{V}^{\circ}(\mathbb{R})$, se i vettori non
+nulli $\s{\textbf{v}}{r}$, costituiscono un sistema ortogonale, allora sono
+linearmente indipendenti.\\ Partendo da una qualsiasi base di
+$\mathbb{V}^{\circ}(\mathbb{R})$, possiamo ora costrure una base ortogonale
+seguendo il procedimento detto \textbf{processo di ortogonalizzazione di
+    Gram-Schmidt}.\\
+
+\subsubsection{Teorema}
+Fissata una base $B = (\s{e}{n})$ di $\mathbb{V}^{\circ}(\mathbb{R})$, la
+sequenza $B' = (\s{e'}{n})$ così costruita
+\[
+    \textbf{e}_1' = \textbf{e}_1
+\]
+\[
+    \textbf{e}_2' = \textbf{e}_2 - \dfrac{\textbf{e}_2\cdot\textbf{e}_1'}{\textbf{e}_1'\cdot\textbf{e}_1'}\textbf{e}_1'
+\]
+\[
+    \cdots \ \ \ \ \ \ \cdots\cdots\cdots\cdots\cdots\cdots
+\]
+\[
+    \textbf{e'}_n = \textbf{e}_n - \dfrac{\textbf{e}_n\cdot\textbf{e'}_{n-1}}{\textbf{e'}_{n-1}\cdot\textbf{e'}_{n-1}}\textbf{e'}_{n-1} - \cdots - \dfrac{\textbf{e}_n\cdot\textbf{e}_1'}{\textbf{e}_1'\cdot\textbf{e}_1'}\textbf{e}_1'
+\]
+
+E' evidente che, \textbf{volendo determinare una base ortonormale di uno spazio
+    vettoriale con prodotto scalare definito positivo, basta normalizzare la base
+    ottenuta applicando il processo di ortogonalizzazione di Gram-Schmidt a una
+    base qualunque dello spazio.}
 
 \end{document}
