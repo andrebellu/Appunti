@@ -2,83 +2,90 @@
 
 ## Table of Contents
 
-- [Introduzione a C](#introduzione-a-c)
-  - [Table of Contents](#table-of-contents)
-  - [Tipi di dato](#tipi-di-dato)
-  - [Regole di scrittura](#regole-di-scrittura)
-  - [Sintassi per dichiarazione delle variabili](#sintassi-per-dichiarazione-delle-variabili)
-    - [Assegnamento variabili](#assegnamento-variabili)
-  - [Operatori aritmetici e di casting](#operatori-aritmetici-e-di-casting)
-    - [Operatori aritmetici](#operatori-aritmetici)
-    - [Operatore di casting](#operatore-di-casting)
-  - [Operatori Logici Booleani](#operatori-logici-booleani)
-  - [Astrazione procedurale](#astrazione-procedurale)
-    - [Main function](#main-function)
-    - [Scanf](#scanf)
-    - [Printf](#printf)
-- [Astrazione sul controllo](#astrazione-sul-controllo)
-  - [If](#if)
-    - [Caso 1](#caso-1)
-    - [Caso 2](#caso-2)
-    - [Caso 3](#caso-3)
-  - [Loops](#loops)
-    - [For](#for)
-    - [While](#while)
-    - [Do-while](#do-while)
-  - [Numeri random](#numeri-random)
-    - [Rand](#rand)
-    - [Srand](#srand)
-  - [Vettori](#vettori)
-  - [Matrici](#matrici)
-- [Puntatori](#puntatori)
-  - [Dichiarazione di puntatori](#dichiarazione-di-puntatori)
-  - [Operatore \&](#operatore-)
-  - [**Operatore \***](#operatore--1)
-    - [Esempio](#esempio)
-    - [Puntatori con vettori](#puntatori-con-vettori)
-  - [Stringhe (Array di caratteri)](#stringhe-array-di-caratteri)
-    - [strlen()](#strlen)
-    - [gets()](#gets)
-    - [puts()](#puts)
-    - [strcpy()](#strcpy)
-    - [strncpy()](#strncpy)
-    - [strcat()](#strcat)
-    - [strncat()](#strncat)
-    - [strcmp()](#strcmp)
-- [Funzioni](#funzioni)
-  - [Definire e chiamare una funzione](#definire-e-chiamare-una-funzione)
-  - [Return nelle funzioni](#return-nelle-funzioni)
-  - [Passaggio di parametri](#passaggio-di-parametri)
-    - [Passaggio per valore](#passaggio-per-valore)
-    - [Passaggio per riferimento](#passaggio-per-riferimento)
-- [Esercizi da svolgere:](#esercizi-da-svolgere)
+-   [Introduzione a C](#introduzione-a-c)
+    -   [Table of Contents](#table-of-contents)
+    -   [Tipi di dato](#tipi-di-dato)
+    -   [Regole di scrittura](#regole-di-scrittura)
+    -   [Sintassi per dichiarazione delle variabili](#sintassi-per-dichiarazione-delle-variabili)
+        -   [Assegnamento variabili](#assegnamento-variabili)
+    -   [Operatori aritmetici e di casting](#operatori-aritmetici-e-di-casting)
+        -   [Operatori aritmetici](#operatori-aritmetici)
+        -   [Operatore di casting](#operatore-di-casting)
+    -   [Operatori Logici Booleani](#operatori-logici-booleani)
+    -   [Astrazione procedurale](#astrazione-procedurale)
+        -   [Main function](#main-function)
+        -   [Scanf](#scanf)
+        -   [Printf](#printf)
+-   [Astrazione sul controllo](#astrazione-sul-controllo)
+    -   [If](#if)
+        -   [Caso 1](#caso-1)
+        -   [Caso 2](#caso-2)
+        -   [Caso 3](#caso-3)
+    -   [Loops](#loops)
+        -   [For](#for)
+        -   [While](#while)
+        -   [Do-while](#do-while)
+    -   [Numeri random](#numeri-random)
+        -   [Rand](#rand)
+        -   [Srand](#srand)
+    -   [Vettori](#vettori)
+    -   [Matrici](#matrici)
+-   [Puntatori](#puntatori)
+    -   [Dichiarazione di puntatori](#dichiarazione-di-puntatori)
+    -   [Operatore \&](#operatore-)
+    -   [**Operatore \***](#operatore--1)
+        -   [Esempio](#esempio)
+        -   [Puntatori con vettori](#puntatori-con-vettori)
+    -   [Stringhe (Array di caratteri)](#stringhe-array-di-caratteri)
+        -   [strlen()](#strlen)
+        -   [gets()](#gets)
+        -   [puts()](#puts)
+        -   [strcpy()](#strcpy)
+        -   [strncpy()](#strncpy)
+        -   [strcat()](#strcat)
+        -   [strncat()](#strncat)
+        -   [strcmp()](#strcmp)
+-   [Funzioni](#funzioni)
+    -   [Definire e chiamare una funzione](#definire-e-chiamare-una-funzione)
+    -   [Return nelle funzioni](#return-nelle-funzioni)
+    -   [Passaggio di parametri](#passaggio-di-parametri)
+        -   [Passaggio per valore](#passaggio-per-valore)
+        -   [Passaggio per riferimento](#passaggio-per-riferimento)
+-   [Operazioni su sequenze](#operazioni-su-sequenze)
+    -   [Ricerca completa](#ricerca-completa)
+    -   [Ricerca Binaria](#ricerca-binaria)
+    -   [Inserimento all'inizio](#inserimento-allinizio)
+    -   [Inserimento alla fine](#inserimento-alla-fine)
+    -   [Inserimento diretto](#inserimento-diretto)
+    -   [Cancellazione](#cancellazione)
+-   [Esercizi da svolgere:](#esercizi-da-svolgere)
 
 ## Tipi di dato
 
-- `int`: Integer type (%d)
-- `short int`: Short integer type (%hd)
-- `long`: Long integer type (%ld)
-- `long long`: Long long integer type (%lld)
-- `float`: Single-precision floating-point type (%f)
-- `double`: Double-precision floating-point type (%lf)
-- `long double`: Extended-precision floating-point type (%lf)
-- `char`: Character type (%c) <br>
+-   `int`: Integer type (%d)
+-   `short int`: Short integer type (%hd)
+-   `long`: Long integer type (%ld)
+-   `long long`: Long long integer type (%lld)
+-   `float`: Single-precision floating-point type (%f)
+-   `double`: Double-precision floating-point type (%lf)
+-   `long double`: Extended-precision floating-point type (%lf)
+-   `char`: Character type (%c) <br>
 
-  **Unsigned Types**
+    **Unsigned Types**
 
-- `unsigned int`: Unsigned Integer type (%u)
-- `unsigned short`: Unsigned Short integer type (%hu)
-- `unsigned long`: Unsigned Long integer type (%lu)
-- `unsigned long long`: Unsigned Long long integer type (%llu)
+-   `unsigned int`: Unsigned Integer type (%u)
+-   `unsigned short`: Unsigned Short integer type (%hu)
+-   `unsigned long`: Unsigned Long integer type (%lu)
+-   `unsigned long long`: Unsigned Long long integer type (%llu)
 
 ## Regole di scrittura
 
-- Indentazione
-- Nome significativo delle variabili
-- Commenti nel caso fossero necessari
-- Evitare l'uso di codici superflui
-- Utilizzo graffe
-- Salto delle righe tra dichiarazione e corpo del codice
+-   Indentazione
+-   Nome significativo delle variabili
+-   Commenti nel caso fossero necessari
+-   Evitare l'uso di codici superflui
+-   Utilizzo graffe
+-   Salto delle righe tra dichiarazione e corpo del codice
 
 ## Sintassi per dichiarazione delle variabili
 
@@ -105,11 +112,11 @@ y = x;
 
 ### Operatori aritmetici
 
-- **+**: somma;
-- **-**: differenza;
-- **\***: moltiplicazione;
-- **/**: diviso;
-- **%**: modulo (ritorna il resto di una divisione).
+-   **+**: somma;
+-   **-**: differenza;
+-   **\***: moltiplicazione;
+-   **/**: diviso;
+-   **%**: modulo (ritorna il resto di una divisione).
 
 ### Operatore di casting
 
@@ -133,9 +140,9 @@ int main() {
 
 ## Operatori Logici Booleani
 
-- **AND** &&
-- **OR** ||
-- **NOT** !
+-   **AND** &&
+-   **OR** ||
+-   **NOT** !
 
 | A   | B   | A AND B | A OR B | NOT A |
 | --- | --- | ------- | ------ | ----- |
@@ -164,9 +171,9 @@ int main(void) {
 }
 ```
 
-- void: indica che nella funzione non sono presenti dei parametri
+-   void: indica che nella funzione non sono presenti dei parametri
 
-- return 0;: se viene eseguito tutto correttamente la funzione ritorna il valore 0 (il valore è un intero perchè la funzione è di tipo int).
+-   return 0;: se viene eseguito tutto correttamente la funzione ritorna il valore 0 (il valore è un intero perchè la funzione è di tipo int).
 
 ### Scanf
 
@@ -252,9 +259,9 @@ In questo caso se la prima condizione non viene verificata, controlla la seconda
 
 Blocchi che permettono di iterare delle operazioni. Esistono 3 differenti loops:
 
-- for
-- while
-- do-while
+-   for
+-   while
+-   do-while
 
 ### For
 
@@ -597,9 +604,9 @@ int main () {
 
 Funzione che viene utilizzata per comparare le due stringhe.
 
-- **ritorna 0** se le stringhe sono identiche
-- **ritorna un numero > 0** se il primo carattere non identico ha un valore ASCII maggiore del secondo
-- **ritorna un numero < 0** se il primo carattere non identico ha un valore ASCII minore del secondo
+-   **ritorna 0** se le stringhe sono identiche
+-   **ritorna un numero > 0** se il primo carattere non identico ha un valore ASCII maggiore del secondo
+-   **ritorna un numero < 0** se il primo carattere non identico ha un valore ASCII minore del secondo
 
 # Funzioni
 
@@ -716,10 +723,10 @@ int main() {
 }
 ```
 
->L'output di questo programma è il seguente: <br>
->a = 1 <br>
->b = 2 <br>
->c = 3 <br>
+> L'output di questo programma è il seguente: <br>
+> a = 1 <br>
+> b = 2 <br>
+> c = 3 <br>
 
 ### Passaggio per riferimento
 
@@ -751,9 +758,103 @@ int main() {
 }
 ```
 
->L'output di questo programma è il seguente: <br>
+> L'output di questo programma è il seguente: <br>
 > a = 3 <br>
 > b = 3 <br>
+
+# Operazioni su sequenze
+
+## Ricerca completa
+
+```C
+#include <stdio.h>
+#define DIM 10
+
+int main(){
+    int v[DIM] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int x = 5;
+    int i = 0;
+
+    while(i < DIM && v[i] != x){
+        i++;
+    }
+
+    if(i < DIM){
+        printf("Elemento trovato in posizione %d", i);
+    }else{
+        printf("Elemento non trovato");
+    }
+}
+```
+
+## Ricerca Binaria
+
+```C
+#include <stdio.h>
+#define DIM 10
+
+int main(){
+    int v[DIM] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int x = 5;
+    int i = 0;
+    int j = DIM - 1;
+    int m;
+
+    while(i <= j){
+        m = (i + j) / 2;
+        if(v[m] == x){
+            printf("Elemento trovato in posizione %d", m);
+            break;
+        }else if(v[m] < x){
+            i = m + 1;
+        }else{
+            j = m - 1;
+        }
+    }
+
+    if(i > j){
+        printf("Elemento non trovato");
+    }
+}
+```
+
+## Inserimento all'inizio
+
+```C
+int inserimento_inizio(int vet[], int n, int nuovo) {
+    if (n < DIM) {
+        vet[n++] = vet[0];
+        vet[0] = nuovo;
+    }
+    else printf("\nWarning: Array is full");
+
+    return n;
+}
+```
+
+## Inserimento alla fine
+
+```C
+int inserimento_fine(int vet[], int n, int nuovo) {
+    if (n < DIM) vet[n++] = nuovo;
+    else printf("\nWarning: Array is full");
+    return n;
+}
+```
+
+## Inserimento diretto
+
+```C
+int inserimento_diretto (int vet[], int n, int nuovo) {
+    int i, j;
+    for (i = 0; i < n && vet[i] < nuovo; i++);
+    for (j = n; j > i; j--) vet[j] = vet[j-1];
+    vet[i] = nuovo;
+    return ++n;
+}
+```
+
+## Cancellazione
 
 # Esercizi da svolgere:
 
