@@ -59,6 +59,14 @@
     -   [Inserimento diretto](#inserimento-diretto)
     -   [Cancellazione](#cancellazione)
     -   [Fusione](#fusione)
+-   [Algoritmi di ordinamento](#algoritmi-di-ordinamento)
+    -   [Ordinamento per inserimento diretto](#ordinamento-per-inserimento-diretto)
+    -   [Ordinamento per selezione](#ordinamento-per-selezione)
+    -   [Bubble Sort](#bubble-sort)
+-   [Strutture](#strutture)
+    -   [Definizione di una struttura](#definizione-di-una-struttura)
+    -   [Inizializzazione di una struttura](#inizializzazione-di-una-struttura)
+    -   [Struct e puntatori](#struct-e-puntatori)
 -   [Esercizi da svolgere:](#esercizi-da-svolgere)
 
 ## Tipi di dato
@@ -885,6 +893,188 @@ int fusione(int v1[], int v2[], int v3[], int n1, int n2)
 }
 ```
 
+# Algoritmi di ordinamento
+
+Gli algoritmi di ordinamento sono algoritmi che permettono di ordinare gli elementi di un array in base al loro valore. Questa operazione si può effettuare con array di interi, ma anche con array di stringhe.
+I seguenti sono gli algoritmi di ordinamento più semplici, nonchè i più dispendiosi in termini di tempo di esecuzione.
+
+## Ordinamento per inserimento diretto
+
+Ordino una sequenza effettuando tanti inserimenti nlla sequenza stessa. Inserisco l'i-esimo elemento nella 1°, 2°... i-esima posizione se esso è inferiore al 1°, 2°,..., i-esimo elemento.
+
+Questa operazione si può effettuare un solo vettore ragionando per sottosequenze.
+
+```C
+void ordinamento_diretto(int vet[], int n) {
+    int i, j, x;
+    for (i = 1; i < n; i++) {
+        x = vet[i];
+        for (j = i-1; j >= 0 && x < vet[j]; j--)
+            vet[j+1] = vet[j];
+        vet[j+1] = x;
+    }
+}
+```
+
+Questo algoritmo è molto dispendioso in termini di tempo di esecuzione, in quanto per ogni elemento devo scorrere tutto il vettore. La complessità di questo algoritmo è $O(n^2)$. Il caso peggiore è quando il vettore è ordinato in modo decrescente.
+
+## Ordinamento per selezione
+
+Scambiare l'i-esimo elemento con l'i-esimo più piccolo.
+
+```C
+void ordinamento_selezione(int vet[], int n)
+{
+    int i, j, k, x;
+    for (i = 0; i < n - 1; i++)
+    {
+        k = i;
+        x = vet[i];
+        for (j = i + 1; j < n; j++)
+        {
+            if (vet[j] < x)
+            {
+                k = j;
+                x = vet[j];
+            }
+        }
+        vet[k] = vet[i];
+        vet[i] = x;
+    }
+
+    for (i = 0; i < n; i++)
+        printf("%d ", vet[i]);
+}
+```
+
+Dopo $n-1$ iterazioni, il vettore è ordinato. Anche in questo caso il caso peggiore è se il vettore è ordinato in modo decrescente.
+
+Numero di confronti: $n(n-1)/2$.
+Numero di scambi: $n-1$.
+
+## Bubble Sort
+
+Con il bubble sort si procede scambiando due elementi adiacenti se non sono in ordine. Dopo $n-1$ iterazioni, il vettore è ordinato.
+
+```C
+void bubble_sort(int vet[], int n)
+{
+    int i, j, x;
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = n - 1; j > i; j--)
+        {
+            if (vet[j - 1] > vet[j])
+            {
+                x = vet[j - 1];
+                vet[j - 1] = vet[j];
+                vet[j] = x;
+            }
+        }
+    }
+
+    printf("\n");
+    for (i = 0; i < n; i++)
+        printf("%d ", vet[i]);
+}
+```
+
+# Strutture
+
+Le strutture sono un tipo di dato che permette di raggruppare più variabili di tipo diverso all'interno di una singola variabile. Le variabili all'interno di una struttura vengono chiamate campi o membri. Le strutture sono dei tipi di dato definiti dall'utente.
+
+## Definizione di una struttura
+
+Per definire una struttura, si utilizza la parola chiave struct seguita dal nome della struttura e da una lista di campi racchiusi tra parentesi graffe. Ogni campo è definito specificando il tipo di dato e il nome del campo.
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+} s1;
+```
+
+## Inizializzazione di una struttura
+
+Per inizializzare una struttura, si utilizza la parola chiave struct seguita dal nome della struttura e da una lista di campi racchiusi tra parentesi graffe. Ogni campo è definito specificando il tipo di dato e il nome del campo.
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+} s1 = {"Mario", 20, 27.5};
+```
+
+Se effettuo l'inizializzazione dopo la dichiarazione posso procedere in due modi:
+
+1. Inizializzo tutti i campi utilizzando la sintassi vista prima
+
+```C
+struct studente s1 = {"Mario", 20, 27.5};
+```
+
+<div style="page-break-after: always"></div>
+
+2. Inizializzo i campi uno alla volta utilizzando l'operatore `.` per accedere ai singoli campi:
+
+```C
+struct studente s1;
+s1.nome = "Mario";
+s1.eta = 20;
+s1.media = 27.5;
+```
+
+Esempio completo:
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+};
+
+int main(){
+    struct studente s1 = {"Mario", 20, 27.5};
+
+    struct studente s2;
+    s2.nome = "Luigi";
+    s2.eta = 21;
+    s2.media = 28.5;
+}
+```
+
+## Struct e puntatori
+
+Posso utilizzare i puntatori per accedere ai campi di una struttura.
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+} s1, *p;
+
+p = &s1;
+
+(*p).nome = "Mario";
+(*p).eta = 20;
+(*p).media = 27.5;
+```
+
+Per evitare di scrivere `(*p).nome` posso utilizzare l'operatore `->`:
+
+```C
+p->nome = "Mario";
+p->eta = 20;
+p->media = 27.5;
+```
+
 # Esercizi da svolgere:
 
 [Pdf esercizi Università della Calabria](https://www.mat.unical.it/spataro/teaching/InformaticaChimica/esercizi_di_programmazione_in_c.pdf)
+
+```
+
+```
