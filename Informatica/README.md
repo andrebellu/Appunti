@@ -2,90 +2,99 @@
 
 ## Table of Contents
 
-- [Introduzione a C](#introduzione-a-c)
-  - [Table of Contents](#table-of-contents)
-  - [Tipi di dato](#tipi-di-dato)
-  - [Regole di scrittura](#regole-di-scrittura)
-  - [Sintassi per dichiarazione delle variabili](#sintassi-per-dichiarazione-delle-variabili)
-    - [Assegnamento variabili](#assegnamento-variabili)
-  - [Operatori aritmetici e di casting](#operatori-aritmetici-e-di-casting)
-    - [Operatori aritmetici](#operatori-aritmetici)
-    - [Operatore di casting](#operatore-di-casting)
-  - [Operatori Logici Booleani](#operatori-logici-booleani)
-  - [Astrazione procedurale](#astrazione-procedurale)
-    - [Main function](#main-function)
-    - [Scanf](#scanf)
-    - [Printf](#printf)
-- [Astrazione sul controllo](#astrazione-sul-controllo)
-  - [If](#if)
-    - [Caso 1](#caso-1)
-    - [Caso 2](#caso-2)
-    - [Caso 3](#caso-3)
-  - [Loops](#loops)
-    - [For](#for)
-    - [While](#while)
-    - [Do-while](#do-while)
-  - [Numeri random](#numeri-random)
-    - [Rand](#rand)
-    - [Srand](#srand)
-  - [Vettori](#vettori)
-  - [Matrici](#matrici)
-- [Puntatori](#puntatori)
-  - [Dichiarazione di puntatori](#dichiarazione-di-puntatori)
-  - [Operatore \&](#operatore-)
-  - [**Operatore \***](#operatore--1)
-    - [Esempio](#esempio)
-    - [Puntatori con vettori](#puntatori-con-vettori)
-  - [Stringhe (Array di caratteri)](#stringhe-array-di-caratteri)
-    - [strlen()](#strlen)
-    - [gets()](#gets)
-    - [puts()](#puts)
-    - [strcpy()](#strcpy)
-    - [strncpy()](#strncpy)
-    - [strcat()](#strcat)
-    - [strncat()](#strncat)
-    - [strcmp()](#strcmp)
-- [Funzioni](#funzioni)
-  - [Definire e chiamare una funzione](#definire-e-chiamare-una-funzione)
-  - [Return nelle funzioni](#return-nelle-funzioni)
-  - [Passaggio di parametri](#passaggio-di-parametri)
-    - [Passaggio per valore](#passaggio-per-valore)
-    - [Passaggio per riferimento](#passaggio-per-riferimento)
-- [Operazioni su sequenze](#operazioni-su-sequenze)
-  - [Ricerca completa](#ricerca-completa)
-  - [Ricerca Binaria](#ricerca-binaria)
-  - [Inserimento all'inizio](#inserimento-allinizio)
-  - [Inserimento alla fine](#inserimento-alla-fine)
-  - [Inserimento diretto](#inserimento-diretto)
-  - [Cancellazione](#cancellazione)
-- [Esercizi da svolgere:](#esercizi-da-svolgere)
+-   [Introduzione a C](#introduzione-a-c)
+    -   [Table of Contents](#table-of-contents)
+    -   [Tipi di dato](#tipi-di-dato)
+    -   [Regole di scrittura](#regole-di-scrittura)
+    -   [Sintassi per dichiarazione delle variabili](#sintassi-per-dichiarazione-delle-variabili)
+        -   [Assegnamento variabili](#assegnamento-variabili)
+    -   [Operatori aritmetici e di casting](#operatori-aritmetici-e-di-casting)
+        -   [Operatori aritmetici](#operatori-aritmetici)
+        -   [Operatore di casting](#operatore-di-casting)
+    -   [Operatori Logici Booleani](#operatori-logici-booleani)
+    -   [Astrazione procedurale](#astrazione-procedurale)
+        -   [Main function](#main-function)
+        -   [Scanf](#scanf)
+        -   [Printf](#printf)
+-   [Astrazione sul controllo](#astrazione-sul-controllo)
+    -   [If](#if)
+        -   [Caso 1](#caso-1)
+        -   [Caso 2](#caso-2)
+        -   [Caso 3](#caso-3)
+    -   [Loops](#loops)
+        -   [For](#for)
+        -   [While](#while)
+        -   [Do-while](#do-while)
+    -   [Numeri random](#numeri-random)
+        -   [Rand](#rand)
+        -   [Srand](#srand)
+    -   [Vettori](#vettori)
+    -   [Matrici](#matrici)
+-   [Puntatori](#puntatori)
+    -   [Dichiarazione di puntatori](#dichiarazione-di-puntatori)
+    -   [Operatore \&](#operatore-)
+    -   [**Operatore \***](#operatore--1)
+        -   [Esempio](#esempio)
+        -   [Puntatori con vettori](#puntatori-con-vettori)
+    -   [Stringhe (Array di caratteri)](#stringhe-array-di-caratteri)
+        -   [strlen()](#strlen)
+        -   [gets()](#gets)
+        -   [puts()](#puts)
+        -   [strcpy()](#strcpy)
+        -   [strncpy()](#strncpy)
+        -   [strcat()](#strcat)
+        -   [strncat()](#strncat)
+        -   [strcmp()](#strcmp)
+-   [Funzioni](#funzioni)
+    -   [Definire e chiamare una funzione](#definire-e-chiamare-una-funzione)
+    -   [Return nelle funzioni](#return-nelle-funzioni)
+    -   [Passaggio di parametri](#passaggio-di-parametri)
+        -   [Passaggio per valore](#passaggio-per-valore)
+        -   [Passaggio per riferimento](#passaggio-per-riferimento)
+-   [Operazioni su sequenze](#operazioni-su-sequenze)
+    -   [Ricerca completa](#ricerca-completa)
+    -   [Ricerca Binaria](#ricerca-binaria)
+    -   [Inserimento all'inizio](#inserimento-allinizio)
+    -   [Inserimento alla fine](#inserimento-alla-fine)
+    -   [Inserimento diretto](#inserimento-diretto)
+    -   [Cancellazione](#cancellazione)
+    -   [Fusione](#fusione)
+-   [Algoritmi di ordinamento](#algoritmi-di-ordinamento)
+    -   [Ordinamento per inserimento diretto](#ordinamento-per-inserimento-diretto)
+    -   [Ordinamento per selezione](#ordinamento-per-selezione)
+    -   [Bubble Sort](#bubble-sort)
+-   [Strutture](#strutture)
+    -   [Definizione di una struttura](#definizione-di-una-struttura)
+    -   [Inizializzazione di una struttura](#inizializzazione-di-una-struttura)
+    -   [Struct e puntatori](#struct-e-puntatori)
+-   [Esercizi da svolgere:](#esercizi-da-svolgere)
 
 ## Tipi di dato
 
-- `int`: Integer type (%d)
-- `short int`: Short integer type (%hd)
-- `long`: Long integer type (%ld)
-- `long long`: Long long integer type (%lld)
-- `float`: Single-precision floating-point type (%f)
-- `double`: Double-precision floating-point type (%lf)
-- `long double`: Extended-precision floating-point type (%lf)
-- `char`: Character type (%c) <br>
+-   `int`: Integer type (%d)
+-   `short int`: Short integer type (%hd)
+-   `long`: Long integer type (%ld)
+-   `long long`: Long long integer type (%lld)
+-   `float`: Single-precision floating-point type (%f)
+-   `double`: Double-precision floating-point type (%lf)
+-   `long double`: Extended-precision floating-point type (%lf)
+-   `char`: Character type (%c) <br>
 
-  **Unsigned Types**
+    **Unsigned Types**
 
-- `unsigned int`: Unsigned Integer type (%u)
-- `unsigned short`: Unsigned Short integer type (%hu)
-- `unsigned long`: Unsigned Long integer type (%lu)
-- `unsigned long long`: Unsigned Long long integer type (%llu)
+-   `unsigned int`: Unsigned Integer type (%u)
+-   `unsigned short`: Unsigned Short integer type (%hu)
+-   `unsigned long`: Unsigned Long integer type (%lu)
+-   `unsigned long long`: Unsigned Long long integer type (%llu)
 
 ## Regole di scrittura
 
-- Indentazione
-- Nome significativo delle variabili
-- Commenti nel caso fossero necessari
-- Evitare l'uso di codici superflui
-- Utilizzo graffe
-- Salto delle righe tra dichiarazione e corpo del codice
+-   Indentazione
+-   Nome significativo delle variabili
+-   Commenti nel caso fossero necessari
+-   Evitare l'uso di codici superflui
+-   Utilizzo graffe
+-   Salto delle righe tra dichiarazione e corpo del codice
 
 ## Sintassi per dichiarazione delle variabili
 
@@ -112,11 +121,11 @@ y = x;
 
 ### Operatori aritmetici
 
-- **+**: somma;
-- **-**: differenza;
-- **\***: moltiplicazione;
-- **/**: diviso;
-- **%**: modulo (ritorna il resto di una divisione).
+-   **+**: somma;
+-   **-**: differenza;
+-   **\***: moltiplicazione;
+-   **/**: diviso;
+-   **%**: modulo (ritorna il resto di una divisione).
 
 ### Operatore di casting
 
@@ -140,9 +149,9 @@ int main() {
 
 ## Operatori Logici Booleani
 
-- **AND** &&
-- **OR** ||
-- **NOT** !
+-   **AND** &&
+-   **OR** ||
+-   **NOT** !
 
 | A   | B   | A AND B | A OR B | NOT A |
 | --- | --- | ------- | ------ | ----- |
@@ -171,9 +180,9 @@ int main(void) {
 }
 ```
 
-- void: indica che nella funzione non sono presenti dei parametri
+-   void: indica che nella funzione non sono presenti dei parametri
 
-- return 0;: se viene eseguito tutto correttamente la funzione ritorna il valore 0 (il valore è un intero perchè la funzione è di tipo int).
+-   return 0;: se viene eseguito tutto correttamente la funzione ritorna il valore 0 (il valore è un intero perchè la funzione è di tipo int).
 
 ### Scanf
 
@@ -259,9 +268,9 @@ In questo caso se la prima condizione non viene verificata, controlla la seconda
 
 Blocchi che permettono di iterare delle operazioni. Esistono 3 differenti loops:
 
-- for
-- while
-- do-while
+-   for
+-   while
+-   do-while
 
 ### For
 
@@ -604,9 +613,9 @@ int main () {
 
 Funzione che viene utilizzata per comparare le due stringhe.
 
-- **ritorna 0** se le stringhe sono identiche
-- **ritorna un numero > 0** se il primo carattere non identico ha un valore ASCII maggiore del secondo
-- **ritorna un numero < 0** se il primo carattere non identico ha un valore ASCII minore del secondo
+-   **ritorna 0** se le stringhe sono identiche
+-   **ritorna un numero > 0** se il primo carattere non identico ha un valore ASCII maggiore del secondo
+-   **ritorna un numero < 0** se il primo carattere non identico ha un valore ASCII minore del secondo
 
 # Funzioni
 
@@ -864,6 +873,208 @@ int cancellazione(int vet[], int n, int num) {
 }
 ```
 
+## Fusione
+
+L'algoritmo di fusione permette di unire due array.
+
+Questa funzione unisce due array in un terzo array. Prende in input due array, le loro dimensioni e il terzo array in cui unire i due. Restituisce la dimensione del terzo array.
+
+```C
+int fusione(int v1[], int v2[], int v3[], int n1, int n2)
+{
+    int i=0, j=0, k=0;
+    do {
+        if (i < n1 && (j == n2 || v1[i] <= v2[j]))
+            v3[k++] = v1[i++];
+    else //if (j < n2 && (vet1[i] > vet2[j] || i == n1))
+        v3[k++] = v2[j++];
+    } while (i < n1 || j < n2);
+    return k;
+}
+```
+
+# Algoritmi di ordinamento
+
+Gli algoritmi di ordinamento sono algoritmi che permettono di ordinare gli elementi di un array in base al loro valore. Questa operazione si può effettuare con array di interi, ma anche con array di stringhe.
+I seguenti sono gli algoritmi di ordinamento più semplici, nonchè i più dispendiosi in termini di tempo di esecuzione.
+
+## Ordinamento per inserimento diretto
+
+Ordino una sequenza effettuando tanti inserimenti nlla sequenza stessa. Inserisco l'i-esimo elemento nella 1°, 2°... i-esima posizione se esso è inferiore al 1°, 2°,..., i-esimo elemento.
+
+Questa operazione si può effettuare un solo vettore ragionando per sottosequenze.
+
+```C
+void ordinamento_diretto(int vet[], int n) {
+    int i, j, x;
+    for (i = 1; i < n; i++) {
+        x = vet[i];
+        for (j = i-1; j >= 0 && x < vet[j]; j--)
+            vet[j+1] = vet[j];
+        vet[j+1] = x;
+    }
+}
+```
+
+Questo algoritmo è molto dispendioso in termini di tempo di esecuzione, in quanto per ogni elemento devo scorrere tutto il vettore. La complessità di questo algoritmo è $O(n^2)$. Il caso peggiore è quando il vettore è ordinato in modo decrescente.
+
+## Ordinamento per selezione
+
+Scambiare l'i-esimo elemento con l'i-esimo più piccolo.
+
+```C
+void ordinamento_selezione(int vet[], int n)
+{
+    int i, j, k, x;
+    for (i = 0; i < n - 1; i++)
+    {
+        k = i;
+        x = vet[i];
+        for (j = i + 1; j < n; j++)
+        {
+            if (vet[j] < x)
+            {
+                k = j;
+                x = vet[j];
+            }
+        }
+        vet[k] = vet[i];
+        vet[i] = x;
+    }
+
+    for (i = 0; i < n; i++)
+        printf("%d ", vet[i]);
+}
+```
+
+Dopo $n-1$ iterazioni, il vettore è ordinato. Anche in questo caso il caso peggiore è se il vettore è ordinato in modo decrescente.
+
+Numero di confronti: $n(n-1)/2$.
+Numero di scambi: $n-1$.
+
+## Bubble Sort
+
+Con il bubble sort si procede scambiando due elementi adiacenti se non sono in ordine. Dopo $n-1$ iterazioni, il vettore è ordinato.
+
+```C
+void bubble_sort(int vet[], int n)
+{
+    int i, j, x;
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = n - 1; j > i; j--)
+        {
+            if (vet[j - 1] > vet[j])
+            {
+                x = vet[j - 1];
+                vet[j - 1] = vet[j];
+                vet[j] = x;
+            }
+        }
+    }
+
+    printf("\n");
+    for (i = 0; i < n; i++)
+        printf("%d ", vet[i]);
+}
+```
+
+# Strutture
+
+Le strutture sono un tipo di dato che permette di raggruppare più variabili di tipo diverso all'interno di una singola variabile. Le variabili all'interno di una struttura vengono chiamate campi o membri. Le strutture sono dei tipi di dato definiti dall'utente.
+
+## Definizione di una struttura
+
+Per definire una struttura, si utilizza la parola chiave struct seguita dal nome della struttura e da una lista di campi racchiusi tra parentesi graffe. Ogni campo è definito specificando il tipo di dato e il nome del campo.
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+} s1;
+```
+
+## Inizializzazione di una struttura
+
+Per inizializzare una struttura, si utilizza la parola chiave struct seguita dal nome della struttura e da una lista di campi racchiusi tra parentesi graffe. Ogni campo è definito specificando il tipo di dato e il nome del campo.
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+} s1 = {"Mario", 20, 27.5};
+```
+
+Se effettuo l'inizializzazione dopo la dichiarazione posso procedere in due modi:
+
+1. Inizializzo tutti i campi utilizzando la sintassi vista prima
+
+```C
+struct studente s1 = {"Mario", 20, 27.5};
+```
+
+<div style="page-break-after: always"></div>
+
+2. Inizializzo i campi uno alla volta utilizzando l'operatore `.` per accedere ai singoli campi:
+
+```C
+struct studente s1;
+s1.nome = "Mario";
+s1.eta = 20;
+s1.media = 27.5;
+```
+
+Esempio completo:
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+};
+
+int main(){
+    struct studente s1 = {"Mario", 20, 27.5};
+
+    struct studente s2;
+    s2.nome = "Luigi";
+    s2.eta = 21;
+    s2.media = 28.5;
+}
+```
+
+## Struct e puntatori
+
+Posso utilizzare i puntatori per accedere ai campi di una struttura.
+
+```C
+struct studente {
+  char nome[50];
+  int eta;
+  float media;
+} s1, *p;
+
+p = &s1;
+
+(*p).nome = "Mario";
+(*p).eta = 20;
+(*p).media = 27.5;
+```
+
+Per evitare di scrivere `(*p).nome` posso utilizzare l'operatore `->`:
+
+```C
+p->nome = "Mario";
+p->eta = 20;
+p->media = 27.5;
+```
+
 # Esercizi da svolgere:
 
 [Pdf esercizi Università della Calabria](https://www.mat.unical.it/spataro/teaching/InformaticaChimica/esercizi_di_programmazione_in_c.pdf)
+
+```
+
+```

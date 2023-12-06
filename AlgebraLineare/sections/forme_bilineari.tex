@@ -192,7 +192,6 @@ sequenza $B' = (\s{e'}{n})$ così costruita
 \[
     \textbf{e'}_n = \textbf{e}_n - \dfrac{\textbf{e}_n\cdot\textbf{e'}_{n-1}}{\textbf{e'}_{n-1}\cdot\textbf{e'}_{n-1}}\textbf{e'}_{n-1} - \cdots - \dfrac{\textbf{e}_n\cdot\textbf{e}_1'}{\textbf{e}_1'\cdot\textbf{e}_1'}\textbf{e}_1'
 \]
-
 E' evidente che, \textbf{volendo determinare una base ortonormale di uno spazio
     vettoriale con prodotto scalare definito positivo, basta normalizzare la base
     ottenuta applicando il processo di ortogonalizzazione di Gram-Schmidt a una
@@ -202,5 +201,82 @@ E' evidente che, \textbf{volendo determinare una base ortonormale di uno spazio
 Se i vettori non nulli $\s{\textbf{v}}{r}$, costituiscono un sistema ortogonale
 di $\mathbb{V}^{\circ}(\mathbb{R})$, allora esiste una base ortogonale che li
 contiene.
+
+\subsection{Corollario}
+Se $U$ è un sottospazio vettoriale di $\mathbb{V}^{\circ}(\mathbb{R})$ allora:
+\[
+    (U^{\perp})^{\perp} = U\]
+
+\subsubsection{Dimostrazione}
+Sia $\dim V^{\circ} (\mathbb{R}) = n$ e $\dim U = r$. Dato che $U\subseteq
+    U^{\perp\perp}$, si ha $\dim U^{\perp\perp} = n-(n-r) = r = \dim U$, si ha la
+tesi.
+
+\subsection{Teorema}
+L'insieme $S$ delle soluzioni di $AX = \underbar{0}$, sistema lineare omogeneo
+in $m$ equazioni e $n$ incognite, a coefficienti reali, è un sottospazio di
+$\mathbb{R}^n (\mathbb{R})$ di dimensione $n-rK (A)$.
+
+\subsection{Forme Bilineari e Matrici}
+
+\begin{comment}
+Se $\Vx{n}$ è uno spazio vettoriale di dimensione $n$, a ogni forma bilineare è possibile associare una matrice rispetto a una base $B$ scelta in $V$. Precisamente
+\subsubsection{Definizione}
+Sia $B = (\s{e}{_n})$ una base di $\Vx{n}$ e sia $*$ una forma bilineare su
+$\Vx{n}$. La matrice di $*$ rispetto alla base $B$ è la:
+\[
+    A^*_B = \begin{matrix}
+        e_1* e_1 & e_1* e_2 & \cdots & e_1* e_n \\
+        e_2* e_1 & e_2* e_2 & \cdots & e_2* e_n \\
+        \vdots   & \vdots   & \ddots & \vdots   \\
+        e_n* e_1 & e_n* e_2 & \cdots & e_n* e_n \\
+    \end{matrix}
+\]
+Osserviamo anzitutto che, utilizzando la matrice associata a una forma
+bilineare, è possibile calcolare rapidamente $\textbf{v}*\textbf{w}$, ove
+$\textbf{v}$ e $\textbf{w}$ sono due vettori di $\Vx{n}$, aventi componenti in
+$B$, rispettivamente, ${^{t}X} = (\s{x}{n})$ e ${^{t}Y} = (\s{y}{n})$, allora
+applicando le proprietà
+\end{comment}
+
+\subsubsection{Corollario}
+Le matrici associate a una stessa forma bilineare $*$ di uno spazio vettoriale
+$\V$, rispetto a basi diverse, hanno lo stesso rango.
+
+\subsection{Definizione}
+Si dice \textbf{rango} della forma bilineare $*$, di uno spazio vettoriale
+$\V$, il rango della matrice associata a $*$ rispetto a una base qualunque di
+$\V$.\\ \textbf{Comunque sia assegnato un prodotto scalare definito positico,
+    in unos pazio vettoriale reale, esiste una base (ortonormale) rispetto alla
+    quale, il prodotto scalare tra due vettori è la somma dei prodotti delle
+    omonime componenti.} Si dice anche che \textbf{il prodotto è definito
+    componente per componente.}
+
+\subsection{Matrici ortogonali e basi ortonormali}
+Una matrice quadrata $C\in M_m(\mathbb{R})$
+\[
+    C = \begin{matrix}
+        c_{11} & c_{12} & \cdots & c_{1n} \\
+        c_{21} & c_{22} & \cdots & c_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        c_{n1} & c_{n2} & \cdots & c_{nn} \\
+    \end{matrix}
+\]
+si dice \textbf{orotogonale} se soddisfa le seguenti condizioni:
+\begin{itemize}
+    \item $(c_{i1})^2 + (c_{i2})^2 +\cdots + (c_{in})^2 = 1 \ \ \forall i\in \mathbb{I}_n$
+    \item $(c_{1j})^2 + (c_{2j})^2 +\cdots + (c_{nj})^2 = 1 \ \ \forall j\in \mathbb{I}_n$
+    \item $c_{i1}c_{j1} + c_{i2}c_{j2} +\cdots + c_{in}c_{jn} = 0 \ \ \forall i,j\in \mathbb{I}_n \text{ con } i\ne j$
+    \item $c_{1i}c_{1j} + c_{2i}c_{2j} +\cdots + c_{ni}c_{nj} = 0 \ \ \forall i,j\in \mathbb{I}_n \text{ con } i\ne j$
+\end{itemize}
+In particolare, la matrice identica $I_n$ è ortogonale.
+
+\subsubsection{Osservazione}
+Una matrice quadrata di ordine $n$ è ortogonale se, e soltanto se, \textbf{le
+    sue righe e le sue colonne formano basi ortonormali dello spazio euclideo reale
+    $\mathbb{R}^n$}.
+
+\subsubsection{Proposizione}
+Una matrice $C\in M_n(\mathbb{R})$ è ortogonale $\iff$ $C^{-1} = {^{t}C}$.
 
 \end{document}

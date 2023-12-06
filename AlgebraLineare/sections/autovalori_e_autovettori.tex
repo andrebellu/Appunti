@@ -1,0 +1,118 @@
+%!TeX root = subfile
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Autovalori e Autovettori}
+
+\subsection{Autovalori e Autovettori di una matrice quadrata}
+Data la matrice $A\in M_n(K)$, vogliamo stabilire se esistono valori di
+$\lambda \in K$ tali che, il sistema lineare $AX=\lambda X$ abbia soluzioni non
+nulle.\\ Questo risulta, evidentemente, equivalente a chiedersi se il sistema
+omogeneo $(A-\lambda I_n)X = \underbar{0}$ ammetta autosoluzione, per qualche
+valore di $\lambda\in K$.\\ In generale, un sistema omogeneo ammette
+autosoluzione $\iff$ il rango della matrice del sistema è minore del numero
+delle incognite, nel nostro caso, quindi il sistema omogeneo $(A-\lambda
+    I_n)X=\underbar{0}$ ammette autosoluzioni $\iff\ |A-\lambda I_n| = 0$.
+
+\subsection{Definizioni}
+Data la matrice $A\in M_n(K)$ si dicono:
+\begin{itemize}
+    \item \textbf{Polinomio caratteristico} di A: il determinante $|A-\lambda I|$. Si pone $|A-\lambda I|$ = $rK_A(\lambda)$
+    \item \textbf{Equazioni caratteristico} di A: le equazioni $|A-\lambda I| = 0$, ovvero $rK_A(\lambda) = 0$, ove l'incognita $\lambda$ assume valori in $K$
+    \item \textbf{Autovalori} di A: le radici del suo polinomio caratteristico, ovvero le soluzioni della sua equazioni caratteristica
+    \item \textbf{Molteplicità algebrica} di $\bar{\lambda}$: il numero di volte in cui $\bar{\lambda}$ compare come radice del polinomio caratteristica, occero come soluzione dell'equazione caratteristica. Indicheremo la molteplicità algebrica di $\bar{\lambda}$ con $a_(\bar{\lambda})$
+    \item \textbf{Autospazio} relativo all'autovalore $\bar{\lambda}$: lo spazio $V_{\Bar{\lambda}}$ delle soluzioni del sistema omogeneo $(A-\bar{\lambda}I)X = \underbar{0}$
+    \item \textbf{Autovettori} relativi all'autovalore $\bar{\lambda}$: i vettori non nulli dello spazio $V_{\Bar{\lambda}}$
+    \item \textbf{Molteplicità geometrica} di $\bar{\lambda}$: la dimensione di $g_{\bar{\lambda}}$ di $V_{\Bar{\lambda}}$
+    \item \textbf{Autovalore regolare}: un autovalore $\Bar{\lambda}$ tale che $g_{\Bar{\lambda}} = a_{\Bar{\lambda}}$, cioè tale che la sua molteplicità algebrica coincide con la rispettiva molteplicità geometrica.
+\end{itemize}
+Dunque, trovate in $K$ le radici del polinomio caratteristico di $A$, cioè i suoi autovalori, sarà possibile determinare i relativi autospazi, risolvendo per ciascun autovalore $\Bar{\lambda}$
+il sistema omogeneo $(A-\Bar{\lambda}I)X = \underbar{0}$. I vettori non nulli, di ciascun autospazio, sono gli autovettori di $A$ e, detto ${^{t}P}$ un autovettore di autovalore $\Bar{\lambda}$, varrà per esso la $AP = \Bar{\lambda}P$, come volevamo.
+Osserviamo, inoltre che \textbf{il grado del polinomio caratteristico di una matrica $A$ è uguale all'ordine della matrice stessa e, quando gli autovalori $\s{\lambda}{t}$ di $A$ appartengono tutti al campo $K$, la somma delle loro molteplicità algebriche è $n$}
+
+\subsection{Matrici simili}
+Due matrici quadrate di ordine $n$ sul campo $K, A, B$, si dicono
+\textbf{simili} quando esiste una matrice $P$, quadrata, di ordine $n$ e non
+singolare, tale che
+\[
+    B = P^{-1}AP \text{ o equivalentemente } PB = AP\]
+\subsubsection{Proposizione}
+Due matrici simili hanno lo stesso determinate e lo stesso polinomio
+caratteristico.
+
+\subsection{Matrici diagonalizzabili}
+Una matrica $A\in M_n(K)$ si dice \textbf{diagonalizzabile} quando è simile ad
+una matrice diagonale $D$.\\ Pertanto, se $A$ è diagonalizzabile, esiste una
+matrice $P$ non singolare tale che $D = P^{-1}AP$ e tale matrice è detta
+\textbf{matrice diagonalizzante}.\\ E' di particolare interesse stabilire
+quando una data matrice quadrata $A$ è diagonalizzabile, cioè quando, data $A$
+di ordine $n$, esistono una matrice diagonale $D$ e una matrice non singolare
+$P$, quadrate di ordine $n$, tali che
+\[
+    D = P^{-1}AP \text{ o equivalentemente } PD=AP\]
+
+\subsubsection{Teorema}
+Una matrice $A\in M_n(K)$ è diagonalizzabile $\iff$ esiste una base di $K^n$
+formata da autovettori di $A$.
+
+\subsubsection{Proposizione}
+Se $\Bar{\lambda}\in K$ è un autovalore di $A\in M_n(K)$, risulta $1\leq
+    g_{\Bar{\lambda}}\leq a_{\Bar{\lambda}}$.
+
+\subsection{Proposizione}
+Sia $A\in M_n(K)$. La somma di $t$ autospazi $V_{\lambda_1},
+    V_{\lambda_2}\cdots V_{\lambda_t}$, relativi a $t$ autovalori distinti
+$\s{\lambda}{t}$ è diretta.
+
+\subsubsection{Corollario}
+Se una matrice $A\in M_n(K)$ ha $n$ autovalori distinti, allora è
+diagonalizzabile.
+
+\subsection{Matrici reali e simmetriche}
+
+\subsubsection{Teorema spettrale}
+Gli autovaloti di una matrice $A$ reale e simmetrica sono reali.
+
+\subsubsection{Dimostrazione}
+Sia $A\in M_n(\mathbb{R})$ simmetrica. Siano $\lambda\in \mathbb{C}$ un suo
+autovalore, ${^{t}A}\in\mathbb{C}^n$ un autovalore relativo a $\lambda$,
+$\bar{\lambda}$ il coniugato di $\lambda$ e ${^{t}\Bar{A}}$ il coniugato di
+${^{t}A}$. Dobbiamo dimostrare che $\lambda = \bar{\lambda}$. Calcoliamo
+$\lambda({^{t}X}\bar{X}) = {^{t}(\lambda X)}\bar{X} = {^{t}(AX)}\bar{X} =
+    {^{t}X}{^{t}A}\bar{X} = {^{t}X}A\bar{X} = {^{t}X}\lambda\bar{X} =
+    \lambda{^{t}X}\bar{X}$. Per quanto premesso, ${^{t}X}\Bar{X}$ non è nullo,
+quindi, deve essere $\lambda = \bar{\lambda}$, perciò $\lambda\in\mathbb{R}$.
+
+\subsection{Martici ortogonalmente diagonalizzabili}
+In quanto segue, lo spazio vettoriale $\mathbb{R}^n (\mathbb{R})$ sarà dotato
+del prodotto scalare euclideo. Osserviamo che possiamo scrivere il prodotto
+scalare di due vettori ${^{t}X}, {^{t}Y}\in\mathbb{R}^n$ come
+\[
+    {^{t}X}{^{t}Y} = x_1y_1 + x_2y_2 + \cdots + x_ny_n = (\s{x}{n})\begin{matrix}
+        y_1    \\
+        y_2    \\
+        \vdots \\
+        y_n
+    \end{matrix} = {^{t}X}Y
+\]
+
+\subsubsection{Proposizione}
+Se $A$ è una matrice reale e simmetrica, autovettori di $A$, relativi ad
+autovalori distinti, sono ortogonali.
+
+\subsubsection{Definizione}
+Una matrice $A\in M_r (\mathbb{R})$ si dice ortogonalmente diagonalizzabile se
+è diagonalizzabile e la matrice diagonalizzante $P$ risulta una matrice
+ortogonale.\\ Sappiamo che una matrice $P\in M_n(\mathbb{R})$ è ortogonale
+$\iff$ le sue righe e le sue colonne sono basi ortonormali di $\mathbb{R}^n
+    (\mathbb{R})$.\\ Ne segue quindi che una matrice $A\in M_n(\mathbb{R})$ è
+ortogonalmente diagonalizzabile $\iff \mathbb{R}^n (\mathbb{R})$ ammette una
+base ortonormale di autovettori di $A$.\\ \textbf{Il seguente teorema dimostra
+    che tutte e sole le matrici reali ortogonalmente diagonalizzabili sono le
+    matrici simmetriche.}
+
+\subsubsection{Teorema della base spettrale}
+Una matrice $A\in M_n(\mathbb{R})$ è ortogonalmente diagonalizzabile $\iff$ è
+simmetrica.
+
+\end{document}

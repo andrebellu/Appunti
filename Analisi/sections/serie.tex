@@ -1,0 +1,163 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Serie Numeriche}
+Consideriamo una successione $a_n$ di numeri reali. Vogliamo definire la
+``somma'' di infiniti termini della successione, cioè: $a_1 + a_2 + a_3 +
+    \cdots + a_n + \cdots$
+\begin{center}
+
+    Ora ad esempio, se consideriamo:
+    \[
+        1+1+1+1+1+\cdots+1+\cdots \ \ \text{ Successione costante $a_n = 1 \ \forall n$}
+    \]
+    Ovvio che il risultato è $+\infty$.\\ Ma se consideriamo:
+    \[
+        1-1+1-1+1-1+\cdots+1-1+\cdots
+    \]
+    Ovvio che il risultato è$\ldots$?\\ Potrebbe essere:
+    \[
+        \textbf{(1-1)}+\textbf{(1-1)}+(1-1)+\cdots+(1-1)+\cdots = 0+0+0+\cdots+0+\cdots = 0
+    \]
+    oppure:
+    \[
+        \textbf{1}+\textbf{(-1+1)}+(-1+1)+\cdots+(-1+1)+\cdots = 1+0+0+\cdots+0+\cdots = 1
+    \]
+
+\end{center}
+Quindi varia in base a come li accoppio.\\ Allora come si procede?\\ Si
+introduce la somma $S_n$ dei primi termini della successione, detta
+\textbf{Somma Parziale o Ridotta Ennesima}.
+
+\subsection{Somma parziale}
+
+\[
+    S_n = a_1 + a_2 + a_3 + \cdots + a_n = \sum_{k=1}^n a_k
+\]
+$S_1 = a_1, S_2 = a_1 + a_2, S_3 = a_1+a_2+a_3,\ldots,S_n = a_1+a_2+a_3+\cdots+a_n=\sum_{k=1}^{n} a_k$\\
+Vediamo ora cosa succede se sommiamo facciamo tendere a infinito la somma
+parziale.
+
+\subsubsection{Esempio 1}
+$a_k = 1\ \forall k$
+
+\[
+    1+1+1+1+1+1\ldots+1+\ldots\]
+
+\[S_1 = 1, S_2 = 2, S_3 = 3,\ldots, S_n = n\]
+$\implies S_n\to\infty$
+
+\subsubsection{Esempio 2}
+$a_k = (-1)^{k+1}$
+
+\[
+    1-1+1-1+1-1+1-1+\ldots
+\]
+
+\[
+    S_1 = 1, S_2 = 0, S_3 = 1, S_4 = 0, S_5 = 1, S_6 = 0, \ldots
+\]
+$S_n$ oscilla fra $0$ e $1$ quindi: $\implies \lim_{n\to\infty}S_n$ non esiste!.
+
+\subsection{Definizione di Serie Numerica Astratta}
+\textbf{Notazione}: $\sum_{k=1}^\infty a_k$ Somma o Serie per $k$ che va da $1$ a
+$+\infty$ di $a_k$. Poniamo per definizione:
+\[
+    \sum_{k=1}^\infty a_k = \lim_{n\to\infty}S_n = \lim_{n\to\infty}\sum_{k=1}^n a_k
+\]
+
+\begin{itemize}
+    \item Se il limite per $n\to\infty$ di $S_n$ esiste ed è un numero finito, la serie è
+          \textbf{Convergente}.
+    \item Se il limite per $n\to\infty$ di $S_n$ è $\pm\infty$, la serie è
+          \textbf{Divergente}.
+\end{itemize}
+
+\begin{itemize}
+    \item Una serie convergente o divergente si dice \textbf{Regolare}.
+    \item Se non esiste il limite per $n\to\infty$ di $S_n$, si dice che la serie è
+          \textbf{Indeterminata}.
+\end{itemize}
+Il comportamtento della seria si chiama \textbf{Carattere} della serie. Il
+carattere di una seria è la sua proprietà di essere convergente, divergente o
+indeterminata.
+
+\subsubsection{Osservazione}
+La serie che abbiamo visto $\sum_{n=1}^{+\infty}(-1)^n$ è indeterminata.
+\[
+    S_1 = -1, S_2 = 0, S_3 = -1, S_4 = 0, \ldots
+\]
+Si noti che la successione associata a queste serie è $a_n=(-1)^n$ che non
+converge a zero. Questo è un motivo èer escludere a priori che la serie
+converga. Vale infatti il seguente:
+
+\subsection{Condizione necessaria di convergenza di una serie}
+Se la serie $\sum_{n=1}^{+\infty}a_n$ converge, allora la successione $a_n$
+tende a zero, per $n\to\infty$.
+
+\[
+    \sum_{n=1}^{+\infty}a_n \text{ converge} \implies \lim_{n\to\infty}a_n = 0
+\]
+L'implicazione inversa \textbf{non} è vera.
+
+\subsubsection{Dimostrazione}
+
+Sia $S_n$ la successione delle somme parziali e sia $S\in \mathbb{R}$, la somma
+$(\implies \lim_{n\to\infty}S_ = S)$ della serie. Abbiamo che:
+\[
+    (\star) \ S_{n+1} = S_n + a_{n+1} \ \forall n\in\mathbb{N}
+\]
+Aggiungendo alla successione $S_n$ il termine $a_{n+1}$, ottengo la successione
+$S_{n+1}$. (Per definizione di successione di somme parziali)\\ Allora da
+$(\star)$:
+\[
+    \lim_{n\to\infty}a_{n+1} = \lim_{n\to\infty}S_{n+1} - \lim_{n\to\infty}S_n = S - S = 0
+\]
+\[
+    \implies a_n\to 0
+\]
+\textbf{Osservazione:}
+E' una condizione \textbf{Necessaria}, ma non sufficiente.\\
+Vediamo due esempi di serie modello:
+
+\subsection{Serie geometrica}
+$\forall x\in \mathbb{R}$, consideriamo la serie:
+\[
+    \sum_{k=0}^{+\infty} x^k = 1+ x + x^2 + x^3 + \cdots + x^n + \cdots
+\]
+che si chiama Serie geometrica di \textbf{ragione} $x$ (argomento elevato alla
+$k$).\\ Calcoliamo la somma parziale $S_n$:
+\[
+    S_n = 1 + x + x^2 + \cdots + x^n
+\]
+e $\lim_{n\to\infty} S_n =$?.\\ \vspace{1pt} \textbf{Formula Risolutiva:}
+$\forall x \ne 1$ \[
+    1+x+x^2+\cdots+x^n = \frac{1-x^{n+1}}{1-x}
+\]
+
+\subsubsection{Osservazione}
+La formual vale $\forall x \ne 1$, cioè:
+\[
+    \lim_{n\to\infty}S_n = \lim_{n\to\infty}\frac{1-x^{n+1}}{1-x} =
+\]
+e
+\[
+    \lim_{n\to\infty}x^{n+1} = \begin{cases}
+
+        \dots
+    \end{cases}
+\]
+Se invece $x = 1$,
+\[
+    \lim_{n\to\infty}S_n = \lim_{n\to\infty}1+1+1+\cdots+1 = +\infty
+\]
+Riassumendo per la serie geometrica (di ragione $x$):
+\[
+    \sum_{k=0}^{+\infty} = \begin{cases}
+        \infty               & \text{se } x \geq 1 \text{ divergente}             \\
+        \frac{1}{1-x}        & \text{se } -1 < x < 1\ (|x|<1) \text{ convergente} \\
+        \text{indeterminata} & \text{se } x \leq -1
+    \end{cases}
+\]
+
+\end{document}

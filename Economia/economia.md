@@ -1,109 +1,125 @@
 # Table of Contents
 
--   [Table of Contents](#table-of-contents)
--   [Lezione 16](#lezione-16)
--   [Margine di contribuzione](#margine-di-contribuzione)
-    -   [Definizione](#definizione)
-    -   [Come utilizzarlo](#come-utilizzarlo)
-    -   [Lettura](#lettura)
-    -   [Algortimo di Calcolo](#algortimo-di-calcolo)
-    -   [Come eseguire il calcolo](#come-eseguire-il-calcolo)
-    -   [Livelli del margine di contribuzione](#livelli-del-margine-di-contribuzione)
-    -   [Calcolo del margine di contribuzione di primo livello](#calcolo-del-margine-di-contribuzione-di-primo-livello)
-        -   [Esempio di calcolo del margine di contribuzione](#esempio-di-calcolo-del-margine-di-contribuzione)
-    -   [Calcolo del margine di contribuzione multilivello](#calcolo-del-margine-di-contribuzione-multilivello)
-        -   [Esempio di calcolo del margine di contribuzione di multilivello](#esempio-di-calcolo-del-margine-di-contribuzione-di-multilivello)
-    -   [Calcolo del margine di contribuzione di secondo livello](#calcolo-del-margine-di-contribuzione-di-secondo-livello)
-    -   [Il margine di contribuzione relativo](#il-margine-di-contribuzione-relativo)
-        -   [Esempi di calcolo di margine di contribuzione relativo](#esempi-di-calcolo-di-margine-di-contribuzione-relativo)
-    -   [Perchè calcolare i margini di retribuzione](#perchè-calcolare-i-margini-di-retribuzione)
-    -   [Limiti dell'analisi del margine di contribuzione](#limiti-dellanalisi-del-margine-di-contribuzione)
-    -   [Configurazioni di costo e mergini di contribuzione](#configurazioni-di-costo-e-mergini-di-contribuzione)
-    -   [Esercitazione 2: Utilizzo dei margini di contribuzione](#esercitazione-2-utilizzo-dei-margini-di-contribuzione)
--   [Lezione 17](#lezione-17)
--   [Il modello di break-even](#il-modello-di-break-even)
-    -   [Definizione](#definizione-1)
-    -   [Ipotesi e finalità](#ipotesi-e-finalità)
-    -   [Punto di pareggio: Ricavi Totali = Costi Totali](#punto-di-pareggio-ricavi-totali--costi-totali)
-    -   [Il volume di pareggio](#il-volume-di-pareggio)
-    -   [Il diagramma di profitto](#il-diagramma-di-profitto)
-    -   [Il modello di break-even in chiave algebrica](#il-modello-di-break-even-in-chiave-algebrica)
-    -   [Quantità e valore di break even](#quantità-e-valore-di-break-even)
-        -   [Caso Monoprodotto](#caso-monoprodotto)
-    -   [Quantità target e reddito obiettivo](#quantità-target-e-reddito-obiettivo)
-    -   [Diagramma del profitto e reddito operativo](#diagramma-del-profitto-e-reddito-operativo)
-    -   [Break even, costi fissi e costi variabili](#break-even-costi-fissi-e-costi-variabili)
-        -   [CASO 1](#caso-1)
-        -   [CASO 2](#caso-2)
-    -   [Break Even e Margine di contribuzione](#break-even-e-margine-di-contribuzione)
-    -   [Volume di pareggio: un esempio](#volume-di-pareggio-un-esempio)
-    -   [Break-even in valore e margine di contribuzione percentuale](#break-even-in-valore-e-margine-di-contribuzione-percentuale)
-    -   [Margine di contribuzione percentuale: un esempio](#margine-di-contribuzione-percentuale-un-esempio)
-        -   [Risoluzione](#risoluzione)
-    -   [Le imprese multi-prodotto](#le-imprese-multi-prodotto)
-        -   [Margine di contribuzione del prodtto equivalente: esempio](#margine-di-contribuzione-del-prodtto-equivalente-esempio)
-    -   [Margine di sicurezza](#margine-di-sicurezza)
-    -   [Leva operativa e struttura dei costi](#leva-operativa-e-struttura-dei-costi)
-        -   [Leva operativa e struttura dei costi: un esempio](#leva-operativa-e-struttura-dei-costi-un-esempio)
-    -   [Grado di leva operativa, quantità, costi e ricavi: una visione d'insieme](#grado-di-leva-operativa-quantità-costi-e-ricavi-una-visione-dinsieme)
-    -   [Esercitazione 3: BEP](#esercitazione-3-bep)
--   [Lezione 18](#lezione-18)
--   [L'utilizzo dei costi per le decisioni di breve e lungo periodo.](#lutilizzo-dei-costi-per-le-decisioni-di-breve-e-lungo-periodo)
-    -   [Logiche nella misurazione dei Costi](#logiche-nella-misurazione-dei-costi)
-    -   [Pregi e difetti del costo diretto e del costo pieno](#pregi-e-difetti-del-costo-diretto-e-del-costo-pieno)
-    -   [Il supporto di decisioni di breve periodo](#il-supporto-di-decisioni-di-breve-periodo)
-    -   [Il supporto a decisioni di lungo periodo](#il-supporto-a-decisioni-di-lungo-periodo)
-    -   [Gli effetti motivazionali](#gli-effetti-motivazionali)
-    -   [Modelli di supporto alle decisioni di breve periodo](#modelli-di-supporto-alle-decisioni-di-breve-periodo)
-    -   [La scelta del mix ottimale di produzione](#la-scelta-del-mix-ottimale-di-produzione)
-    -   [Il problema matematico del mix ottimo](#il-problema-matematico-del-mix-ottimo)
-        -   [Il mix ottimo di produzione: un esempio](#il-mix-ottimo-di-produzione-un-esempio)
-    -   [Analisi della contribuzione](#analisi-della-contribuzione)
-    -   [Analisi della contribuzione: un'applicazione](#analisi-della-contribuzione-unapplicazione)
--   [Lezione 19](#lezione-19)
--   [Analisi make or buy, determinazione dei costi di prodotto, Job Order Costing.](#analisi-make-or-buy-determinazione-dei-costi-di-prodotto-job-order-costing)
-    -   [Scelta tra alternative e costi e ricavi differenziali](#scelta-tra-alternative-e-costi-e-ricavi-differenziali)
-    -   [Make or buy](#make-or-buy)
-        -   [un esempio](#un-esempio)
-        -   [I costi opportunità](#i-costi-opportunità)
-        -   [I costi invisibili](#i-costi-invisibili)
-    -   [Costi invisibili](#costi-invisibili)
-        -   [Un esempio nell'elettronica di consumo](#un-esempio-nellelettronica-di-consumo)
-    -   [I metodi per la determinazione dei costi di prodotto](#i-metodi-per-la-determinazione-dei-costi-di-prodotto)
-    -   [Il calcolo dei costi di prodotto](#il-calcolo-dei-costi-di-prodotto)
-    -   [Le tecniche di rilevazione dei costi](#le-tecniche-di-rilevazione-dei-costi)
-    -   [Rilevazione dei costi: i metodi tradizionali rilevazione dei costi](#rilevazione-dei-costi-i-metodi-tradizionali-rilevazione-dei-costi)
-    -   [Job Order Costing](#job-order-costing)
-        -   [Esempio di scheda](#esempio-di-scheda)
--   [Lezione 22](#lezione-22)
--   [La divisione del lavoro e i meccanismi di coordinamento.](#la-divisione-del-lavoro-e-i-meccanismi-di-coordinamento)
-    -   [Le parti dell'organizzazione secondo Mintztberg](#le-parti-dellorganizzazione-secondo-mintztberg)
-    -   [1. Il nucleo operativo](#1-il-nucleo-operativo)
--   [2. Vertice strategico](#2-vertice-strategico)
-    -   [3. La linea intermedia](#3-la-linea-intermedia)
-    -   [4. La tecnostruttura](#4-la-tecnostruttura)
-    -   [5. Lo staff di supporto](#5-lo-staff-di-supporto)
-    -   [Il problema fondamentale dell'organizzazione](#il-problema-fondamentale-dellorganizzazione)
-    -   [I 5 meccanismi di coordinamento](#i-5-meccanismi-di-coordinamento)
-    -   [Il sistema organizzativo: modello sistemico](#il-sistema-organizzativo-modello-sistemico)
-    -   [Le variabili ambientali](#le-variabili-ambientali)
-    -   [Le variabili individuali](#le-variabili-individuali)
-    -   [Le variabili sociali](#le-variabili-sociali)
-    -   [Le variabili tecniche](#le-variabili-tecniche)
-    -   [Le variabili istituzionali](#le-variabili-istituzionali)
-    -   [Le variabili organizzative](#le-variabili-organizzative)
-    -   [Funzioni generali: il ruolo della struttura organizzativa](#funzioni-generali-il-ruolo-della-struttura-organizzativa)
-    -   [Approfondimento lessicale](#approfondimento-lessicale)
-    -   [Sistemi di ricerca, selezione, inserimento](#sistemi-di-ricerca-selezione-inserimento)
-    -   [Sistemi di addestramento e formazione](#sistemi-di-addestramento-e-formazione)
-    -   [Sistemi di carriera e di valutazione del potenziale](#sistemi-di-carriera-e-di-valutazione-del-potenziale)
-    -   [Sistema retributivo e i connessi sistemi di valutazione delle mansioni/prestazioni](#sistema-retributivo-e-i-connessi-sistemi-di-valutazione-delle-mansioniprestazioni)
-    -   [I sistemi di gestione del personale: una sintesi](#i-sistemi-di-gestione-del-personale-una-sintesi)
-    -   [Pianificazione, programmazione e controllo](#pianificazione-programmazione-e-controllo)
-    -   [L'organizzazione aziendale](#lorganizzazione-aziendale)
-    -   [Oggetto e obiettivi dell'organizzazione](#oggetto-e-obiettivi-dellorganizzazione)
-    -   [Affrontare i problemi organizzativi](#affrontare-i-problemi-organizzativi)
-    -   [L'approccio di progettazione "contingency"](#lapproccio-di-progettazione-contingency)
+- [Table of Contents](#table-of-contents)
+- [Lezione 16](#lezione-16)
+- [Margine di contribuzione](#margine-di-contribuzione)
+  - [Definizione](#definizione)
+  - [Come utilizzarlo](#come-utilizzarlo)
+  - [Lettura](#lettura)
+  - [Algortimo di Calcolo](#algortimo-di-calcolo)
+  - [Come eseguire il calcolo](#come-eseguire-il-calcolo)
+  - [Livelli del margine di contribuzione](#livelli-del-margine-di-contribuzione)
+  - [Calcolo del margine di contribuzione di primo livello](#calcolo-del-margine-di-contribuzione-di-primo-livello)
+    - [Esempio di calcolo del margine di contribuzione](#esempio-di-calcolo-del-margine-di-contribuzione)
+  - [Calcolo del margine di contribuzione multilivello](#calcolo-del-margine-di-contribuzione-multilivello)
+    - [Esempio di calcolo del margine di contribuzione di multilivello](#esempio-di-calcolo-del-margine-di-contribuzione-di-multilivello)
+  - [Calcolo del margine di contribuzione di secondo livello](#calcolo-del-margine-di-contribuzione-di-secondo-livello)
+  - [Il margine di contribuzione relativo](#il-margine-di-contribuzione-relativo)
+    - [Esempi di calcolo di margine di contribuzione relativo](#esempi-di-calcolo-di-margine-di-contribuzione-relativo)
+  - [Perchè calcolare i margini di retribuzione](#perchè-calcolare-i-margini-di-retribuzione)
+  - [Limiti dell'analisi del margine di contribuzione](#limiti-dellanalisi-del-margine-di-contribuzione)
+  - [Configurazioni di costo e mergini di contribuzione](#configurazioni-di-costo-e-mergini-di-contribuzione)
+  - [Esercitazione 2: Utilizzo dei margini di contribuzione](#esercitazione-2-utilizzo-dei-margini-di-contribuzione)
+- [Lezione 17](#lezione-17)
+- [Il modello di break-even](#il-modello-di-break-even)
+  - [Definizione](#definizione-1)
+  - [Ipotesi e finalità](#ipotesi-e-finalità)
+  - [Punto di pareggio: Ricavi Totali = Costi Totali](#punto-di-pareggio-ricavi-totali--costi-totali)
+  - [Il volume di pareggio](#il-volume-di-pareggio)
+  - [Il diagramma di profitto](#il-diagramma-di-profitto)
+  - [Il modello di break-even in chiave algebrica](#il-modello-di-break-even-in-chiave-algebrica)
+  - [Quantità e valore di break even](#quantità-e-valore-di-break-even)
+    - [Caso Monoprodotto](#caso-monoprodotto)
+  - [Quantità target e reddito obiettivo](#quantità-target-e-reddito-obiettivo)
+  - [Diagramma del profitto e reddito operativo](#diagramma-del-profitto-e-reddito-operativo)
+  - [Break even, costi fissi e costi variabili](#break-even-costi-fissi-e-costi-variabili)
+    - [CASO 1](#caso-1)
+    - [CASO 2](#caso-2)
+  - [Break Even e Margine di contribuzione](#break-even-e-margine-di-contribuzione)
+  - [Volume di pareggio: un esempio](#volume-di-pareggio-un-esempio)
+  - [Break-even in valore e margine di contribuzione percentuale](#break-even-in-valore-e-margine-di-contribuzione-percentuale)
+  - [Margine di contribuzione percentuale: un esempio](#margine-di-contribuzione-percentuale-un-esempio)
+    - [Risoluzione](#risoluzione)
+  - [Le imprese multi-prodotto](#le-imprese-multi-prodotto)
+    - [Margine di contribuzione del prodtto equivalente: esempio](#margine-di-contribuzione-del-prodtto-equivalente-esempio)
+  - [Margine di sicurezza](#margine-di-sicurezza)
+  - [Leva operativa e struttura dei costi](#leva-operativa-e-struttura-dei-costi)
+    - [Leva operativa e struttura dei costi: un esempio](#leva-operativa-e-struttura-dei-costi-un-esempio)
+  - [Grado di leva operativa, quantità, costi e ricavi: una visione d'insieme](#grado-di-leva-operativa-quantità-costi-e-ricavi-una-visione-dinsieme)
+  - [Esercitazione 3: BEP](#esercitazione-3-bep)
+- [Lezione 18](#lezione-18)
+- [L'utilizzo dei costi per le decisioni di breve e lungo periodo.](#lutilizzo-dei-costi-per-le-decisioni-di-breve-e-lungo-periodo)
+  - [Logiche nella misurazione dei Costi](#logiche-nella-misurazione-dei-costi)
+  - [Pregi e difetti del costo diretto e del costo pieno](#pregi-e-difetti-del-costo-diretto-e-del-costo-pieno)
+  - [Il supporto di decisioni di breve periodo](#il-supporto-di-decisioni-di-breve-periodo)
+  - [Il supporto a decisioni di lungo periodo](#il-supporto-a-decisioni-di-lungo-periodo)
+  - [Gli effetti motivazionali](#gli-effetti-motivazionali)
+  - [Modelli di supporto alle decisioni di breve periodo](#modelli-di-supporto-alle-decisioni-di-breve-periodo)
+  - [La scelta del mix ottimale di produzione](#la-scelta-del-mix-ottimale-di-produzione)
+  - [Il problema matematico del mix ottimo](#il-problema-matematico-del-mix-ottimo)
+    - [Il mix ottimo di produzione: un esempio](#il-mix-ottimo-di-produzione-un-esempio)
+  - [Analisi della contribuzione](#analisi-della-contribuzione)
+  - [Analisi della contribuzione: un'applicazione](#analisi-della-contribuzione-unapplicazione)
+- [Lezione 19](#lezione-19)
+- [Analisi make or buy, determinazione dei costi di prodotto, Job Order Costing.](#analisi-make-or-buy-determinazione-dei-costi-di-prodotto-job-order-costing)
+  - [Scelta tra alternative e costi e ricavi differenziali](#scelta-tra-alternative-e-costi-e-ricavi-differenziali)
+  - [Make or buy](#make-or-buy)
+    - [un esempio](#un-esempio)
+    - [I costi opportunità](#i-costi-opportunità)
+    - [I costi invisibili](#i-costi-invisibili)
+  - [Costi invisibili](#costi-invisibili)
+    - [Un esempio nell'elettronica di consumo](#un-esempio-nellelettronica-di-consumo)
+  - [I metodi per la determinazione dei costi di prodotto](#i-metodi-per-la-determinazione-dei-costi-di-prodotto)
+  - [Il calcolo dei costi di prodotto](#il-calcolo-dei-costi-di-prodotto)
+  - [Le tecniche di rilevazione dei costi](#le-tecniche-di-rilevazione-dei-costi)
+  - [Rilevazione dei costi: i metodi tradizionali rilevazione dei costi](#rilevazione-dei-costi-i-metodi-tradizionali-rilevazione-dei-costi)
+  - [Job Order Costing](#job-order-costing)
+    - [Esempio di scheda](#esempio-di-scheda)
+  - [Processo di allocazione dei costi indiretti:](#processo-di-allocazione-dei-costi-indiretti)
+  - [Esercitazione 4](#esercitazione-4)
+- [Lezione 21](#lezione-21)
+- [Introduzione all'organizzazione d'impresa](#introduzione-allorganizzazione-dimpresa)
+  - [L'organizzazione Interna](#lorganizzazione-interna)
+    - [L'organizzazione interna: divisione e coordinamento](#lorganizzazione-interna-divisione-e-coordinamento)
+    - [Organizzazione interna: i tre modelli di organizzazione aziendale](#organizzazione-interna-i-tre-modelli-di-organizzazione-aziendale)
+    - [L'organizzazione intera: i meccanismi di coordinamento secondo Mintzberg](#lorganizzazione-intera-i-meccanismi-di-coordinamento-secondo-mintzberg)
+  - [L'adattamento reciproco (mutuo aggiustamento)](#ladattamento-reciproco-mutuo-aggiustamento)
+  - [La supervisione diretta](#la-supervisione-diretta)
+  - [La standardizzazione dei processi produttivi](#la-standardizzazione-dei-processi-produttivi)
+  - [La standardizzazione degli output](#la-standardizzazione-degli-output)
+  - [La standardizzazione delle competenze](#la-standardizzazione-delle-competenze)
+  - [L’organizzazione interna: l’organigramma](#lorganizzazione-interna-lorganigramma)
+  - [Le strutture organizzative tradizionali](#le-strutture-organizzative-tradizionali)
+  - [La struttura funzionale](#la-struttura-funzionale)
+- [Lezione 22](#lezione-22)
+- [La divisione del lavoro e i meccanismi di coordinamento.](#la-divisione-del-lavoro-e-i-meccanismi-di-coordinamento)
+  - [Le parti dell'organizzazione secondo Mintztberg](#le-parti-dellorganizzazione-secondo-mintztberg)
+  - [1. Il nucleo operativo](#1-il-nucleo-operativo)
+- [2. Vertice strategico](#2-vertice-strategico)
+  - [3. La linea intermedia](#3-la-linea-intermedia)
+  - [4. La tecnostruttura](#4-la-tecnostruttura)
+  - [5. Lo staff di supporto](#5-lo-staff-di-supporto)
+  - [Il problema fondamentale dell'organizzazione](#il-problema-fondamentale-dellorganizzazione)
+  - [I 5 meccanismi di coordinamento](#i-5-meccanismi-di-coordinamento)
+  - [Il sistema organizzativo: modello sistemico](#il-sistema-organizzativo-modello-sistemico)
+  - [Le variabili ambientali](#le-variabili-ambientali)
+  - [Le variabili individuali](#le-variabili-individuali)
+  - [Le variabili sociali](#le-variabili-sociali)
+  - [Le variabili tecniche](#le-variabili-tecniche)
+  - [Le variabili istituzionali](#le-variabili-istituzionali)
+  - [Le variabili organizzative](#le-variabili-organizzative)
+  - [Funzioni generali: il ruolo della struttura organizzativa](#funzioni-generali-il-ruolo-della-struttura-organizzativa)
+  - [Approfondimento lessicale](#approfondimento-lessicale)
+  - [Sistemi di ricerca, selezione, inserimento](#sistemi-di-ricerca-selezione-inserimento)
+  - [Sistemi di addestramento e formazione](#sistemi-di-addestramento-e-formazione)
+  - [Sistemi di carriera e di valutazione del potenziale](#sistemi-di-carriera-e-di-valutazione-del-potenziale)
+  - [Sistema retributivo e i connessi sistemi di valutazione delle mansioni/prestazioni](#sistema-retributivo-e-i-connessi-sistemi-di-valutazione-delle-mansioniprestazioni)
+  - [I sistemi di gestione del personale: una sintesi](#i-sistemi-di-gestione-del-personale-una-sintesi)
+  - [Pianificazione, programmazione e controllo](#pianificazione-programmazione-e-controllo)
+  - [L'organizzazione aziendale](#lorganizzazione-aziendale)
+  - [Oggetto e obiettivi dell'organizzazione](#oggetto-e-obiettivi-dellorganizzazione)
+  - [Affrontare i problemi organizzativi](#affrontare-i-problemi-organizzativi)
+  - [L'approccio di progettazione "contingency"](#lapproccio-di-progettazione-contingency)
 
 # Lezione 16
 
@@ -115,9 +131,9 @@ Per **margine di contribuzione** (MdC) si intende la differenza tra il fatturato
 
 Può essere calcolato:
 
--   per un prodotto
--   per un gruppo di prodotti
--   per l'intero volune di vendite
+- per un prodotto
+- per un gruppo di prodotti
+- per l'intero volune di vendite
 
 Per trarre profitto c'è bisogno che il margine di contribuzione complessivo debba essere superiore ai costi fissi.
 Questo importante valore viene definito nel conto dei costi e delle prestazioni come l'importo che un'azienda ha a disposizione, in base al fatturato, per coprire i propri costi fissi.
@@ -126,15 +142,15 @@ Esso fornisce informazioni circa quanto la rispettiva quota del fatturato contri
 
 I **costi fissi** coincidono con i costi sostenuti indipendentemente dal fatturato dell'impresa:
 
--   Affitti
--   Interessi
--   Ammortamenti
--   Costi Salariali (in alcuni casi)
+- Affitti
+- Interessi
+- Ammortamenti
+- Costi Salariali (in alcuni casi)
 
 I **costi variabili** sono tutti i costi che aumentano o diminuiscono in rapporto alle quantità prodotte, ad esempio:
 
--   Materie prime
--   Costi di trasporto
+- Materie prime
+- Costi di trasporto
 
 ## Come utilizzarlo
 
@@ -145,9 +161,9 @@ Il margine di contribuzione fornisce riulti significativi **se posto in relazion
 
 ## Lettura
 
--   **MdC > costi fissi**: l'azienda realizza profitti, le entrate superano le uscite;
--   **MdC = costi fissi**: il risultato delle normali attività commerciali è appena bilanciato (**punto di pareggio**);
--   **MdC < costi fissi**: l'azienda registra perdite in quanto le uscite superano le entrate.
+- **MdC > costi fissi**: l'azienda realizza profitti, le entrate superano le uscite;
+- **MdC = costi fissi**: il risultato delle normali attività commerciali è appena bilanciato (**punto di pareggio**);
+- **MdC < costi fissi**: l'azienda registra perdite in quanto le uscite superano le entrate.
 
 Il risultato può essere migliorato:
 
@@ -158,12 +174,12 @@ Il risultato può essere migliorato:
 
 Si distingue tra il **margine unitario** e il **margine di contribuzione totale**, i quali possono essere calcolari mediante le rispettive formule del margine di contribuzuione:
 
--   **Margine di contriubuzione unitario**: differenza tra il prezzo unitario `p` e i costi unitari variabili `cv` .
-    $$M_dC_u = p - CV$$
+- **Margine di contriubuzione unitario**: differenza tra il prezzo unitario `p` e i costi unitari variabili `cv` .
+  $$M_dC_u = p - CV$$
 
--   **Margine di contribuzione totale**: moltiplicando il margine di contribuzione unitario `MdCu` per il volume delle vendite `x` si ottiene il margine di ocntribuzione totale `MdC`.
-    Con il margine di contribuzione otale è possibile determinare il prodotto o il servizio abbia contribuito nel complesso (in un determinato periodo di tempo).
-    $$M_dC = M_dC_u \times x$$
+- **Margine di contribuzione totale**: moltiplicando il margine di contribuzione unitario `MdCu` per il volume delle vendite `x` si ottiene il margine di ocntribuzione totale `MdC`.
+  Con il margine di contribuzione otale è possibile determinare il prodotto o il servizio abbia contribuito nel complesso (in un determinato periodo di tempo).
+  $$M_dC = M_dC_u \times x$$
 
 ## Come eseguire il calcolo
 
@@ -173,17 +189,17 @@ Il margine di contribuzione relativo consente di determinare un programma di pro
 Il risultato del calcolo del margine di contribuzione a livello unico fornisce informazioni sulla redditività dell'azienda del suo complesso ese p quindi di particolare interesse per le decisioni impreditoriali generali.
 Con il **calcolo del margine di contribuzione multilivello**, invece è possibile esaminare:
 
--   La redditività dei singoli prodotti
--   La redditività di gruppi di prodotti
--   La redditività di aree di business
+- La redditività dei singoli prodotti
+- La redditività di gruppi di prodotti
+- La redditività di aree di business
 
 ## Livelli del margine di contribuzione
 
 A seconda di quali e quanti costi venga sottratto ai ricavi, è possibile ottenere:
 
--   Margine di primo livello
--   Margine di secondo livello
--   Margine di terzo livello
+- Margine di primo livello
+- Margine di secondo livello
+- Margine di terzo livello
 
 Essendo un calcolo tipico del Controllo di Gestione, la scelta del nome e il metodo del calcolo può essere discrezionale.
 
@@ -212,11 +228,11 @@ $$M_dC \text{ I° livello} = Ricavi - (Materiali, Mandodopera, Lavorazioni ester
 
 1. Per ogni singolo ricavo parziale si calcola il margine di contribuzione sottraendo i costi variabili dai rispettivi ricavi di vendita
 
-    > Il modello di bicicletta A realizza un ricavo di 20k€ con costi variabili pari a 5k€. Il margine di contribuzione è quindi pari a 15k€.
+   > Il modello di bicicletta A realizza un ricavo di 20k€ con costi variabili pari a 5k€. Il margine di contribuzione è quindi pari a 15k€.
 
 2. Si sommano i singoli margini di contribuzione per determinare il margine di contribuzione totale
 3. Si sottrae il totale dei costi fissi dal margine di contribuzione totale per ottenere l'utile operativo.
-    > Nell'esempio il margine di contribuzione totale è di 23k€. Tenendo conto dei costi fissi di 5k€ si ottiene un risultato operativo pari a 18k€.
+   > Nell'esempio il margine di contribuzione totale è di 23k€. Tenendo conto dei costi fissi di 5k€ si ottiene un risultato operativo pari a 18k€.
 
 ## Calcolo del margine di contribuzione multilivello
 
@@ -226,9 +242,9 @@ Tale differenziazione può assumere forme molto diverse.
 
 **Lo scopo del calcolo dei margini di contribuzione multilivello è quello di determinare la redditività degli oggetti di riferimento in conformità con le relative cause e nel modo più trasparente possibile.**
 
--   **Costi specifici dl prodotto** = i costi possono essere attribuiti in modo preciso a un prodotto o servizio (ad esempio l'ammortamento di una macchina utilizzata per produrre il modello di biciclette A);
--   **Costi fissi per area** = i costi possono essere attribuiti a un'area aziendale (ad esempio per l'officina di produzione di bicilette);
--   **Costi aziendali fissi** = si intendono i costi fissi generali che non possono essere imputati a un prodotto o a un'area (Ad esempio gli stipendi amministrativi).
+- **Costi specifici dl prodotto** = i costi possono essere attribuiti in modo preciso a un prodotto o servizio (ad esempio l'ammortamento di una macchina utilizzata per produrre il modello di biciclette A);
+- **Costi fissi per area** = i costi possono essere attribuiti a un'area aziendale (ad esempio per l'officina di produzione di bicilette);
+- **Costi aziendali fissi** = si intendono i costi fissi generali che non possono essere imputati a un prodotto o a un'area (Ad esempio gli stipendi amministrativi).
 
 ### Esempio di calcolo del margine di contribuzione di multilivello
 
@@ -245,15 +261,15 @@ Tale differenziazione può assumere forme molto diverse.
 Una volta calcolata il margine di primo livello, è possibile calcolare il margine di secondo livello sottraendo al primo i costi fissi specifici.
 I costi fissi specifici sono detti così in quanto:
 
--   **Fissi**: non cambiano nel corso del tempo e non sono proporzionali alla produzione;
--   **Specifici**: partecipano alla creazione del prodotto (e non di altri).
+- **Fissi**: non cambiano nel corso del tempo e non sono proporzionali alla produzione;
+- **Specifici**: partecipano alla creazione del prodotto (e non di altri).
 
 Alcuni esempi potrebbero essere:
 
--   Ammortamento di macchinari deputati esclusivamente alla creazione del prodotto
--   Manutenzioni
--   Consulenze tecniche esclusive
--   Leasing del macchinario specifico
+- Ammortamento di macchinari deputati esclusivamente alla creazione del prodotto
+- Manutenzioni
+- Consulenze tecniche esclusive
+- Leasing del macchinario specifico
 
 Una volta riconosciuti tali costi, la formula è la seguente:
 $$M_dC \text{ II° livello} = M_dC \text{ I° livello} - \text{Costi Fissi Specifici}$$
@@ -262,15 +278,15 @@ $$M_dC \text{ II° livello} = M_dC \text{ I° livello} - \text{Costi Fissi Speci
 
 Il margine di contribuzione relativo mette in relazione:
 
--   Il margine di contribuzione unitario
--   IL cosiddetto fattore vincolante
+- Il margine di contribuzione unitario
+- IL cosiddetto fattore vincolante
 
 Alcuni esempi sono la capacità di una macchina di produzione o di un dipendente.
 
 Il margine di contribuzione relativo viene utilizzato per:
 
--   Ottimizzare un origramma di produzione in caso di capacità limitate;
--   Massimizzare il margine di contribuzione dell'untià di produzione interessata.
+- Ottimizzare un origramma di produzione in caso di capacità limitate;
+- Massimizzare il margine di contribuzione dell'untià di produzione interessata.
 
 Per principio, la produzione di prodotti o servizi con un margine di contrivuzione previsto più elevato deve essere privilegiata.
 
@@ -281,16 +297,16 @@ $$M_dR = \frac{M_dC_u}{\text{fattore vincolante per unità}}$$
 
 **Dati:**
 
--   Il margine di contribuzione per il modello di bicicletta A è di 100€;
--   Per la produzione viene utilizzata una determinata macchina per un'ora;
--   Per il modello di bicicletta B, invece, il margine di contribuzione unitario è pari a 60€ ed è previsto un tempo di produzione di soli 30 minuti con la stessa macchina.
+- Il margine di contribuzione per il modello di bicicletta A è di 100€;
+- Per la produzione viene utilizzata una determinata macchina per un'ora;
+- Per il modello di bicicletta B, invece, il margine di contribuzione unitario è pari a 60€ ed è previsto un tempo di produzione di soli 30 minuti con la stessa macchina.
 
 **Svolgimento:**
 
--   Margine di contribuzione relativo $M_CR_A$ per la bicicletta A:
-    $$M_CR = \frac{100€}{1h} = 100 €/h$$
--   Margine di contribuzione relativo $M_CR_B$ per la bicicletta B:
-    $$M_CR = \frac{60€}{0.5h} = 120 €/h$$
+- Margine di contribuzione relativo $M_CR_A$ per la bicicletta A:
+  $$M_CR = \frac{100€}{1h} = 100 €/h$$
+- Margine di contribuzione relativo $M_CR_B$ per la bicicletta B:
+  $$M_CR = \frac{60€}{0.5h} = 120 €/h$$
 
 > **Dal calcolo emerge che il modello B ha un margine di contribuzione più elevato.**
 
@@ -298,10 +314,10 @@ Se la macchina rappresenta quindi effettivamente il fattore vincolante nella pro
 
 La pratica non è così semplice!:
 
--   Nel nostro esempio affinchè il calcolo sia correttom si dovrebbe produrre il doppio delle biciclette B rispetto a quelle di tipo A;
--   Tuttavia, la domanda di biciclette B potrebbe non essere sufficiente per sfruttare al massimo la macchina;
--   Il fattore vincolante quindi non sarebbe più la macchina, ma la vendita delle biciclette di tipo B;
--   Il tal caso, il margine di contribuzione più elevato nella teoria non verrebbe raggiunto nella realtà.
+- Nel nostro esempio affinchè il calcolo sia correttom si dovrebbe produrre il doppio delle biciclette B rispetto a quelle di tipo A;
+- Tuttavia, la domanda di biciclette B potrebbe non essere sufficiente per sfruttare al massimo la macchina;
+- Il fattore vincolante quindi non sarebbe più la macchina, ma la vendita delle biciclette di tipo B;
+- Il tal caso, il margine di contribuzione più elevato nella teoria non verrebbe raggiunto nella realtà.
 
 ## Perchè calcolare i margini di retribuzione
 
@@ -345,10 +361,10 @@ Dalla contabilità industriale della Raptor si ricavano le seguenti informazioni
 | Prodotto Z | 1.2                  | 2                 | 1.5               | 1                 | 1                 | 2                 | 3            |
 | Costo      | 10 €/ora             | 3 €/kg            | 2 €/kg            | 2 €/unità         | 3 €/unità         | 2 €/unità         |
 
--   Il prezzo di vendita del prodotto X è pari a 42€, il prezzo di Y è pari a 45€ e il prezzo di Z è pari a 40€;
--   La produzione prevista per il 2021 è pari a 15.000 unità del prodotto X, 25.000 del prodotto Y e 20.000 unità del prodotto Z;
--   Le ore macchina complessivamente disponibili nel corso dell'anno sono 160k.
--   I costi indiretti di produzione sono complessivamente pari a 40k€ e sono legali all'ammortamento del macchinario e alla quota parte dell'affito del capannone industriale (calcolata sulla base dello spazio utilizzato dal macchinario);
+- Il prezzo di vendita del prodotto X è pari a 42€, il prezzo di Y è pari a 45€ e il prezzo di Z è pari a 40€;
+- La produzione prevista per il 2021 è pari a 15.000 unità del prodotto X, 25.000 del prodotto Y e 20.000 unità del prodotto Z;
+- Le ore macchina complessivamente disponibili nel corso dell'anno sono 160k.
+- I costi indiretti di produzione sono complessivamente pari a 40k€ e sono legali all'ammortamento del macchinario e alla quota parte dell'affito del capannone industriale (calcolata sulla base dello spazio utilizzato dal macchinario);
 
 a. Il direttore vendie ritiene possibile aumentare le vendite di 1k unità per uno dei tre prodotti. Di quale prodotto conviene aumentare la produzione?
 
@@ -401,11 +417,11 @@ Per modellizzare il punto di pareggio e analizzare la dinamica del reddito di un
 
 Il diagramma del profitto:
 
--   Mostra la relazione attesa tra ricavi totali e costi totali al variare del volume di output;
--   Può essere costruito sia per l'impresa nel suo complesso sia per specifici segmenti di business, come:
-    -   Un prodotto (Kinder Brioss Latte)
-    -   Una line di prodotti (Kinder Brioss)
-    -   Una divisione di prodotti (Diviosione prodotti per colazione di ferrero)
+- Mostra la relazione attesa tra ricavi totali e costi totali al variare del volume di output;
+- Può essere costruito sia per l'impresa nel suo complesso sia per specifici segmenti di business, come:
+  - Un prodotto (Kinder Brioss Latte)
+  - Una line di prodotti (Kinder Brioss)
+  - Una divisione di prodotti (Diviosione prodotti per colazione di ferrero)
 
 ![Alt text](./assets/image-6.png)
 
@@ -478,12 +494,12 @@ Costi fissi bassi e costi variabili alti
 
 ## Break Even e Margine di contribuzione
 
--   Una quota parte dei ricavi di vendita devono essere utilizzati per coprire i costi variabili correlati ai ricavi stessi;
--   Ciò che resta dei ricavi totali dopo la copertura dei corrispondenti costi variabili è il margine di contribuzione;
--   Se il flusso del margine di contribuzione riempie fino all'orlo il "recipiente dei costi fissi", significa che è stato raggiunto il volume di pareggio;
--   Una volta che il "recipiente dei costi fissi" è colmo, ogni ulteriore unitò di margine di contribuzione unitario confluisce nel "recipiente dei profitti";
--   Questo trabocco non può comunque verificarsi (vale a dire, non sarà generato alcun profitto) fino a che il "recipiente dei costi fissi" non sia completamente pieno;
-    ** La contribuzione è, dunque, dapprima contribuito alla copertura dei costi fissi e, successivamente (oltre il volume di pareggio), contributo alla generazione del reddito**
+- Una quota parte dei ricavi di vendita devono essere utilizzati per coprire i costi variabili correlati ai ricavi stessi;
+- Ciò che resta dei ricavi totali dopo la copertura dei corrispondenti costi variabili è il margine di contribuzione;
+- Se il flusso del margine di contribuzione riempie fino all'orlo il "recipiente dei costi fissi", significa che è stato raggiunto il volume di pareggio;
+- Una volta che il "recipiente dei costi fissi" è colmo, ogni ulteriore unitò di margine di contribuzione unitario confluisce nel "recipiente dei profitti";
+- Questo trabocco non può comunque verificarsi (vale a dire, non sarà generato alcun profitto) fino a che il "recipiente dei costi fissi" non sia completamente pieno;
+  ** La contribuzione è, dunque, dapprima contribuito alla copertura dei costi fissi e, successivamente (oltre il volume di pareggio), contributo alla generazione del reddito**
 
 ![Alt text](./assets/image-10.png)
 
@@ -493,9 +509,9 @@ La figura precedente chiarisce l'importanza, sotto il profilo gestionale, del co
 
 Si consideri un'impresa monoprodotto con i seguenti dati di costo e di prezzo di vendita:
 
--   Costi fissi totali (CF) -> 400€ per periodo;
--   Costo variabile unitario ($CV_u$) -> 6€ per unità;
--   Prezzo di vendita (P) -> 8,5€ per unità.
+- Costi fissi totali (CF) -> 400€ per periodo;
+- Costo variabile unitario ($CV_u$) -> 6€ per unità;
+- Prezzo di vendita (P) -> 8,5€ per unità.
 
 Il volume di pareggio risulta essere:
 $$Q_{be} = \frac{CF}{(P-CV_u)} = \frac{400€}{8,5€ - 6€} = 160€$$
@@ -511,34 +527,34 @@ Il volume di pareggio può anche essere espresso in termini di ricavi ($RT_{be}$
 $$RT_{be} = \frac{CF}{\frac{MC_u}{P}} = \frac{CF}{mc\%}$$
 Il margine di contribuzione unitario espresso in percentuale del prezzo di vendita è denominato **margine di contribuzione percentuale** (percentage contribution margin).
 
--   Nel nostro esempio, questo valore è pari a 2,5€/8,5€ = 29,4%: _ciascun euro di ricavo produce 29,4 centesimi di contribuzione_;
--   Il bep in valore è, dunque, pari a 400€/0,294 = 1360€ (che equivale al volume di pareggio, 160 unità, moltiplicato per il prezzo di vendita, 8,5€).
+- Nel nostro esempio, questo valore è pari a 2,5€/8,5€ = 29,4%: _ciascun euro di ricavo produce 29,4 centesimi di contribuzione_;
+- Il bep in valore è, dunque, pari a 400€/0,294 = 1360€ (che equivale al volume di pareggio, 160 unità, moltiplicato per il prezzo di vendita, 8,5€).
 
 ## Margine di contribuzione percentuale: un esempio
 
--   Il prodotto **A** ha:
+- Il prodotto **A** ha:
 
-    -   Un margine di contribuzione percentuale (mc%) del 40%;
-    -   Un prezzo di vendita di 100€;
+  - Un margine di contribuzione percentuale (mc%) del 40%;
+  - Un prezzo di vendita di 100€;
 
-    La direzione commerciale ritiene che una campagna promozionale del costo di 30k€ potrebbe determinare un aumento dei volumi dei vendita di 1000 unità.
+  La direzione commerciale ritiene che una campagna promozionale del costo di 30k€ potrebbe determinare un aumento dei volumi dei vendita di 1000 unità.
 
--   Una decisione alternativa potrebbe essere quella di agire sul prodotto **B**, che ha un mc% del 50%, un prezzo di vendita di 120€, ma che richiederebbe costi promozionali a 60k€.
+- Una decisione alternativa potrebbe essere quella di agire sul prodotto **B**, che ha un mc% del 50%, un prezzo di vendita di 120€, ma che richiederebbe costi promozionali a 60k€.
 
-    In questo caso si potrebbero vendere 1.3k unità in più.
+  In questo caso si potrebbero vendere 1.3k unità in più.
 
 **Qual è la scelta migliore?**
 
 ### Risoluzione
 
--   Dati del problema:
+- Dati del problema:
 
 ![Alt text](./assets/image-11.png)
 
--   $EBIT = M_{cu}\times Q - CF$
--   $mc\% = \frac{M_{cu}}{P} \implies M_{cu} = mc\%\times P$
--   $EBIT(A) = 40\% \times 100€ \times 1.000 - 30.000€ = 40.000€ - 30.000€ = 10.000€$
--   $EBIT(B) = 50\% \times 120 \times 1.300 - 60.000€ = 78.000€ - 60.000€ = 18.000€$
+- $EBIT = M_{cu}\times Q - CF$
+- $mc\% = \frac{M_{cu}}{P} \implies M_{cu} = mc\%\times P$
+- $EBIT(A) = 40\% \times 100€ \times 1.000 - 30.000€ = 40.000€ - 30.000€ = 10.000€$
+- $EBIT(B) = 50\% \times 120 \times 1.300 - 60.000€ = 78.000€ - 60.000€ = 18.000€$
 
 > La soluzione migliore risulta essere la **B**
 
@@ -615,8 +631,8 @@ $$\text{(glo)} = \dfrac{\dfrac{mc\% \times \Delta RT}{EBIT}}{\dfrac{\Delta RT}{R
 
 Calcolo del _glo_ in corrispondeza di un volume pari a 200 unità:
 
--   $Q = 200RT = €1700 \ CV = €1.200 \ CF = €400 \ EBIT = €100$
--   $\Delta Q = 50 \rightarrow €425 \Delta CV = €300 \Delta CF = 0 \Delta EBIT = €125$
+- $Q = 200RT = €1700 \ CV = €1.200 \ CF = €400 \ EBIT = €100$
+- $\Delta Q = 50 \rightarrow €425 \Delta CV = €300 \Delta CF = 0 \Delta EBIT = €125$
 
 $$\text{glo} = \dfrac{\dfrac{\Delta EBIT}{EBIT}}{\dfrac{\Delta RT}{RT}} = \dfrac{1,25}{0,250} = 5$$
 
@@ -630,7 +646,7 @@ La leva operativa è sensibile alla **struttura dei costi** (cost structure), va
 
 Se un'impresa è caratterizzata da **alti costi fissi** (e bassi costi variabili), il margine di contribuzione è alto e, corrispondentemente, è **alto il glo**.
 
--   Per queste imprese, come ad esempio le compagnie aeree, le catene alberghiere o, in generale, le imprese di produzione fortemente integrate (che svolgono, cioè, all'interno di molte delle fasi del ciclo produttivo), una determinata variazione dei ricavi ha conseguenze economiche di rilievo.
+- Per queste imprese, come ad esempio le compagnie aeree, le catene alberghiere o, in generale, le imprese di produzione fortemente integrate (che svolgono, cioè, all'interno di molte delle fasi del ciclo produttivo), una determinata variazione dei ricavi ha conseguenze economiche di rilievo.
 
 Al contrario, le imprese caratterizzata da **bassi costi fissi** (e alti costi variabili) presentano un **basso glo** e, quindi, a parità di variazione dei ricavi mostrano variazioni dell'EBIT più contenute.
 
@@ -650,11 +666,11 @@ In formule: $\text{glo} = \dfrac{MC}{EBIT} = \dfrac{MC}{MC - CF} = \dfrac{1}{1-\
 
 Quali voci si costo considerare?
 
--   Full costing o Direct costing
--   Costi standard o Budget?
+- Full costing o Direct costing
+- Costi standard o Budget?
 
--   **Full costing:** viene attribuita ai prodotti anche una quota dei costi indiretti. In tal modo viene privilegiato il criterio della completezza di analisi rispetto alle responsabilità specifiche;
--   **Direct costing:** viene attribuito ai prodotto il solo costo delle risorse dirette impiegate (materiali diretti e lavoro diretto). In tal modo viene privilegiato il criterio delle responsabilità specifiche rispetto alla completezza di analisi.
+- **Full costing:** viene attribuita ai prodotti anche una quota dei costi indiretti. In tal modo viene privilegiato il criterio della completezza di analisi rispetto alle responsabilità specifiche;
+- **Direct costing:** viene attribuito ai prodotto il solo costo delle risorse dirette impiegate (materiali diretti e lavoro diretto). In tal modo viene privilegiato il criterio delle responsabilità specifiche rispetto alla completezza di analisi.
 
 > L'obiettivo è mettere in evidenza il peso delle attività lavorative indirette sul costo del bene prodotto, cioè sul **Costo Pieno Aziendale**
 
@@ -678,8 +694,8 @@ Le **decisioni di breve periodo** si basano usualmente sulla capacità delle div
 
 Esempi di tali decisioni possono essere:
 
--   La scelta se accettare o meno l'ordine di un cliente non strategico;
--   Una decisione di _make or buy_ per attività non critiche;
+- La scelta se accettare o meno l'ordine di un cliente non strategico;
+- Una decisione di _make or buy_ per attività non critiche;
 
 $$\text{Creazione di valore economico} = \text{Ricavi} - \text{Costi evitabili}$$
 
@@ -705,8 +721,8 @@ Tuttavia, ciò non implica necessariamente che nel lungo periodo le decisioni de
 
 _Esempio_: decisione concernente l'acquisizione di un ordine da parte di un cliente strategico: la creazione di valore economico connessa con la decisione richiede l'analisi delle implicazioni delle due decisioni alternative relative rispettivamente:
 
--   All'acquisizione dell'ordine;
--   Alla non acquisizione dell'ordine.
+- All'acquisizione dell'ordine;
+- Alla non acquisizione dell'ordine.
 
 La differenza tra le due alternative nasce dal margine degli futuri che il cliente potrebbe annullare in seguito al rifiuto di accettare l'ordine odierno.
 Occorrerebbe dunque analizzare, attraverso una vera e propria valutazione di investimento, i possibili ordini futuri del cliente, la relativa profittabilità, la possibilità di saturare la capacità produttica dell'impresa, tutti elementi che non vengono in alcun modo evidenziati nel costo pieno.
@@ -729,14 +745,14 @@ L'uso di un sistema direct costing, non garantendo un controllo sulle risorse in
 
 ## Modelli di supporto alle decisioni di breve periodo
 
--   Il _modello di break-even_ ha la finalità di individuare il minimo volume di produzione che consente ad un'impresa di comprire i costi
-    -   Domanda: quanto devo produrre per stare in piedi?
--   La _scelta del mix ottimale di produzione_ permette di individuare il piano di produzione che massimizza il proditto di un'impresa multi prodtto in presenza di vincoli
-    -   Domanda: su che prodotti devo puntare per fare più soldi
--   L'_analisi della contribuzione_ consente di determinare la redditività delle diverse linee di pordotto di un'imprese
-    -   Domanda: quanto mi rende ogni linea di prodott?
--   L'_analisi di make or buy_ supporta l'assunzione di decisione che attengono alla scelta tra produrre all'interno o acquistare all'esterno (outsourcing)
-    -   Domanda: svolgo in caso o esternalizzo quella determinata fase del processo produttivo?
+- Il _modello di break-even_ ha la finalità di individuare il minimo volume di produzione che consente ad un'impresa di comprire i costi
+  - Domanda: quanto devo produrre per stare in piedi?
+- La _scelta del mix ottimale di produzione_ permette di individuare il piano di produzione che massimizza il proditto di un'impresa multi prodtto in presenza di vincoli
+  - Domanda: su che prodotti devo puntare per fare più soldi
+- L'_analisi della contribuzione_ consente di determinare la redditività delle diverse linee di pordotto di un'imprese
+  - Domanda: quanto mi rende ogni linea di prodott?
+- L'_analisi di make or buy_ supporta l'assunzione di decisione che attengono alla scelta tra produrre all'interno o acquistare all'esterno (outsourcing)
+  - Domanda: svolgo in caso o esternalizzo quella determinata fase del processo produttivo?
 
 ## La scelta del mix ottimale di produzione
 
@@ -744,8 +760,8 @@ Oltre al modello di break-even, un altro importantissimo modello di supporto all
 
 Domanda: ottimo in che senso e rispetto a cosa?
 
--   Ottimo nel senso della **massimizzazione del margine di contribuzione** (e perciò del reddito operativo) dell'impresa?
--   Ottimo rispetto ai **vincoli di capacità produttiva** (h macchina, h di manodopera) e di **domanda di mercaoto** (la quantità di prodotto che si prevede il mercato assorbirà) che l'impresa deve fronteggiare?
+- Ottimo nel senso della **massimizzazione del margine di contribuzione** (e perciò del reddito operativo) dell'impresa?
+- Ottimo rispetto ai **vincoli di capacità produttiva** (h macchina, h di manodopera) e di **domanda di mercaoto** (la quantità di prodotto che si prevede il mercato assorbirà) che l'impresa deve fronteggiare?
 
 ## Il problema matematico del mix ottimo
 
@@ -765,11 +781,11 @@ L'analisi della contribuzione si fonda sullo studio del **margine di contribuzio
 
 Nel **conto economico tradizionale**, riclassificato a **valore aggiunto**, i costi di competenza sono aggregati "per natura" o "per funzione" , a prescindere dal loro comportamento con il voume di output:
 
--   All'interno delle singole voci di costo di un conto economico a valore aggiunto sono presenti, in generale, sia costi fissi sia costi variabili.
+- All'interno delle singole voci di costo di un conto economico a valore aggiunto sono presenti, in generale, sia costi fissi sia costi variabili.
 
 Il **conto economico a margine di contribuzione** classifica i costi non per funzione ma bensì in _relazione al loro comportamento con il volume di output:_
 
--   Il conto economico a margine di contribuzione è cioè caratterizzato dalla separazione dei costi in variabili (con il volume di output) e fissi (rispetto al volume di output).
+- Il conto economico a margine di contribuzione è cioè caratterizzato dalla separazione dei costi in variabili (con il volume di output) e fissi (rispetto al volume di output).
 
 **Il consto economico a margine di contribuzione consente di valutare rapidamente l'effetto sul reddito di cambiamenti delle quantità vendute o dei ricavi di vendita**.
 
@@ -786,8 +802,8 @@ In generale, grazie alla separazione dei costi in variabili e fissi, il cosnto e
 
 Conto economico convenzionale (mese di giugno) di un'impresa che eroga due servizi:
 
--   Lavaggio a secco;
--   Tintoria.
+- Lavaggio a secco;
+- Tintoria.
 
 ![Alt text](./assets/20.png)
 
@@ -831,8 +847,8 @@ Per prendere una decisione di questo tipo occorre infatti analizzare con attenzi
 
 _Esempio_: un'azienda che realizza un prodotto caratterizzata da un costo pieno di 40€ a cui venga avanzata - da parte di un fornitore esterno - la cessione dello stesso bene a 38€.
 
--   Dovrebbe l'azienda cessare la produzione ed attivare un contratto di fornitura con l'imprenditore esterno?
--   Quali sono i costi da considerare in questo caso?
+- Dovrebbe l'azienda cessare la produzione ed attivare un contratto di fornitura con l'imprenditore esterno?
+- Quali sono i costi da considerare in questo caso?
 
 ## Scelta tra alternative e costi e ricavi differenziali
 
@@ -848,8 +864,8 @@ In altre parola, i costi e i ricavi differenziali si riferiscono sempre a situaz
 
 Cosa significano **in alternativa e evitabile?**. Facciamo un esempio:
 
--   Nella decisione se recarsi in macchina al mare o in montagna per il week-end, il costo dell'assicurazione dell'autovettura è un costo irrilevante, perchè rimane lo stesso qualunque sia la decisione presa;
--   I costi di viaggio e soggiorno che si sosterrebbero andando al mare sarebbero invece evitabili scegliendo la montagna e, viceversa, si eviterebbero i costi di viaggio e soggiorno del week-end in montagna se ci si recasse al mare;
+- Nella decisione se recarsi in macchina al mare o in montagna per il week-end, il costo dell'assicurazione dell'autovettura è un costo irrilevante, perchè rimane lo stesso qualunque sia la decisione presa;
+- I costi di viaggio e soggiorno che si sosterrebbero andando al mare sarebbero invece evitabili scegliendo la montagna e, viceversa, si eviterebbero i costi di viaggio e soggiorno del week-end in montagna se ci si recasse al mare;
 
 ## Make or buy
 
@@ -879,8 +895,8 @@ Per completezza, avremmo potuto anche rappresentare gli elementi di costo e di r
 
 Nella scelta tra alternative è opportuno tenere conto dei costi (di) opportunità:
 
--   I **costi opportunità** sono una misura del reddito potenziale al quale si rinuncia quando una determinata scelta implica l'esclusione di un corso d'azione alternativo;
--   Nell'esempio precedente, se lo spazio necessario per produrre internamente il componente cod. 101 potesse essere alternativamente destinato alla produzione di altri componenti e tra queste possibilità quella più conveniente si riferisse al componente cod. 405 in grado di realizzare settimanalmente un utile di 600€, allora il costo opportunitò che si sosterrebbe producendo internamente il componente cod. 101 sarebbe di 600€.
+- I **costi opportunità** sono una misura del reddito potenziale al quale si rinuncia quando una determinata scelta implica l'esclusione di un corso d'azione alternativo;
+- Nell'esempio precedente, se lo spazio necessario per produrre internamente il componente cod. 101 potesse essere alternativamente destinato alla produzione di altri componenti e tra queste possibilità quella più conveniente si riferisse al componente cod. 405 in grado di realizzare settimanalmente un utile di 600€, allora il costo opportunitò che si sosterrebbe producendo internamente il componente cod. 101 sarebbe di 600€.
 
 ### I costi invisibili
 
@@ -888,7 +904,7 @@ Nell'esempio precedente il costo dell'alternativa acquistare all'esterno (buy) �
 
 Occorre però tenere in considerazione il fatto che la qualità e il sercizio (puntaualitò e modalità delle consegne) sono elementi di valutazione altrettanto importanti, a volte anche più del prezzo d'acquisto:
 
--   Il **danno economico** che produce un ritardo di consegna di un componente o una sua difettosità può essere infatti superiore al prezzo d'acquisto, specie se la difettosità si manifesta quanto il prodotto è già stato consegnato all'utente finale e richiede costoi interventi di riparazione (se non la sostituzione).
+- Il **danno economico** che produce un ritardo di consegna di un componente o una sua difettosità può essere infatti superiore al prezzo d'acquisto, specie se la difettosità si manifesta quanto il prodotto è già stato consegnato all'utente finale e richiede costoi interventi di riparazione (se non la sostituzione).
 
 In una decisione di make or buy, **l'alternativa buy** (così come la scelta fra fornitori diversi) deve quindi essere effettuata in base al costo complessivo generato dall'outsourcing e non solo in base al prezzo d'acquisto.
 
@@ -905,16 +921,16 @@ Questo costo complessivo è denominato **costo totale del possesso** (total cost
 I metodi tradizionali per la determinazione dei costi di prodotto coinvologono decisioni su tre aspetti (fra loro correlati):
 
 1. Quali voci considerare:
-    1. **Full costing**: viene attribuita ai prodotti anche una quota dei costi indeiretti. In tal modo viene privilegiato il criterio della completezza di analisi di rispetto alle respinsabilità specifiche.
-    2. **Direct costing**: viene attribuito ai prodotti il solo costo delle risorse dirette impiegate (materiali diretti e lavoro diretto). In tal modo viene privilegiato il criterio delle responsabilità specifiche rispetto alle cimpletezza di analisi.
+   1. **Full costing**: viene attribuita ai prodotti anche una quota dei costi indeiretti. In tal modo viene privilegiato il criterio della completezza di analisi di rispetto alle respinsabilità specifiche.
+   2. **Direct costing**: viene attribuito ai prodotti il solo costo delle risorse dirette impiegate (materiali diretti e lavoro diretto). In tal modo viene privilegiato il criterio delle responsabilità specifiche rispetto alle cimpletezza di analisi.
 2. **Quali dati utilizzare:**
-    1. **Costi standard**
-    2. **Costi storici**
+   1. **Costi standard**
+   2. **Costi storici**
 3. **Quale specifica tecnica adottare:**
-    1. **Job Order Costing (JOC)**
-    2. **Processo Costing (PC)**
-    3. **Operation costing (OC)**
-    4. **Tecniche _innovative_**
+   1. **Job Order Costing (JOC)**
+   2. **Processo Costing (PC)**
+   3. **Operation costing (OC)**
+   4. **Tecniche _innovative_**
 
 ## Il calcolo dei costi di prodotto
 
@@ -929,35 +945,35 @@ L'attribuzione dei cosi può avvenire con due criteri:
 
 ## Le tecniche di rilevazione dei costi
 
--   Tencniche tradizionali:
-    -   JOC
-    -   PC
-    -   OC
+- Tencniche tradizionali:
+  - JOC
+  - PC
+  - OC
 
 ![Alt text](./assets/1913.png)
 
--   Tecniche innovative:
-    -   Activity Based Costing
-    -   Target Costing
-    -   Life Cycle Costing
+- Tecniche innovative:
+  - Activity Based Costing
+  - Target Costing
+  - Life Cycle Costing
 
 ## Rilevazione dei costi: i metodi tradizionali rilevazione dei costi
 
 ![Alt text](./assets/1914.png)
 
--   Se il sistema produttivo realizza prodotti molto eterogenei si ricerca una base di allocazione per i costi indiretti industriali, mentre si allocano direttamente i costi del lavoro e quelli di materiali:
-    **JOC $\rightarrow$ Produzione per singolo pezzo + Produzione per lotti**
+- Se il sistema produttivo realizza prodotti molto eterogenei si ricerca una base di allocazione per i costi indiretti industriali, mentre si allocano direttamente i costi del lavoro e quelli di materiali:
+  **JOC $\rightarrow$ Produzione per singolo pezzo + Produzione per lotti**
 
--   Se il sistema produttivo realizza prodotti omogenei, si allocano tutti i costi in modo proprzionale, senza alcuna allocazione causale
-    **PC $\rightarrow$ Produzione di serie + Produzione per processo**
+- Se il sistema produttivo realizza prodotti omogenei, si allocano tutti i costi in modo proprzionale, senza alcuna allocazione causale
+  **PC $\rightarrow$ Produzione di serie + Produzione per processo**
 
--   **Sistema per commessa (JOC)**:
+- **Sistema per commessa (JOC)**:
 
-    -   Si rileva il costo di ciscun job (ordine di produzione, lotto, prodotto, servizio) nel corso della sua realizzazione indipendentemente dai periodi di tempi interessati
+  - Si rileva il costo di ciscun job (ordine di produzione, lotto, prodotto, servizio) nel corso della sua realizzazione indipendentemente dai periodi di tempi interessati
 
--   **Sistema per processo (PC)**:
-    -   Si rileva il costo totale di competenza di un certo periodo
-    -   Il costo untario di prodotto si ottiene dividendo tale costo per le quantità (di prodotti simili) realizzate nel periodo in questione.
+- **Sistema per processo (PC)**:
+  - Si rileva il costo totale di competenza di un certo periodo
+  - Il costo untario di prodotto si ottiene dividendo tale costo per le quantità (di prodotti simili) realizzate nel periodo in questione.
 
 ![Alt text](./assets/1917.png)
 
@@ -975,9 +991,9 @@ In ogni fase del ciclo (centro di costo) vengono registrat isulla scehda i costi
 
 Più specificamente:
 
--   Il costo dei materiali diretti viene determinato sulla base del valore a cui essi erano contabilizzati a magazzino;
--   Si rileva la quantità di lavoro diretto impiegata per la realizzazione del job, valorizzandola al costo orario del lavoro;
--   I costi indiretti vengono ripartiti tra i prodotti proporzionalmente all'utilizzo di un fattore produttivo (usualmente il lavoro diretto), denominato base di allocazione;
+- Il costo dei materiali diretti viene determinato sulla base del valore a cui essi erano contabilizzati a magazzino;
+- Si rileva la quantità di lavoro diretto impiegata per la realizzazione del job, valorizzandola al costo orario del lavoro;
+- I costi indiretti vengono ripartiti tra i prodotti proporzionalmente all'utilizzo di un fattore produttivo (usualmente il lavoro diretto), denominato base di allocazione;
 
 ### Esempio di scheda
 
@@ -995,7 +1011,220 @@ $$\text{Costo indiretto da allocare al j-esimo Job} = \text{Coefficiente di allo
 
 dove $ba_j$ rappresenta l'utilizzo della base di allocazione da parte del job j-esimo.
 
-// slide 21
+## Processo di allocazione dei costi indiretti:
+
+Determinazione del coefficiente di allocazione (o imputazione):
+
+$$
+\text{coefficiente di allocazione} = \dfrac{\text{costi indiretti totali}}{\text{base di allocazione totale}}
+$$
+
+Allocazione dei CL allo specifico job:
+$$\text{costi indiretti}_{\text{job j}} = \text{coefficiente di allocazione} \times \text{base di allocazione}_{\text{job j}}$$
+con: $\text{base di allocazione}_{job j}$ = utilizzo della base di allocazione da parte del job j-esimo.
+La semplice lettura della scheda associata a ciascun job consente di determinare il costo totale dei job.
+
+Dividendo tale dato per il numero di unità che compongono il job si ottiene il costo unitario di produzione.
+
+Infine, sommando i costi di dei job in corso di lavorazione e di quelli contenuti nel magazzino prodotti finiti si determinano rispettivamente il valore delle scorte di prodotti finiti e di quelle di semilavorati.
+
+![Alt text](1921.png)
+
+Il job costing è un metodo preciso, in particolare quando il lavoro diretto e di materiali diretti rappresentano la componente principale dei costi di prodotto.
+
+Rispetto a metodi meno precisi è però particolarmente oneroso, poichè richiede la rilevazione di un gran numero di dati.
+
+In generale esso non appare impiegabile in imprese che operano con processi continui, per lìimpossibilità di individuare il singolo lotto di prodotti cui associare una scheda di rilevazione.
+
+Nel caso di processi discreti è necessario verificare la compatibilità tra i benefici derivanti da un'informazione precisa ed i costi relatici alla registrazione accurata delle informazioni.
+
+L'elemento discriminante è usualmente rappresentato dalla scala produttiva:
+
+- **Imprese che opreano per commessa singola o ripetuta**, con lotti di produzione piccoli possono trovare conveniente l'adozione del job costing;
+- Nel caso di **imprese che operano su larga scala** è preferibile ricorrere ad altri metodi e in particolare al process costing, soprattutto quando i prodotti venduti siano a basso valore aggiunto.
+
+I coefficienti di allocazione dei costi indiretti (overhead unitari) vengono spesso predeterminati in funzione dei dati relatici agli esercizi precedenti (dati std o dati storici).
+
+Per avere il dato esatto è necessario attendere la fine dell'esercizio in corso (dati consuntivi); si otterrà il dato esatto relativo al totale dei costi indiretti di produzione.
+
+Nonostante ciò non si avrà ancora un'allocazione esatta, perchè il dettaglio esatto dei singoli costi indretti per singola commessa è pressochè impossibile (o molto costosa) da determinare.
+
+## Esercitazione 4
+
+# Lezione 21
+
+# Introduzione all'organizzazione d'impresa
+
+## L'organizzazione Interna
+
+### L'organizzazione interna: divisione e coordinamento
+
+Anche nella nostra quotidianità possiamo riscontrare che all'aumentare della complessità di un lavoro o del suo carico, cerchiamo di dividerlo in parti e se possibile deleghiamo l'esecuzione di queste parti ad altre persone.
+
+Ogni attività umana organizzata fa nascere due esigenze fondamentali:
+
+1. La divisione del lavoro in vari compiti da eseguire
+2. Il coordinamento di questi compiti per il raggiungimento dell'obiettivo ultimo
+
+Soprattutto all'aumentare delle dimensioni del carico di lavoro da eseguire, occorre dividerlo in parti ed assegnare questi compiti ad altre persone.
+
+**L'organizziazione è la "scienza della divisione e del coordinamento" tra attività economiche distinte e interdipendenti, al fine di assicurare l'efficacia nella combinazione delle risorse.**
+
+Organizzare è quindi un concetto che integra due operazioni dialetticamente contrapposte:
+
+1. **Trovare le modalità più adeguate per "dividere" il lavoro (individuare parti, componenti, organi) in compiti distinti;**
+2. **Implementare i meccanismi più atti a "coordinare" (definire, governare, regolare, dar una forma particolare alle relazioni tra le parti) le parti in cui si era diviso il lavoro nella fase precedente;**
+
+Come abbiamo più volte ripetuto, ogni attività umana (e soprattutto quelle economiche), è volta al conseguimento e alla realizzazione di un obiettivo.
+
+Dunque in termini molto generali, l'organizzazione è un insieme di modalità di partizione di risorse e attività e di modalità di collegamenti tra di esse.
+
+Organizzare il lavoro significa quindi gestire questo apparente paradosso: più si divide e più occorre integrare. La divisione, cioè la specializzazione del lavoro, genera in sé il bisogno di coordinamento o integrazione.
+
+### Organizzazione interna: i tre modelli di organizzazione aziendale
+
+Per capirlo, osserviamo tre differenti modelli:
+
+1. **Modello semplificato di Leavitt - 1964**
+2. **Modello di Gralbaith - 1980**
+3. **Modello di Pascale e Athos - 1982**
+
+Secondo la visione di Leavitt (1964) l'organizzazione è costituita da 4 componenti di base:
+
+- Persone
+- Compiti
+- Strategia
+- Tecnologia
+
+In questo primo modello non c'è un collegamento diretto tra strategia e organizzazione.
+
+Nel 1980, partendo dal modello di Leavitt, Galbraith predispone un modello più completo, dove le componenti ritenute critiche per l'organizzazione sono messe in relazione alla strategia aziendale.
+
+**Galbraith parte dall'assunto che la strategia aziendale imponga determinati obiettivi che si traducono in compiti da eseguire**. I compiti, essendo collegati a tutte le altre 4 variabili, mettono la strategia in interdipendenza con l'intero modello.
+
+Successivamente nel 1982, Pascale e Athos apportano il loro contributo, configurando il così detto modello delle <<7 S» secondo il quale il successo aziendale è collegato alla coerenza tra le 7 variabili individuate.
+
+**Un'organizzazione è vincente se riesce a ottimizzare questi 7 elementi mantenendone l'armonia e la coerenza reciproca.**
+
+Le 7 S sono:
+
+1. **Struttura:** Il modo in cui un'azienda è organizzata e le relazioni tra le sue entità.
+2. **Sistemi aziendali:** I componenti che costituiscono il sistema di un'azienda.
+3. **Stile direzionale:** La cultura dell'azienda.
+4. **Staff:** I processi di reclutamento e incentivazione delle persone.
+5. **Capacità:** Le competenze dei singoli dipendenti.
+6. **Strategia:** L'obiettivo che l'impresa vuole ottenere e le azioni che intende svolgere per raggiungerlo.
+7. **Valori aziendali condivisi:** I credo, i valori e i modi di fare che guidano da sempre un'azienda.
+
+![Alt text](2107.png)
+
+### L'organizzazione intera: i meccanismi di coordinamento secondo Mintzberg
+
+Una volta diviso il lavoro, come è possibile coordinarlo? Quali tecniche e metodologie possono essere introdotte?
+
+Il lavoro svolto da Mintzberg negli anni '80 può eessere condireta il più imporante di questo ambito pochè oltre all'analisi delle **forme di coordinamento** ha sviluppato anche un modello che indica i vincoli e le "regole" da seguire nella progettazione delle strutture interne delle organizzazioni.
+
+Ha individuato cinque modelli complessi, ovvero **cinque forme di coordinamento organizzative**.
+
+Teorizza comunque che non esista una forma di coordinamento migliore a priori: questa deve essere scelta in base alle caratteristiche dell'oraganizzazione e del suo ambiente in cui essa opera.
+
+Esistono quindi contingeze che non posssono essere ignorate nella progettazione: per essere efficaci le organizzazioni devono raggiungere una certa armonia e coerenza interna e allo stesso tempo anche una coerenza con i fattori situazionali o contingenti esterni.
+
+Per creare configurazioni ottimali bisogna combinare:
+
+- I parametri della progettazione organizzativa
+- I fattori situazionali
+
+## L'adattamento reciproco (mutuo aggiustamento)
+
+Il mutuo adattamento è un coordinamento di tipo orizzontale, che si sostanzia nella collaborazione ed interazione tra gli attori organizzativi nella ricerca della soluzione ai problemi che emergono dalle attività che gli stessi realizzano.
+
+In particolare, ogni individuo è dotato di una certa autonomia che gli permette di individuare egli stesso la migliore soluzione al problema individuato.
+
+Questo tipo di coordinamento consente di ottenere una soluzione più rapida al problema e, spesso, più efficace, in quanto più vicina alla fonte da cui ha avuto origine il problema in questione. Si esplica attraverso un semplice processo di comunicazione informale: il controllo del lavoro resta a chi lo esegue e la conoscenza di «cosa va fatto» si sviluppa man mano che il lavoro procede.
+
+Tale meccanismo è adatto alle organizzazioni più semplici e a quelle più complesse.
+
+Questa forma di coordinamento è più frequente nei primi stadi di vita delle organizzazioni e ai vertici dell’azienda qualora siano ampiamente strutturati e lungamente operanti sul mercato
+
+## La supervisione diretta
+
+Si tratta del coordinamento più elementare: una persona responsabile del lavoro dà ordini e controlla le azioni della parte operativa dell’organizzazione.
+
+Questo meccanismo di coordinamento non ha bisogno di burocrazia, né di organi di staff: il coordinamento avviene tramite una persona che assume la responsabilità del lavoro di altri dando loro ordini e controllando le loro azioni.
+
+E’ presente nelle organizzazioni più piccole, di breve durata, ma anche in quelle chiamate “organizzazioni sintetiche”, ovvero nelle organizzazioni con un forte accentramento dove gli sforzi vengono coordinati in una situazione particolare e di breve durata.
+
+La supervisione diretta non è più sufficiente quando l’organizzazione cresce. In tal caso per rimanere efficiente è necessario passare ad un altro meccanismo di coordinamento: la standardizzazione, che può intervenire:
+
+- Sui processi di lavoro;
+- Sugli output;
+- Sulle competenze;
+
+## La standardizzazione dei processi produttivi
+
+Meccanismi di coordinamento basati sulla standardizzazione si sostanziano in una omogeneizzazione dei processi di lavoro.
+
+Vengono definite da un attore organizzativo con delle specifiche competenze, procedure standard e regole che devono essere seguite nel caso si verifichino determinati problemi (che vengono, quindi, codificati).
+
+## La standardizzazione degli output
+
+Qualora si renda impossibile standardizzare le procedure, si può ricorrere alla standardizzazione dei risultati dei processi (output), lasciando autonomia agli attori organizzativi sulle regole e le procedure da seguire
+
+## La standardizzazione delle competenze
+
+Quando non è possibile ricorrere alla standardizzazione degli output, si procede alla standardizzazione delle competenze e delle conoscenze attraverso la definizione delle informazioni e conoscenze necessarie per poter realizzare le attività che l’organizzazione richiede (input o standardizzazione professionale).
+
+La standardizzazione consiste nell’individuare delle attività che permettono agli individui di reagire allo stesso modo in presenza di una specifica gamma di eventi.
+
+Con questo meccanismo viene specificato il tipo di formazione richiesto per eseguire il lavoro, ovvero si tratta della standardizzazione degli input, delle capacità dei dipendenti.
+
+Si può pensare per esempio a ospedali dove ogni professionista, solitamente molto specializzato, svolge il suo lavoro in autonomia, mantenendo il controllo sul proprio lavoro.
+
+Si opera a diretto contatto con il pubblico ed in base alle esigenze dell’utente viene stabilito quale programma standard viene utilizzato.
+
+**Via via che l’attività diviene più complessa, il metodo di coordinamento sembra passare dall’adattamento reciproco agli altri metodi.**
+In realtà, nella maggior parte delle aziende, questi cinque diversi meccanismi convivono e si combinano.
+
+## L’organizzazione interna: l’organigramma
+
+Abbiamo visto quali siano i meccanismi di possibile coordinamento del lavoro e quali siano le variabili comprese all’interno dell’organizzazione. Ora vediamo come si possano configurare gli organi aziendali, i compiti e le responsabilità.
+
+**Dove vengono rappresentate le relazioni e le gerarchie che vigono in un’azienda?**
+
+**L’organigramma** costituisce una rappresentazione accurata della divisione del lavoro, mostrando in modo immediato quali posizioni esistono nell’organizzazione, le modalità di raggruppamento di queste posizioni in unità, come l’autorità formale fluisce fra esse.
+
+**Un organigramma è la rappresentazione grafica di una struttura organizzativa ed è formato da un sistema di simboli convenzionali**. È composto da:
+
+- Rettangoli → rappresentano gli enti (o anche organi, unità organizzative, reparti) con il loro nome;
+- Linee → rappresentano le relazioni gerarchiche, o talora funzionali tra gli enti e si evincono le principali relazioni esistenti;
+
+![Alt text](2115.png)
+
+## Le strutture organizzative tradizionali
+
+La struttura organizzativa è fondamentale per capire come suddividere il lavoro in mansioni, posizioni , resposabilità e gerarchie.
+
+Partiamo con l'analisi delle strutture organizzative prorpste dall'approccio tradizionale che ne comprende quattro:
+![Alt text](2116.png)
+
+## La struttura funzionale
+
+In questa struttura organizzativa **l'azienda p esuddivisa in aree omogenee per ambito di attività** (amministrazione, acquisti, produzione, vendite) e si cerca di raggiungere elevati livelli di efficienza attraverso una forte specializzazione dei ruoli e riducendo costi di struttura.
+
+**Alla crescita dimensionale dell'azienda**, si arriva al punto in cui l'imprenditore, non riesce più a prendere tutte le decisioni e ad effettuare autonomamente il controllo dell'intera organizzazione: **decono essere create delle unità organizzative specializzate**, mediante la riuniore di più persone dotate di competenze comuni, alle quali veiene affidato il raggiungimento di un determinato obiettivo.
+
+L'azienda si sviluppa in due dimensioni:
+
+1. Una **dimensione orizzontale**: divisione del lavoro, specializzazione delle mansioni, formazione di unità organizzative che prendono il nome di funzioni aziendali;
+2. Una **dimensione verticale**: introduzione di uno o più livelli gerarchici tra vertice strategico e nucleo operativo.
+
+gli organi direttivi sono specializzati secondo il criterio della tecnica, per funzioni appunto, quali:
+
+- Produzione
+- Vendite
+- Marketing
+- Amministrazione
 
 # Lezione 22
 
@@ -1005,7 +1234,7 @@ dove $ba_j$ rappresenta l'utilizzo della base di allocazione da parte del job j-
 
 Le organizzazioni sono strutturate per controllare e dirigere sistemi di flusso e per precisare le interrelazioni fra le diverse parti e tali flussi sono difficilmente di tipo lineare.
 
-Minztberg identifica all'interno della struttura cinque parti differenti:
+Mintzberg identifica all'interno della struttura cinque parti differenti:
 ![Alt text](2202.png)
 
 ## 1. Il nucleo operativo
@@ -1043,10 +1272,10 @@ E' necessaria per supervisionare le varie parti di un'azienda di grandi dimensio
 
 I compiti di un manager della linea intermedia sono:
 
--   Raccogliere feedback sulla performance della propria unità e trasmetterli ai manager superiori
--   Intervenire nel flusso delle decisioni
--   Gestire situazioni di confine con altre unità interdipendenti con la propria
--   Formulare la strategia per la sua unità (concreta e dettagliata) che è comunque influenzata dalla strategia generale.
+- Raccogliere feedback sulla performance della propria unità e trasmetterli ai manager superiori
+- Intervenire nel flusso delle decisioni
+- Gestire situazioni di confine con altre unità interdipendenti con la propria
+- Formulare la strategia per la sua unità (concreta e dettagliata) che è comunque influenzata dalla strategia generale.
 
 ## 4. La tecnostruttura
 
@@ -1066,8 +1295,8 @@ Sono presenti a vari livelli della gerarchia secondo il destinatario del servizi
 
 Il problema fondamentale dell'organizzazione, a qualunque livello si agisca, riguarda gestione di:
 
--   Divisione del lavoro
--   Mecanismi di coordinamento
+- Divisione del lavoro
+- Mecanismi di coordinamento
 
 > Ossimoro: dividere il lavoro e poi rimetterlo insieme, è un problema dell'organizzazione.
 
@@ -1082,17 +1311,17 @@ Il problema fondamentale dell'organizzazione, a qualunque livello si agisca, rig
 Mostra quali sono le componenti di un sistema organizzativo.
 Per esempio:
 
--   Variabili di contesto (microambiente)
+- Variabili di contesto (microambiente)
 
 ## Le variabili ambientali
 
 Le variabili ambientali comprendono sotto raggruppamenti di variabili influenti, che sono:
 
--   Le variabili individuali
--   Le variabili sociali
--   Le variabili tecniche
--   Le variabili istituzionali
--   Le variabili organizzative
+- Le variabili individuali
+- Le variabili sociali
+- Le variabili tecniche
+- Le variabili istituzionali
+- Le variabili organizzative
 
 I primi quattro raggruppamenti rappresentano le variabili di contesto, mentre le variabili organizzative specifiche della singola impresa agiscono tenendo in considerazione e facendosi condizionare dalle variabili di contesto.
 
@@ -1101,9 +1330,9 @@ I primi quattro raggruppamenti rappresentano le variabili di contesto, mentre le
 Le variabili individuali rappresentano le caratteristiche intrinseche delle persone che operano all'interno dell'impresa.
 Tali variabili possono essere:
 
--   La qualificazione del personale
--   Gli atteggiamenti
--   Le motivazioni riguardo al lavoro
+- La qualificazione del personale
+- Gli atteggiamenti
+- Le motivazioni riguardo al lavoro
 
 ## Le variabili sociali
 
@@ -1115,9 +1344,9 @@ Le variabili tecniche riguardano l'insieme delle modalità operative ed applicat
 
 Tali variabili sono fondamentali nei processi di trasformazione industriale e sono rappresentate dal funzionamento di:
 
--   Macchine
--   Impianti
--   Attrezzature tecniche
+- Macchine
+- Impianti
+- Attrezzature tecniche
 
 Le variabili tecniche sono complementari al lavoro umano.
 
@@ -1127,17 +1356,17 @@ Le variabili istituzionali, a seconda dell'oggetto di riferimento rappresentano 
 
 Nel nostro caso e rapportandoci ai sistemi aziendali sono rappresentate:
 
--   Dalle finalità istituzionali;
--   Dalla costituzione del soggetto di impresa;
--   Dalla combinazione dei processi produttivi.
+- Dalle finalità istituzionali;
+- Dalla costituzione del soggetto di impresa;
+- Dalla combinazione dei processi produttivi.
 
 ## Le variabili organizzative
 
 Le variabili organizzative, ossia le modalità con le quali si effettuano i collegamenti tra i vari elementi del sistema organizzativo, sono rappresentate principalmente da:
 
--   La struttura organizzativa;
--   I meccanismi operativi;
--   La cultura organizzativa;
+- La struttura organizzativa;
+- I meccanismi operativi;
+- La cultura organizzativa;
 
 La **struttura organizzativa** è il risultato delle scelte di divisione e coordinamento del lavoro. In base alla progettazione dell'organizzazione si avranno diversi compiti, responsabilità, livelli di potere, ecc.
 
@@ -1153,14 +1382,14 @@ La **cultura organizzativa** riguarda l'insieme di regole, ruoli e comportamenti
 
 La struttura organizzativa (o macrostruttura) esprime la logica con cui l'azienda effettua la divisione del lavoro in senso:
 
--   Verticale -> che sovraintende e chi è sottoposto
--   Orizzontale -> "chi fa cosa"
+- Verticale -> che sovraintende e chi è sottoposto
+- Orizzontale -> "chi fa cosa"
 
 La struttura organizzativa definisce:
 
--   Organi aziendali (o unità organizzative) e posizioni presenti in ciscun organo
--   Relazioni gerarchiche tra organi
--   Insiemi di responsabilità e compiti relativemten stabili e indipendenti che identificano le funzioni di ciascun organo e la sua responsabilità
+- Organi aziendali (o unità organizzative) e posizioni presenti in ciscun organo
+- Relazioni gerarchiche tra organi
+- Insiemi di responsabilità e compiti relativemten stabili e indipendenti che identificano le funzioni di ciascun organo e la sua responsabilità
 
 ## Approfondimento lessicale
 
@@ -1174,10 +1403,10 @@ La struttura organizzativa definisce:
 
 I **sistemi di ricerca e selezione** vengono attivati in relazione alla esigenza di copertura di posizioni vacanti. Tale copertura può avvenire tramite:
 
--   Promozioni interne;
--   Assunzione di persone senza/con precedente esperienza con profilo professionale di tipo:
-    -   o Specialistico;
-    -   o Non specialistico;
+- Promozioni interne;
+- Assunzione di persone senza/con precedente esperienza con profilo professionale di tipo:
+  - o Specialistico;
+  - o Non specialistico;
 
 I **sistemi di accoglimento e inserimento** gestiscono la fase d'ingresso in azienda e il primo periodo di lavoro.
 
@@ -1185,22 +1414,22 @@ I **sistemi di accoglimento e inserimento** gestiscono la fase d'ingresso in azi
 
 Contribuiscono a determinare:
 
--   Conoscenze e capacità
--   Atteggiamenti e orientamenti dei prestatori di lavoro
+- Conoscenze e capacità
+- Atteggiamenti e orientamenti dei prestatori di lavoro
 
 Sono processi svolti:
 
--   In aula (training)
--   Sul lavoro (Learning by doing)
+- In aula (training)
+- Sul lavoro (Learning by doing)
 
 Di tipo:
 
--   Specialistico
-    -   Per amentare l'efficienza
-    -   Per aumentare il grado di specializzazione
--   Interfunzionale
-    -   Per acquisire flessibilità
-    -   Per orientare alla multidimensionalità
+- Specialistico
+  - Per amentare l'efficienza
+  - Per aumentare il grado di specializzazione
+- Interfunzionale
+  - Per acquisire flessibilità
+  - Per orientare alla multidimensionalità
 
 ## Sistemi di carriera e di valutazione del potenziale
 
@@ -1236,13 +1465,13 @@ Le operazioni di organizzazione riguardano l'assetto organizzativo e l'organismo
 
 Tali operazioni includono i processi di progettazione delle strutture organizzative e dei sistemi di gestione del personale:
 
--   Processi di ricerca del personale;
--   Processi di selezione del personale;
--   Attività di addestramento del personale;
--   Attività di formazione del personale;
--   Valutazione delle competenze del personale;
--   Determinazione delle retribuzioni del personale;
--   Liquidazione delle retribuzioni del personale;
+- Processi di ricerca del personale;
+- Processi di selezione del personale;
+- Attività di addestramento del personale;
+- Attività di formazione del personale;
+- Valutazione delle competenze del personale;
+- Determinazione delle retribuzioni del personale;
+- Liquidazione delle retribuzioni del personale;
 
 ## Oggetto e obiettivi dell'organizzazione
 
@@ -1257,12 +1486,12 @@ Gli obiettivi dell'organizzazione sono:
 
 1. Chi in concreto deve affrontare il problemi organizzativi?
 
-    - Gli specialisti
-    - Tutti -> le funzioni di organizzazione sono diffuse
+   - Gli specialisti
+   - Tutti -> le funzioni di organizzazione sono diffuse
 
 2. Per progettare l'assetto organizzativo non basta il buon senso ma sono necessarie:
-    - Teorie
-    - Tecniche
+   - Teorie
+   - Tecniche
 
 ## L'approccio di progettazione "contingency"
 
@@ -1272,15 +1501,15 @@ L'implementazione dell'organizzazione **è strettamente collegata** all'ambiente
 
 **Secondo questo approccio** l'organizzazione **viene progettata su misura in funzione di alcune variabili:**
 
--   Contesto competitivo;
--   Tecnologie disponibili;
--   Cultura del paese;
--   Dimensione:
-    -   Fatturato;
-    -   Persone;
--   Strategia e obiettivi:
-    -   Prodotti;
-    -   Mercati;
-    -   Tecnologie;
+- Contesto competitivo;
+- Tecnologie disponibili;
+- Cultura del paese;
+- Dimensione:
+  - Fatturato;
+  - Persone;
+- Strategia e obiettivi:
+  - Prodotti;
+  - Mercati;
+  - Tecnologie;
 
 **Logica** "strategia-struttura" -> l'organizzazione **come strumento a supporto della strategia.**

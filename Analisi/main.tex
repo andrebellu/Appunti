@@ -8,8 +8,9 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tkz-euclide}
 \usepackage{subfiles}
-\usepackage{verbatim}
 \usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+\graphicspath{ {./img/} }
 
 \usepackage{hyperref}
 \hypersetup{
@@ -20,18 +21,9 @@
     urlcolor=black
 }
 
-\DeclareMathOperator{\Span}{span}
 \renewcommand\fbox{\fcolorbox{red}{white}}
-\newcommand{\sa}{\Span(\mathbb{A})}
-\newcommand{\V}{\mathbb{V} (\mathbb{K})}
-\newcommand{\s}[2]{#1_1, #1_2, \ldots, #1_{#2}}
-\newcommand{\Vx}[1]{\mathbb{V}_#1 (\mathbb{K})}
-\newcommand{\ah}{\alpha}
-\newcommand{\bh}{\beta}
-\newcommand{\ch}{\gamma}
 
-
-\title{Algebra Lineare e Geometria Analitica}
+\title{Analisi I}
 \author{Andrea Bellu}
 \date{2023/2024}
 
@@ -41,14 +33,8 @@
 
 \tableofcontents
 
-\subfile{sections/introduzione.tex}
+\subfile{sections/integrali.tex}
 
-\subfile{sections/spazi_vettoriali.tex}
-
-\subfile{sections/sistemi_lineari.tex}
-
-\subfile{sections/forme_bilineari.tex}
-
-\subfile{sections/autovalori_e_autovettori.tex}
+\subfile{sections/serie.tex}
 
 \end{document}
