@@ -1,0 +1,93 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Equazioni differenziali}
+Sia
+\[
+    y'(x) = g(x) \ \ \ \ \forall x \in [a, b]
+\]
+dove $g(x)$ è una funzione di una variabile reale, continua in un intervallo
+$[a, b] \in \R$.\\ Per il \textbf{teorema fondamentale del calcolo integrale}
+sappiamo trovare una \textbf{primitiva} $G(x)$ di $g(x)$ nell'intervallo
+$[a,b]$, data da:
+\[
+    G(x) = {\int_{x_0}^{x}  g(t)\,dt }
+\]
+dove $x_0$ è un numero reale fissato in $[a, b]$. \\ Quindi possiamo
+rappresentare ogni soluzione dell'equazione differenziale
+\[
+    y'(x) = g(x) \ \ \ \ \ \forall x\in [a, b] \ \ (\star)
+\]
+Integrando entrambi i membri di $(\star)$ tra $x_0$ e $x$ otteniamo:
+\[
+    y(x)-y(x_0) = \int_{x_0}^{x} y'(t)\,dt = \int_{x_0}^{x} g(t)\,dt
+\]
+e rappresentiamo la soluzione nella forma:
+\[
+    y(x) = y(x_0) + \int_{x_0}^{x} g(t)\,dt \ \ \ x\in [a, b]
+\]
+Questo è un esempio molto particolare di equazione differenziale, si dice che
+$y(x)$ è soluzione del \textbf{problema di Cauchy}:
+\[
+    \begin{cases}
+        y'(x) = g(x) \\
+        y(x_0) = y_0
+    \end{cases}
+\]
+in quanto $y(x)$ è soluzione ed inoltre soddisfa la \textbf{condizione
+    iniziale} nel punto $x = x_0$:
+\[
+    x = x_0 \ \ \ y(x_0) = y_0 + \int_{x_0}^{x_0} g(t)\,dt = y_0
+\]
+\subsection{Osservazione}
+L'equazione differenziale considerata si dice del \textbf{primo ordine}, poichè
+l'ordine massimo di derivazione che compare nell'equazione è il primo.
+
+\subsection{Ulteriore esempio di equazione differenziale del primo ordine}
+Sia
+\[
+    y'(x) = \lambda y(x) \ \ \ \ \ \forall x \in \R
+\]
+dove $\lambda$ è un parametro reale fissato. \\ Dobbiamo trovare una soluzione
+di questa equazione differenziale, cioè una funzione $y = y(x)$, derivabile in
+$\R$, tale che
+\[
+    y'(x) = \lambda y(x) \ \ \ \ \ \forall x \in \R
+\]
+Una soluzione è data da:
+\[
+    y(x) = ce^{\lambda x} \ \ \ \ \ \forall x \in \R
+\]
+dove $c$ è una costante arbitrariamente fissata in $\R$.\\ Si verifica subito
+che è soluzione, infatti derivando si ottiene:
+\[
+    y'(x) = c\lambda e^{\lambda x} = \lambda y(x)
+\]
+\subsubsection{Domanda}
+Tutte le possibile soluzoni sono della forma $y(x) = ce^{\lambda x}$? Sì, ma
+non lo dimostriamo.
+
+\subsection{Esempio di equazione differenziale del secondo ordine: equazione del moto armonico}
+\[
+    y''(x) + \omega^2 y = 0 \ \ \ \ \ \forall x \in \R
+\]
+dove $\omega \ne 0$ è un parametro reale fissato.\\ Una famiglia di soluzioni è
+data da:
+\[
+    y(x) = c_1\cos{\omega x} + c_2\sin{\omega x}
+\]
+con $c_1, c_2 \in \R$ costanti in $\R$.\\ \textbf{Verifica:}\\
+\[
+    y'(x) = -c_1\omega\sin{\omega x} + c_2\omega\cos{\omega x}
+\]
+\[
+    y''(x) = -c_1\omega^2\cos{\omega x} - c_2\omega^2\sin{\omega x} = -\omega^2 (c_1\cos{\omega x} + c_2\sin{\omega x}) = -\omega^2 y(x)
+\]
+\[
+    \implies y''(x) + \omega^2 y(x) = 0
+\]
+Tutte le soluzioni dell'equazione differenziale del moto armonico sono nella
+forma $y(x) = c_1\cos{\omega x} + c_2\sin{\omega x}$? Sì, ma non lo
+dimostriamo.
+
+\end{document}
