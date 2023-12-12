@@ -132,13 +132,13 @@ $k$).\\ Calcoliamo la somma parziale $S_n$:
 \]
 e $\lim_{n\to\infty} S_n =$?.\\ \vspace{1pt} \textbf{Formula Risolutiva:}
 $\forall x \ne 1$ \[
-    1+x+x^2+\cdots+x^n = \frac{1-x^{n+1}}{1-x}
+    1+x+x^2+\cdots+x^n = \dfrac{1-x^{n+1}}{1-x}
 \]
 
 \subsubsection{Osservazione}
 La formual vale $\forall x \ne 1$, cioè:
 \[
-    \lim_{n\to\infty}S_n = \lim_{n\to\infty}\frac{1-x^{n+1}}{1-x} =
+    \lim_{n\to\infty}S_n = \lim_{n\to\infty}\dfrac{1-x^{n+1}}{1-x} =
 \]
 e
 \[
@@ -155,7 +155,7 @@ Riassumendo per la serie geometrica (di ragione $x$):
 \[
     \sum_{k=0}^{+\infty} = \begin{cases}
         \infty               & \text{se } x \geq 1 \text{ divergente}             \\
-        \frac{1}{1-x}        & \text{se } -1 < x < 1\ (|x|<1) \text{ convergente} \\
+        \dfrac{1}{1-x}       & \text{se } -1 < x < 1\ (|x|<1) \text{ convergente} \\
         \text{indeterminata} & \text{se } x \leq -1
     \end{cases}
 \]
@@ -167,16 +167,16 @@ Stabilire per quali $x\in \R$, la serie:
 \]
 converge, e per tali valori di $x$, calcolare la somma della serie.\\ ! L'unica
 serie che conosciamo di cui possiamo fare la somma è quella geometrica.\\ !
-Capisco che è geometrica perchè dipende da $x-4$ \textbf{Risoluzione:}\\
+Capisco che è geometrica perchè dipende da $x-4$\\ \textbf{Risoluzione:}\\
 \begin{itemize}
     \item è una serie geometrica di ragione $x-4$.
     \item la serie geometrica data converge per:
           \[
               |x-4|<1 \iff -1<x-4<1 \iff 3<x<5
           \]
-    \item la somma della serie è data da: $\frac{1}{1-x}$
+    \item la somma della serie è data da: $\dfrac{1}{1-x}$
           \[
-              \sum_{n=2}^{+\infty}(x-4)^n = \frac{1}{1-(x-4)} - 1 - (x-4) = \frac{x^2-8x+16}{5-x}
+              \sum_{n=2}^{+\infty}(x-4)^n = \dfrac{1}{1-(x-4)} - 1 - (x-4) = \dfrac{x^2-8x+16}{5-x}
           \]
           \[
               -1 = \text{ I° termine della serie } = {(x-4)}^0 = 1
@@ -186,20 +186,20 @@ Capisco che è geometrica perchè dipende da $x-4$ \textbf{Risoluzione:}\\
 \subsection{La serie armonica}
 Data la somma:
 \[
-    1+\frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \frac{1}{5} + \cdots + \frac{1}{n} + \cdots = \]
+    1+\dfrac{1}{2} + \dfrac{1}{3} + \dfrac{1}{4} + \dfrac{1}{5} + \cdots + \dfrac{1}{n} + \cdots = \]
 \[
-    = \sum_{n=1}^{+\infty} \frac{1}{n}\]
+    = \sum_{n=1}^{+\infty} \dfrac{1}{n}\]
 
 Si dimostra che la serie armonica è divergente.\\ ! Non si conosce la somma.
-\subsubitem{Osservazione} E' un esempio di serie dove $a_n = \frac{1}{n} \to
-    0$, ma la serie $\sum_{n=1}^{+\infty}\frac{1}{n}$ è \textbf{divergente.}
+\subsubitem{Osservazione} E' un esempio di serie dove $a_n = \dfrac{1}{n} \to
+    0$, ma la serie $\sum_{n=1}^{+\infty}\dfrac{1}{n}$ è \textbf{divergente.}
 
 \subsection{La serie armonica generalizzata (con esponente)}
 Detta dalla somma:
 \[
-    1+\frac{1}{2^p} + \frac{1}{3^p} + \frac{1}{4^p} + \frac{1}{5^p} + \cdots + \frac{1}{n^p} = \]
+    1+\dfrac{1}{2^p} + \dfrac{1}{3^p} + \dfrac{1}{4^p} + \dfrac{1}{5^p} + \cdots + \dfrac{1}{n^p} = \]
 \[
-    = \sum_{n=1}^{+\infty} \frac{1}{n^p}\]
+    = \sum_{n=1}^{+\infty} \dfrac{1}{n^p}\]
 Si dimostra che la seria armonica generalizzata è:
 \begin{itemize}
     \item \textbf{convergente} per $p>1$
@@ -225,13 +225,14 @@ $\implies$ Quindi per il teorema sulle successioni monotone, ovvero:\\
 $\implies$ $S_n$ ammette limite (eventualmente a $+\infty$) e quindi la serie corrispondente può solo convergere o divergere, ma non essere indeterminata.
 
 \subsection{Criteri di convergenza per serie a termini non negativi}
-Alcuni criteri per stabilire il carattere di una serie: (non sempre si risce a
-calcolare esplicitamente la somma di una serie)
+Alcuni \textbf{criteri} per stabilire il \textbf{carattere} di una serie: (non
+sempre si risce a calcolare esplicitamente la somma di una serie)
 
-\subsubsection{Criterio del rapporto:} Data $\sum_{n=1}^{+\infty}a_n$ con $a_n > 0 \forall n$. Supponiamo che esista
-il limite:
+\subsubsection{Criterio del rapporto:}
+Si utilizza solitamente per il fattoriale.\\ Data $\sum_{n=1}^{+\infty}a_n$ con
+$a_n > 0 \forall n$. Supponiamo che esista il limite:
 \[
-    \lim_{n\to\infty}\frac{a_{n+1}}{a_n} = L
+    \lim_{n\to\infty}\dfrac{a_{n+1}}{a_n} = L
 \]
 \begin{itemize}
     \item Se $0\leq L \leq 1$, la serie converge.
@@ -244,7 +245,8 @@ $\sum_{n=1}^{+\infty} a_n$ converge.\\
 \textbf{Esempi:}\\
 da fare
 
-\subsubsection{Criterio della radice:} Data $\sum_{n=1}^{+\infty}a_n$ con $a_n > 0 \forall n$. Supponiamo che esista
+\subsubsection{Criterio della radice:}
+Data $\sum_{n=1}^{+\infty}a_n$ con $a_n > 0 \forall n$. Supponiamo che esista
 il limite:
 \[
     \lim_{n\to\infty}\sqrt[n]{a_n} = L
@@ -261,14 +263,155 @@ da fare\\
 Date $\sum_{n=1}^{+\infty}a_n$ con $a_n \geq 0 \forall n$ e
 $\sum_{n=1}^{+\infty}b_n$ con $b_n > 0 \forall n$:
 \begin{itemize}
-    \item Se $\lim_{n\to\infty}\frac{a_n}{b_n} = L \in (0,+\infty)$, allora le due serie
+    \item Se $\lim_{n\to\infty}\dfrac{a_n}{b_n} = L \in (0,+\infty)$, allora le due serie
           hanno lo stesso grado, quindi carattere, cioè convergono o divergono.
-    \item Se $\lim_{n\to\infty}\frac{a_n}{b_n} = 0$ e $\sum_{n=1}^{+\infty}b_n$ converge,
-          allora $\sum_{n=1}^{+\infty}a_n$ converge.
-    \item Se $\lim_{n\to\infty}\frac{a_n}{b_n} = +\infty$ e $\sum_{n=1}^{+\infty}b_n$
+    \item Se $\lim_{n\to\infty}\dfrac{a_n}{b_n} = 0$ e $\sum_{n=1}^{+\infty}b_n$
+          converge, allora $\sum_{n=1}^{+\infty}a_n$ converge.
+    \item Se $\lim_{n\to\infty}\dfrac{a_n}{b_n} = +\infty$ e $\sum_{n=1}^{+\infty}b_n$
           diverge, allora $\sum_{n=1}^{+\infty}a_n$ diverge.
 \end{itemize}
 
 \subsubsection{Esempi}
+
+\begin{itemize}
+    \item $\sum_{n=1}^{+\infty} \dfrac{\ln n}{n^2} $
+          quindi $a_n = \dfrac{\ln n}{n^2}$ e considero $b_n = \dfrac{1}{n^p}$ con p?\\
+          valuto $\lim_{n\to\infty}\dfrac{a_n}{b_n}$
+          \begin{itemize}
+              \item $b_n = \dfrac{1}{n^2} \implies \lim_{n\to\infty} \dfrac{\ln{n}}{n^2} \cdot n^2 = \lim_{n\to\infty}\ln n = +\infty$ ma $\sum_{n=1}^{+\infty}\dfrac{1}{n^2}$ è una serie convergente, quindi non riesco a concludere.
+              \item $b_n = \dfrac{1}{n^3} \implies \lim_{n\to\infty} \dfrac{\ln n}{n^2} \cdot n^3 = +\infty$, stesso problema di prima e non riesco a concludere.
+              \item $b_n = \dfrac{1}{n^{\dfrac{3}{2}}} \implies \lim_{n\to\infty} \dfrac{\ln n}{n^2} \cdot n^{\dfrac{3}{2}} = \lim_{n\to\infty} \dfrac{\ln n}{\sqrt{n}} \to 0$, la serie $\sum_{n=1}^{+\infty}\dfrac{1}{n^{\dfrac{3}{2}}}$ converge e quindi concludo con il criterio del \textbf{confronto mediante limiti} e la serie data converge.
+          \end{itemize}
+    \item \textbf{Determinare il carattere della serie:}
+          \[
+              \sum_{n=1}^{+\infty}(\sqrt{6n^3+1} - \sqrt{6n^3})
+          \]
+          \[
+              a_n = \sqrt{6n^3+1} - \sqrt{6n^3} \cdot \dfrac{\sqrt{6n^3+1} + \sqrt{6n^3}}{\sqrt{6n^3+1} + \sqrt{6n^3}} = \dfrac{6n^3+1-6n^3}{\sqrt{6n^3+1} + \sqrt{6n^3}} = \dfrac{1}{\sqrt{6n^3+1} + \sqrt{6n^3}}
+          \]
+          Utilizziamo il criterio del confronto mediante limiti e prendiamo $b_n =
+              \dfrac{1}{n^{\dfrac{3}{2}}} \implies \dfrac{a_n}{b_n} \rightarrow
+              \dfrac{1}{2\sqrt{6}}$ (per $n\to+\infty$) quindi la serie data si comporta come
+          la serie $\sum_{n=1}^{+\infty} \dfrac{1}{n^{\dfrac{3}{2}}}$
+    \item \textbf{Determinare il carattere della serie:}
+          \[
+              \sum_{n=1}^{+\infty} n^3(1-\cos\dfrac{1}{n^3})
+          \]
+          \[
+              a_n = n^3(1-\cos\dfrac{1}{n^3}) = \dfrac{1-\cos{\dfrac{1}{n^3}}}{\dfrac{1}{n^3}}
+          \]
+          prendiamo $b_n = \dfrac{1}{n^3}$ e utilizziamo il criterio del confronto
+          mediante limiti. Allora, cerchiamo di ricondurci al limite notevole
+          $\dfrac{1-\cos{\varepsilon_n}}{\varepsilon_n^2}$
+          \[
+              \dfrac{a_n}{b_n} = \dfrac{1-\cos{\dfrac{1}{n^3}}}{\dfrac{1}{n^6}} \to \dfrac{1}{2}
+          \]
+    \item Stabilire, per $x\geq0$, il carattere della serie:
+          \[
+              \sum_{n=1}^{+\infty} \dfrac{x^{n-1}}{(n-1)!}
+          \]
+          Utilizziamo il criterio del rapporto:
+          \[
+              \dfrac{a_{n+1}}{a_n} = \dfrac{x^n}{n!} \cdot \dfrac{(n-1)!}{x^{n-1}} = \dfrac{x^n(n-1)!}{(n-1)!nx^nx^{-1}} = \dfrac{x}{n} \to 0 \ \ \forall x > 0 \implies \text{ la serie converge } \forall x > 0
+          \]
+    \item Stabilire, per $x > 0$ il carattere della serie:
+          \[
+              \sum_{n=1}^{+\infty} x^n (\dfrac{n+1}{2n-1})^{2n}
+          \]
+          utilizziamo il criterio della radice:
+          \[
+              \sqrt[n]{a_n} x\left(\dfrac{n+1}{2n-1}\right)^2 \rightarrow \dfrac{x}{4}\ (n \to +\infty)
+          \]
+          Quindi se $0 < x < 4$, allora la serie converge. Se $x > 4$, allora la serie
+          diverge a $+\infty$. \\ Se $x = 4$:
+          \[
+              \sum_{n=1}^{+\infty} 4^n\left(\dfrac{n+1}{2n-1}\right)^{2n} = \sum_{n=1}^{+\infty}\left(\dfrac{2n+2}{2n-1}\right)^{2n}
+          \]
+          Osserviamo che:
+          \[
+              \lim_{n\to+\infty} \left(\dfrac{2n+2}{2n-1}\right)^{2n} = 1^\infty
+              = \lim_{n\to+\infty} \left[(1+\varepsilon_n)^{\dfrac{1}{\varepsilon_n}}\right]^{\varepsilon_n\cdot 2n}
+              = \cdots = e^3
+          \]
+          $a_n \not\to 0$ e poichè è una serie a termini positivi $\implies$ diverge a $+\infty$.
+    \item Stabilire per quali valori di $\alpha$ la serie converge:
+          \[
+              \sum_{n=1}^{+\infty} n^\alpha \cdot (\sqrt{1+\sin\dfrac{1}{n^2}} -1)
+          \]
+          Utilizziamo lo sviluppo (Taylor):
+          \[
+              \sin{\varepsilon_n} = \varepsilon_n + o(\varepsilon_n), \ \ \varepsilon_n \to 0
+          \]
+          Inoltre:
+          \[
+              \sqrt{1+\varepsilon_n} = 1 + \dfrac{\varepsilon_n}{2} + o(\varepsilon_n), \ \ \varepsilon_n \to 0
+          \]
+          \[
+              \implies \sin{\dfrac{1}{n^2}} = \dfrac{1}{n^2} + o(\dfrac{1}{n^2})
+          \]
+          \[
+              \sqrt{1+\sin{\dfrac{1}{n^2}}} = \left(1 +\sqrt{1+\dfrac{1}{n^2} + o(\dfrac{1}{n^2})}\right)^{\dfrac{1}{2}} = 1 + \dfrac{1}{2n^2} + o(\dfrac{1}{n^2})
+          \]
+          \[
+              \implies a_n = n^\alpha (\sqrt{1+\sin{\dfrac{1}{n^2}}} - 1) = n^\alpha \left(\dfrac{1}{2n^2} + o(\dfrac{1}{n^2})\right)
+          \]
+          $a_n$ si comporta come $\dfrac{1}{2n^{2-\alpha}}$ e $\sum_{n=1}^{+\infty} \dfrac{1}{2n^{2-\alpha}}$ converge $\iff 2-\alpha > 1 \iff \alpha < 1$. Per il criterio del confronto mediante i limiti, la serie data converge $\iff \alpha < 1$.
+\end{itemize}
+
+\subsection{Serie alternate}
+Consideriamo serie del tipo:
+\[
+    a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n+1}a_n + \cdots = \sum_{n=1}^{+\infty}(-1)^{n+1}a_n, \ \ \text{ con } a_n > 0
+\]
+Vale il seguente criterio:
+\subsection{Criterio di convergenza per le serie alternate (Leibniz)}
+Sia $a_n$ una sucessione tale che:
+\begin{itemize}
+    \item $a_n \geq 0$
+    \item infinitesima $(a_n \to 0)$
+    \item decrescente $(a_{n} \geq a_{n+1}) \forall n$
+\end{itemize}
+\[
+    \implies \sum_{n = 1}^{+\infty} (-1)^{n}\ a_n \text{ converge}
+\]
+
+\subsubsection{Esempi}
+\begin{itemize}
+    \item $\serie \dfrac{1}{2n+1}$
+    \item $\serie (-1)^n \dfrac{1}{\sqrt{n}}$
+\end{itemize}
+
+\subsubsection{Esercizio del compito 20 07 21}
+Determinare il carattere della serie:
+\[
+    \serie (-1)^{n+1}\sin\dfrac{1}{n^3+5}
+\]
+La serie converge per il criterio di Leibniz, infatti:
+\begin{itemize}
+    \item $a_n \geq 0$
+    \item $a_n \to 0$
+    \item $a_n$ decrescente, infatti $\dfrac{1}{n^3+5}$ è decrescente e la funzione $g(x) = \sin x$ è crescente per $x \in [0,\frac{\pi}{2}]$
+\end{itemize}
+
+\subsection{Convergenza Assoluta}
+Una serie $\serie a_n$ si dice \textbf{assolutamente convergente} se risulta
+convergente la serie dei valori assoluti $\serie |a_n|$. In generale, una serie
+convergente non necessariamente è assolutamente convergente. \\ Ad esempio:
+$\serie (-1)^n \dfrac{1}{n}$ è convergente per il criterio di Leibniz, ma
+\[
+    \serie |(-1)^n\dfrac{1}{n}| = \serie \dfrac{1}{n}
+\]
+è la serie armonica che diverge.
+
+\subsection{Teorema}
+Una serie assolutamente convergenete, è convergente.
+
+\subsubsection{Esercizio del compito (predcedente)}
+La serie $\serie (-1)^{n+1}\sin\dfrac{1}{n^3+5}$ è anche assolutamente
+convergente. Infatti:
+\[
+    a_n = \sin \left(\dfrac{1}{n^3+5}\right) \cong \dfrac{1}{n^3} + o\left(\dfrac{1}{n^3}\right)
+\]
+e la serie $\serie \dfrac{1}{n^3}$ converge.
 
 \end{document}
