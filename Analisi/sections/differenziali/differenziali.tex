@@ -1,0 +1,323 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Equazioni differenziali}
+Sia
+\[
+    y'(x) = g(x) \ \ \ \ \forall x \in [a, b]
+\]
+dove $g(x)$ è una funzione di una variabile reale, continua in un intervallo
+$[a, b] \in \R$.\\ Per il \textbf{teorema fondamentale del calcolo integrale}
+sappiamo trovare una \textbf{primitiva} $G(x)$ di $g(x)$ nell'intervallo
+$[a,b]$, data da:
+\[
+    G(x) = {\int_{x_0}^{x}  g(t)\,dt }
+\]
+dove $x_0$ è un numero reale fissato in $[a, b]$. \\ Quindi possiamo
+rappresentare ogni soluzione dell'equazione differenziale
+\[
+    y'(x) = g(x) \ \ \ \ \ \forall x\in [a, b] \ \ (\star)
+\]
+Integrando entrambi i membri di $(\star)$ tra $x_0$ e $x$ otteniamo:
+\[
+    y(x)-y(x_0) = \int_{x_0}^{x} y'(t)\,dt = \int_{x_0}^{x} g(t)\,dt
+\]
+e rappresentiamo la soluzione nella forma:
+\[
+    y(x) = y(x_0) + \int_{x_0}^{x} g(t)\,dt \ \ \ x\in [a, b]
+\]
+Questo è un esempio molto particolare di equazione differenziale, si dice che
+$y(x)$ è soluzione del \textbf{problema di Cauchy}:
+\[
+    \begin{cases}
+        y'(x) = g(x) \\
+        y(x_0) = y_0
+    \end{cases}
+\]
+in quanto $y(x)$ è soluzione ed inoltre soddisfa la \textbf{condizione
+    iniziale} nel punto $x = x_0$:
+\[
+    x = x_0 \ \ \ y(x_0) = y_0 + \int_{x_0}^{x_0} g(t)\,dt = y_0
+\]
+\subsection{Osservazione}
+L'equazione differenziale considerata si dice del \textbf{primo ordine}, poichè
+l'ordine massimo di derivazione che compare nell'equazione è il primo.
+
+\subsection{Ulteriore esempio di equazione differenziale del primo ordine}
+Sia
+\[
+    y'(x) = \lambda y(x) \ \ \ \ \ \forall x \in \R
+\]
+dove $\lambda$ è un parametro reale fissato. \\ Dobbiamo trovare una soluzione
+di questa equazione differenziale, cioè una funzione $y = y(x)$, derivabile in
+$\R$, tale che
+\[
+    y'(x) = \lambda y(x) \ \ \ \ \ \forall x \in \R
+\]
+Una soluzione è data da:
+\[
+    y(x) = ce^{\lambda x} \ \ \ \ \ \forall x \in \R
+\]
+dove $c$ è una costante arbitrariamente fissata in $\R$.\\ Si verifica subito
+che è soluzione, infatti derivando si ottiene:
+\[
+    y'(x) = c\lambda e^{\lambda x} = \lambda y(x)
+\]
+\subsubsection{Domanda}
+Tutte le possibile soluzoni sono della forma $y(x) = ce^{\lambda x}$? Sì, ma
+non lo dimostriamo.
+
+\subsection{Esempio di equazione differenziale del secondo ordine: equazione del moto armonico}
+\[
+    y''(x) + \omega^2 y = 0 \ \ \ \ \ \forall x \in \R
+\]
+dove $\omega \ne 0$ è un parametro reale fissato.\\ Una famiglia di soluzioni è
+data da:
+\[
+    y(x) = c_1\cos{\omega x} + c_2\sin{\omega x}
+\]
+con $c_1, c_2 \in \R$ costanti in $\R$.\\ \textbf{Verifica:}\\
+\[
+    y'(x) = -c_1\omega\sin{\omega x} + c_2\omega\cos{\omega x}
+\]
+\[
+    y''(x) = -c_1\omega^2\cos{\omega x} - c_2\omega^2\sin{\omega x} = -\omega^2 (c_1\cos{\omega x} + c_2\sin{\omega x}) = -\omega^2 y(x)
+\]
+\[
+    \implies y''(x) + \omega^2 y(x) = 0
+\]
+Tutte le soluzioni dell'equazione differenziale del moto armonico sono nella
+forma $y(x) = c_1\cos{\omega x} + c_2\sin{\omega x}$? Sì, ma non lo
+dimostriamo.
+
+\subsection{Equazioni differenziali lineari ordine n, di tipo normale}
+\[
+    y^n + a_{n-1}(x)y^{n-1}+\ldots+a_1(x)y'+a_0(x)y = g(x) \ \ (1)
+\]
+dove $a_0(x), a_1(x), \ldots, a_{n-1}(x)$ sono coefficienti e $g(x)$ è il
+termine noto. (funzioni continue in un intervallo $[a, b] \in \R$).\\ Se $g(x)
+    = 0$ l'equazione (1) si dice \textbf{omogenea}.
+\[
+    y^n + a_{n-1}(x)y^{n-1}+\ldots+a_1(x)y'+a_0(x)y = 0 \ \ (2)
+\]
+
+\subsection{}
+Una soluzione dell'equazione differenziale (1) o (2) è una funzione $y = y(x)$,
+derivabile n volte in $[a, b]$, che soddisfa la condizione (1) o (2) $\forall x
+    \in [a, b]$. Le soluzioni delle equazioni differenziali lineari sono dette
+anche \textbf{integrali} e l'insieme di tutte le soluzione è detto
+\textbf{integrale generale}.
+
+\subsection{Rappresentazione dell'integrale generale di un'equazione differenziale lineare}
+L'integrale generale di un'operazione differenziale \textbf{non omogenea} è
+dato dall'insieme delle soluzione dell'equazione omogenea, sommate ad una
+soluzione particolare dell'equazione non omogenea.
+
+\subsection{Equazioni differenziali lineari del secondo ordine}
+\[
+    y''(x) + a(x)y'(x) + b(x)y = g(x)
+\]
+con $a(x), b(x), g(x)$ funzioni continue in un intervallo $[a, b]$. \\
+Consideriamo inizialmente l'equzione omogenea associata:
+\[
+    y''(x) + a(x)y'(x) + b(x)y = 0
+\]
+Una soluzione è una funzione $y = y(x)$, derivabile due volte in $[a, b]$, che
+soddisfa l'equazione differenziale.\\ Considereremo equazioni differenziali di
+questo tipo, a coefficienti costanti.
+
+\subsection{Equazioni differenziali lineari omogenee a coefficienti costanti}
+\[
+    y''(x) + ay'(x) + by(x) = 0
+\]
+con $a, b \in \R$ costanti.\\ Associamo l'equazione caratteristica
+\[
+    \lambda^2 + a\lambda + b = 0
+\]
+equazione di secondo grado dove:
+\[
+    \lambda_1, \lambda_2 = \frac{-a \pm \sqrt{a^2 - 4b}}{2} \ \ \ \Delta > 0
+\]
+\[
+    \lambda_1 = \lambda_2 = \frac{-a}{2} \ \ \ \Delta = 0
+\]
+E se il discriminante è negativo? \\ Ricordiamoci come si calcola la radice
+quadrata di un numero negativo:
+\[
+    \sqrt{\Delta} \text{ con } \ \Delta < 0
+\]
+\[
+    \sqrt{\Delta} = \sqrt{-1(-\Delta)} = \pm i\sqrt{-\Delta}
+\]
+e quindi le soluzioni complesse nel caso $\Delta < 0$ sono:
+\[
+    \lambda_1, \lambda_2 = \frac{-a \pm \sqrt{\Delta}}{2} = \frac{-a\pm i\sqrt{-\Delta}}{2}
+\]
+cioè $\lambda_1, \lambda_2 = -\frac{a}{2}\pm i \frac{\sqrt{-\Delta}}{2}$\\
+$\lambda_1 = \alpha - i\beta$\\ $\lambda_2 = \alpha + i\beta$\\ $\alpha =
+    -\frac{a}{2}$\\ $\beta = \frac{\sqrt{-\Delta}}{2}$
+
+\subsection{Integrale generale delle equazioni lineari omogenee a coefficienti costanti}
+\[
+    y''(x) + ay'(x) + by(x) = 0
+\]
+Tutte le soluzioni sono date da:
+\begin{align*}
+    \bullet \  & c_1e^{\lambda_1 x} + c_2e^{\lambda_2 x} \ \ \ \Delta > 0           \\
+    \bullet \  & (c_1 + c_2x)e^{\lambda_1 x} \ \ \ \Delta = 0                       \\
+    \bullet \  & e^{\alpha x}(c_1\cos{\beta x} + c_2\sin{\beta x}) \ \ \ \Delta < 0
+\end{align*}
+Al variare delle costanti $c_1, c_2$.
+
+\subsubsection{Esempio}
+Risolvere l'equazione differenziale omogenea:
+\[
+    y'' - 6y' + 5y = 0\]
+L'equazione differenziale ha come equazione caratteristica, l'equazione di
+secondo grado:
+\[
+    \lambda^2 - 6\lambda + 5 = 0
+\]
+\[
+    \Delta = 36 - 20 = 16 > 0 \implies \lambda_1 = \frac{6-4}{2} = 1 \ \ \ \lambda_2 = \frac{6+4}{2} = 5
+\]
+$\implies$ L'integrale generale è dato da:
+\[
+    y(x) = c_1e^x + c_2e^{5x}
+\]
+\subsubsection{Esempio 2}
+Risolvere l'eqazione differenziale omogenea:
+\[
+    y'' - 2y' + 2y = 0
+\]
+L'equazione caratteristica è data da:
+\[
+    \lambda^2 - 2\lambda + 2 = 0
+\]
+\[
+    \Delta = 4 - 8 = -4 < 0
+\]
+Posso trovare i $\alpha$ e $\beta$, ma mi conviene utilizzare direttamente la
+formula del $\Delta$:
+\[
+    \lambda_{1,2} = \frac{2 \pm i\sqrt{4}}{2} = 1 \pm i \implies \lambda_1 = 1 - i \ \ \ \lambda_2 = 1 + i
+\]
+L'integrale generale è dato da:
+\[
+    y(x) = e^x(c_1\cos{x} + c_2\sin{x})
+\]
+
+\subsection{Esempio 3}
+Risolvere l'equazione differenziale omogenea:
+\[
+    y'' - 2y' + y = 0
+\]
+L'equazione caratteristica è data da:
+\[
+    \lambda^2 - 2\lambda + 1 = 0
+\]
+\[
+    \Delta = 4 - 4 = 0 \implies \lambda_1 = \lambda_2 = 1
+\]
+e l'integrale generale è dato da:
+\[
+    y(x) = (c_1 + c_2x)e^x
+\]
+
+\subsection{Equazioni differnziali lineari non omogenee}
+\[
+    y''(x) + ay'(x) + by(x) = g(x)
+\]
+L'integrale generale delle soluzioni è dato da:
+\[
+    c_1y_1(x) + c_2y_2(x) + \bar{y}(x)
+\]
+al variare delle costanti $c_1$ e $c_2$. $y_1(x)$ e $y_2(x)$ sono due soluzioni
+dell'omogenee associata in $[a, b]$, $\forall x \in [a, b]$, (che abbiamo visto
+nel caso di coefficienti costanti) e $\bar{y}(x)$ è una soluzione particolare
+dell'equazione non omogenea.\\ Ci sono casi particolari in cui è possibile
+ricavare una soluzione in modo diretto (nel caso di equazioni del secondo
+ordine a coefficienti costanti).
+
+\subsubsection{Esempio}
+Determinare l'integrale generale dell'equazione differenziale
+\[
+    y'' + 2y' + y = x^2+4x-1 \ \ (\star)
+\]
+Come primo passo consideriamo l'omogenea associata e quindi, essendo a
+coefficienti costanti, consideriamo l'equazione caratteristica:
+\[
+    \lambda^2 + 2\lambda + 1 = 0
+\]
+\[
+    \Delta = 4 - 4 = 0 \implies \lambda_1 = \lambda_2 = -1
+\]
+per cui l'integral generale dell'omogenea associata è dato da:
+\[
+    (c_1 + c_2x)e^{-x}
+\]
+al variare delle costanti $c_1$ e $c_2$.\\ Ora ricerchiamo una soluzione
+particolare $\bar{y}(x)$ e poichè il termine noto dell'equazione differenziale
+è una equazione di secondo grado, la ricerchiamo nella forma:
+\[
+    \bar{y}(x) = ax^2 + bx + C
+\]
+Sostituendo $\bar{y}(x)$ nell'equazione differenziale $(\star)$ otteniamo:
+\[
+    \bar{y}'' + 2\bar{y}' + \bar{y} =  x^2 + 4x - 1 \ \ \implies \bar{y}(x) = ax^2+bx+c \ \ \ \bar{y}' = 2ax + b \ \ \ \bar{y}'' = 2a
+\]
+\[
+    2a + 4ax + 2b + ax^2 + bx + c = x^2 + 4x - 1 \implies ax^2 + (4a + b)x + 2a + 2b + c = x^2 + 4x - 1
+\]
+Quindi occorre che:
+\[
+    \begin{cases}
+        a = 1      \\
+        4a + b = 4 \\
+        2a + 2b + c = -1
+    \end{cases}
+\]
+da cui $a = 1, b = 0, c = -3$.\\ Quindi una soluzione particolare è:
+\[
+    \bar{y}(x) = x^2 - 3
+\]
+Quindi l'integrale generale dell'equazione differenziale iniziale è dato da:
+\[
+    (c_1 + c_2x)e^{-x} + x^2 - 3
+\]
+
+\subsubsection{Esempio 2}
+Risolvere l'equazione differenziale non omogenea:
+\[
+    y'' - 3y' + 2y = 2x^3 - x^2 + 1
+\]
+$\implies$ l'integrale generale dell'omogenea associata è dato quindi da:
+\[
+    \ldots
+\]
+
+\subsubsection{Osservazione}
+Abbiamo visto un metodo per trovare una soluzione, quando il termine noto è un
+polinomio. \\ Ora vediamo un esempio, in cui:
+\[
+    g(x) = a\sin{x} + b\cos{x}
+\]
+\subsubsection{Esempio}
+Determinare l'integrale generale dell'equazione differenziale:
+\[
+    y'' + y' + 2y = 2\cos{x}
+\]
+Consideriamo prima l'equazione caratteristica dell'omogenea associata:
+\[
+    \lambda^2 + \lambda + 2 = 0
+\]
+\[
+    \Delta = 1 - 8 = -7 < 0 \implies \lambda_1 = -\frac{1}{2} + i\frac{\sqrt{7}}{2} \ \ \ \lambda_2 = -\frac{1}{2} - i\frac{\sqrt{7}}{2}
+\]
+$\alpha = -\frac{1}{2}$\\ $\beta = \frac{\sqrt{7}}{2}$\\
+L'integrale generale è dato da:
+\[
+    c_1e^{-\dfrac{x}{2}}\cos{\frac{\sqrt{7}}{2}x} + c_2e^{-\dfrac{x}{2}}\sin{\frac{\sqrt{7}}{2}x}
+\]
+
+\end{document}
