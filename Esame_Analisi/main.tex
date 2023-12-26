@@ -464,17 +464,96 @@ Confrontiamola con altre successioni $b_n, c_n$:
     c_n = (1+\dfrac{1}{10})^n = (\dfrac{11}{10})^n = a^n \to +\infty \ \ \ \ \text{ con } a > 1
 \]
 Quindi $a_n$ è una \textbf{forma indeterminata} $1^{+\infty}$, che da una
-parte, vuole tendere ad 1, dall'altra a $+\infty$, arriverà quindi ad un
-''punto di mezzo''. Si definisce $e$ il \textbf{numero di Nepero} tale che:
+parte, vuole tendere ad 1, dall'altra a $+\infty$, arriverà quindi ad un `punto
+di mezzo'. Si definisce $e$ il \textbf{numero di Nepero} tale che:
 \[
     e = \lim_{n\to+\infty}(1+\dfrac{1}{n})^n
 \]
-dove $e \simeq 2,71828182845904523536028747135266249775724709369995\ldots$\\ Si
-dimsotra che la succesisone $a_n$ è strettamente crescente e limitata.
+dove $e \simeq 2,718281828459\ldots$\\ Si dimsotra che la succesisone $a_n$ è
+strettamente crescente e limitata.
 
 \subsection{Successioni Monotòne}
 \begin{itemize}
-    \item
+    \item $a_n$ strettamente crescente $\iff a_n < a_{n+1} \ \ \ \ \forall n \in \mathbb{N}$
+    \item $a_n$ strettamente decrescente $\iff a_n > a_{n+1} \ \ \ \ \forall n \in \mathbb{N}$
+    \item $a_n$ crescente $\iff a_n \leq a_{n+1} \ \ \ \ \forall n \in \mathbb{N}$
+    \item $a_n$ decrescente $\iff a_n \geq a_{n+1} \ \ \ \ \forall n \in \mathbb{N}$
 \end{itemize}
+Una successione si dice \textbf{monotona} se si verifica una delle quattro condizioni.\\
+Una successione si dice \textbf{costante} se $a_n = a \ \ \ \ \forall n \in \mathbb{N}$ con $a$ numero reale. Le successioni costanti sono sia crescenti che decrescenti.
+
+\subsection{Teorema sulle successioni monotone}
+Ogni successione monotona ammette limite. In particolare, ogni successio
+monotona e limitata ammette limite finito.\\ \textbf{Osservazione:}
+Naturalmente non è che ogni successione convergente è monotona. Ad esempio $an
+    = \frac{(-1)^n}{n}$ è convergente ($\to 0$), ma non è monotona.\\
+\textbf{Dimostrazione:} $(1)$ Sia, ad esempio, $a_n$ crescente e limtata.\\
+Poniamo $l = \sup a_n$ (teorema di esistenza dell'estremo superiore: esiste il
+sup ed è finito perchè $a_n$ è limitata).\\ Allora, per le proprietà
+dell'estremo superiore (data che è il minimo dei maggioranti)
+\[
+    \forall\varepsilon>0 \ \ \ \ \exists \nu : l-\varepsilon < a_\nu \ \ (\star)
+\]
+Ma $a_n$ è monotona (crescente), quindi $\forall n>\nu \ \ \ a_\nu \leq a_n$,
+da $(\star)$
+\[
+    l-\varepsilon < a_\nu \leq a_n \leq l < l+\varepsilon \ \ \ \ \forall n > \nu
+\]
+\[
+    |a_n - l| < \varepsilon \ \ \ \ \forall n > \nu
+\]
+$\implies \lim_{n\to+\infty}a_n = l \ \ \ \clubsuit$\\
+$(2)$ Sia ora $a_n$ crescente e non limitata. Fissiamo $M > 0$, allora esiste $\nu$ tale che $a_\nu > M$. Dato che $a_n$ è crescente $\forall n>\nu$
+\[
+    a_n \geq a_\nu > M
+\]
+$\implies \lim_{n\to+\infty}a_n = +\infty \ \ \ \clubsuit$\\
+\textbf{Osservazione:} Assioma di completezza $\implies$ Esistenza dell'estremo superiore $\implies$ Esistenza del limite delle successioni monotone\\
+\textbf{Osservazione:} Si dimostra che $a_n = (1+\frac{1}{n})^n$ è strettamente crescente e limitata. Quindi esiste, ed è un numero reale, il limite per $n\to+\infty$ di $a_n$, che è $e$.
+
+\subsection{Limiti Notevoli}
+\begin{itemize}
+    \item $\lim_{n\to+\infty} (1+\dfrac{1}{n})^n = e$
+    \item $\lim_{n\to+\infty} (1+\dfrac{x}{n})^n = e^x$ con $x \in \R$
+\end{itemize}
+Più in generale:
+\begin{itemize}
+    \item $\lim_{n\to+\infty} (1+\dfrac{x}{a_n})^a_n = e^x$ con $a_n \to +\infty$, $x \in \R$
+    \item $\lim_{n\to+\infty} (1+\varepsilon n)^{\frac{1}{\varepsilon}} = e$ con $\varepsilon \to 0$
+    \item $\lim_{n\to+\infty} (1+x\varepsilon n)^{\frac{1}{\varepsilon}} = e^x$ con $\varepsilon \to 0$, $x \in \R$
+\end{itemize}
+\textbf{Osservazione:} Abbiamo visto, nell'ambito dei \textbf{limiti notevoli}, la successione esponenziale $a^n$, con $a > 1$ e la successione potenza $n^b$, con $b > 0$.\\
+Entrambe divergono a $+\infty$. Spesso tali successioni vengono confrontate con $\log n, n!$ e con $n^n$, che pure divergono a $+\infty$.\\
+
+\subsubsection{Infiniti di ordine crescente}
+$\log n$, $n^b$, $a^n$, $n!$, $n^n$, da cui:
+\begin{itemize}
+    \item $\lim_{n\to+\infty} \dfrac{\log n}{n^b} = 0$
+    \item $\lim_{n\to+\infty} \dfrac{a^n}{n!} = 0$
+    \item $\lim_{n\to+\infty} \dfrac{n!}{n^n} = 0$
+    \item $\lim_{n\to+\infty} \dfrac{n^b}{a^n} = 0$
+\end{itemize}
+
+\subsection{Criterio del rapporto per le successioni}
+Sia $a_n$ una successione a termini positivi.\\ Sia $\dfrac{a_n+1}{a_n} \to a$,
+se $a \in [0, 1)$, allora la successione $a_n$ converge a zero.\\ Se $a \in (1,
+    +\infty)$, allora la successione $a_n$ diverge a $+\infty$.\\
+\textbf{Osservazione:} Il caso $a = 1$ non è contemplato nell'enunciato.
+
+\subsection{Successioni estratte}
+Considero $a_n$ successione di numeri reali e sia $n_k$ una successione
+strettamente crescente di numeri naturali.\\ La successione $a_{nk}$
+\[
+    k\in\mathbb{N} \to a_{n_k}
+\]
+prende il nome di \textbf{successione estratta da $a_n$} di inidici $n_k$.\\
+\textbf{Osservazione:} Si dimostra che se $a_n$ converge ad $a$, allora ogni
+successione estratta $a_{n_k}$ converge ad $a$.\\ \textbf{Osservazione:}
+Abbiamo dimostrato che ogni successione $a_n$ convergente è limitata. Il
+viceversa non è vero, ma vale il seguente notevole risultato:
+
+\subsection{Teorema di Bolzano-Weierstrass}
+Sia $a_n$ una successione limitata. Allora esiste almeno una sua estratta
+convergente.
 
 \end{document}
