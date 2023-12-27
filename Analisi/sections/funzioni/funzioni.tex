@@ -338,12 +338,13 @@ per $x > 0$, $y = \dfrac{\sin x}{x}$ ha lo stesso segno di $\sin x$:
             \addplot [
                 domain=0.01:5,
                 samples=100,
-                color=green,
+                color=orange,
             ]
             {sin(deg(x))/x};
 
             \addlegendentry{$\frac{1}{x}$}
             \addlegendentry{$-\frac{1}{x}$}
+            \addlegendentry{$\frac{\sin x}{x}$}
         \end{axis}
     \end{tikzpicture}
 \end{center}
@@ -374,7 +375,6 @@ $\implies \lim_{x\to +\infty} \ f(x_n) = \lim_{x\to +\infty} \frac{\sin x_n}{x_n
                 ylabel = {$f(x)$},
                 xmin=-15, xmax=15,
                 ymin=-1.5, ymax=1.5,
-                scale = 1.5
             ]
             \addplot [
                 domain=-15:15,
@@ -392,7 +392,7 @@ $\implies \lim_{x\to +\infty} \ f(x_n) = \lim_{x\to +\infty} \frac{\sin x_n}{x_n
             \addplot [
                 domain=-15:15,
                 samples=100,
-                color=green,
+                color=orange,
             ]
             {sin(deg(x))/x};
 
@@ -421,6 +421,57 @@ Le seguenti relazioni sono fra loro equivalenti ($x_0, l\in\R$).
 \end{itemize}
 Valgono anche le definizioni con i limiti infiniti:
 \begin{itemize}
-    \item
+    \item $\lim_{x\to x_0} f(x) = +\infty \iff \forall x_n \to x_0 \ x_n \in A \setminus \{x_0\} \ \forall n \in \mathbb{N} \implies f(x_n) \to +\infty /iff \forall M > 0 \ \exists \delta > 0 \ : f(x) > M \ \ \ \forall x \in A \ : \ 0 \neq |x - x_0| < \delta$
+    \item $\lim_{x\to x_o} f(x) = l \iff \forall x_n\to+\infty, \ x_n\in A, \ \forall n \in \mathbb{N} \implies f(x_n) \to l \iff \forall \varepsilon > 0 \ \exists k \ : \ |f(x) - l| < \varepsilon \ \ \ \forall x \in A \ : \ x > k$
+    \item $\lim_{x\to+\infty} f(x) = +\infty \iff \forall x_n \to +\infty \ x_n \in A \ \forall n \in \mathbb{N} \implies f(x_n) \to +\infty \iff \forall M > 0 \ \exists k \ : \ f(x) > M \ \ \ \forall x \in A \ : \ x > k$
 \end{itemize}
+\textbf{Osservazione:} è utile considerare il \textbf{limite destro $x\to x_0^+$} e il \textbf{limite sinistro $x\to x_0^-$}, quando ci si avvicina al punto $x_0$ per valori di $x\in A$ rispettivamente solo maggiori di $x_0$, o solo minori.
+\begin{itemize}
+    \item $\lim_{x\to x_0^+} f(x) = l \iff \forall\varepsilon > 0,\delta > 0 \ : \ |f(x)-l|<\varepsilon \ \ \ \forall x \in A \ : \ 0 < x - x_0 < \delta$
+    \item $\lim_{x\to x_0^-} f(x) = l \iff \forall\varepsilon > 0,\delta > 0 \ : \ |f(x)-l|<\varepsilon \ \ \ \forall x \in A \ : \ -\delta < x - x_0 < 0$
+\end{itemize}
+
+\subsection{Operazioni con i limiti di funzioni}
+Il limite della somma, differenza, prodotto, quoziente, di due funzioni è
+rispettivamente uguale alla somma, differenza, prodotto, quazionete (se il
+denominatore è diverso da zero) dei due limiti, purchè non sia una delle forme
+indeterminate.
+
+\subsection{Limiti Notevoli}
+Valgono i limiti notevoli visti per le successioni:
+\begin{itemize}
+    \item $\lim_{x\to 0} a^x = \begin{cases}
+                  +\infty & \text{se } a > 1     \\
+                  0       & \text{se } 0 < a < 1
+              \end{cases}$\\In particolare $\lim_{x\to+\infty} e^x = +\infty$ e $\lim_{x\to-\infty} e^x = 0$
+    \item $\lim_{x\to +\infty} \ln x = +\infty$ e $\lim_{x\to 0^+} \ln x = -\infty$
+    \item $\lim_{x\to\pm\infty} (1+\frac{1}{x})^x = e$
+    \item $\lim_{x\to\pm\infty} (1+\frac{b}{x})^x = e^b \ \ \ \forall b\in\R$\\ In generale $(1+f(x))^{\frac{1}{f(x)}} \to e \ \ \ \text{per } f(x)\to 0$
+    \item $\lim_{x\to0} \dfrac{\sin x}{x} = 1$
+    \item $\lim_{x\to0} \dfrac{1-\cos x}{x^2} = \frac{1}{2}$
+    \item $\lim_{x\to0} \dfrac{1-\cos x}{x} = 0$
+\end{itemize}
+
+\subsection{Limiti di funzioni composte}
+Siano $g: x \to y$ e $f: y \to \R$ due funzioni, tali che:
+\[
+    \lim_{x\to x_0} g(x) = y_0 \text{ e } \lim_{y\to y_0} f(y) = l
+\]
+ed esiste $\delta > 0$ tale che risulti $g(x) \neq y_0 \forall x\neq x_0$
+dell'intervallo $(x_0 - \delta, x_0 + \delta)$, allora:
+\[
+    f \circ g: x \to \R \ \ \ \left[ f \circ g \right] (x) = f(g(x))
+\]
+si ha:
+\[
+    \lim_{x\to x_0} f(g(x)) = l
+\]
+segue che:
+\[
+    \lim_{x\to x_0} f(g(x)) = \lim_{y\to y_0} f(y) = l
+\]
+\textbf{Esempio:} Applichiamo il precedente risultato:\\
+$\lim_{x\to\pm\infty} x\log(1+\frac{1}{x}) = 1$\\
+Si può scrivere anche $1+y = t \implies \lim_{t\to 1} \dfrac{\log t}{t-1} = 1$\\
+
 \end{document}
