@@ -1,0 +1,213 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\section{Derivate}
+Supponiamo di dover percorrere una strada da $A$ a $B$ e indichiamo con $s(t)$
+lo spazio percorso in funzione del tempo.\\
+Velocità media? $ = \dfrac{\text{spazio percorso}}{\text{tempo impiegato}} = \dfrac{s_1 - s_0}{t_1 - t_0}$
+\vspace*{2mm}\\
+\textbf{Velocità istantanea?}\\
+$\dfrac{s(t+h) - s(t)}{h}$ velocità media. Devo fare il limite per $h \to 0$.\\
+$\lim\limits_{h \to 0} \dfrac{s(t+h) - s(t)}{h}$ occorre calcolare il \textbf{limite di un rapporto incrementale}, così chiamato
+perchè al denominatore c'è l'incremento $h$ della variabile indipendente e al numeratore c'è l'incremento della variabile dipendente.\\
+$\implies$ la velocità istantanea è l'interpretazione fisica della deriviata.
+
+\subsection{Definizione di derivata}
+Sia $f(x)$ una funzione definita in $(a,b)$ e sia $x\in (a,b)$. Si dice che la funzione $f$ è derivabile
+nel punto $x$, se esiste \textbf{finito il limite del rapporto incrementale}
+\[
+    \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h}
+\]
+tale limite è la \textbf{derivata} di $f$.\\
+In simboli:
+\[
+    f'(x),\ Df(x),\ \dfrac{df}{dx},\ y',\ Dy
+\]
+\begin{itemize}
+    \item $f$ derivabile in $(a, b)$, se è derivabile in ogni punto di $(a, b)$
+    \item $f$ definita in $[a, b]$ è derivabile in $[a, b]$ se è derivabile in ogni punto $x\in(a, b)$ e se $f$ ammette derivata destra  (per $h\to 0^+$) in $x=a$
+          e derivata sinistra (per $h\to 0^-$) in $x=b$ (intesi come limite destro e sinistro).
+\end{itemize}
+
+\subsection{Derivabilità e continuità}
+Ogni funzione derivabile in $x$ è continua in $x$.
+\[
+    \text{Derivabilità} \implies \text{Continuità}
+\]
+\textbf{Dimostrazione:}$f(x)$ continua in $x_0$ se:\\
+$\lim\limits_{x\to x_0} f(x) = f(x_0)$\\
+se $x_0 = x$ e $x = x+h$ equivalentemente
+\[
+    \lim_{h\to 0} f(x + h) = f(x)
+\]
+Quindi:
+\[
+    \lim_{h\to 0} f(x+h) = \lim_{h\to0} f(x) + f(x+h) - f(x) = f(x) + \lim_{h\to 0} \dfrac{f(x+h) - f(x)}{h} \cdot h = f(x)
+\]
+Quindi ogni funzione derivabile in $x$ è continua in $x$, il viceversa non è vero.
+
+\subsection{Derivate di ordine superiore}
+Se una funzione è dereivabile in tutti i punti di un intervallo $(a, b)$, allora la sua derivata
+$f'(x)$ è una funzione definita in $(a, b)$. Se questa funzione è a sua volta derivabile, diremo che la derivata
+$(f')'$ è la derivata seconda.
+\[
+    f'' \ \frac{d^2f}{dx^2} \ \frac{d^2y}{dx^2} \ \frac{d^2}{dx^2} \ y'' \ D^2f \ D^2y
+\]
+\textbf{Osservazione:} $g(x) = c \ \ \ \forall x\in\R$ costante $\implies g'(x) = 0$ infatti:
+\[
+    \lim_{h\to 0} \dfrac{g(x+h) - g(x)}{h} = \lim_{h\to 0} \dfrac{c - c}{h} = \lim_{h\to 0} 0 = 0
+\]
+\textbf{NB:} $\frac{0}{h}$ non è una forma indeterminata.\\
+
+Quindi il limite del rapporto incrementale vale zero. $\clubsuit$
+
+\subsection{Operazioni con le derivate}
+Se $f$ e $g$ sono due funzioni derivabili in $x$, allora:
+\begin{itemize}
+    \item $(f\pm g)' = f'\pm g'$
+    \item $(f \cdot g) = f'g + fg'$
+    \item $\left(\dfrac{f}{g}\right)' = \dfrac{f'g - fg'}{g^2}$
+\end{itemize}
+
+\subsubsection{Dimostrazione regola del prodotto}
+\[
+    \dfrac{f(x+h)g(x+h) - f(x)  g(x+h) + f(x)g(x+h) - f(x)g(x)}{h} = \dfrac{f(x+h) - f(x)}{h} \cdot g(x+h) + f(x) \cdot \dfrac{g(x+h) - g(x)}{h}
+\]
+la funzione $g$ è derivabile in $x$ per ipotesi $\implies$ è anche continua e $g(x+h) \to g(x)$ per cui, passando al limite per
+$h\to 0$ $\implies \lim_{h\to0} g(x+h) = g(x) \clubsuit$
+
+\subsection{Derivazione delle funzioni composte}
+se $y = f(z) \text{ funzione di } z$ e $z = g(x) \text{ funzione di } x$ allora $y = f(g(x))$ è una funzione composta risultante.
+
+\subsection{Teorema di derivazione delle funzioni composte}
+Se $g$ è derivabile in $x$ e se $f$ è una funzione derivabile nel punto $g(x)$, allora la funzione composta $f(g(x))$ è derivabile
+in $x$ e si ha:
+\[
+    D f(g(x)) = f'(g(x)) \cdot g'(x)
+\]
+\textbf{Dimostrazione:} Consideriamo il rapporto incrementale:
+\[
+    \dfrac{f(g(x+h)) - f(g(x))}{h} = \dfrac{f(g(x+h)) - f(g(x))}{g(x+h) - g(x)} \cdot \dfrac{g(x+h) - g(x)}{h}
+\]
+\[
+    \lim_{h\to 0} \dfrac{f(g(x+h)) - f(g(x))}{g(x+h) - g(x)} \ \ (\star)
+\]
+è il limite del rapporto incrementale di $f$ nel punto $g(x)$.\\
+Pongo $k = g(x+h) - g(x)$, allora $k\to 0$ per $h\to 0$ perchp $g$ è derivabile in $x$ e quindi continua $g(x+h)\to g(x)$\\
+\[
+    \implies (\star) = \lim_{k\to 0} \dfrac{f(g(x) + k) - f(g(x))}{k} = f'(g(x)) \implies D f(g(x)) = f'(g(x)) \cdot g'(x) \ \ \clubsuit
+\]
+\textbf{Osservazione criterio di invertibilità:} una funzione continua e strettamente monotona in un intervallo $[a, b]$ è invertibile in tale intervallo.
+
+\subsection{Teorema di derivazione delle funzioni inverse}
+Sia $f(x)$ una funzione continua e strettamente crescente (oppure strettamente decrescente) in un intervallo $[a, b]$. Se $f$ è derivabile in un
+punto $x\in (a,b)$ e se $f'(x) \neq 0$, allora anche $f^{-1}$ è derivabile nel punto $y = f(x)$ e la derivata vale:
+\[
+    D f^{-1}(y) = \dfrac{1}{f'(f^{-1}(y))}
+\]
+$f: x\to y$ e $f^{-1}: y\to x$.\\
+
+\subsection{Principali forme di derivazione}
+\begin{itemize}
+    \item $Dx^{\alpha} = \alpha x^{\alpha - 1}$
+    \item $D\ln x = \dfrac{1}{x}$
+    \item $D\sin x = \cos x$
+    \item $D\cos x = -\sin x$
+    \item $D\tan x = \dfrac{1}{\cos^2 x}$
+    \item $D e^x$ = $e^x$
+\end{itemize}
+
+\subsection{Significato geometrico della derivata: retta tangente}
+La derivata è il coefficiente angolare della retta tangente al grafico di una funzione in un punto e misura la \textbf{pendenza} del grafico.\\
+Sia $f(x)$ una funzione definita in un intorno di un punto $x_0$ e si consideri il grafico della funzione nel piano $x, y$.\\
+Vogliamo determinare l'equazione della \textbf{retta tangente} al grafico della funzione $f$ nel punto $p_0$.\\
+Per calcolare la retta tangente, è opportuno preliminarmente determinare l'equazione di una \textbf{retta secante} il grafico della funzione $f$
+nei punti $p_0 = (x_, f(x_0))$ e $p = (x_0+h, f(x_0+h))$.\\
+\begin{center}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+        \begin{axis}[
+                x=1.0cm,y=1.0cm,
+                axis lines=middle,
+                ymajorgrids=true,
+                xmajorgrids=true,
+                xmin=-2.299520452224967,
+                xmax=5.547670592618821,
+                ymin=-0.9981723456395779,
+                ymax=4.901036415184894,
+                xtick={-2.0,-1.0,...,5.0},
+                ytick={-0.0,1.0,...,4.0},]
+            \clip(-2.299520452224967,-0.9981723456395779) rectangle (5.547670592618821,4.901036415184894);
+            \draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-2.299520452224967:5.547670592618821] plot(\x,{(\x)^(2)});
+            \draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-2.299520452224967:5.547670592618821] plot(\x,{2*(\x)});
+            \draw (0.021479715968265947,0.14851226126541311) node[anchor=north west] {$x_0$};
+            \draw [line width=2.pt,dash pattern=on 3pt off 3pt] (2.,4.)-- (2.,0.);
+            \draw (2.093801294712224,4.085923260878936) node[anchor=north west] {$x_0+h$};
+            \begin{scriptsize}
+                \draw[color=qqwuqq] (-2.1475502031170772,4.686896518714685) node {$f$};
+                \draw[color=ccqqqq] (-0.3929845997805257,-0.7425860175944896) node {$g$};
+                \draw [fill=ududff] (0.,0.) circle (2.5pt);
+                \draw[color=ududff] (0.09055710192639789,0.2521283402026111) node {$A$};
+                \draw [fill=ududff] (2.,4.) circle (2.5pt);
+                \draw[color=ududff] (2.093801294712224,4.258616725774266) node {$B$};
+                \draw[color=black] (1.8174917508796964,2.131033238263801) node {$h$};
+            \end{scriptsize}
+        \end{axis}
+    \end{tikzpicture}
+\end{center}
+L'equazione di una generica retta non verticale è:
+\[
+    y = mx + q
+\]
+Determiniamo $m$ e $q$ in modo che la retta passi per i punti $p$ e $p_0$:
+\[
+    \begin{cases}
+        f(x_0) = mx_0 + q \text{ passaggio per } p_0 \\
+        f(x_0 + h) = m(x_0 + h) + q \text{ passaggio per } p
+    \end{cases}
+\]
+$\implies$ Sistema di due equazioni, due incognite, $m$ e $q$.
+$\implies$ sottrendo:
+\[
+    f(x_0 + h) - f(x_0) = m(x_0+h) - m(x_0) \implies m = \dfrac{f(x_0 + h) - f(x_0)}{h}
+\]
+e si ricava $q$ dalla prima equazione:
+\[
+    q = f(x_0) - \dfrac{f(x_0+h) - f(x_0)}{h} \cdot x_0
+\]
+$\implies$ l'equazione della retta secante, risulta essere quindi:
+\[
+    y = \dfrac{f(x_0 + h) - f(x_0)}{h} \cdot (x-x_0) + f(x_0)
+\]
+l'equazione della retta tangente, quando esiste, è il limite per $h\to 0$ dell'equazione della retta secante.\\
+Quindi se $f$ è derivabile in $x_0$, si ottiene
+\[
+    y = f'(x_0) \cdot (x-x_0) + f(x_0)
+\]
+\begin{center}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+        \begin{axis}[
+                x=1.0cm,y=1.0cm,
+                axis lines=middle,
+                ymajorgrids=true,
+                xmajorgrids=true,
+                xmin=-2.299520452224967,
+                xmax=5.547670592618821,
+                ymin=-0.9981723456395779,
+                ymax=4.901036415184894,
+                xtick={-2.0,-1.0,...,5.0},
+                ytick={-0.0,1.0,...,4.0},]
+            \clip(-4.8518400640593145,-1.1606975876612768) rectangle (10.916972461402404,10.693673800317894);
+            \draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.8518400640593145:10.916972461402404] plot(\x,{(\x)^(2)});
+            \draw [line width=2.pt,domain=-4.8518400640593145:10.916972461402404] plot(\x,{(-4.--4.*\x)/1.});
+            \begin{scriptsize}
+                \draw[color=qqwuqq] (-3.1861204310880056,10.263362895133639) node {$f$};
+                \draw [fill=ududff] (2.,4.) circle (2.5pt);
+                \draw[color=ududff] (2.1997063821858913,4.516630161382611) node {$B$};
+                \draw[color=black] (3.2269001558515313,10.263362895133639) node {$g$};
+            \end{scriptsize}
+        \end{axis}
+    \end{tikzpicture}
+\end{center}
+$f'(x_0)$ è il coefficiente angolare della retta tangente al grafico della funzione nel punto $(x_0, f(x_0))$.\\
+\textbf{Significato geometrico:} misura la pendenza del grafico della funzione.
+
+\end{document}

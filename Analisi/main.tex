@@ -10,8 +10,17 @@
 \usepackage{tikz}
 \usepackage{subfiles}
 \usepackage{pgfplots}
+\usepackage{setspace}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
 \usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
 \pgfplotsset{compat = newest}
+\onehalfspacing % 1.5
+
+\definecolor{ududff}{rgb}{0.30196078431372547,0.30196078431372547,1.}
+\definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 
 
 \graphicspath{ {./img/} }
@@ -49,6 +58,8 @@
 \subfile{sections/funzioni/funzioni.tex}
 
 \subfile{sections/funzioni_continue/continue.tex}
+
+\subfile{sections/derivate/derivate.tex}
 
 \subfile{sections/integrali/integrali.tex}
 
