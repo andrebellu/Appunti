@@ -1,0 +1,89 @@
+\documentclass[../../main.tex]{subfiles}
+
+\begin{document}
+
+\subsection{Unità di misura-grandezze fondamentali}
+\begin{enumerate}
+    \item \textbf{Lunghezza (m)}: Misura l'estensione di un oggetto in una direzione specifica.
+    \item \textbf{Massa (kg)}: Misura la quantità di materia in un corpo.
+    \item \textbf{Tempo (s)}: Misura la durata di un evento o intervallo tra due istanti.
+    \item \textbf{Densità ($\frac{kg}{m^3}$)}: Misura la quantità di massa contenuta in un certo volume.
+    \item \textbf{Corrente elettrica (A)}: Misura la quantità di carica elettrica che fluisce attraverso un circuito in un certo tempo.
+\end{enumerate}
+Il sistema che ha definito le precedenti unità di misura come fondamentali è il \textbf{Sistema Internazionale (SI) (MKSA)}.
+\subsection{Velocità}
+\[
+    \text{Velocità} = \frac{\text{spazio percorso}}{\text{tempo impiegato}}
+\]
+L'unità di misura della velocità è il $\frac{m}{s}$ ed è detta unità di misura derivata in quanto è ottenuta da unità di misura fondamentali.\\
+La fisica è fatta di misurazioni, ma le misurazioni comportano errori e quindi è necessario definire la precisione di una misurazione.\\
+\subsection{Notazione scientifica}
+Fondamentale per esprimere numeri molto grandi o molto piccoli.
+\subsection{Multipli e sottomultipli}
+\begin{itemize}
+    \item $10^15$ = Peta (P)
+    \item $10^12$ = Tera (T)
+    \item $10^9$ = Giga (G)
+    \item $10^6$ = Mega (M)
+    \item $10^3$ = Kilo (K)
+    \item $10^{-3}$ = Milli (m)
+    \item $10^{-6}$ = Micro ($\mu$)
+    \item $10^{-9}$ = Nano (n)
+    \item $10^{-12}$ = Pico (p)
+    \item $10^{-15}$ = Femto (f)
+    \item $10^{-18}$ = Atto (a)
+\end{itemize}
+\newpage
+\subsection{Grandezze fisiche}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Grandezza}     & \textbf{Simbolo} & \textbf{Unità di misura} & \textbf{Dimensioni}        & \textbf{Unità SI}           \\
+        \hline
+        Velocità               & $\bar v$         & $\frac{m}{s}$            & $L \cdot T^{-1}$           & $m \cdot s^{-1}$            \\
+        Accelerazione          & $\bar a$         & $\frac{m}{s^2}$          & $L \cdot T^{-2}$           & $m \cdot s^{-2}$            \\
+        Accelerazione angolare & $\alpha$         & $\frac{rad}{s^2}$        & $T^{-2}$                   & $rad \cdot s^{-2}$          \\
+        Densità                & $\rho$           & $\frac{kg}{m^3}$         & $M \cdot L^{-3}$           & $kg \cdot m^{-3}$           \\
+        Lunghezza              & $L$              & $m$                      & $L$                        & $m$                         \\
+        Massa                  & $m$              & $kg$                     & $M$                        & $kg$                        \\
+        Tempo                  & $t$              & $s$                      & $T$                        & $s$                         \\
+        Energia                & $E, \ U, \ K$    & $J$                      & $\dfrac{M \cdot L^2}{T^2}$ & $kg \cdot m^2 \cdot s^{-2}$ \\
+        Frequenza              & $f$              & $Hz$                     & $T^{-1}$                   & $s^{-1}$                    \\
+        Forza                  & $\bar{F}$        & $N$                      & $M \cdot L \cdot T^{-2}$   & $kg \cdot m \cdot s^{-2}$   \\
+        Volume                 & $V$              & $m^3$                    & $L^3$                      & $m^3$                       \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsection{Angolo}
+\begin{figure}[h!]
+    \begin{minipage}{0.45\linewidth}
+        \begin{tikzpicture}
+            \draw (0,0) circle (3cm);
+            \draw[->] (0,0) -- (3,0) node[right] {$x$};
+            \draw[->] (0,0) -- (0,3) node[above] {$y$};
+            \draw[->] (0,0) -- (2.1,2.1) node[above] {$\vec{r}$};
+            \draw (0.5,0) arc (0:45:0.5) node[midway, right] {$\theta$};
+        \end{tikzpicture}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.5\linewidth}
+        Gli angoli non hanno dimensioni, si misurano in radianti.
+        \[
+            \theta = \frac{L}{R} \implies \dfrac{\text{\sout{m}}}{\text{\sout{m}}} \implies \text{Radianti}
+        \]
+    \end{minipage}
+\end{figure}
+\subsection{Densità di massa}
+La densità è il rapporto tra la massa e il volume.
+\[
+    \rho = \frac{m}{V}
+\]
+Per definizione la densità dell'acqua è $1 \frac{g}{cm^3} = 1000 \frac{kg}{m^3}$.\\
+\subsubsection{Esercizio}
+Quale è la massa in chilogrammi di due litri di elio, dove $1.00l = 1.00 \cdot 10^3 cm^3$ e la densità dell'elio è $0.1785 \frac{kg}{m^3}$?\\
+\[
+    \rho = \frac{m}{V} \implies m = \rho \cdot V \implies m = 0.1785 \frac{kg}{m^3} \cdot 2 \cdot 10^{3} cm^3 \implies 10^{-6} m^3 = 3.57 \cdot 10^{-4} kg
+\]
+
+\end{document}

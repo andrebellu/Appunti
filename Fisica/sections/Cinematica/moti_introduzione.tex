@@ -2,90 +2,6 @@
 
 \begin{document}
 
-\subsection{Unità di misura-grandezze fondamentali}
-\begin{enumerate}
-    \item \textbf{Lunghezza (m)}: Misura l'estensione di un oggetto in una direzione specifica.
-    \item \textbf{Massa (kg)}: Misura la quantità di materia in un corpo.
-    \item \textbf{Tempo (s)}: Misura la durata di un evento o intervallo tra due istanti.
-    \item \textbf{Densità ($\frac{kg}{m^3}$)}: Misura la quantità di massa contenuta in un certo volume.
-    \item \textbf{Corrente elettrica (A)}: Misura la quantità di carica elettrica che fluisce attraverso un circuito in un certo tempo.
-\end{enumerate}
-Il sistema che ha definito le precedenti unità di misura come fondamentali è il \textbf{Sistema Internazionale (SI) (MKSA)}.
-\subsection{Velocità}
-\[
-    \text{Velocità} = \frac{\text{spazio percorso}}{\text{tempo impiegato}}
-\]
-L'unità di misura della velocità è il $\frac{m}{s}$ ed è detta unità di misura derivata in quanto è ottenuta da unità di misura fondamentali.\\
-La fisica è fatta di misurazioni, ma le misurazioni comportano errori e quindi è necessario definire la precisione di una misurazione.\\
-\subsection{Notazione scientifica}
-Fondamentale per esprimere numeri molto grandi o molto piccoli.
-\subsection{Multipli e sottomultipli}
-\begin{itemize}
-    \item $10^15$ = Peta (P)
-    \item $10^12$ = Tera (T)
-    \item $10^9$ = Giga (G)
-    \item $10^6$ = Mega (M)
-    \item $10^3$ = Kilo (K)
-    \item $10^{-3}$ = Milli (m)
-    \item $10^{-6}$ = Micro ($\mu$)
-    \item $10^{-9}$ = Nano (n)
-    \item $10^{-12}$ = Pico (p)
-    \item $10^{-15}$ = Femto (f)
-    \item $10^{-18}$ = Atto (a)
-\end{itemize}
-\newpage
-\subsection{Grandezze fisiche}
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|c|c|c|c|}
-        \hline
-        \textbf{Grandezza}     & \textbf{Simbolo} & \textbf{Unità di misura} & \textbf{Dimensioni}        & \textbf{Unità SI}           \\
-        \hline
-        Velocità               & $\bar v$         & $\frac{m}{s}$            & $L \cdot T^{-1}$           & $m \cdot s^{-1}$            \\
-        Accelerazione          & $\bar a$         & $\frac{m}{s^2}$          & $L \cdot T^{-2}$           & $m \cdot s^{-2}$            \\
-        Accelerazione angolare & $\alpha$         & $\frac{rad}{s^2}$        & $T^{-2}$                   & $rad \cdot s^{-2}$          \\
-        Densità                & $\rho$           & $\frac{kg}{m^3}$         & $M \cdot L^{-3}$           & $kg \cdot m^{-3}$           \\
-        Lunghezza              & $L$              & $m$                      & $L$                        & $m$                         \\
-        Massa                  & $m$              & $kg$                     & $M$                        & $kg$                        \\
-        Tempo                  & $t$              & $s$                      & $T$                        & $s$                         \\
-        Energia                & $E, \ U, \ K$    & $J$                      & $\dfrac{M \cdot L^2}{T^2}$ & $kg \cdot m^2 \cdot s^{-2}$ \\
-        Frequenza              & $f$              & $Hz$                     & $T^{-1}$                   & $s^{-1}$                    \\
-        Forza                  & $\bar{F}$        & $N$                      & $M \cdot L \cdot T^{-2}$   & $kg \cdot m \cdot s^{-2}$   \\
-        Volume                 & $V$              & $m^3$                    & $L^3$                      & $m^3$                       \\
-        \hline
-    \end{tabular}
-\end{table}
-\subsection{Angolo}
-\begin{figure}[h!]
-    \begin{minipage}{0.45\linewidth}
-        \begin{tikzpicture}
-            \draw (0,0) circle (3cm);
-            \draw[->] (0,0) -- (3,0) node[right] {$x$};
-            \draw[->] (0,0) -- (0,3) node[above] {$y$};
-            \draw[->] (0,0) -- (2.1,2.1) node[above] {$\vec{r}$};
-            \draw (0.5,0) arc (0:45:0.5) node[midway, right] {$\theta$};
-        \end{tikzpicture}
-    \end{minipage}
-    \hfill
-    \begin{minipage}{0.5\linewidth}
-        Gli angoli non hanno dimensioni, si misurano in radianti.
-        \[
-            \theta = \frac{L}{R} \implies \dfrac{\text{\sout{m}}}{\text{\sout{m}}} \implies \text{Radianti}
-        \]
-    \end{minipage}
-\end{figure}
-\subsection{Densità di massa}
-La densità è il rapporto tra la massa e il volume.
-\[
-    \rho = \frac{m}{V}
-\]
-Per definizione la densità dell'acqua è $1 \frac{g}{cm^3} = 1000 \frac{kg}{m^3}$.\\
-\subsubsection{Esercizio}
-Quale è la massa in chilogrammi di due litri di elio, dove $1.00l = 1.00 \cdot 10^3 cm^3$ e la densità dell'elio è $0.1785 \frac{kg}{m^3}$?\\
-\[
-    \rho = \frac{m}{V} \implies m = \rho \cdot V \implies m = 0.1785 \frac{kg}{m^3} \cdot 2 \cdot 10^{3} cm^3 \implies 10^{-6} m^3 = 3.57 \cdot 10^{-4} kg
-\]
-
 \newpage
 \section{Moto}
 Il moto è il movimento dei corpi.
@@ -147,6 +63,13 @@ Se conosco l'accelerazione posso calcolare la velocità.
 \]
 \subsection{Moto rettilineo uniformemente accelerato}
 Moto rettilineo uniformemente accelerato $\iff$ accelerazione costante.\\
+Le equazioni del \textbf{moto rettilineo uniformemente accelerato} sono:
+\[
+    \begin{cases}
+        v(t) = v_0 + a \cdot t \\
+        x(t) = x_0 + v_0t + \dfrac{1}{2}at^2
+    \end{cases}
+\]
 \[
     dv = a dt \implies \int_{v_0}^v dv = \int_{0}^t a dt \implies v - v_0 = a \int_{0}^t dt = a \cdot t \implies v = v_0 + a \cdot t
 \]
@@ -260,10 +183,94 @@ viene lanciato verso il basso all’istante $t = t_0 > 0$, con velocità inizial
 \end{math}
 
 \section{Moto Armonico}
-Un corpo si muove di moto armonico se la sua posizione è descritta da una funzione del tipo:
+\subsection{Moto armonico semplice}
+Un corpo si muove di moto armonico se la sua posizione in funzione del tempo è descritta da:
 \[
     x(t) = A \cdot \sin(2\pi t)
 \]
+\[
+    x(t) = A \cdot \sin(\omega t + \phi)
+\]
+Periodo della funzione: quale è il valore di $t : x(t) = x(t + T)$?
+\[
+    T = \dfrac{2\pi}{\omega} \textit{ è il periodo}
+\]
+\[
+    \omega = \dfrac{2\pi}{T} \textit{ è la pulsazione angolare}
+\]
+\[
+    x(t) = A \cdot \sin(\omega t + \phi) = x(t+T) = A \cdot \sin(\omega t+\dfrac{\omega2\pi}{\omega}+\phi)
+\]
+La frequenza del moto misura il numero di cicli che si compiono in un secondo:
+\[
+    f, \ \nu = \mathbf{\dfrac{1}{T}} \textit{ è l'inverso del periodo e si misura in } s^{-1} \textit{ o } Hz
+\]
+\[
+    v = \dfrac{dx}{dt} = \mathbf{A \cdot \omega \cdot \cos(\omega t + \phi)}
+\]
+\[
+    a = \dfrac{dv}{dt} = \mathbf{-A \cdot \omega^2 \cdot \sin(\omega t + \phi)}
+\]
+oppure
+\[
+    a = -\omega^2 \cdot x(t)
+\]
+\[
+    \int_{x_0}^{x} -\omega^2xdx = \dfrac{1}{2} v^2 - \dfrac{1}{2}v_0^2 \implies \ -\omega^2[\frac{1}{2}x^2]_{x_0}^{x}
+\]
+\[
+    v^2 = v_0^2 - 2\omega^2(x-x_0)
+\]
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{armonico.png}
+    \caption{Moto armonico}
+\end{figure}
+\begin{math}
+    x(t) = A\sin(\omega t + \phi) \ \ \ \ t = 0 \ \ \ \ x(0) = A\sin(\phi) \\
+    v(t) = A\omega\cos(\omega t + \phi) \ \ \ \ t = 0 \ \ \ \ v(0) = A\omega\cos(\phi)
+\end{math}
+\\In base alla velocità iniziale a alla posizione iniziale possiamo determinare $\phi$:
+\begin{math}
+    x(0) = x_0 = A \\
+    v(0) = 0
+    \implies \begin{cases}
+        A\sin(\phi) = A \\
+        A\omega\cos(\phi) = 0
+    \end{cases}
+    \implies \phi = \frac{\pi}{2}
+\end{math}
+Omega invece è legato a come è impostato il sistema.
+
+\section{Velocità e accelerazione in funzione della posizione}
+\[
+    a = \dfrac{dv}{dt} = \dfrac{dv[x(t)]}{dt} = \dfrac{dv}{dx} \cdot \textcolor{red}{\dfrac{dx}{dt}}
+\]
+\[
+    \implies \textcolor{red}{\int_{x_0}^x adx = \int_{v_0}^v vdv \implies \int_{x_0}^x adx = \frac{1}{2}v^2 - \frac{1}{2}v_0^2}
+\]
+
+\subsubsection{Un particolare moto vario esempio 1.7}
+Un punto materiale risente, lungo l’asse x positivo, della seguente accelerazione: $a = 0 per 0 \leq x \leq x0$, a = –
+k/x 2 per x > x0. Il punto viene lanciato dall’origine lungo il verso positivo dell’asse con velocità iniziale v0. Calcolare
+in quale posizione il punto si ferma e discutere il risultato.
+\[
+    \int_{x_0}^{x} adc = \frac{1}{2}v^2 - \frac{1}{2}v_0^2 \ \ \ \ a =\textit{ costante} \ \ \ a(x-x_0) = \frac{1}{2}v^2 - \frac{1}{2}v_0^2
+\]
+\[
+    v = v_0 - gt
+\]
+\[
+    x = h - \frac{1}{2}gt^2
+\]
+\[
+    g(x-h) = \frac{1}{2}v^2 - \frac{1}{2}v_0^2
+\]
+\[
+    v(x) = \sqrt{2g(x-h) + v_0^2}
+\]
+
+
 
 
 \end{document}
