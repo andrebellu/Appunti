@@ -182,4 +182,88 @@ vale lo spazio percorso nei due casi? E la velocità media?\\
     \bar{v}_{m_2} = \dfrac{111m}{8s} = 13.9 \dfrac{m}{s} \\
 \end{math}
 
+\subsubsection{Esercizio accelerazione negativa}
+Un punto materiale parte dall’origine con velocità iniziale $v_0$ positiva ed è sottoposto ad un’accelerazione negativa –
+a costante. Calcolare la massima distanza dall’origine raggiunta dal punto lungo il semiasse positivo, l’istante $t_1$ in
+cui si ferma, l’istante $t_2$ in cui ripassa per l’origine e la velocità che ha per $t = t_2$.\\
+\vspace*{0.5pt} \\
+\begin{math}
+    v = v_0 + at \implies v_0 + at, \ a < 0, \ v_0 > 0 \\
+    \vspace*{0.1cm} \\
+    v_0 + at = 0 \implies t_1 = \dfrac{-v_0}{a} \\
+    \vspace*{0.1cm} \\
+    x = x_0 + v_0t + \dfrac{1}{2}at^2 \implies x_1 = v_0 \cdot t_1 + \dfrac{1}{2}at_1^2 =  \dfrac{-v_0^2}{a} + \dfrac{1}{2}a \cdot \dfrac{v_0^2}{a^2} = \dfrac{-v_0^2}{2a} \\
+    \vspace*{0.1cm} \\
+    \textit{Ora calcoliamo quando il punto ripassa per l'origine} \ \
+    v_0 + \frac{1}{2} at^2 = 0 \begin{cases}
+        t = 0 \\
+        t_2 = \dfrac{2v_0}{-a}
+    \end{cases}\\
+    \vspace*{0.1cm} \\
+    \textit{Velocità in } t_2 \ \ v_2 = v_0 + at_2 = v_0 - 2v_0 = -v_0 \\
+\end{math}
+
+\section{Valori Medi}
+\subsection{Valore medio di una funzione}
+\[
+    <f(t)> = \dfrac{\int_{0}^{T} f(t) dt}{T}
+\]
+Nel caso della funzione $\sin$, la media su un periodo è nulla: \\
+\[
+    <\sin(t)> = \dfrac{1}{2\pi} \int_{0}^{2\pi} \sin(\theta) d\theta = \dfrac{1}{2\pi} \left[ -\cos(\theta) \right]_{0}^{2\pi} = 0
+\]
+Lo stesso si ottiene per il coseno, ed è evidente, basta osservare il grafico; in un semiperiodo la funzione è positiva, nell'altro è negativa e la loro somma è nulla.\\
+E' diversa la situazione per la funzione $\sin^2$ e $\cos^2$, funzioni che hanno come periodo $\pi$, che essendo
+sempre positive non possono aver valore medio nullo. Osserviamo che:
+\[
+    \int_0^\pi (\sin^2(\theta) + \cos^2(\theta)) d\theta = \int_0^\pi 1 d\theta = \pi
+\]
+pertanto
+\[
+    \int_0^\pi \int^2(\theta) d\theta = \int_0^\pi \cos^2(\theta) d\theta = \dfrac{\pi}{2}
+\]
+
+\subsubsection{Esercizio 1.4 (compito)}
+
+\section{Moto verticale di un corpo}
+Un corpo in caduta libera è un corpo che cade sotto l'azione della forza di gravità.\\
+\[
+    g = 9.81 \dfrac{m}{s^2}
+\]
+\[
+    \begin{cases}
+        v = v_0 - g \cdot t \\
+        x = x_0 + v_0t - \dfrac{1}{2}gt^2
+    \end{cases}
+\]
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Screenshot 2024-02-20 093133.png}
+    \caption{Esercizio 1.6}
+\end{figure}\[
+    0 = h +v_0\bar{t}-\frac{1}{2}g\bar{t}^2 \implies \bar{t} = \sqrt{\dfrac{2h}{g}}
+\]
+\subsubsection{Esercizio 1.6}
+Un punto materiale viene lasciato cadere all’istante $t = 0$ con velocità iniziale nulla. Un secondo punto materiale
+viene lanciato verso il basso all’istante $t = t_0 > 0$, con velocità iniziale $v_0$: riuscirà a raggiungere il primo punto?
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Disegno1-6.png}
+    \caption{Esercizio 1.6}
+\end{figure}
+\vspace*{0.1cm} \\
+\begin{math}
+    x_1(t) = \dfrac{1}{2}gt^2 \textit{ perchè abbiamo considerato il punto di partenza $h$ come l'origine} \\
+    x_2(t) = v_0(t - t_0) + \dfrac{1}{2}g(t-t_0)^2 \textit{ perchè il secondo corpo viene lasciato cadere in un secondo istante $t_0$} \\
+    \textit{si incontrano a } \bar{t} = x_1(\bar{t}) = x_2(\bar{t}) \implies \dfrac{1}{2}g\bar{t}^2 = v_0(\bar{t} - t_0) + \dfrac{1}{2}g(\bar{t}-t_0)^2 \\
+    \bar{t} = \dfrac{t_0}{2} \left(1+\dfrac{v_0}{v_0-gt_0}\right)
+\end{math}
+
+\section{Moto Armonico}
+Un corpo si muove di moto armonico se la sua posizione è descritta da una funzione del tipo:
+\[
+    x(t) = A \cdot \sin(2\pi t)
+\]
+
+
 \end{document}
