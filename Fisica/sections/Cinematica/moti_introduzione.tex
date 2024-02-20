@@ -16,20 +16,27 @@ Effettuando delle misurazioni si ottiene un diagramma orario e successivamente s
     \caption{Grafico spazio-tempo}
 \end{figure}
 \subsubsection{Velocità media}
+Supponiamo che all'istante $t = t_1$ il punto si trovi nella posizione $x_1$ e all'istante $t = t_2$ nella posizione $x_2$.
+La velocità media $v_m$ del punto è definita come il rapporto tra la variazione di spazio e l'intervallo di tempo in cui si è verificata la variazione di spazio.
 \[
     \textbf{$\bar{v}_m$} = \frac{\Delta x}{\Delta t} = \frac{x_F - x_I}{t_F - t_I}
 \]
+La velocità media dà un'idea della rapidità con cui si muove il punto in un certo intervallo di tempo, ma non ci fornisce altre informazioni.
 \subsubsection{Velocità istantanea}
-La velocità istantanea è una variazione piccolissima variazione di spazio in un piccolissimo intervallo di tempo.
+Per individuare meglio le variazioni della funzione $x(t)$ si aumenta il numero delle misurazioni, riducendo l'intervallo di tempo.
+Si divide l'intervallo di spazio $\Delta x$ in tanti intervalli di spazio $\Delta x_n$ e l'intervallo di tempo $\Delta t$ in tanti intervalli di tempo $\Delta t_n$. Le corrispondenti velocità medie sono $v_i = \frac{\Delta x_i}{\Delta t_i}$; questo processo può essere svolto per intervalli di tempo sempre più piccoli, fino a giungere a un intervallo di tempo infinitesimo $\Delta t \to 0$.
 \[
     \textbf{v} = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}
 \]
-
+La velocità istantanea è una variazione piccolissima variazione di spazio in un piccolissimo intervallo di tempo.\\
+Possiamo risolvere il problema inverso, cioè ricavare la funzione $x(t)$ se conosciamo la dipendenza dal tempo della velocità istantanea $v(t)$. Se il punto si trova nella posizione $x$ al tempo $t$ e nella posizione $x + dx$ al tempo $t + dt$, lo spostamento infinitesimo $dx$ è uguale al prodotto della velocità istantanea per l'intervallo di tempo infinitesimo $dt$:
+\[
+    dx = v(t) \cdot dt \implies \int_{x_0}^{x} dx = \int_{t_0}^{t} v(t) \cdot dt \implies x(t) = x_0 \int_{t_0}^{t} v(t) \cdot dt
+\]
 \subsubsection{Due punti in moto sullo stesso asse}
 Due punti materiali si trovano nell’istante iniziale $t = 0$ sullo stesso asse $x$, rispettivamente nella posizione $x_1$ con
 velocità $v_1$ e nella posizione $x_2 > x_1$ con velocità $v_2$. Il moto dei punti è uniforme. Discutere quali sono le situazioni in
-cui i punti ad un certo istante si urtano e determinare dove e quando si urtano.\\
-Moto rettilineo uniforme $\iff$ velocità costante.\\
+cui i punti ad un certo istante si urtano e determinare dove e quando si urtano.\\ Moto rettilineo uniforme $\iff$ velocità costante.\\
 \[
     v = \frac{dx}{dt} \implies dx = v \cdot dt \implies \int_{0}^{t_0} dx = \int_{0}^{t_0} v(t) \cdot dt
 \]
@@ -39,7 +46,7 @@ Moto rettilineo uniforme $\iff$ velocità costante.\\
 \[
     x_1(t) = v_1 \cdot t \quad x_2(t) = v_2 \cdot t + x_2(0)
 \]
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{9a2591ca-93e4-42c3-a861-5f067fd67bdb.png}
     \caption{Esempi di grafici di due punti in moto sullo stesso asse}
