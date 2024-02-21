@@ -87,12 +87,95 @@ Il prodotto tra due vettori $\vec{a}$ e $\vec{b}$ è un vettore che giace al pia
     |c| = |a||b| \sin(\theta)
 \]
 Regola della mano destra oppure vite destrorsa.
-\begin{figure}
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=0.5\textwidth]{manodx.png}
+    \includegraphics[width=0.3\textwidth]{manodx.png}
     \caption{Regola della mano destra}
 \end{figure}
 
+Il prodotto vettoriale non è commutitativo. E' \textbf{anticommutativo}; il vettore risultante ha la stessa direzione e lo stesso modulo ma verso opposto.
+\[
+    \vec{a} \times \vec{b} = - \vec{b} \times \vec{a}
+\]
+Vale la \textbf{proprietà distributiva}.
+\[
+    \vec{a} \times (\vec{b} + \vec{c}) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}
+\]
+Non vale la proprietà \textbf{associativa}.
+\[
+    (\vec{a}\times\vec{b})\times\vec{c} \neq \vec{a}\times(\vec{b}\times\vec{c})
+\]
+$\star$ Vedi il prodotto vettoriale di versori.
+\subsection{Formuletta del profe}
+Il prodotto vettoriale si può calcolare utilizzando le matrici.
+\[
+    A = \vec{c} = \begin{vmatrix}
+        \bar{u}_x & \bar{u}_y & \bar{u}_z \\
+        a_x & a_y & a_z \\
+        b_x & b_y & b_z
+    \end{vmatrix} = \vec{a} \times \vec{b}
+\]
+\[
+    \det{A} = \vec{c} = \bar{u}_x(-1)^2(a_yb_z - a_zb_y) + \bar{u}_y(-1)^3(a_xb_z - a_zb_x) + \bar{u}_z(-1)^4(a_xb_y - a_yb_x)
+\]
+
+\subsection{Derivata di un vettore}
+Per continuità possiamo definire la derivata di un vettore come la derivata a cui siamo abituati.
+\[
+    \lim_{h \to 0} \dfrac{f(x+h) - f(x)}{h} = f'(x) \ \textit{ per gli scalari}
+\]
+\[
+    \lim_{\Delta t \to 0} \dfrac{\vec{x}(t + \Delta t) - \vec{x}(t)}{\Delta t} = \dfrac{d\vec{x}}{dt} \ \textit{ per i vettori}
+\]
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{derivata.png}
+    \caption{Derivata di un vettore}
+\end{figure}
+
+\begin{itemize}
+    \item $\dfrac{d(\vec{a} + \vec{b})}{dt} = \dfrac{d\vec{a}}{dt} + \dfrac{d\vec{b}}{dt}$
+    \item $\dfrac{d}{dt} k\vec{a} = k\dfrac{d\vec{a}}{dt}$
+    \item $\dfrac{d}{dt} (k\vec{a}) = \dfrac{dk}{dt}\vec{a} + k\dfrac{d\vec{a}}{dt}$
+    \item $\dfrac{d}{dt} (\vec{a} \bullet \vec{b}) = \dfrac{d\vec{a}}{dt} \bullet \vec{b} + \vec{a} \bullet \dfrac{d\vec{b}}{dt}$
+    \item $\dfrac{d}{dt} (\vec{a} \times \vec{b}) = \dfrac{d\vec{a}}{dt} \times \vec{b} + \vec{a} \times \dfrac{d\vec{b}}{dt}$
+    \item se ho la scrittura cartesiana del vettore $\vec{a} = a_x\bar{u}_x + a_y\bar{u}_y + a_z\bar{u}_z$ allora $\dfrac{d\vec{a}}{dt} = \dfrac{da_x}{dt}\bar{u}_x + \dfrac{da_y}{dt}\bar{u}_y + \dfrac{da_z}{dt}\bar{u}_z$
+\end{itemize}
+
+\newpage
+\subsection{Derivata di un versore}
+La derivata del versore è differente in quanto nel tempo solo la direzione e il verso cambiano, non il modulo.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{versorederivata.png}
+    \caption{Derivata di un versore}
+\end{figure}
+\[
+    \Delta \bar{u} = \bar{u}(t+\Delta t) - \bar{u}(t)
+\]
+\[
+    du = d\theta \cdot |u(t)|
+\]
+\[
+    d\bar{u} = d\theta \cdot \bar{u}_n
+\]
+\[
+    \dfrac{d\bar{u}}{dt} = \dfrac{d\theta}{dt} \cdot \bar{u}_n
+\]
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.3\textwidth]{verovettore.png}
+\end{figure}
+
+\[
+    \vec{v} = v \cdot \bar{u} \implies \dfrac{dv}{dt} = \dfrac{d(v\bar{u})}{dt} + v\dfrac{d\bar{u}}{dt} = \dfrac{d(v\bar{u})}{dt} + v\dfrac{d\theta}{dt}\bar{u}_n
+\]
+\[
+    |\dfrac{d\vec{v}}{dt}| = \sqrt{(\dfrac{dv}){dt})^2 + (\dfrac{vd\theta}{dt})^2}
+\]
+
+\subsection{}
 
 
 \end{document}
