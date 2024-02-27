@@ -13,6 +13,7 @@
 \usepackage{setspace}
 \pgfplotsset{compat=1.15}
 \usepackage{mathrsfs}
+\usepackage{float}
 \usetikzlibrary{arrows}
 \usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
 \pgfplotsset{compat = newest}
@@ -53,10 +54,19 @@
 \tableofcontents
 \newpage
 
-\section{Cinematica}
+\section{Misure}
 \subfile{sections/Cinematica/misure.tex}
+\subfile{sections/Cinematica/variabili_cinematiche.tex}
 \subfile{sections/Cinematica/moti_introduzione.tex}
 \subfile{sections/Cinematica/variabili_cinematiche.tex}
+
+\section{Calcolo vettoriale}
+\subfile{sections/Calcolo_vettoriale/calcolo_vettoriale.tex}
+\subfile{sections/Cinematica/moti_traiettoria_curvilinea.tex}
+\subfile{sections/Cinematica/moto_circolare.tex}
+
+\section{Dinamica del punto}
+\subfile{sections/Dinamica/main.tex}
 
 
 \end{document}
