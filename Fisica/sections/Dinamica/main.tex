@@ -1,6 +1,7 @@
 \documentclass[../../main.tex]{subfiles}
 
 \begin{document}
+\section{Dinamica}
 \subsection{Concetto di forza}
 La forza è la grandezza che esprime e misura l'interazione tra sistemi fisici.
 \subsection{Primo principio della dinamica: principio d'inerzia}
@@ -149,9 +150,37 @@ $1kg$ peso $\implies$ la forza con cui viene attratta la massa di $1kg$:
 \]
 
 \subsection{Reazione vincolare}
-La reazione vincolare è la forza che un vincolo esercita su un corpo vincolato.
-(vedi pagina 58)
-
+\begin{minipage}{0.6\textwidth}
+    Se un corpo, soggetto all'azione di una forza o della risultante non nulla di un'insieme di forze rimane fermo, dobbiamo dedurre da quanto detto precendentemente che l'azione della forza provoca una reazione dell'ambiente circostante, detta \textbf{reazione vincolare}, che si esprime tramite una forza, eguale e contraria alla forza o alla risultante delle forze agenti, applicata al corpo stesso in modo tale che esso rimanga in quiete. Se prendiamo un oggetto che poggia su un tavolo, il tavolo esercita una forza uguale e contraria al peso del corpo, che si chiama reazione vincolare normale $\bar N$. Se si applicano ulteriori forze al corpo, la reazione vincolare deve equilibrare la risultante $\bar R$ di tutte le forze applicate al corpo.
+    \[
+        \bar R + \bar N = 0
+    \]
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+    \centering
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.3\textwidth]{reazione_vincolare.png}
+    \end{figure}
+\end{minipage}
+\subsection{Sensazione di peso}
+Come abbiamo appena visto, quando un corpo di massa $m$ è poggiato su un pavimento orizzontale, esso risente di una reazione vincolare $\bar N$ che in modulo vale $mg$. E' proprio questa reazione applicata al corpo che dà la \textit{sensazione di peso}. Prendiamo un corpo posato su una superficie che può muoversi verticalmente con un'accelerazione $\bar a$. Se il corpo rimane appoggiato sulla superficie la sue accelerazione è $\bar a$ e la sua equazione è:
+\[
+    \bar N + \bar P = m\bar a \ \ \implies \ \ \bar N + m\bar g = m\bar a \ \ \implies \ \ \bar N = m(\bar a - \bar g)
+\]
+perchè al corpo sono applicate sia la forza peso che la reazione dovuta al contatto con la superficie. Ora abbiamo quattro casi da esaminare; come asse di riferimento prendiamo un asse $z$ verticale orientato verso l'alto, per cui $\bar g = -g\bar u_z$:
+\begin{enumerate}
+    \item $\bar a$ discordante con $\bar g$, la superficie su cui è appogiato il corpo accelera verso l'alto
+          \[
+              \bar N = m[a\bar u_z - (-g\bar u_z)] = m(a + g)\bar u_z \ \ \implies \ \ N > mg
+          \]
+    \item $\bar a$ concorde con $\bar g$, la superficie su cui è appogiato il corpo accelera verso il basso, con $a < g$:
+          \[
+              \bar N = m[-a\bar u_z - (-g\bar u_z)] = m(a - g)\bar u_z \ \ \implies \ \ N > mg
+          \]
+    \item $\bar a = \bar g \ \ \implies \ \ \bar N = 0$: non c'è reazione e non c'è sensazione di peso
+    \item $\bar a$ concorde con $\bar g$ con $a > g$: si ha il distacca del corpo dalla superficie.
+\end{enumerate}
 \subsubsection{Esercizio 2.5}
 \begin{figure}[H]
     \centering
