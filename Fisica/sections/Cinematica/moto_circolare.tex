@@ -63,24 +63,40 @@ Se è nota la legge oraria oraria $\theta(t)$ con le due derivazioni determiniam
     \theta = \theta_0 + \int_{t_0}^{t} \omega dt = \theta_0 + \omega_0(t - t_0) + \dfrac{1}{2}\alpha(t - t_0)^2
 \]
 \subsection{Notazione vettoriale nel moto circolare}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\textwidth]{moto_circolare2.png}
-\end{figure}
+Si definisce velocità angolare il vettore $\bar\omega$:
+\begin{itemize}
+    \item $\bar\omega = \dfrac{d\theta}{dt}$
+    \item La direzione è perpendicolare al piano in cui giace la circonferenza
+    \item il verso è tale che dall'estremo del vettore $\bar\omega$ il moto appaia antiorario
+\end{itemize}
+\[
+    \bar v = \bar\omega\times\bar r
+\]
+L'equazione rimane valida anche se $\bar\omega$ non è applicata al centro della circonferenza, ma in un punto $O'$ dell'asse di rotazione; infatti direzione e verso di $\bar v$ restano eguali e il modulo vale ancora $v = \omega r\sin\phi = \omega R$.
 \[
     v_s = \omega R
 \]
+Da $\omega$, derivando rispetto al tempo, si ottiene il vettore $\bar\alpha$, l'accelerazione angolare che risulta parallelo a $\omega$, dato che questa ha direzione costante, e ha verso determinato dalla variazione del modulo di $\omega$ e modulo uguale a $\alpha = \dfrac{d\omega}{dt}$.\\
+Tramite $\alpha$ e $\omega$ si ottiene l'accelerazione del moto circolare:
+\[
+    \bar a = \dfrac{d\bar v}{dt} = \dfrac{\bar\omega\times\bar r}{dt} = \dfrac{d\bar \omega}{dt}\times\bar r + \bar\omega\times\dfrac{d\bar r}{dt} \implies \bar a = \bar\alpha\times\bar r + \bar\omega\times\bar v
+\]
+Dove $\bar a$ è l'accelerazione totale, $\bar\alpha\times\bar r$ è l'accelerazione tangenziale $\bar a_T$ e $\bar\omega\times\bar v$ è l'accelerazione centripeta \\$\bar a_N = \bar\omega\times\bar v = \bar\omega\times(\bar\omega\times\bar r)$. Nel moto circolare unforme $\omega$ è un vettore costante anche in mdoulo, $\alpha$ è nulla $\bar a = \bar a_N = \bar\omega\times\bar\omega\times\bar r$.
+\begin{minipage}{0.5\textwidth}
+    \includegraphics[width=0.8\textwidth]{moto_circolare2.png}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \includegraphics[width=0.8\textwidth]{moto_circolare3.png}
+\end{minipage}
+\subsubsection{Formuline del profe}
 \[
     \bar{v} = v_s \cdot \bar{u}_t
 \]
-\[
-    \bar a = \dfrac{d\bar v}{dt} = \dfrac{\bar\omega\times\bar r}{dt} = \dfrac{d\bar \omega}{dt}\times\bar r + \bar\omega\times\dfrac{d\bar r}{dt}
-\]
-$wr\cdot\sin\frac{\pi}{2} = wr \ \ \ \bar\alpha = \dfrac{d\bar\omega}{dt} \ \ \ \bar a = \bar\alpha\times\bar r + \bar\omega\times\bar v \implies \bar a = \alpha\cdot r + \bar\omega\times\bar v$
+\[wr\cdot\sin\frac{\pi}{2} = wr \ \ \ \bar\alpha = \dfrac{d\bar\omega}{dt} \ \ \ \bar a = \bar\alpha\times\bar r + \bar\omega\times\bar v \implies \bar a = \alpha\cdot r + \bar\omega\times\bar v\]
 \[
     \bar a_t = \bar\alpha\times\bar r
 \]
 \[
-    \bar a_n = \bar{\omega}\times\bar v \ \ \ \textit{accelerazione centripeta}
+    \bar a_n = \bar{\omega}\times\bar v
 \]
 \end{document}
