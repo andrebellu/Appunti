@@ -247,4 +247,14 @@ Le porte logiche sono HW fondamentale su cui sono costruiti i computer.
 \section{Forme normali e implicazionie ogica via risoluzione}
 
 
+\section{Teoria assiomatica per il calcolo proposizionale}
+\[
+    B\implies C = \neg B \lor C
+\]
+\begin{itemize}
+    \item $(B\implies (C\implies B)) = B \implies (B \lor \neg C)$
+    \item $((B\implies (C\implies D))) \implies ((B\implies C)\implies (B\implies D)) =\\= ((B\implies (B\implies B \implies B))) \implies ((B\implies C)\implies (B\implies D))$
+    \item $(((\neg C)\implies (-B)) \implies (((\neg C)\implies B) \implies C)) = (C \lor \neg B) \implies ((C \lor B) \implies C)$
+\end{itemize}
+
 \end{document}
