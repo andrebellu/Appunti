@@ -199,6 +199,11 @@ Quando il nostro corpo è già in movimento si parla di \textbf{attrito dinamico
 \]
 dove $N = mg$. $F_d$ è costante fino a che si muove e $\mu_d < \mu_s$. La forza di attrito è sempre diretta in verso opposto alla velocità $\bar v$.\\
 Una superficie si chiama \textbf{scabra} se c'è attrito o \textbf{liscia} se non c'è attrito.\\
+Sul punto in movimento agisce una forza di attrito
+\[
+    F_{ad} = -\mu N
+\]
+
 \subsubsection{Esercizio 2.6}
 
 \subsubsection{Esercizio 2.8}
@@ -231,28 +236,6 @@ Mentre la forza di attrito:
 \subsubsection{Esercizio 2.10}
 
 \subsubsection{Esercizio 2.11}
-
-% pull github
-Le molle si muovono in moto armonico semplice\\
-\begin{minipage}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.7\textwidth]{mas.png}
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-    \centering
-    \[
-        A\sin(\omega t)
-    \]
-    \[
-        v = \dfrac{dx}{dt} = A\omega\cos(\omega t)
-    \]
-    \[
-        a = \dfrac{F}{m} = -A\omega^2\sin(\omega t)
-    \]
-\end{minipage}
-
-\subsection{Esercizio 2.19}
-\subsection{Esercizio 2.20}
 
 \subsection{Pendolo semplice}
 \begin{figure}[H]
@@ -287,5 +270,63 @@ Se vogliamo trovare la coordinata del punto materiale:
 \]
 
 
+\subsection{Forza di attrito viscoso}
+La forza di attrito viscoso è una forza che si oppone al moto ed è proporzionale alla velocità del corpo soggetto a tale forza:
+\[
+    \bar F = -b\bar v
+\]
+dove $b$ è una costante che dipende dalla forma e dal mezzo.
+\[
+    m\dfrac{dv}{dt} = -b v \implies \int_{v_0}^{v}\dfrac{m}{v} dv = \int_{0}^{t} -b dt \implies \ln\dfrac{v}{v_0} = \dfrac{-b}{m}t \implies \dfrac{v}{v_0} = e^{-\dfrac{b}{m}t} \implies v = v_0 e^{-\dfrac{b}{m}t} \implies v = v_0 e^{-\dfrac{t}{\tau}} \ \ \ \text{dove} \ \ \ \tau = \dfrac{m}{b}
+\]
+Applicando la seconda legge di Newton
+\[
+    P + F = m\bar g - b\bar v = m\bar a = m\dfrac{d\bar v}{dt}
+\]
+La posizione iniziale del moto è nulla quindi il moto avviene solo lungo l'asse $z$, proiettiamo l'equazione su $z$:
+\[
+    \dfrac{dv}{dt} = g - \dfrac{bv}{m} \implies \dfrac{dv}{dt} = g - \dfrac{v}{\tau} \implies \dfrac{dv}{g - \dfrac{v}{\tau}} = dt \implies \int_{v_0}^{v} \dfrac{dv}{g - \dfrac{v}{\tau}} = \int_{0}^{t} dt \implies \ln\left(\dfrac{g- \dfrac{v}{\tau}}{g}\right) = -\dfrac{t}{\tau}
+\]
+Passando alle esponenziali otteniamo la velocità:
+\[
+    v(t) = g\tau\left(1-e^dfrac{-1}{\tau}\right)
+\]
+Inserisci le immagini per completezza
+\subsection{Tensione dei fili}
+Un filo può essere fissato in un estremo a un punto fisso e nell’altro a un punto materiale oppure può collegare due punti materiali. La forza che il filo esercita su qualisasi punto materiale è detta tensione del filo. Suporremo che la sua massa sia trascurabile e la lunghezza sia costante.
 
+\subsection{Forza elastica, Oscillatore armonico semplice}
+La molla è diversa dal filo. \\
+Si definisce \textbf{forza elastica} una forza di direzione costante, con verso rivolto sempre a un centro $O$ e con modulo proporzionale alla distanza $r$ da $O$. Assumiamo come l'asse $x$ la direzione della forza e come origine il centro:
+\[
+    F = -kx \ \ \ \text{dove} \ \ \ k = \text{costante di molla}
+\]
+\[
+    F = -ku_xx
+\]
+Limite di elasticità oltre il quale la molla si rompe/deforma.
+\[
+    m\bar a = -kx \implies m\dfrac{d^2x}{dt^2} = -kx \implies \dfrac{d^2x}{dt^2} = - \dfrac{k}{m}x \implies x = A\sin(\omega t + \phi) \ , \ \omega = \sqrt{\dfrac{k}{m}} \ \text{ moto armonico}
+\]
+
+Le molle si muovono in moto armonico semplice\\
+\begin{minipage}{0.2\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{mas.png}
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+    \centering
+    \[
+        A\sin(\omega t)
+    \]
+    \[
+        v = \dfrac{dx}{dt} = A\omega\cos(\omega t)
+    \]
+    \[
+        a = \dfrac{F}{m} = -A\omega^2\sin(\omega t)
+    \]
+\end{minipage}
+
+\subsection{Esercizio 2.19}
+\subsection{Esercizio 2.20}
 \end{document}
