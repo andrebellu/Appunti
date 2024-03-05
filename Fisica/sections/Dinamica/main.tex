@@ -189,7 +189,7 @@ perchè al corpo sono applicate sia la forza peso che la reazione dovuta al cont
 \subsection{Forza di attrito}
 
 \subsubsection{Forza di attrito radente}
-\textbf{Forza di attrito statico} $F_s$: ci interessa il suo massimo in quanto è la forza che ostacola il moto. 
+\textbf{Forza di attrito statico} $F_s$: ci interessa il suo massimo in quanto è la forza che ostacola il moto.
 \[
     F_{s max} = \mu_s N \ \ \text{coefficiente di attrito statico}
 \]
@@ -206,7 +206,11 @@ Una superficie si chiama \textbf{scabra} se c'è attrito o \textbf{liscia} se no
 \subsubsection{Esercizio 2.9}
 
 \subsection{Piano inclinato}
-Il piano inclinato è un piano che forma un angolo $\theta$ con l'orizzontale.
+Consideriamo un corpo, assimilabile a un punto materiale di mass $m$, che possa muoversi sotto l'azione della forza peso e di altre forze, su una \textbf{piano inclinato} di angolo $\theta$ rispetto all'orizzontale.\\
+Se consideriamo solo la forza peso $\bar P$, secondo la legge di Newton:
+\[
+    \bar P + \bar R = m\bar a
+\]
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{piano_inclinato.png}
@@ -227,6 +231,61 @@ Mentre la forza di attrito:
 \subsubsection{Esercizio 2.10}
 
 \subsubsection{Esercizio 2.11}
+
+% pull github
+Le molle si muovono in moto armonico semplice\\
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{mas.png}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \[
+        A\sin(\omega t)
+    \]
+    \[
+        v = \dfrac{dx}{dt} = A\omega\cos(\omega t)
+    \]
+    \[
+        a = \dfrac{F}{m} = -A\omega^2\sin(\omega t)
+    \]
+\end{minipage}
+
+\subsection{Esercizio 2.19}
+\subsection{Esercizio 2.20}
+
+\subsection{Pendolo semplice}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Graphics-180.png}
+\end{figure}
+Il pendolo è costituito da un punto materiale attaccato a un filo. Sul punto agisce la forza peso e sulla corda una forza $T$. Inoltre consideriamo la forza normale e tangenziale.
+\[
+    \begin{cases}
+        (\star) \ \ mg\sin\theta = m\bar a_T \\
+        R_N = T - mg \cos\theta = m\bar a_N \text{ dove} a_n = \omega^2 L \implies R_N = m\omega^2 L
+    \end{cases}
+\]
+\[
+    a_T = \dfrac{dv}{dt} = \dfrac{d}{dt}\omega L = \omega \dfrac{dL}{dt} = L\alpha = L\dfrac{d^2\theta}{dt^2}
+\]
+\[
+    a_N = \omega^2 L
+\]
+da $(\star)$ dopo aver semplificato la $m$ e trovato la $a_T$ ricaviamo la legge che regola il moto:
+\[
+    - g\sin\theta = L\dfrac{d^2\theta}{dt^2} \implies \theta(t) = \sin\theta = \theta - \dfrac{\theta^3}{3!} + \ldots
+\]
+Il pendolo per piccole oscillazioni si può descrivere con:
+\[
+    \dfrac{-g\theta}{L} = \dfrac{d^2\theta}{dt^2} \implies \theta(t) = A\sin(\omega t + \phi)
+\]
+dove $\omega = \sqrt{\dfrac{g}{L}}$ e $T = 2\pi\sqrt{\dfrac{L}{g}}$. Il periodo dipende \textbf{solo dalla lunghezza del filo} e non dalla massa del corpo attaccato.\\
+Se vogliamo trovare la coordinata del punto materiale:
+\[
+    s(t) = L\theta
+\]
+
 
 
 \end{document}
